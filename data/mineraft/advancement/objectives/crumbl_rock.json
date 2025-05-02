@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:raw_copper",
+        "components": {
+          "minecraft:item_model": "minecraft:pale_moss_block"
+        }
+      },
+      "title": "Quite the Find!",
+      "description": "Obtain Loose Slate",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/found_barrel",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:test_block"
+            }
+          ]
+        }
+      }
+    }
+  }

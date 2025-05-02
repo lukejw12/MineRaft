@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "pattern": [
+      "   ",
+      "121",
+      "131"
+    ],
+    "key": {
+      "1": [
+        "minecraft:jigsaw"
+      ],
+      "3": [
+        "dirt"
+      ],
+      "2": [
+        "command_block_minecart"
+      ]
+    },
+    "result": {
+      "id": "minecraft:vex_spawn_egg",
+      "components": {
+        "minecraft:item_model": "minecraft:crop_plot",
+        "minecraft:item_name": "Crop Plot",
+        "minecraft:rarity": "uncommon",
+        "minecraft:entity_data": {
+          "id": "minecraft:marker",
+          "Tags": [
+            "crop_plot"
+          ]
+        },
+        "minecraft:custom_data": {
+          "crop_plot": true
+        }
+      },
+      "count": 1
+    },
+    "show_notification": true
+  }

@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone",
+        "components": {
+          "minecraft:item_model": "minecraft:wooden_stairs"
+        }
+      },
+      "title": "Wooden Staircase",
+      "description": "A Rickety wooden staircase, can be placed to climb to another layer of your raft.",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "mineraft:research_guide/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:decor/wooden_staircase"
+        }
+      }
+    }
+  }

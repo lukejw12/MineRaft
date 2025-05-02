@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:raw_copper",
+        "components": {
+          "minecraft:item_model": "minecraft:bow"
+        }
+      },
+      "title": "Baby's First Bow",
+      "description": "Craft a Simple Bow",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/pulling_it_together",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:vanilla_overrides/equipment/tools/weapons/bow"
+        }
+      }
+    }
+  }

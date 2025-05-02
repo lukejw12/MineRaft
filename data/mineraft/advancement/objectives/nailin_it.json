@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:spruce_trapdoor",
+        "components": {
+          "minecraft:item_model": "minecraft:prismarine_crystals"
+        }
+      },
+      "title": "Nailin' It!",
+      "description": "Create some makeshift nails",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/carpenter",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:nail"
+        }
+      }
+    }
+  }

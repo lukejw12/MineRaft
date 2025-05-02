@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:raw_copper",
+        "components": {
+          "minecraft:item_model": "minecraft:foundation_armor_item"
+        }
+      },
+      "title": "Reinforcements Have Arrived!",
+      "description": "Craft Foundation Armor",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/finish_earlygame",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:foundation_armor"
+        }
+      }
+    }
+  }

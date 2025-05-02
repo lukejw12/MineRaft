@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+      "#": "minecraft:stick",
+      "X": "minecraft:command_block_minecart"
+    },
+    "pattern": [
+      " #X",
+      "# X",
+      " #X"
+    ],
+    "result": {
+      "count": 1,
+      "id": "minecraft:bow",
+      "components": {
+        "item_name": "Simple Bow",
+        "max_damage": 10
+      }
+    }
+  }

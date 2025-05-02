@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+      "2": "string",
+      "#": "minecraft:stick",
+      "X": "#minecraft:stone_tool_materials"
+    },
+    "pattern": [
+      " 2X",
+      " #2",
+      "#  "
+    ],
+    "result": {
+      "components": {
+        "minecraft:item_name": "Stone Spear",
+        "minecraft:max_damage": 15,
+        "item_model": "minecraft:stone_spear",
+        "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "minecraft:base_attack_damage",
+            "amount": 2,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ]
+      },
+      "count": 1,
+      "id": "minecraft:stone_sword"
+    }
+  }

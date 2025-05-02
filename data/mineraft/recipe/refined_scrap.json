@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:smoking",
+    "category": "misc",
+    "ingredient": "minecraft:command_block",
+    "result": {
+      "id": "minecraft:repeating_command_block",
+      "components": {
+        "minecraft:item_model": "minecraft:refined_scrap",
+        "minecraft:item_name": "Refined Scrap",
+        "minecraft:rarity": "rare"
+      }
+    },
+    "cookingtime": 800
+  }

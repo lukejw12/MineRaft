@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "bonus_rolls": 0,
+        "conditions": [
+          {
+            "condition": "minecraft:survives_explosion"
+          }
+        ],
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:dried_kelp_block",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                "minecraft:item_name": "Biofuel"
+               }
+              }
+            ]
+          }
+        ],
+        "rolls": 1
+      }
+    ]
+  }

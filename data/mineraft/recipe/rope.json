@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      "string",
+      "string",
+      "string",
+      "string",
+      "sugar_cane",
+      "sugar_cane",
+      "sugar_cane",
+      "sugar_cane"
+    ],
+    "result": {
+      "id": "minecraft:command_block_minecart",
+      "components": {
+        "minecraft:item_name": "Rope",
+        "rarity": "common",
+        "minecraft:max_stack_size": 64
+      },
+      "count": 2
+    }
+  }

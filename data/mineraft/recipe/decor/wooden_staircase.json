@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "143",
+    "21 ",
+    "2 1"
+  ],
+  "key": {
+    "1": [
+      "minecraft:jigsaw"
+    ],
+    "2": [
+      "spruce_log"
+    ],
+    "3": [
+      "structure_block"
+    ],
+    "4": [
+      "prismarine_crystals"
+    ]
+  },
+  "result": {
+    "id": "minecraft:vex_spawn_egg",
+    "components": {
+      "minecraft:item_model": "minecraft:wooden_stairs",
+      "minecraft:item_name": "Wooden Staircase",
+      "minecraft:rarity": "uncommon",
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "wooden_staircase"
+        ]
+      },
+      "minecraft:custom_data": {
+        "wooden_staircase": true
+      }
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

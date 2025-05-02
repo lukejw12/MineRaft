@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:potion",
+            "components": {
+              "minecraft:custom_data": {
+                "pure_water": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "mineraft:hydration/replenish"
+    }
+  }

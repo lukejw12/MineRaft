@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone",
+        "components": {
+          "minecraft:item_model": "minecraft:oak_sapling"
+        }
+      },
+      "title": "Palm Sapling",
+      "description": "Plant this sapling in a Large Crop Plot",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "mineraft:research_guide/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+                "items": "oak_sapling"
+            }
+          ]
+          }
+        }
+      }
+    }

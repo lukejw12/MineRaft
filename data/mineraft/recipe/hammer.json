@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " 12",
+    "231",
+    "32 "
+  ],
+  "key": {
+    "1": [
+      "minecraft:command_block"
+    ],
+    "2": [
+      "minecraft:string"
+    ],
+    "3": [
+      "minecraft:stick"
+    ]
+  },
+  "result": {
+    "id": "minecraft:structure_block",
+    "components": {
+      "minecraft:item_model": "minecraft:hammer",
+      "minecraft:item_name": "Hammer",
+      "minecraft:rarity": "rare",
+      "minecraft:custom_data": {
+        "hammer": true
+      },
+      "minecraft:consumable": {
+        "consume_seconds": 9999,
+        "animation": "brush",
+        "has_consume_particles": false
+      },
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
+      "minecraft:unbreakable": {}
+    },
+    "count": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "pattern": [
+      "121",
+      " 13",
+      "121"
+    ],
+    "key": {
+      "1": [
+        "minecraft:jigsaw"
+      ],
+      "2": [
+        "prismarine_crystals"
+      ],
+      "3": [
+        "structure_block"
+      ]
+    },
+    "result": {
+      "id": "minecraft:vex_spawn_egg",
+      "components": {
+        "minecraft:item_model": "minecraft:wooden_pillar",
+        "minecraft:item_name": "Wooden Pillar",
+        "minecraft:rarity": "uncommon",
+        "minecraft:entity_data": {
+          "id": "minecraft:marker",
+          "Tags": [
+            "wooden_support"
+          ]
+        },
+        "minecraft:custom_data": {
+          "wooden_support": true
+        }
+      },
+      "count": 1
+    },
+    "show_notification": true
+  }

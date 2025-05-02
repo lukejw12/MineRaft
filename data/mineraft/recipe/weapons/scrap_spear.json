@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " 32",
+      " 13",
+      "1  "
+    ],
+    "key": {
+      "1": [
+        "minecraft:stick"
+      ],
+      "2": [
+        "repeating_command_block"
+      ],
+      "3": [
+        "minecraft:string"
+      ]
+    },
+    "result": {
+      "id": "minecraft:golden_sword",
+      "components": {
+        "item_model": "minecraft:scrap_spear",
+        "minecraft:item_name": "Scrap Spear",
+        "minecraft:max_damage": 21,
+        "minecraft:rarity": "uncommon"
+      },
+      "count": 1
+    },
+    "show_notification": true
+  }

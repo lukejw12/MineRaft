@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+      "2": "string",
+      "#": "minecraft:stick",
+      "X": "#minecraft:stone_tool_materials"
+    },
+    "pattern": [
+      "XXX",
+      "2#2",
+      " # "
+    ],
+    "result": {
+      "components": {
+        "minecraft:max_damage": 39,
+        "minecraft:item_name": "Stone Pickaxe"
+      },
+      "count": 1,
+      "id": "minecraft:stone_pickaxe"
+    }
+  }

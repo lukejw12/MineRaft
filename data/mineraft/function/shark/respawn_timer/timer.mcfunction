@@ -1,0 +1,4 @@
+execute unless entity @e[tag=shark,type=dolphin] run scoreboard players add #shark_timer shark.timer 1
+execute if score #shark_timer shark.timer matches 500 unless entity @e[tag=shark] at @e[tag=central_raft,limit=1] run summon dolphin ~ 62 ~ {PersistenceRequired:1b,Silent:1b,CustomNameVisible:0b,Health:180f,GotFish:0b,Tags:["shark"],CustomName:'{"color":"aqua","text":"Shark"}',attributes:[{id:"minecraft:max_health",base:180},{id:"minecraft:scale",base:1}]}
+execute if score #shark_timer shark.timer matches 500 unless entity @e[type=item_display,tag=aj.shark_swim.root] at @e[tag=central_raft,limit=1] run function animated_java:shark_swim/summon {args: {}}
+execute if score #shark_timer shark.timer matches 500 run scoreboard players set #shark_timer shark.timer 0

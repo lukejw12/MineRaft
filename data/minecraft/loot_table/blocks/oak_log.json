@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "bonus_rolls": 0,
+        "conditions": [
+          {
+            "condition": "minecraft:survives_explosion"
+          }
+        ],
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                "minecraft:item_model": "minecraft:wooden_step",
+                "minecraft:item_name": "Wooden Plank",
+                "minecraft:rarity": "common",
+                "minecraft:custom_data": {
+                "wooden_plank": true
+                }
+               }
+              }
+            ]
+          }
+        ],
+        "rolls": 1
+      }
+    ],
+    "random_sequence": "minecraft:blocks/jungle_wood"
+  }

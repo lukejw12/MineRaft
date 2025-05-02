@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+      {
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:kelp",
+            "weight": 20
+          },
+          {
+            "type": "minecraft:item",
+            "name": "cod",
+            "weight": 30
+          },
+          {
+            "type": "minecraft:item",
+            "name": "flint",
+            "weight": 50
+          }
+        ],
+        "rolls": 1
+      }
+    ],
+    "random_sequence": "minecraft:gameplay/fishing/fish"
+  }

@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:cobweb",
+        "components": {
+          "minecraft:item_model": "minecraft:collection_net"
+        }
+      },
+      "title": "Scrap Collector",
+      "description": "Craft a Collection Net",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/leg_room",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:collection_raft"
+        }
+      }
+    }
+  }

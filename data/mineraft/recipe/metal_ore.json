@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      [
+        "minecraft:test_block"
+      ],
+      [
+        "minecraft:structure_block"
+      ]
+    ],
+    "result": {
+      "id": "minecraft:raw_iron",
+      "components": {
+        "minecraft:item_name": "Metal Ore"
+      },
+      "count": 1
+    }
+  }

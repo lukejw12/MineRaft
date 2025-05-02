@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone",
+        "components": {
+          "minecraft:item_model": "minecraft:raw_iron"
+        }
+      },
+      "title": "Metal Ore",
+      "description": "Tough Metal Ore. Can be obtained from crafting.",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "mineraft:research_guide/misc/loose_slate",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+                "items": "raw_iron"
+            }
+          ]
+        }
+      }
+    }
+  }

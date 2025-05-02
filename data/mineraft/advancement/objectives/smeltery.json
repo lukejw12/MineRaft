@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:blast_furnace",
+        "components": {
+          "minecraft:item_model": "minecraft:smeltery"
+        }
+      },
+      "title": "Forging with Fashion",
+      "description": "Craft a Smeltery",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/leg_room",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:smeltery"
+        }
+      }
+    }
+  }

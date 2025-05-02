@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "   ",
+    "131",
+    "2 2"
+  ],
+  "key": {
+    "1": [
+      "minecraft:test_instance_block"
+    ],
+    "2": [
+      "minecraft:command_block_minecart"
+    ],
+    "3": [
+      "minecraft:chainmail_boots"
+    ]
+  },
+  "result": {
+    "id": "minecraft:iron_boots",
+    "components": {
+      "minecraft:item_name": "Metal Boots",
+      "minecraft:rarity": "rare",
+      "minecraft:max_damage": 200
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

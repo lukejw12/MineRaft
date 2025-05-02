@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "pattern": [
+      "111",
+      "222",
+      "111"
+    ],
+    "key": {
+      "1": [
+        "minecraft:jigsaw"
+      ],
+      "2": [
+        "cobweb"
+      ]
+    },
+    "result": {
+      "id": "minecraft:vex_spawn_egg",
+      "components": {
+        "item_model": "minecraft:collection_net",
+        "minecraft:item_name": "Collection Net",
+        "minecraft:rarity": "uncommon",
+        "minecraft:entity_data": {
+          "id": "minecraft:marker",
+          "Tags": [
+            "net_extension"
+          ]
+        },
+        "minecraft:custom_data": {
+          "net_extension_item": true
+        }
+      },
+      "count": 1
+    },
+    "show_notification": true
+  }

@@ -1,0 +1,25 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "spruce_planks"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "recipes": [
+        "mineraft:vanilla_overrides/equipment/tools/wooden_axe",
+        "mineraft:vanilla_overrides/equipment/tools/wooden_hoe",
+        "mineraft:vanilla_overrides/equipment/tools/wooden_shovel",
+        "mineraft:vanilla_overrides/equipment/tools/wooden_pickaxe",
+        "mineraft:vanilla_overrides/equipment/tools/weapons/wooden_sword"
+      ]
+    }
+  }

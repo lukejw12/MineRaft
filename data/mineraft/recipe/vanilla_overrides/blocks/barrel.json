@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "key": {
+      "1": "jigsaw",
+      "2": "prismarine_crystals",
+      "3": "minecraft:structure_block"
+    },
+    "pattern": [
+      "121",
+      "131",
+      "121"
+    ],
+    "result": {
+      "count": 1,
+      "id": "minecraft:barrel"
+    }
+  }

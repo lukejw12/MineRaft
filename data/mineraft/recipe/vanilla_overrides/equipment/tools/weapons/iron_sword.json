@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "2": "prismarine_crystals",
+    "#": "minecraft:stick",
+    "X": "minecraft:test_instance_block"
+  },
+  "pattern": [
+    " X ",
+    " X ",
+    "2#2"
+  ],
+  "result": {
+    "components": {
+      "minecraft:item_name": "Metal Sword",
+      "minecraft:max_damage": 46,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ]
+    },
+    "count": 1,
+    "id": "minecraft:iron_sword"
+  }
+}

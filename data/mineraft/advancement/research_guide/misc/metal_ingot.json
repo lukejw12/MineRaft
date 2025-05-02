@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone",
+        "components": {
+          "minecraft:item_model": "minecraft:iron_ingot"
+        }
+      },
+      "title": "Metal Ingot",
+      "description": "Tougher metal ingot. Can be obtained from smelting.",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "mineraft:research_guide/misc/metal_ore",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+                "items": "test_instance_block"
+            }
+          ]
+        }
+      }
+    }
+  }

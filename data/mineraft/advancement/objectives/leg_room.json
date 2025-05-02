@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:spruce_trapdoor",
+        "components": {
+          "minecraft:item_model": "minecraft:raft_extension"
+        }
+      },
+      "title": "More Leg Room",
+      "description": "Craft a Foundation",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/fish_scrap",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:raft_extension"
+        }
+      }
+    }
+  }

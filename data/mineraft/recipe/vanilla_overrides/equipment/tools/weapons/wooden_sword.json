@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+      "2": "string",
+      "#": "minecraft:stick",
+      "X": "#minecraft:wooden_tool_materials"
+    },
+    "pattern": [
+      " X ",
+      " X ",
+      "2#2"
+    ],
+    "result": {
+      "components": {
+        "minecraft:item_name": "Driftwood Sword",
+        "minecraft:max_damage": 23,
+        "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "minecraft:base_attack_damage",
+            "amount": 0,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ]
+      },
+      "count": 1,
+      "id": "minecraft:wooden_sword"
+    }
+  }

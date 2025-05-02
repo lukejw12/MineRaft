@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      "kelp",
+      "kelp",
+      "kelp",
+      "kelp",
+      "kelp",
+      "kelp",
+      "kelp",
+      "string"
+    ],
+    "result": {
+      "id": "minecraft:sugar_cane",
+      "components": {
+        "minecraft:item_name": "Thatch"
+      },
+      "count": 1
+    }
+  }

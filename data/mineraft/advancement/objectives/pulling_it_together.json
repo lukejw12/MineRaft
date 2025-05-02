@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:golden_shovel",
+        "components": {
+          "minecraft:item_model": "minecraft:command_block_minecart"
+        }
+      },
+      "title": "Pulling it Together",
+      "description": "Weave some Rope",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/plantin_time",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:rope"
+        }
+      }
+    }
+  }

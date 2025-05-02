@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "   ",
+      "31 ",
+      "12 "
+    ],
+    "key": {
+      "1": [
+        "kelp"
+      ],
+      "2": [
+        "sugar_cane"
+      ],
+      "3": [
+        "command_block_minecart"
+      ]
+    },
+    "result": {
+      "id": "dried_kelp_block",
+      "components": {
+        "item_name": "Biofuel"
+      },
+      "count": 3
+    },
+    "show_notification": true
+  }

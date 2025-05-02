@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "   ",
+      "31 ",
+      "23 "
+    ],
+    "key": {
+      "1": [
+        "flint"
+      ],
+      "2": [
+        "stick"
+      ],
+      "3": [
+        "string"
+      ]
+    },
+    "result": {
+      "id": "arrow",
+      "count": 6
+    },
+    "show_notification": true
+  }

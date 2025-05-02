@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "stone",
+        "components": {
+          "minecraft:item_model": "minecraft:wooden_step"
+        }
+      },
+      "title": "Walking the Plank!",
+      "description": "Craft some wooden planks",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/nailin_it",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:wooden_step"
+        }
+      }
+    }
+  }

@@ -1,0 +1,25 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "cobblestone"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "recipes": [
+        "mineraft:vanilla_overrides/equipment/tools/stone_axe",
+        "mineraft:vanilla_overrides/equipment/tools/stone_hoe",
+        "mineraft:vanilla_overrides/equipment/tools/stone_shovel",
+        "mineraft:vanilla_overrides/equipment/tools/stone_pickaxe",
+        "mineraft:vanilla_overrides/equipment/tools/weapons/stone_sword"
+      ]
+    }
+  }

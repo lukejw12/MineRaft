@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:raw_copper",
+        "components": {
+          "minecraft:item_model": "minecraft:bundle"
+        }
+      },
+      "title": "Simple Storage",
+      "description": "Craft a Storage Sack",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/pulling_it_together",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:vanilla_overrides/items/bundle"
+        }
+      }
+    }
+  }

@@ -1,0 +1,25 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "test_instance_block"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "recipes": [
+        "mineraft:vanilla_overrides/equipment/tools/iron_axe",
+        "mineraft:vanilla_overrides/equipment/tools/iron_hoe",
+        "mineraft:vanilla_overrides/equipment/tools/iron_shovel",
+        "mineraft:vanilla_overrides/equipment/tools/iron_pickaxe",
+        "mineraft:vanilla_overrides/equipment/tools/weapons/iron_sword"
+      ]
+    }
+  }

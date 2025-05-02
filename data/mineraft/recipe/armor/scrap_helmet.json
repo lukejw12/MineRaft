@@ -1,0 +1,44 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "212",
+      "1 1",
+      "   "
+    ],
+    "key": {
+      "1": [
+        "minecraft:repeating_command_block"
+      ],
+      "2": [
+        "minecraft:command_block_minecart"
+      ]
+    },
+    "result": {
+      "id": "minecraft:chainmail_helmet",
+      "components": {
+        "item_model": "minecraft:scrap_helmet",
+        "minecraft:item_name": "Scrap Helmet",
+        "minecraft:rarity": "uncommon",
+        "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:armor",
+            "id": "minecraft:armor.helmet",
+            "amount": 2,
+            "operation": "add_value",
+            "slot": "head"
+          },
+          {
+            "type": "minecraft:armor_toughness",
+            "id": "minecraft:armor.helmet",
+            "amount": 0.5,
+            "operation": "add_value",
+            "slot": "head"
+          }
+        ],
+        "minecraft:max_damage": 110
+      },
+      "count": 1
+    },
+    "show_notification": true
+  }

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+      "2": "string",
+      "#": "minecraft:stick",
+      "X": "#minecraft:wooden_tool_materials"
+    },
+    "pattern": [
+      "XXX",
+      "2#2",
+      " # "
+    ],
+    "result": {
+      "components": {
+        "minecraft:max_damage": 26,
+        "minecraft:item_name": "Driftwood Pickaxe"
+      },
+      "count": 1,
+      "id": "minecraft:wooden_pickaxe"
+    }
+  }

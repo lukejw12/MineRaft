@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:metal_ore"
+          
+        }
+      }
+    },
+    "rewards": {
+      "function": "mineraft:hammer/hammer_recipe_return/hammer_recipe_return",
+      "recipes": []
+    }
+  }

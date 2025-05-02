@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "222",
+      "232",
+      "424"
+    ],
+    "key": {
+      "2": [
+        "repeating_command_block"
+      ],
+      "3": [
+        "minecraft:chain_command_block"
+      ],
+      "4": [
+        "prismarine_crystals"
+      ]
+    },
+    "result": {
+      "id": "minecraft:compass",
+      "components": {
+        "minecraft:item_model": "minecraft:radar",
+        "minecraft:item_name": "Island Radar",
+        "minecraft:rarity": "epic",
+        "minecraft:custom_data": {
+          "radar": true
+        }
+      },
+      "count": 1
+    },
+    "show_notification": true
+  }

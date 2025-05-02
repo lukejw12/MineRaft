@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " 31",
+      " 12",
+      "1 2"
+    ],
+    "key": {
+      "1": [
+        "minecraft:jigsaw"
+      ],
+      "2": [
+        "command_block_minecart"
+      ],
+      "3": [
+        "minecraft:prismarine_crystals"
+      ]
+    },
+    "result": {
+      "id": "minecraft:fishing_rod",
+      "components": {
+        "minecraft:item_model": "sturdy_rod",
+        "minecraft:item_name": "Sturdy Rod",
+        "minecraft:rarity": "uncommon",
+        "minecraft:max_damage": 192
+      },
+      "count": 1
+    },
+    "show_notification": true
+  }

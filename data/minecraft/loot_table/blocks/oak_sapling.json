@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:oak_sapling",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name": "Palm Sapling"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

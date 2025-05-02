@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      [
+        "minecraft:structure_block"
+      ],
+      [
+        "minecraft:command_block"
+      ],
+      [
+        "minecraft:command_block"
+      ]
+    ],
+    "result": {
+      "id": "minecraft:prismarine_crystals",
+      "components": {
+        "minecraft:item_name": "Nails",
+        "minecraft:rarity": "common"
+      },
+      "count": 3
+    }
+  }

@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "stone",
+        "components": {
+          "minecraft:item_model": "minecraft:wooden_platform_it"
+        }
+      },
+      "title": "Didn't I Already Craft This?",
+      "description": "Craft a wooden platform",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/walk_the_plank",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:decor/wooden_platform"
+        }
+      }
+    }
+  }

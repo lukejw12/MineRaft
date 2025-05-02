@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:raw_copper",
+        "components": {
+          "minecraft:item_model": "minecraft:sail_raft"
+        }
+      },
+      "title": "Set Sail",
+      "description": "Craft a Sail Raft",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/walk_the_plank",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:bamboo_raft"
+            }
+          ]
+        }
+      }
+    }
+  }

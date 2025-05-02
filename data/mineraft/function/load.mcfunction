@@ -1,0 +1,65 @@
+schedule function mineraft:spawn_raft/spawn_raft 15t append
+scoreboard objectives add resource_delay dummy
+scoreboard objectives add temp dummy
+scoreboard objectives add fishing_state dummy
+scoreboard objectives add lifetime dummy
+scoreboard objectives add foundation dummy
+
+scoreboard objectives add spread_x dummy
+scoreboard objectives add growth_timer dummy
+scoreboard objectives add loop dummy
+scoreboard objectives add spread_z dummy
+scoreboard objectives add raft_extension dummy
+scoreboard objectives add wooden_staircase dummy
+scoreboard objectives add wooden_support dummy
+scoreboard objectives add wooden_platform dummy
+scoreboard objectives add stop_reach dummy
+scoreboard objectives add raft_extension_net dummy
+scoreboard objectives add hammer dummy
+scoreboard objectives add playstyle dummy
+scoreboard objectives add temp dummy
+scoreboard objectives add hammer_use dummy
+scoreboard objectives add hammer_choose dummy
+scoreboard objectives add net_amount dummy
+scoreboard objectives add rain_collector dummy
+scoreboard objectives add smeltery dummy
+scoreboard objectives add shark.detect dummy
+scoreboard objectives add shark.timer dummy
+scoreboard objectives add shark.angle dummy
+scoreboard objectives add shark.id dummy
+scoreboard objectives add rain_collector_timer dummy
+scoreboard objectives add hydration dummy
+scoreboard objectives add hydration_counter dummy
+scoreboard objectives add death minecraft.custom:minecraft.deaths
+scoreboard players set #360 shark.detect 360
+scoreboard players set #100 shark.detect 100
+scoreboard objectives add player_online dummy
+scoreboard objectives add shark.raft_timer dummy
+scoreboard objectives add shark_kills dummy
+scoreboard players set #30 shark.detect 30
+scoreboard players set #45 shark.detect 45
+scoreboard players set #360 shark.detect 360
+scoreboard objectives add shark.raft_timer dummy
+scoreboard objectives add shark.stuck_timer dummy
+scoreboard objectives add shark.water_dir dummy
+scoreboard objectives add shark.health dummy
+scoreboard objectives add staircase_id dummy
+scoreboard objectives add central_raft_amount dummy
+scoreboard objectives add large_crop_plot dummy
+scoreboard objectives add crop_plot dummy
+execute positioned ~0.5 63 ~0.5 unless entity @e[tag=central_raft,distance=..2] run kill @e[tag=central_raft]
+execute positioned ~0.5 63 ~0.5 unless entity @e[tag=central_raft,distance=..2] run summon marker ~ 63 ~ {Tags:["central_raft"]}
+execute unless entity @e[tag=shark_name] run summon marker 0 62 0 {Tags:["shark_name"],CustomNameVisible:0b,CustomName:{"color":"aqua","text":"Shark"}}
+
+scoreboard objectives add locate_distance dummy
+scoreboard objectives add locate_distance_1 dummy
+scoreboard objectives add locate_distance_2 dummy
+scoreboard objectives add locate_distance_3 dummy
+scoreboard players set #temp locate_distance 0
+scoreboard players set #invert locate_distance 0
+#bossbar add mineraft:radar/locate_distance "Island Distance"
+
+bossbar add mineraft:radar/locate_distance {"text":"Island Radar"}
+scoreboard objectives add compass_id dummy
+scoreboard objectives add player_has_compass dummy
+

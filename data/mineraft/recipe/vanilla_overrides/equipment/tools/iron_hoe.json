@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+      "2": "prismarine_crystals",
+      "#": "minecraft:stick",
+      "X": "minecraft:test_instance_block"
+    },
+    "pattern": [
+      "XX ",
+      " #2",
+      "2# "
+    ],
+    "result": {
+      "components": {
+        "minecraft:item_name": "Metal Hoe",
+        "minecraft:max_damage": 46
+      },
+      "count": 1,
+      "id": "minecraft:iron_hoe"
+    }
+  }

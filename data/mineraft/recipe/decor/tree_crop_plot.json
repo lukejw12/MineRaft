@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "pattern": [
+      "424",
+      "1 1",
+      "131"
+    ],
+    "key": {
+      "1": [
+        "minecraft:jigsaw"
+      ],
+      "2": [
+        "prismarine_crystals"
+      ],
+      "3": [
+        "dirt"
+      ],
+      "4": [
+        "command_block_minecart"
+      ]
+    },
+    "result": {
+      "id": "minecraft:vex_spawn_egg",
+      "components": {
+        "minecraft:item_model": "minecraft:tree_crop_plot_item",
+        "minecraft:item_name": "Large Crop Plot",
+        "minecraft:rarity": "uncommon",
+        "minecraft:entity_data": {
+          "id": "minecraft:marker",
+          "Tags": [
+            "tree_plot"
+          ]
+        },
+        "minecraft:custom_data": {
+          "tree_plot": true
+        }
+      },
+      "count": 1
+    },
+    "show_notification": true
+  }

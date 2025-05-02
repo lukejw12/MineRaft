@@ -1,0 +1,12 @@
+# File: functions/admin_commands/gameplay_menu/controls/items/misc.mcfunction
+
+tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Misc Items --"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Storage Sack "},"[",{"click_event":{"action":"run_command","command":"/give @s bundle[item_name=\"Storage Sack\"] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Sailable Raft "},"[",{"click_event":{"action":"run_command","command":"/give @s bamboo_raft[custom_data={sail_boat:1b},entity_data={id:\"minecraft:bamboo_raft\",Tags:[\"sail\",\"new\"]},item_model=\"minecraft:sail_raft\",item_name=\"Sailable Raft\",rarity=\"epic\"] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Island Radar "},"[",{"click_event":{"action":"run_command","command":"/give @s compass[custom_data={radar:1b},item_model=\"minecraft:radar\",item_name=\"Island Radar\",rarity=\"epic\"] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Hammer "},"[",{"click_event":{"action":"run_command","command":"/give @s structure_block[consumable={animation:\"brush\",consume_seconds:9999.0f,has_consume_particles:0b},custom_data={hammer:1b},food={can_always_eat:1b,nutrition:0,saturation:0.0f},item_model=\"minecraft:hammer\",item_name=\"Hammer\",rarity=\"rare\",unbreakable={}] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"-"}]
+tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"-"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"-"}]
+tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-----------------------"}]
+tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/main"}}]

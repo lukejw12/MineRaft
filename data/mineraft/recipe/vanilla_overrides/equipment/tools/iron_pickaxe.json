@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+      "2": "prismarine_crystals",
+      "#": "minecraft:stick",
+      "X": "minecraft:test_instance_block"
+    },
+    "pattern": [
+      "XXX",
+      "2#2",
+      " # "
+    ],
+    "result": {
+      "components": {
+        "minecraft:max_damage": 52,
+        "minecraft:item_name": "Metal Pickaxe"
+      },
+      "count": 1,
+      "id": "minecraft:iron_pickaxe"
+    }
+  }
