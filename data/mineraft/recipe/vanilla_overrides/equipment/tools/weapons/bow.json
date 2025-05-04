@@ -14,7 +14,10 @@
       "count": 1,
       "id": "minecraft:bow",
       "components": {
-        "item_name": "Simple Bow",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.simple_bow", 
+          "fallback": "Simple Bow" 
+        },
         "max_damage": 10
       }
     }
