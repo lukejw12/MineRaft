@@ -17,7 +17,21 @@
           "translate": "item.mineraft.driftwood_hoe", 
           "fallback": "Driftwood Hoe" 
         },
-        "minecraft:max_damage": 22
+        "minecraft:max_damage": 22,
+        "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "minecraft:base_attack_damage",
+            "amount": 0,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "tooltip_display": {
+          "hidden_components": [
+            "attribute_modifiers"
+          ]
+        }
       },
       "count": 1,
       "id": "minecraft:wooden_hoe"

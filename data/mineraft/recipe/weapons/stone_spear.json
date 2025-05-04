@@ -23,9 +23,17 @@
           {
             "type": "minecraft:attack_damage",
             "id": "minecraft:base_attack_damage",
-            "amount": 2,
+            "amount": 3,
             "operation": "add_value",
             "slot": "mainhand"
+          },
+          {
+            "type": "entity_interaction_range",
+            "id": "minecraft:base_attack_damage",
+
+            "amount": 2,
+            "operation": "add_value",
+            "slot":  "mainhand"
           }
         ]
       },
