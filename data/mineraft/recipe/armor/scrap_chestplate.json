@@ -18,7 +18,10 @@
       "id": "minecraft:chainmail_chestplate",
       "components": {
         "item_model": "minecraft:scrap_chestplate",
-        "minecraft:item_name": "Scrap Chestplate",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.scrap_chestplate", 
+          "fallback": "Scrap Chestplate" 
+        },
         "minecraft:rarity": "uncommon",
         "minecraft:attribute_modifiers": [
           {

@@ -12,7 +12,10 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "Palm Sapling"
+                  "minecraft:item_name": { 
+                    "translate": "item.mineraft.palm_sapling", 
+                    "fallback": "Palm Sapling" 
+                  }
                 }
               }
             ]

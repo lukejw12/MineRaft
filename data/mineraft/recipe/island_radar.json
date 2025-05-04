@@ -21,7 +21,10 @@
       "id": "minecraft:compass",
       "components": {
         "minecraft:item_model": "minecraft:radar",
-        "minecraft:item_name": "Island Radar",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.island_radar", 
+          "fallback": "Island Radar" 
+        },
         "minecraft:rarity": "epic",
         "minecraft:custom_data": {
           "radar": true

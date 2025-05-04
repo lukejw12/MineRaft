@@ -55,45 +55,45 @@ execute if block ~ ~-1 ~-1 #valid_center_blocks run kill @s
 execute if block ~ ~-1 ~-1 #valid_center_blocks if entity @s[tag=valid] run return 0 
 
 
-execute unless block ~ ~-1 ~1 #valid_center_blocks run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":'Collection Net',"minecraft:rarity":"uncommon"}}}
+execute unless block ~ ~-1 ~1 #valid_center_blocks run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":{"translate":"item.mineraft.collection_net","fallback":"Collection Net"},"minecraft:rarity":"uncommon"}}}
 execute unless block ~ ~-1 ~1 #valid_center_blocks run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless block ~ ~-1 ~1 #valid_center_blocks run kill @s
 execute unless block ~ ~-1 ~1 #valid_center_blocks run return 0
 
-execute unless block ~-1 ~-1 ~ #valid_center_blocks run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":'Collection Net',"minecraft:rarity":"uncommon"}}}
+execute unless block ~-1 ~-1 ~ #valid_center_blocks run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":{"translate":"item.mineraft.collection_net","fallback":"Collection Net"},"minecraft:rarity":"uncommon"}}}
 execute unless block ~-1 ~-1 ~ #valid_center_blocks run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless block ~-1 ~-1 ~ #valid_center_blocks run kill @s
 execute unless block ~-1 ~-1 ~ #valid_center_blocks run return 0
 
-execute unless block ~1 ~-1 ~ #valid_center_blocks run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":'Collection Net',"minecraft:rarity":"uncommon"}}}
+execute unless block ~1 ~-1 ~ #valid_center_blocks run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":{"translate":"item.mineraft.collection_net","fallback":"Collection Net"},"minecraft:rarity":"uncommon"}}}
 execute unless block ~1 ~-1 ~ #valid_center_blocks run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless block ~1 ~-1 ~ #valid_center_blocks run kill @s
 execute unless block ~1 ~-1 ~ #valid_center_blocks run return 0
 
-execute unless block ~ ~-1 ~-1 #valid_center_blocks run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":'Collection Net',"minecraft:rarity":"uncommon"}}}
+execute unless block ~ ~-1 ~-1 #valid_center_blocks run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":{"translate":"item.mineraft.collection_net","fallback":"Collection Net"},"minecraft:rarity":"uncommon"}}}
 execute unless block ~ ~-1 ~-1 #valid_center_blocks run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless block ~ ~-1 ~-1 #valid_center_blocks run kill @s
 execute unless block ~ ~-1 ~-1 #valid_center_blocks run return 0
 
-execute unless block ~ ~-1 ~-1 #raft_replacable run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":'Collection Net',"minecraft:rarity":"uncommon"}}}
+execute unless block ~ ~-1 ~-1 #raft_replacable run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":{"translate":"item.mineraft.collection_net","fallback":"Collection Net"},"minecraft:rarity":"uncommon"}}}
 execute unless block ~ ~-1 ~-1 #raft_replacable run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless block ~ ~-1 ~-1 #raft_replacable run kill @s
 execute unless block ~ ~-1 ~-1 #raft_replacable run return 0
 
 
-execute unless block ~1 ~-1 ~ #raft_replacable run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":'Collection Net',"minecraft:rarity":"uncommon"}}}
+execute unless block ~1 ~-1 ~ #raft_replacable run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":{"translate":"item.mineraft.collection_net","fallback":"Collection Net"},"minecraft:rarity":"uncommon"}}}
 execute unless block ~1 ~-1 ~ #raft_replacable run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless block ~1 ~-1 ~ #raft_replacable run kill @s
 execute unless block ~1 ~-1 ~ #raft_replacable run return 0
 
 
-execute unless block ~-1 ~-1 ~ #raft_replacable run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":'Collection Net',"minecraft:rarity":"uncommon"}}}
+execute unless block ~-1 ~-1 ~ #raft_replacable run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":{"translate":"item.mineraft.collection_net","fallback":"Collection Net"},"minecraft:rarity":"uncommon"}}}
 execute unless block ~-1 ~-1 ~ #raft_replacable run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless block ~-1 ~-1 ~ #raft_replacable run kill @s
 execute unless block ~-1 ~-1 ~ #raft_replacable run return 0
 
 
-execute unless block ~ ~-1 ~1 #raft_replacable run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":'Collection Net',"minecraft:rarity":"uncommon"}}}
+execute unless block ~ ~-1 ~1 #raft_replacable run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{net_extension_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["net_extension"]},"minecraft:item_model":"minecraft:collection_net","minecraft:item_name":{"translate":"item.mineraft.collection_net","fallback":"Collection Net"},"minecraft:rarity":"uncommon"}}}
 execute unless block ~ ~-1 ~1 #raft_replacable run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless block ~ ~-1 ~1 #raft_replacable run kill @s
 execute unless block ~ ~-1 ~1 #raft_replacable run return 0

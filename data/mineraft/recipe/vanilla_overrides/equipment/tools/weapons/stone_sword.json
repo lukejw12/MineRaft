@@ -13,7 +13,10 @@
   ],
   "result": {
     "components": {
-      "minecraft:item_name": "Stone Sword",
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.stone_sword", 
+        "fallback": "Stone Sword" 
+      },
       "minecraft:max_damage": 33,
       "minecraft:attribute_modifiers": [
         {

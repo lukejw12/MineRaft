@@ -18,7 +18,10 @@
     "id": "minecraft:chainmail_boots",
     "components": {
       "item_model": "minecraft:scrap_boots",
-      "minecraft:item_name": "Scrap Boots",
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.scrap_boots", 
+        "fallback": "Scrap Boots" 
+      },
       "minecraft:rarity": "uncommon",
       "minecraft:attribute_modifiers": [
         {

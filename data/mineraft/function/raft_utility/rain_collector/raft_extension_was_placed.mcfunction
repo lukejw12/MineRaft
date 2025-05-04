@@ -10,12 +10,12 @@ execute at @s if entity @s[tag=valid] if block ~ ~-1 ~ #raft_materials run setbl
 execute at @s if entity @s[tag=valid] if block ~ ~-1 ~ #raft_materials run kill @s
 execute at @s if block ~ ~-1 ~ #raft_materials if entity @s[tag=valid] run return 0
 
-execute unless entity @s[tag=valid] unless block ~ ~-1 ~ #raft_materials run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{rain_collector_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["rain_collector"]},"minecraft:item_model":"minecraft:rain_collector","minecraft:item_name":'Rain Collector',"minecraft:rarity":"uncommon"}}}
+execute unless entity @s[tag=valid] unless block ~ ~-1 ~ #raft_materials run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{rain_collector_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["rain_collector"]},"minecraft:item_model":"minecraft:rain_collector","minecraft:item_name":{"translate":"item.mineraft.rain_collector","fallback":"Rain Collector"},"minecraft:rarity":"uncommon"}}}
 execute unless entity @s[tag=valid] unless block ~ ~-1 ~ #raft_materials run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless entity @s[tag=valid] unless block ~ ~-1 ~ #raft_materials run kill @s
 execute unless entity @s[tag=valid] unless block ~ ~-1 ~ #raft_materials run return 0
 
-execute unless entity @s[tag=valid] run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{rain_collector_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["rain_collector"]},"minecraft:item_model":"minecraft:rain_collector","minecraft:item_name":'Rain Collector',"minecraft:rarity":"uncommon"}}}
+execute unless entity @s[tag=valid] run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{rain_collector_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["rain_collector"]},"minecraft:item_model":"minecraft:rain_collector","minecraft:item_name":{"translate":"item.mineraft.rain_collector","fallback":"Rain Collector"},"minecraft:rarity":"uncommon"}}}
 execute unless entity @s[tag=valid] run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless entity @s[tag=valid] run kill @s
 execute unless entity @s[tag=valid] run return 0

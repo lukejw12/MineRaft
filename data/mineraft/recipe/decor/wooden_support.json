@@ -21,7 +21,10 @@
       "id": "minecraft:vex_spawn_egg",
       "components": {
         "minecraft:item_model": "minecraft:wooden_pillar",
-        "minecraft:item_name": "Wooden Pillar",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.wooden_pillar", 
+          "fallback": "Wooden Pillar" 
+        },
         "minecraft:rarity": "uncommon",
         "minecraft:entity_data": {
           "id": "minecraft:marker",

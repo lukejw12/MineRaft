@@ -21,7 +21,10 @@
       "id": "minecraft:iron_sword",
       "components": {
         "item_model": "minecraft:iron_spear",
-        "minecraft:item_name": "Metal Spear",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.metal_spear", 
+          "fallback": "Metal Spear" 
+        },
         "minecraft:max_damage": 30,
         "minecraft:rarity": "uncommon"
       },

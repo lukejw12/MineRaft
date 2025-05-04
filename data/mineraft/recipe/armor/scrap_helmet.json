@@ -18,7 +18,10 @@
       "id": "minecraft:chainmail_helmet",
       "components": {
         "item_model": "minecraft:scrap_helmet",
-        "minecraft:item_name": "Scrap Helmet",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.scrap_helmet", 
+          "fallback": "Scrap Helmet" 
+        },
         "minecraft:rarity": "uncommon",
         "minecraft:attribute_modifiers": [
           {

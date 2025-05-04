@@ -175,12 +175,12 @@ execute if entity @s[tag=valid] if blocks ~-1 ~ ~ ~-1 ~2 ~ ~ 300 ~ masked if blo
 execute if entity @s[tag=valid] if blocks ~-1 ~ ~ ~-1 ~2 ~ ~ 300 ~ masked if block ~ ~-1 ~ #raft_materials if entity @s[tag=valid] run return 0
 
 
-execute unless entity @s[tag=valid] unless block ~ ~-1 ~ #raft_materials run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_staircase:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_staircase"]},"minecraft:item_model":"minecraft:wooden_stairs","minecraft:item_name":'Wooden Staircase',"minecraft:rarity":"uncommon"}}}
+execute unless entity @s[tag=valid] unless block ~ ~-1 ~ #raft_materials run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_staircase:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_staircase"]},"minecraft:item_model":"minecraft:wooden_stairs","minecraft:item_name":{"translate":"item.mineraft.wooden_staircase","fallback":"Wooden Staircase"},"minecraft:rarity":"uncommon"}}}
 execute unless entity @s[tag=valid] unless block ~ ~-1 ~ #raft_materials run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless entity @s[tag=valid] unless block ~ ~-1 ~ #raft_materials run kill @s
 execute unless entity @s[tag=valid] unless block ~ ~-1 ~ #raft_materials run return 0
 
-execute unless entity @s[tag=valid] run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_staircase:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_staircase"]},"minecraft:item_model":"minecraft:wooden_stairs","minecraft:item_name":'Wooden Staircase',"minecraft:rarity":"uncommon"}}}
+execute unless entity @s[tag=valid] run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_staircase:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_staircase"]},"minecraft:item_model":"minecraft:wooden_stairs","minecraft:item_name":{"translate":"item.mineraft.wooden_staircase","fallback":"Wooden Staircase"},"minecraft:rarity":"uncommon"}}}
 execute unless entity @s[tag=valid] run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless entity @s[tag=valid] run kill @s
 execute unless entity @s[tag=valid] run return 0

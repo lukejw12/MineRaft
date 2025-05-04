@@ -1,7 +1,7 @@
 execute unless block ~ ~-1 ~ #raft_materials run kill @e[type=item_display,distance=..1,sort=nearest,limit=1,tag=crop_plot_facade]
 execute unless block ~ ~-1 ~ #raft_materials run kill @e[type=interaction,distance=..1,sort=nearest,limit=1,tag=crop_plot_interact]
 execute unless block ~ ~-1 ~ #raft_materials run setblock ~ ~ ~ air
-execute unless block ~ ~-1 ~ #raft_materials run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{crop_plot:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["crop_plot"]},"minecraft:item_model":"minecraft:crop_plot","minecraft:item_name":"Crop Plot","minecraft:rarity":"uncommon"}}}
+execute unless block ~ ~-1 ~ #raft_materials run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{crop_plot:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["crop_plot"]},"minecraft:item_model":"minecraft:crop_plot","minecraft:item_name":{"translate":"item.mineraft.crop_plot","fallback":"Crop Plot"},"minecraft:rarity":"uncommon"}}}
 execute unless block ~ ~-1 ~ #raft_materials run kill @s
 
 execute unless block ~ ~ ~ structure_void run kill @e[type=item_display,distance=..1,sort=nearest,limit=1,tag=crop_plot_facade]

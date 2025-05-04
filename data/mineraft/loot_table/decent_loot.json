@@ -42,7 +42,10 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "Scrap",
+                  "minecraft:item_name": {
+                    "translate": "item.mineraft.scrap", 
+                    "fallback": "Scrap"
+                  },
                   "minecraft:rarity": "uncommon",
                   "item_model": "minecraft:scrap"
                 }
@@ -87,7 +90,10 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "Sea Glass",
+                  "minecraft:item_name": { 
+                    "translate": "item.mineraft.sea_glass", 
+                    "fallback": "Sea Glass" 
+                  },
                   "minecraft:item_model": "minecraft:glass",
                   "minecraft:rarity": "common"
                 }
@@ -102,7 +108,10 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "Nails",
+                  "minecraft:item_name": { 
+                    "translate": "item.mineraft.nails", 
+                    "fallback": "Nails" 
+                  },
                   "minecraft:rarity": "common"
                 }
               }

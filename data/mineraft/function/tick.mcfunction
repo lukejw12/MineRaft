@@ -10,7 +10,7 @@ scoreboard players set #total net_amount 0
 execute as @e[tag=active_net,type=marker] run scoreboard players add #total net_amount 1
 
 execute as @e[type=item_display,tag=boat] at @s unless predicate mineraft:is_riding run kill @e[type=item,sort=nearest,distance=..6,nbt={Item:{id:"minecraft:bamboo_raft"}}]
-execute as @e[type=item_display,tag=boat] at @s unless predicate mineraft:is_riding run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:bamboo_raft",count:1,components:{"minecraft:custom_data":{sail_boat:1b},"minecraft:item_model":"minecraft:sail_raft","minecraft:item_name":"Sailable Raft","minecraft:rarity":"epic","minecraft:entity_data":{id:"minecraft:bamboo_raft",Tags:["sail","new"]}}}}
+execute as @e[type=item_display,tag=boat] at @s unless predicate mineraft:is_riding run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:bamboo_raft",count:1,components:{"minecraft:custom_data":{sail_boat:1b},"minecraft:item_model":"minecraft:sail_raft","minecraft:item_name":{"translate":"item.mineraft.sailable_raft","fallback":"Sailable Raft"},"minecraft:rarity":"epic","minecraft:entity_data":{id:"minecraft:bamboo_raft",Tags:["sail","new"]}}}}
 execute as @e[type=item_display,tag=boat] at @s unless predicate mineraft:is_riding run kill @s
 
 execute as @e[tag=sail,type=bamboo_raft] at @s run function mineraft:entity_execute/sailing_boat

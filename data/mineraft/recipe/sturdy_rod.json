@@ -21,7 +21,10 @@
       "id": "minecraft:fishing_rod",
       "components": {
         "minecraft:item_model": "sturdy_rod",
-        "minecraft:item_name": "Sturdy Rod",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.sturdy_rod", 
+          "fallback": "Sturdy Rod" 
+        },
         "minecraft:rarity": "uncommon",
         "minecraft:max_damage": 192
       },

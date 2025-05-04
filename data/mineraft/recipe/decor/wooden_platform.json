@@ -24,7 +24,10 @@
       "id": "minecraft:vex_spawn_egg",
       "components": {
         "minecraft:item_model": "minecraft:wooden_platform_it",
-        "minecraft:item_name": "Wooden Platform",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.wooden_platform", 
+          "fallback": "Wooden Platform" 
+        },
         "minecraft:rarity": "uncommon",
         "minecraft:entity_data": {
           "id": "minecraft:marker",

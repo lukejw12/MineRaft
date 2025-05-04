@@ -14,7 +14,10 @@
     "result": {
       "id": "minecraft:sugar_cane",
       "components": {
-        "minecraft:item_name": "Thatch"
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.thatch", 
+          "fallback": "Thatch" 
+        }
       },
       "count": 1
     }

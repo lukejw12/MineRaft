@@ -5,7 +5,10 @@
     "result": {
       "id": "minecraft:netherite_scrap",
       "components": {
-        "minecraft:item_name": "Cooked Shark",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.cooked_shark", 
+          "fallback": "Cooked Shark" 
+        },
         "item_model": "minecraft:cooked_shark",
         "minecraft:food": {
           "nutrition": 6,

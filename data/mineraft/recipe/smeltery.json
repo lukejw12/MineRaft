@@ -21,7 +21,10 @@
       "id": "minecraft:vex_spawn_egg",
       "components": {
         "minecraft:item_model": "minecraft:smeltery",
-        "minecraft:item_name": "Smeltery",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.smeltery", 
+          "fallback": "Smeltery" 
+        },
         "minecraft:rarity": "rare",
         "minecraft:entity_data": {
           "id": "minecraft:marker",

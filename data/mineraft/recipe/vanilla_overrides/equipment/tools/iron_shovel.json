@@ -14,7 +14,10 @@
     "result": {
       "components": {
         "minecraft:max_damage": 52,
-        "minecraft:item_name": "Metal Shovel"
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.metal_shovel", 
+          "fallback": "Metal Shovel" 
+        }
       },
       "count": 1,
       "id": "minecraft:iron_shovel"

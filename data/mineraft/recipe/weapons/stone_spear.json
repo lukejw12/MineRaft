@@ -13,7 +13,10 @@
     ],
     "result": {
       "components": {
-        "minecraft:item_name": "Stone Spear",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.stone_spear", 
+          "fallback": "Stone Spear" 
+        },
         "minecraft:max_damage": 15,
         "item_model": "minecraft:stone_spear",
         "minecraft:attribute_modifiers": [

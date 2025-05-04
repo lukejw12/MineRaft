@@ -21,7 +21,10 @@
       "id": "minecraft:golden_sword",
       "components": {
         "item_model": "minecraft:scrap_spear",
-        "minecraft:item_name": "Scrap Spear",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.scrap_spear", 
+          "fallback": "Scrap Spear" 
+        },
         "minecraft:max_damage": 21,
         "minecraft:rarity": "uncommon"
       },

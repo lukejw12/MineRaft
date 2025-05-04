@@ -20,7 +20,10 @@
     "result": {
       "id": "minecraft:iron_helmet",
       "components": {
-        "minecraft:item_name": "Metal Helmet",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.metal_helmet", 
+          "fallback": "Metal Helmet" 
+        },
         "minecraft:rarity": "rare",
         "minecraft:max_damage": 210
       },

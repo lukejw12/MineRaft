@@ -21,7 +21,10 @@
       "id": "minecraft:vex_spawn_egg",
       "components": {
         "minecraft:item_model": "minecraft:foundation_armor_item",
-        "minecraft:item_name": "Foundation Armor",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.foundation_armor", 
+          "fallback": "Foundation Armor" 
+        },
         "minecraft:rarity": "uncommon",
         "minecraft:entity_data": {
           "id": "minecraft:marker",

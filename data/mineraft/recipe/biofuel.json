@@ -20,7 +20,10 @@
     "result": {
       "id": "dried_kelp_block",
       "components": {
-        "item_name": "Biofuel"
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.biofuel", 
+          "fallback": "Biofuel" 
+        }
       },
       "count": 3
     },

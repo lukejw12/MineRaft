@@ -20,7 +20,10 @@
     "result": {
       "id": "minecraft:iron_leggings",
       "components": {
-        "minecraft:item_name": "Metal Leggings",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.metal_leggings", 
+          "fallback": "Metal Leggings" 
+        },
         "minecraft:rarity": "rare",
         "minecraft:max_damage": 250
       },

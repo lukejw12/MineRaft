@@ -17,7 +17,10 @@
                 "function": "minecraft:set_components",
                 "components": {
                 "minecraft:item_model": "minecraft:wooden_step",
-                "minecraft:item_name": "Wooden Plank",
+                "minecraft:item_name": { 
+                  "translate": "item.mineraft.wooden_plank",
+                 "fallback": "Wooden Plank" 
+                },
                 "minecraft:rarity": "common",
                 "minecraft:custom_data": {
                 "wooden_plank": true

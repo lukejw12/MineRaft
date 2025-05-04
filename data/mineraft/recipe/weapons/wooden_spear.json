@@ -13,7 +13,10 @@
     ],
     "result": {
       "components": {
-        "minecraft:item_name": "Driftwood Spear",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.driftwood_spear", 
+          "fallback": "Driftwood Spear" 
+        },
         "minecraft:max_damage": 11,
         "item_model": "minecraft:wooden_spear",
         "minecraft:attribute_modifiers": [

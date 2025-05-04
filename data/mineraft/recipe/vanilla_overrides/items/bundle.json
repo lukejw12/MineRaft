@@ -14,7 +14,10 @@
       "count": 1,
       "id": "minecraft:bundle",
       "components": {
-        "item_name": "Storage Sack"
+        "minecraft:item_name": {
+           "translate": "item.mineraft.storage_sack",
+            "fallback": "Storage Sack" 
+          }
       }
     }
   }

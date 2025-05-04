@@ -24,7 +24,10 @@
     "id": "minecraft:vex_spawn_egg",
     "components": {
       "minecraft:item_model": "minecraft:wooden_stairs",
-      "minecraft:item_name": "Wooden Staircase",
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.wooden_staircase", 
+        "fallback": "Wooden Staircase" 
+      },
       "minecraft:rarity": "uncommon",
       "minecraft:entity_data": {
         "id": "minecraft:marker",

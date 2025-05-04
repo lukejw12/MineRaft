@@ -12,7 +12,10 @@
                 "function": "minecraft:set_components",
                 "components": {
                   "minecraft:item_model": "minecraft:pale_moss_block",
-                  "minecraft:item_name": "Loose Slate",
+                  "minecraft:item_name": { 
+                    "translate": "item.mineraft.loose_slate", 
+                    "fallback": "Loose Slate" 
+                  },
                   "minecraft:rarity": "common",
                   "minecraft:custom_data": {
                     "loose_slate": true

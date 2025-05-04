@@ -28,7 +28,10 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:item_name": "Shark Meat",
+                  "minecraft:item_name": { 
+                    "translate": "item.mineraft.shark_meat", 
+                    "fallback": "Shark Meat" 
+                  },
                   "minecraft:food": {
                     "nutrition": 2,
                     "saturation": 2,

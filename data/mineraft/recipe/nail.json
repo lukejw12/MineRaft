@@ -15,7 +15,10 @@
     "result": {
       "id": "minecraft:prismarine_crystals",
       "components": {
-        "minecraft:item_name": "Nails",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.nails", 
+          "fallback": "Nails" 
+        },
         "minecraft:rarity": "common"
       },
       "count": 3

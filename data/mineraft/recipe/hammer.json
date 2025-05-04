@@ -21,7 +21,10 @@
     "id": "minecraft:structure_block",
     "components": {
       "minecraft:item_model": "minecraft:hammer",
-      "minecraft:item_name": "Hammer",
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.hammer", 
+        "fallback": "Hammer" 
+      },
       "minecraft:rarity": "rare",
       "minecraft:custom_data": {
         "hammer": true

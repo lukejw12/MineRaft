@@ -24,7 +24,10 @@
       "id": "minecraft:vex_spawn_egg",
       "components": {
         "minecraft:item_model": "minecraft:tree_crop_plot_item",
-        "minecraft:item_name": "Large Crop Plot",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.large_crop_plot", 
+          "fallback": "Large Crop Plot" 
+        },
         "minecraft:rarity": "uncommon",
         "minecraft:entity_data": {
           "id": "minecraft:marker",

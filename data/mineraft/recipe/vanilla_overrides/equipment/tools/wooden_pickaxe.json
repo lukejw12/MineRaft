@@ -14,7 +14,10 @@
     "result": {
       "components": {
         "minecraft:max_damage": 26,
-        "minecraft:item_name": "Driftwood Pickaxe"
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.driftwood_pickaxe", 
+          "fallback": "Driftwood Pickaxe" 
+        }
       },
       "count": 1,
       "id": "minecraft:wooden_pickaxe"

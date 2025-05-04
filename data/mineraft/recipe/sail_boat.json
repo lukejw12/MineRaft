@@ -27,7 +27,10 @@
       "id": "minecraft:bamboo_raft",
       "components": {
         "minecraft:item_model": "minecraft:sail_raft",
-        "minecraft:item_name": "Sailable Raft",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.sailable_raft", 
+          "fallback": "Sailable Raft" 
+        },
         "minecraft:rarity": "epic",
         "minecraft:entity_data": {
           "id": "minecraft:bamboo_raft",

@@ -12,7 +12,10 @@
     "result": {
       "id": "minecraft:raw_iron",
       "components": {
-        "minecraft:item_name": "Metal Ore"
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.metal_ore", 
+          "fallback": "Metal Ore" 
+        }
       },
       "count": 1
     }

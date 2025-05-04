@@ -14,7 +14,10 @@
     "result": {
       "id": "minecraft:command_block_minecart",
       "components": {
-        "minecraft:item_name": "Rope",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.rope", 
+          "fallback": "Rope" 
+        },
         "rarity": "common",
         "minecraft:max_stack_size": 64
       },

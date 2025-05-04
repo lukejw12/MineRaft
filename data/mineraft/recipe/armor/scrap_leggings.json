@@ -18,7 +18,10 @@
       "id": "minecraft:chainmail_leggings",
       "components": {
         "item_model": "minecraft:scrap_leggings",
-        "minecraft:item_name": "Scrap Leggings",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.scrap_leggings", 
+          "fallback": "Scrap Leggings" 
+        },
         "minecraft:rarity": "uncommon",
         "minecraft:attribute_modifiers": [
           {

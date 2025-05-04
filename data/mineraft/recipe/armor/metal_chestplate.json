@@ -20,7 +20,10 @@
     "result": {
       "id": "minecraft:iron_chestplate",
       "components": {
-        "minecraft:item_name": "Metal Chestplate",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.metal_chestplate", 
+          "fallback": "Metal Chestplate" 
+        },
         "minecraft:rarity": "rare",
         "minecraft:max_damage": 260
       },
