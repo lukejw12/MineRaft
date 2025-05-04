@@ -125,12 +125,12 @@ execute if entity @s[tag=valid] run return 0
 
 
 # Handle unsuccessful placement
-execute unless entity @s[tag=valid] unless block ~ ~ ~ #pillar_support run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_platform:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_platform"]},"minecraft:item_model":"minecraft:wooden_platform_it","minecraft:item_name":'Wooden Platform',"minecraft:rarity":"uncommon"}}}
+execute unless entity @s[tag=valid] unless block ~ ~ ~ #pillar_support run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_platform:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_platform"]},"minecraft:item_model":"minecraft:wooden_platform_it","minecraft:item_name":{"translate":"item.mineraft.wooden_platform","fallback":"Wooden Platform"},"minecraft:rarity":"uncommon"}}}
 execute unless entity @s[tag=valid] unless block ~ ~ ~ #pillar_support run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless entity @s[tag=valid] unless block ~ ~ ~ #pillar_support run kill @s
 execute unless entity @s[tag=valid] unless block ~ ~ ~ #pillar_support run return 0
 
-execute unless entity @s[tag=valid] run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_platform:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_platform"]},"minecraft:item_model":"minecraft:wooden_platform_it","minecraft:item_name":'Wooden Platform',"minecraft:rarity":"uncommon"}}}
+execute unless entity @s[tag=valid] run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_platform:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_platform"]},"minecraft:item_model":"minecraft:wooden_platform_it","minecraft:item_name":{"translate":"item.mineraft.wooden_platform","fallback":"Wooden Platform"},"minecraft:rarity":"uncommon"}}}
 execute unless entity @s[tag=valid] run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless entity @s[tag=valid] run kill @s
 execute unless entity @s[tag=valid] run return 0
