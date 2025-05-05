@@ -9,6 +9,7 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:vex_spawn_egg",components:{"minec
 execute as @s[nbt={SelectedItem:{id:"minecraft:vex_spawn_egg",components:{"minecraft:custom_data":{foundation_item:1b}}}}] at @s run function mineraft:raft_extension/foundation_armor/is_holding_item
 execute as @s[nbt={SelectedItem:{id:"minecraft:vex_spawn_egg",components:{"minecraft:custom_data":{tree_plot:1b}}}}] at @s run function mineraft:raft_utility/crop_plots/large_crop_plot/is_holding_item
 execute as @s[nbt={SelectedItem:{id:"minecraft:vex_spawn_egg",components:{"minecraft:custom_data":{crop_plot:1b}}}}] at @s run function mineraft:raft_utility/crop_plots/crop_plot/is_holding_item
+execute as @s[nbt={SelectedItem:{id:"minecraft:vex_spawn_egg",components:{"minecraft:custom_data":{water_purifier_item:1b}}}}] at @s run function mineraft:raft_utility/water_purifier/is_holding_item
 
 
 execute as @s at @s run function mineraft:hydration/hydration_deplenish

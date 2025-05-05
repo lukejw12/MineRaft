@@ -1,10 +1,16 @@
 schedule function mineraft:spawn_raft/spawn_raft 15t append
 scoreboard objectives add resource_delay dummy
+scoreboard objectives add purifier_x dummy
+scoreboard objectives add purifier_y dummy
+scoreboard objectives add purifier_z dummy
+scoreboard objectives add purifier_current dummy
+scoreboard objectives add purifier_start dummy
+scoreboard objectives add purifier_timer dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add fishing_state dummy
 scoreboard objectives add lifetime dummy
 scoreboard objectives add foundation dummy
-
+scoreboard objectives add water_purifier dummy
 scoreboard objectives add spread_x dummy
 scoreboard objectives add growth_timer dummy
 scoreboard objectives add loop dummy

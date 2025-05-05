@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "   ",
+    "121",
+    "343"
+  ],
+  "key": {
+    "1": [
+      "minecraft:stone"
+    ],
+    "2": [
+      "stone"
+    ],
+    "3": [
+      "minecraft:stone"
+    ],
+    "4": [
+      "minecraft:stone"
+    ]
+  },
+  "result": {
+    "id": "minecraft:vex_spawn_egg",
+    "components": {
+      "minecraft:item_model": "minecraft:rain_collector",
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.water_purifier", 
+        "fallback": "Water Purifier" 
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "water_purifier"
+        ]
+      },
+      "minecraft:custom_data": {
+        "water_purifier_item": true
+      }
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

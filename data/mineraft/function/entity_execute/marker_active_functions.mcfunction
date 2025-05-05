@@ -8,6 +8,7 @@ execute as @s[tag=wooden_support] at @s run function mineraft:raft_decor/pillar/
 execute as @s[tag=foundation_armor] at @s run function mineraft:raft_extension/foundation_armor/raft_extension_was_placed
 execute as @s[tag=tree_plot] at @s run function mineraft:raft_utility/crop_plots/large_crop_plot/raft_extension_was_placed
 execute as @s[tag=crop_plot] at @s run function mineraft:raft_utility/crop_plots/crop_plot/raft_extension_was_placed
+execute as @s[tag=water_purifier] at @s run function mineraft:raft_utility/water_purifier/raft_extension_was_placed
 
 execute as @s[tag=active_net] at @s run function mineraft:raft_extension/collection_net/active_net/active_fishing_net
 execute as @s[tag=raft_extension] at @s run function mineraft:raft_extension/extension_ticking
@@ -18,3 +19,4 @@ execute as @s[tag=wooden_platform_active] at @s run function mineraft:raft_decor
 execute as @s[tag=wooden_support_active] at @s run function mineraft:raft_decor/pillar/wooden_pillar/pillar_ticking
 execute as @s[tag=tree_plot_active] at @s run function mineraft:raft_utility/crop_plots/large_crop_plot/active_tree_plot
 execute as @s[tag=crop_plot_active] at @s run function mineraft:raft_utility/crop_plots/crop_plot/active_crop_plot
+execute as @s[tag=water_purifier_active] at @s run function mineraft:raft_utility/water_purifier/active_water_purifier
