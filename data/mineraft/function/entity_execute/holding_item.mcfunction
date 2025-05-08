@@ -38,9 +38,7 @@ execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:cus
 
 execute as @s at @s run function mineraft:hydration/hydration_deplenish
 
-
-execute as @a at @s run attribute @s minecraft:block_interaction_range base reset
-execute if score $block_limit_b playstyle matches 1.. as @a at @s run function mineraft:prevent_below_water_placement/block_length_restrict
+attribute @s block_interaction_range base reset
 
 
 execute as @a[scores={hydration=6..}] at @s run title @s actionbar [{"color":"aqua","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"}}]

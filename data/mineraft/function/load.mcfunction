@@ -57,6 +57,9 @@ execute positioned ~0.5 63 ~0.5 unless entity @e[tag=central_raft,distance=..2] 
 execute positioned ~0.5 63 ~0.5 unless entity @e[tag=central_raft,distance=..2] run summon marker ~ 63 ~ {Tags:["central_raft"]}
 execute unless entity @e[tag=shark_name] run summon marker 0 62 0 {Tags:["shark_name"],CustomNameVisible:0b,CustomName:{"color":"aqua","text":"Shark"}}
 
+
+
+
 scoreboard objectives add locate_distance dummy
 scoreboard objectives add locate_distance_1 dummy
 scoreboard objectives add locate_distance_2 dummy
