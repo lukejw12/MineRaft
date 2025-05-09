@@ -2,41 +2,41 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "442",
-    "323",
-    "1 1"
+    "   ",
+    "121",
+    "343"
   ],
   "key": {
     "1": [
-      "minecraft:command_block"
+      "stone"
     ],
     "2": [
-      "cauldron"
+      "stone"
     ],
     "3": [
-      "minecraft:string"
+      "stone"
     ],
     "4": [
-      "minecraft:cobweb"
+      "stone"
     ]
   },
   "result": {
     "id": "minecraft:vex_spawn_egg",
     "components": {
-      "minecraft:item_model": "minecraft:water_purifier",
+      "minecraft:item_model": "minecraft:rain_collector",
       "minecraft:item_name": { 
-        "translate": "item.mineraft.water_purifier", 
-        "fallback": "Water Purifier" 
+        "translate": "item.mineraft.simple_grill", 
+        "fallback": "Simple Grill" 
       },
       "minecraft:rarity": "uncommon",
       "minecraft:entity_data": {
         "id": "minecraft:marker",
         "Tags": [
-          "water_purifier"
+          "simple_grill"
         ]
       },
       "minecraft:custom_data": {
-        "water_purifier_item": true
+        "simple_grill_item": true
       }
     },
     "count": 1

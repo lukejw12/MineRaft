@@ -1,5 +1,17 @@
+## World Setup
 schedule function mineraft:spawn_raft/spawn_raft 15t append
+
+## Scoreboard Setup
+# Foudation Raycast
+scoreboard objectives add raft_extension dummy
+# Collection Net Raycast
+scoreboard objectives add raft_extension_net dummy
+# Smeltery Net Raycast
+scoreboard objectives add smeltery dummy
+# Resources
 scoreboard objectives add resource_delay dummy
+# Water Purrifier
+scoreboard objectives add water_purifier dummy
 scoreboard objectives add purifier_x dummy
 scoreboard objectives add purifier_y dummy
 scoreboard objectives add purifier_z dummy
@@ -7,20 +19,20 @@ scoreboard objectives add purifier_current dummy
 scoreboard objectives add purifier_start dummy
 scoreboard objectives add purifier_timer dummy
 scoreboard objectives add temp dummy
+
 scoreboard objectives add fishing_state dummy
 scoreboard objectives add lifetime dummy
 scoreboard objectives add foundation dummy
-scoreboard objectives add water_purifier dummy
+scoreboard objectives add simple_grill dummy
 scoreboard objectives add spread_x dummy
 scoreboard objectives add growth_timer dummy
 scoreboard objectives add loop dummy
 scoreboard objectives add spread_z dummy
-scoreboard objectives add raft_extension dummy
+
 scoreboard objectives add wooden_staircase dummy
 scoreboard objectives add wooden_support dummy
 scoreboard objectives add wooden_platform dummy
 scoreboard objectives add stop_reach dummy
-scoreboard objectives add raft_extension_net dummy
 scoreboard objectives add hammer dummy
 scoreboard objectives add playstyle dummy
 scoreboard objectives add temp dummy
@@ -28,7 +40,6 @@ scoreboard objectives add hammer_use dummy
 scoreboard objectives add hammer_choose dummy
 scoreboard objectives add net_amount dummy
 scoreboard objectives add rain_collector dummy
-scoreboard objectives add smeltery dummy
 scoreboard objectives add shark.detect dummy
 scoreboard objectives add shark.timer dummy
 scoreboard objectives add shark.angle dummy

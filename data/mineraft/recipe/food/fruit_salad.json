@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " 22",
+    "113",
+    "   "
+  ],
+  "key": {
+    "1": [
+      "minecraft:dried_kelp"
+    ],
+    "2": [
+      "minecraft:sweet_berries"
+    ],
+    "3": [
+      "minecraft:bowl"
+    ]
+  },
+  "result": {
+    "id": "minecraft:apple",
+    "components": {
+      "minecraft:item_model": "minecraft:fruit_salad",
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.fruit_salad", 
+        "fallback": "Fruit Salad" 
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:consumable": {
+        "consume_seconds": 4,
+        "animation": "eat",
+        "has_consume_particles": false
+      },
+      "minecraft:food": {
+        "nutrition": 10,
+        "saturation": 5,
+        "can_always_eat": true
+      }
+    },
+    "count": 1
+  }
+}

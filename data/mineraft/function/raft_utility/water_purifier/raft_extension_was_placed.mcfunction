@@ -44,7 +44,6 @@ execute at @s if entity @s[tag=valid_east] run summon item_display ~ ~0.3 ~ {Rot
 execute at @s if entity @s[tag=valid_east] run kill @s
 execute at @s if entity @s[tag=valid_east] run return 0
 
-setblock ~ ~ ~ stone
 # Failure case - refund item
 execute unless entity @s[tag=valid_north] unless entity @s[tag=valid_west] unless entity @s[tag=valid_south] unless entity @s[tag=valid_east] run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{water_purifier_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["water_purifier"]},"minecraft:item_model":"minecraft:water_purifier","minecraft:item_name":{"translate":"item.mineraft.water_purifier","fallback":"Water Purifier"},"minecraft:rarity":"uncommon"}}}
 execute unless entity @s[tag=valid_north] unless entity @s[tag=valid_west] unless entity @s[tag=valid_south] unless entity @s[tag=valid_east] run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2

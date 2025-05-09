@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:smoking",
+    "type": "minecraft:blasting",
     "category": "food",
     "ingredient": "minecraft:phantom_membrane",
     "result": {
@@ -7,7 +7,7 @@
       "components": {
         "minecraft:item_name": { 
           "translate": "item.mineraft.cooked_shark", 
-          "fallback": "Cooked Shark" 
+          "fallback": "Grilled Shark" 
         },
         "item_model": "minecraft:cooked_shark",
         "minecraft:food": {

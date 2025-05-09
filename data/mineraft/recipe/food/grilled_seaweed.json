@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:blasting",
+  "category": "food",
+  "ingredient": "minecraft:kelp",
+  "result": {
+    "id": "minecraft:dried_kelp",
+    "components": {
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.grilled_seaweed", 
+        "fallback": "Grilled Seaweed" 
+      },
+      "item_model": "minecraft:grilled_seaweed",
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation": 1,
+        "can_always_eat": false
+      },
+      "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "eat",
+        "has_consume_particles": true
+      }
+    }
+  },
+  "cookingtime": 120
+}
