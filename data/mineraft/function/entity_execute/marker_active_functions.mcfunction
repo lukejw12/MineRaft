@@ -10,6 +10,7 @@ execute as @s[tag=tree_plot] at @s run function mineraft:raft_utility/crop_plots
 execute as @s[tag=crop_plot] at @s run function mineraft:raft_utility/crop_plots/crop_plot/raft_extension_was_placed
 execute as @s[tag=water_purifier] at @s run function mineraft:raft_utility/water_purifier/raft_extension_was_placed
 execute as @s[tag=simple_grill] at @s run function mineraft:raft_utility/grills/simple_grill/raft_extension_was_placed
+execute as @s[tag=cooking_pot] at @s run function mineraft:raft_utility/cooking_pot/raft_extension_was_placed
 
 execute as @s[tag=active_net] at @s run function mineraft:raft_extension/collection_net/active_net/active_fishing_net
 execute as @s[tag=raft_extension] at @s run function mineraft:raft_extension/extension_ticking
@@ -22,3 +23,4 @@ execute as @s[tag=tree_plot_active] at @s run function mineraft:raft_utility/cro
 execute as @s[tag=crop_plot_active] at @s run function mineraft:raft_utility/crop_plots/crop_plot/active_crop_plot
 execute as @s[tag=water_purifier_active] at @s run function mineraft:raft_utility/water_purifier/active_water_purifier
 execute as @s[tag=simple_grill_active] at @s run function mineraft:raft_utility/grills/simple_grill/active_grill
+execute as @s[tag=cooking_pot_active] at @s run function mineraft:raft_utility/cooking_pot/active_cooking_pot

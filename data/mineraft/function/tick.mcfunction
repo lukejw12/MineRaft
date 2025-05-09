@@ -3,7 +3,7 @@ execute as @e[tag=displayed] at @s run function mineraft:entity_execute/display_
 execute as @e[type=marker] at @s run function mineraft:entity_execute/marker_active_functions
 
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{resources:1b}}}}] run function mineraft:spawn_resources/replace_custom_data
-execute as @e[type=marker,tag=central_raft] at @s run function mineraft:spawn_resources/timer_spawn
+#execute as @e[type=marker,tag=central_raft] at @s run function mineraft:spawn_resources/timer_spawn
 execute as @e[type=item,tag=resources] at @s run function mineraft:resource_fishing_mechanics/fishing_and_current
 
 scoreboard players set #total net_amount 0

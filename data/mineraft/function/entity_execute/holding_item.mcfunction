@@ -36,6 +36,7 @@ execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:cus
 
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={water_purifier_item:1b}] at @s run function mineraft:raft_utility/water_purifier/is_holding_item
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={simple_grill_item:1b}] at @s run function mineraft:raft_utility/grills/simple_grill/is_holding_item
+execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={cooking_pot_item:1b}] at @s run function mineraft:raft_utility/cooking_pot/is_holding_item
 
 execute as @s at @s run function mineraft:hydration/hydration_deplenish
 
