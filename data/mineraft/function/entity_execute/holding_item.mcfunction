@@ -43,9 +43,10 @@ execute as @s at @s run function mineraft:hydration/hydration_deplenish
 attribute @s block_interaction_range base reset
 
 
-execute as @a[scores={hydration=6..}] at @s run title @s actionbar [{"color":"aqua","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"}}]
-execute as @a[scores={hydration=..5}] run title @s actionbar [{"color":"red","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"}}]
-
+#execute as @a[scores={hydration=6..}] at @s run title @s actionbar [{"color":"aqua","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"}}]
+#execute as @a[scores={hydration=..5}] run title @s actionbar [{"color":"red","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"}}]
+# With this single line:
+function mineraft:raft_utility/cooking_pot/merge_with_hydration
 
 execute as @s[nbt={Inventory:[{id:"minecraft:barrel",components:{"minecraft:custom_data":{barrel_loot:true}}}]}] at @s run function mineraft:barrels/open_barrel
 execute as @s if predicate mineraft:holding_compass run schedule function mineraft:radar/holding_compass 20t append

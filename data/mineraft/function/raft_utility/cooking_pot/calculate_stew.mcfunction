@@ -114,6 +114,6 @@ function mineraft:raft_utility/cooking_pot/build_name
 function mineraft:raft_utility/cooking_pot/build_effects
 execute store result score #effect_count temp run data get storage minecraft:temp effects
 
-execute unless entity @s[tag=stew_generated] if score #effect_count temp matches 1.. run function mineraft:raft_utility/cooking_pot/generate_stew_with_effects with storage minecraft:temp
-execute unless entity @s[tag=stew_generated] if score #effect_count temp matches 0 run function mineraft:raft_utility/cooking_pot/generate_stew_no_effects with storage minecraft:temp
+execute unless entity @s[tag=stew_generated] if score #effect_count temp matches 1.. as @a[tag=cooking_collector,limit=1] run function mineraft:raft_utility/cooking_pot/generate_stew_with_effects with storage minecraft:temp
+execute unless entity @s[tag=stew_generated] if score #effect_count temp matches 0 as @a[tag=cooking_collector,limit=1] run function mineraft:raft_utility/cooking_pot/generate_stew_no_effects with storage minecraft:temp
 tag @s add stew_generated

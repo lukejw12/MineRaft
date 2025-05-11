@@ -1,3 +1,4 @@
+
 execute unless score @s cooking matches 0.. run scoreboard players set @s cooking 0
 execute unless score @s cooking_time matches 0.. run scoreboard players set @s cooking_time 0
 execute unless score @s ingredient_count matches 0.. run scoreboard players set @s ingredient_count 0
@@ -18,11 +19,14 @@ tag @e[type=interaction,distance=..0.5,sort=nearest,limit=1,tag=cooking_pot_inte
 
 execute as @e[type=minecraft:interaction,tag=this_pot_interact] if data entity @s interaction on target if entity @s[nbt={SelectedItem:{id:"minecraft:structure_block"}}] run function mineraft:hammer/hammer_right_click
 
-execute as @e[type=minecraft:interaction,tag=this_pot_interact] if data entity @s interaction run function mineraft:raft_utility/cooking_pot/add_ingredient
+tag @e[type=marker,tag=cooking_pot_active,distance=..0.5,sort=nearest,limit=1] add this_pot_marker
 
 execute as @e[type=minecraft:interaction,tag=this_pot_interact] if data entity @s interaction on target if items entity @s weapon.mainhand bowl run function mineraft:raft_utility/cooking_pot/cook_stew
+
+execute as @e[type=minecraft:interaction,tag=this_pot_interact] if data entity @s interaction if score @e[type=marker,tag=this_pot_marker,limit=1] ingredient_count matches ..2 run function mineraft:raft_utility/cooking_pot/add_ingredient
 
 execute if data entity @e[type=minecraft:interaction,tag=this_pot_interact,limit=1] interaction run data remove entity @e[type=minecraft:interaction,tag=this_pot_interact,limit=1] interaction
 
 tag @e[tag=this_pot_facade] remove this_pot_facade
 tag @e[tag=this_pot_interact] remove this_pot_interact
+tag @e[tag=this_pot_marker] remove this_pot_marker

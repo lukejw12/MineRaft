@@ -1,4 +1,3 @@
-
 # Kelp (adds 1 to cooking score)
 execute on target if items entity @s weapon.mainhand minecraft:kelp as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s cooking 1
 execute on target if items entity @s weapon.mainhand minecraft:kelp as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s kelp_count 1
