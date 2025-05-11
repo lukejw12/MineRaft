@@ -19,6 +19,7 @@ scoreboard objectives add purifier_current dummy
 scoreboard objectives add purifier_start dummy
 scoreboard objectives add purifier_timer dummy
 scoreboard objectives add temp dummy
+scoreboard objectives add dummy dummy
 
 scoreboard objectives add fishing_state dummy
 scoreboard objectives add lifetime dummy
@@ -74,6 +75,16 @@ scoreboard objectives add ingredient_count dummy
 scoreboard objectives add nutrition_value dummy
 scoreboard objectives add saturation_value dummy
 scoreboard objectives add cooking dummy
+scoreboard objectives add cook dummy
+scoreboard objectives add temp dummy
+scoreboard players set #2 dummy 2
+scoreboard players set #4 dummy 4
+scoreboard players set #8 dummy 8
+scoreboard players set #16 dummy 16
+scoreboard players set #32 dummy 32
+scoreboard players set #64 dummy 64
+
+
 
 scoreboard objectives add locate_distance dummy
 scoreboard objectives add locate_distance_1 dummy

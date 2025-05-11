@@ -1,0 +1,1 @@
+$data modify storage minecraft:temp final_name set value {text:"$(name_1) $(name_2) Stew",color:"dark_green",italic:false}
