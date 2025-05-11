@@ -1,13 +1,22 @@
+execute store result score #debug_count temp run scoreboard players get @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] ingredient_count
 
-execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] store result score #debug_count temp run scoreboard players get @s ingredient_count
-
-
-execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] unless score @s ingredient_count matches 3 run return 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] unless score @s ingredient_count matches 3 run return 0
 
 execute on target run clear @s minecraft:bowl 1
 
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run function mineraft:raft_utility/cooking_pot/calculate_stew
 
-execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run function mineraft:raft_utility/cooking_pot/calculate_stew
-
-execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players set @s cooking 0
-execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players set @s ingredient_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s cooking 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s ingredient_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s kelp_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s dried_kelp_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s berries_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s cod_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s shark_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s bread_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s raw_cod_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s raw_shark_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s water_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s pure_water_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run scoreboard players set @s thatch_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..0.5] run tag @s remove stew_generated

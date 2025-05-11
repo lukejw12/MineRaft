@@ -84,7 +84,17 @@ scoreboard players set #16 dummy 16
 scoreboard players set #32 dummy 32
 scoreboard players set #64 dummy 64
 
-
+scoreboard objectives add raw_cod_count dummy
+scoreboard objectives add raw_shark_count dummy
+scoreboard objectives add water_count dummy
+scoreboard objectives add pure_water_count dummy
+scoreboard objectives add thatch_count dummy
+scoreboard objectives add kelp_count dummy
+scoreboard objectives add dried_kelp_count dummy
+scoreboard objectives add berries_count dummy
+scoreboard objectives add cod_count dummy
+scoreboard objectives add shark_count dummy
+scoreboard objectives add bread_count dummy
 
 scoreboard objectives add locate_distance dummy
 scoreboard objectives add locate_distance_1 dummy
