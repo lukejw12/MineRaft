@@ -1,1 +1,0 @@
-$execute on target run give @s rabbit_stew{components:{"minecraft:custom_name":{"text":"$(StewName)Stew","color":"gold","italic":false},"minecraft:food":{"nutrition":$(nutrition),"saturation":$(saturation),"can_always_eat":true},"minecraft:custom_data":{"custom_stew":1b}}}

@@ -1,3 +1,0 @@
-execute if data entity @s data.Ingredients[{Effect:"regeneration"}] run data modify storage minecraft:cooking_pot Effects append value {id:"minecraft:regeneration",duration:200,amplifier:0}
-execute if data entity @s data.Ingredients[{Effect:"strength"}] run data modify storage minecraft:cooking_pot Effects append value {id:"minecraft:strength",duration:600,amplifier:0}
-execute if data entity @s data.Ingredients[{Effect:"saturation"}] run data modify storage minecraft:cooking_pot Effects append value {id:"minecraft:saturation",duration:100,amplifier:0}
