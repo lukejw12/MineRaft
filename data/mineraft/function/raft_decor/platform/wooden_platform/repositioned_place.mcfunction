@@ -1,6 +1,4 @@
-# Central platform placement
 execute if block ~ ~ ~ #pillar_support if block ~ ~ ~-1 #blocks if block ~ ~ ~1 #blocks if block ~1 ~ ~ #blocks if block ~-1 ~ ~ #blocks if block ~1 ~ ~-1 #blocks if block ~-1 ~ ~-1 #blocks if block ~1 ~ ~1 #blocks if block ~-1 ~ ~1 #blocks unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-# Check surrounding blocks are air (excluding center)
 execute if entity @s[tag=valid_initial] if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
@@ -12,9 +10,7 @@ execute if entity @s[tag=valid] run kill @s
 execute if entity @s[tag=valid] run return 0
 
 
-# North platform placement
 execute unless block ~ ~ ~ #pillar_support if block ~ ~-1 ~-2 #blocks_w_e if block ~ ~-1 ~1 #pillar_support positioned ~ ~-1 ~-2 unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-# Check surrounding blocks are air at the placement position
 execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~-2 if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
@@ -26,9 +22,7 @@ execute if entity @s[tag=valid] run kill @s
 execute if entity @s[tag=valid] run return 0
 
 
-# South platform placement
 execute unless block ~ ~ ~ #pillar_support if block ~ ~-1 ~2 #blocks_w_e if block ~ ~-1 ~-1 #pillar_support positioned ~ ~-1 ~2 unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-# Check surrounding blocks are air at the placement position
 execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~2 if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
@@ -40,9 +34,7 @@ execute if entity @s[tag=valid] run kill @s
 execute if entity @s[tag=valid] run return 0
 
 
-# East platform placement
 execute unless block ~ ~ ~ #pillar_support if block ~2 ~-1 ~ #blocks_w_e if block ~-1 ~-1 ~ #pillar_support positioned ~2 ~-1 ~ unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-# Check surrounding blocks are air at the placement position
 execute if entity @s[tag=valid_initial] positioned ~2 ~-1 ~ if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
@@ -54,9 +46,7 @@ execute if entity @s[tag=valid] run kill @s
 execute if entity @s[tag=valid] run return 0
 
 
-# West platform placement
 execute unless block ~ ~ ~ #pillar_support if block ~-2 ~-1 ~ #blocks_w_e if block ~1 ~-1 ~ #pillar_support positioned ~-2 ~-1 ~ unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-# Check surrounding blocks are air at the placement position
 execute if entity @s[tag=valid_initial] positioned ~-2 ~-1 ~ if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
@@ -68,9 +58,7 @@ execute if entity @s[tag=valid] run kill @s
 execute if entity @s[tag=valid] run return 0
 
 
-# Alternative North platform placement
 execute unless block ~ ~ ~ #pillar_support if block ~ ~-1 ~-2 #blocks_w_e if block ~ ~-1 ~-2 #pillar_support positioned ~ ~-1 ~-2 unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-# Check surrounding blocks are air at the placement position
 execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~-2 if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
@@ -82,9 +70,7 @@ execute if entity @s[tag=valid] run kill @s
 execute if entity @s[tag=valid] run return 0
 
 
-# Alternative South platform placement
 execute unless block ~ ~ ~ #pillar_support if block ~ ~-1 ~2 #blocks_w_e if block ~ ~-1 ~2 #pillar_support positioned ~ ~-1 ~2 unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-# Check surrounding blocks are air at the placement position
 execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~2 if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
@@ -96,9 +82,7 @@ execute if entity @s[tag=valid] run kill @s
 execute if entity @s[tag=valid] run return 0
 
 
-# Alternative East platform placement
 execute unless block ~ ~ ~ #pillar_support if block ~2 ~-1 ~ #blocks_w_e if block ~2 ~-1 ~ #pillar_support positioned ~2 ~-1 ~ unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-# Check surrounding blocks are air at the placement position
 execute if entity @s[tag=valid_initial] positioned ~2 ~-1 ~ if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
@@ -110,9 +94,7 @@ execute if entity @s[tag=valid] run kill @s
 execute if entity @s[tag=valid] run return 0
 
 
-# Alternative West platform placement
 execute unless block ~ ~ ~ #pillar_support if block ~-2 ~-1 ~ #blocks_w_e if block ~-2 ~-1 ~ #pillar_support positioned ~-2 ~-1 ~ unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-# Check surrounding blocks are air at the placement position
 execute if entity @s[tag=valid_initial] positioned ~-2 ~-1 ~ if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
@@ -124,7 +106,6 @@ execute if entity @s[tag=valid] run kill @s
 execute if entity @s[tag=valid] run return 0
 
 
-# Handle unsuccessful placement
 execute unless entity @s[tag=valid] unless block ~ ~ ~ #pillar_support run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_platform:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_platform"]},"minecraft:item_model":"minecraft:wooden_platform_it","minecraft:item_name":{"translate":"item.mineraft.wooden_platform","fallback":"Wooden Platform"},"minecraft:rarity":"uncommon"}}}
 execute unless entity @s[tag=valid] unless block ~ ~ ~ #pillar_support run playsound minecraft:block.anvil.place block @a ~ ~ ~ 2 2
 execute unless entity @s[tag=valid] unless block ~ ~ ~ #pillar_support run kill @s

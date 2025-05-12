@@ -1,39 +1,42 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "category": "building",
-    "pattern": [
-      "111",
-      "222",
-      "111"
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "1 1",
+    "232",
+    " 2 "
+  ],
+  "key": {
+    "1": [
+      "minecraft:command_block"
     ],
-    "key": {
-      "1": [
-        "minecraft:stone"
-      ],
-      "2": [
-        "stone"
-      ]
-    },
-    "result": {
-      "id": "minecraft:vex_spawn_egg",
-      "components": {
-        "item_model": "minecraft:collection_net",
-        "minecraft:item_name": { 
-          "translate": "item.mineraft.collection_net", 
-          "fallback": "Cooking pot" 
-        },
-        "minecraft:rarity": "uncommon",
-        "minecraft:entity_data": {
-          "id": "minecraft:marker",
-          "Tags": [
-            "cooking_pot"
-          ]
-        },
-        "minecraft:custom_data": {
-          "cooking_pot_item": true
-        }
+    "2": [
+      "minecraft:cobblestone"
+    ],
+    "3": [
+      "minecraft:cauldron"
+    ]
+  },
+  "result": {
+    "id": "minecraft:vex_spawn_egg",
+    "components": {
+      "item_model": "minecraft:cooking_pot",
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.cooking_pot", 
+        "fallback": "Cooking Pot" 
       },
-      "count": 1
+      "minecraft:rarity": "uncommon",
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "cooking_pot"
+        ]
+      },
+      "minecraft:custom_data": {
+        "cooking_pot_item": true
+      }
     },
-    "show_notification": true
-  }
+    "count": 1
+  },
+  "show_notification": true
+}

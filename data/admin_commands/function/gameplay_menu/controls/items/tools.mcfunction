@@ -1,4 +1,3 @@
-# File: functions/admin_commands/gameplay_menu/controls/items/tools.mcfunction
 
 tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Tools --"}]
 tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Metal Helmet "},"[",{"click_event":{"action":"run_command","command":"/give @s iron_helmet[item_name={translate:\"item.mineraft.metal_helmet\",fallback:\"Metal Helmet\"},max_damage=210,rarity=\"rare\"] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]

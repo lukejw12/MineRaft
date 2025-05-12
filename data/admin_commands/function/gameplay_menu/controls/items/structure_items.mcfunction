@@ -1,4 +1,3 @@
-# File: functions/admin_commands/gameplay_menu/controls/items/structure_items.mcfunction
 
 tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Structure Items --"}]
 tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Collection Net "},"[",{"click_event":{"action":"run_command","command":"/give @s vex_spawn_egg[custom_data={net_extension_item:1b},entity_data={id:\"minecraft:marker\",Tags:[\"net_extension\"]},item_model=\"minecraft:collection_net\",item_name={translate:\"item.mineraft.collection_net\",fallback:\"Collection Net\"},rarity=\"uncommon\"] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]

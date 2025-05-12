@@ -1,4 +1,3 @@
-# File: functions/admin_commands/gameplay_menu/controls/items/main.mcfunction
 
 tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Items Menu --"}]
 tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Tools "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/tools"},"color":"aqua","text":"Expand"},{"color":"gold","text":"]"}]

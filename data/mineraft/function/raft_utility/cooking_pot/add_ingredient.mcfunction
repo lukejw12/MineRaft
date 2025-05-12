@@ -55,19 +55,19 @@ execute on target if items entity @s weapon.mainhand minecraft:phantom_membrane 
 execute on target if items entity @s weapon.mainhand minecraft:phantom_membrane run particle minecraft:bubble ~ ~0.5 ~ 0.1 0.1 0.1 0.1 5
 
 # Water (adds 6 to cooking score) - reduces saturation
+execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] run give @s glass_bottle
 execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s cooking 6
 execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s water_count 1
 execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s ingredient_count 1
 execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] run clear @s minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] 1
-execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] run give @s glass_bottle
 execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] run particle minecraft:bubble ~ ~0.5 ~ 0.1 0.1 0.1 0.1 5
 
 # Purified Water (adds 9 to cooking score) - increases saturation
+execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:custom_data={pure_water:1b}] run give @s glass_bottle
 execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:custom_data={pure_water:1b}] as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s cooking 9
 execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:custom_data={pure_water:1b}] as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s pure_water_count 1
 execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:custom_data={pure_water:1b}] as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s ingredient_count 1
 execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:custom_data={pure_water:1b}] run clear @s minecraft:potion[minecraft:custom_data={pure_water:1b}] 1
-execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:custom_data={pure_water:1b}] run give @s glass_bottle
 execute on target if items entity @s weapon.mainhand minecraft:potion[minecraft:custom_data={pure_water:1b}] run particle minecraft:bubble ~ ~0.5 ~ 0.1 0.1 0.1 0.1 5
 
 # Thatch (adds 11 to cooking score) - energy boost

@@ -1,4 +1,3 @@
-# File: functions/admin_commands/gameplay_menu/controls/items/misc.mcfunction
 
 tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Misc Items --"}]
 tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Storage Sack "},"[",{"click_event":{"action":"run_command","command":"/give @s bundle[item_name={translate:\"item.mineraft.storage_sack\",fallback:\"Storage Sack\"}] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]

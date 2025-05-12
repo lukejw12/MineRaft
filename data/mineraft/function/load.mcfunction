@@ -84,6 +84,10 @@ scoreboard players set #16 dummy 16
 scoreboard players set #32 dummy 32
 scoreboard players set #64 dummy 64
 
+scoreboard objectives add trophy_board dummy
+scoreboard objectives add trophy_has_shark dummy
+
+scoreboard objectives add global dummy
 scoreboard objectives add raw_cod_count dummy
 scoreboard objectives add raw_shark_count dummy
 scoreboard objectives add water_count dummy

@@ -37,6 +37,7 @@ execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:cus
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={water_purifier_item:1b}] at @s run function mineraft:raft_utility/water_purifier/is_holding_item
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={simple_grill_item:1b}] at @s run function mineraft:raft_utility/grills/simple_grill/is_holding_item
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={cooking_pot_item:1b}] at @s run function mineraft:raft_utility/cooking_pot/is_holding_item
+execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={trophy_board_item:1b}] at @s run function mineraft:raft_decor/trophy_board/is_holding_item
 
 execute as @s at @s run function mineraft:hydration/hydration_deplenish
 
@@ -45,9 +46,8 @@ attribute @s block_interaction_range base reset
 
 #execute as @a[scores={hydration=6..}] at @s run title @s actionbar [{"color":"aqua","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"}}]
 #execute as @a[scores={hydration=..5}] run title @s actionbar [{"color":"red","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"}}]
-# With this single line:
 function mineraft:raft_utility/cooking_pot/merge_with_hydration
 
-execute as @s[nbt={Inventory:[{id:"minecraft:barrel",components:{"minecraft:custom_data":{barrel_loot:true}}}]}] at @s run function mineraft:barrels/open_barrel
+execute if items entity @s container.* barrel[custom_data={barrel_loot:1b}] at @s run function mineraft:barrels/open_barrel
 execute as @s if predicate mineraft:holding_compass run schedule function mineraft:radar/holding_compass 20t append
 bossbar set mineraft:radar/locate_distance players @a[predicate=mineraft:holding_compass]

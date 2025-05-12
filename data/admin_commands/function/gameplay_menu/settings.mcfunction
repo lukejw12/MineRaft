@@ -1,4 +1,3 @@
-# File: functions/admin_commands/admin_menu.mcfunction
 
 tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-- Gameplay Settings --"}]
 tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Restrict Ocean Block Placements "},"[",{"click_event":{"action":"run_command","command":"/tellraw @s {text:'Sorry! this command is being reworked!',color:gray}"},"color":"dark_gray","text":"(Currently Disabled)"},{"color":"gold","text":"]"}]

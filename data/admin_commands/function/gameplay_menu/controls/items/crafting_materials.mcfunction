@@ -1,4 +1,3 @@
-# File: functions/admin_commands/gameplay_menu/controls/items/crafting_materials.mcfunction
 
 tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Crafting Materials --"}]
 tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Scrap "},"[",{"click_event":{"action":"run_command","command":"/give @s command_block[item_model=\"minecraft:scrap\",item_name={translate:\"item.mineraft.scrap\",fallback:\"Scrap\"},rarity=\"uncommon\"] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
