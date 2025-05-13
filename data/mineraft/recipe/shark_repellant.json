@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "PSP",
+    " G "
+  ],
+  "key": {
+    "P": [
+      "minecraft:phantom_membrane"
+    ],
+    "S": [
+      "minecraft:sugar_cane"
+    ],
+    "G": [
+      "minecraft:glass_bottle"
+    ]
+  },
+  "result": {
+    "id": "minecraft:carrot",
+    "components": {
+      "minecraft:item_model": "minecraft:potion",
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.shark_repellent", 
+        "fallback": "Shark Repellent" 
+      },
+      "minecraft:custom_data": {
+        "shark_repellent": true
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:potion_contents": {
+        "custom_color": 111222
+      },
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0.0,
+        "can_always_eat": true
+      },
+      "minecraft:consumable": {
+        "consume_seconds": 1.5
+      },
+      "tooltip_display": {
+        "hidden_components": [
+            "potion_contents"
+        ]
+      }
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

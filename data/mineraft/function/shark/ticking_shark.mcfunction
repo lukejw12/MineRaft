@@ -9,8 +9,8 @@ effect give @s invisibility infinite 1 true
 effect clear @a dolphins_grace
 attribute @s scale base set 1.6
 
-execute as @s at @s unless entity @a[distance=..60,predicate=mineraft:in_water,gamemode=survival,predicate=!mineraft:is_riding] unless score @s shark.detect matches 2 run scoreboard players set @s shark.detect 0
-execute as @s at @s if entity @a[distance=..60,predicate=mineraft:in_water,gamemode=survival,predicate=!mineraft:is_riding] unless score @s shark.detect matches 2 run scoreboard players set @s shark.detect 1
+execute as @s at @s unless entity @a[distance=..60,predicate=mineraft:in_water,gamemode=survival,predicate=!mineraft:is_riding,predicate=!mineraft:repellent] unless score @s shark.detect matches 2 run scoreboard players set @s shark.detect 0
+execute as @s at @s if entity @a[distance=..60,predicate=mineraft:in_water,gamemode=survival,predicate=!mineraft:is_riding,predicate=!mineraft:repellent] unless score @s shark.detect matches 2 run scoreboard players set @s shark.detect 1
 
 execute as @e[scores={shark.detect=0}] at @s run function mineraft:shark/circle_mode
 execute as @e[scores={shark.detect=1}] at @s run function mineraft:shark/attack_mode
