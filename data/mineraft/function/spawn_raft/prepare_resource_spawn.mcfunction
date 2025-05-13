@@ -1,4 +1,5 @@
 gamerule doMobSpawning false
+gamerule doWeatherCycle false
 gamerule commandModificationBlockLimit 500000
 forceload add 120 120 -120 -120
 fill 122 -60 122 -122 -64 -122 stone

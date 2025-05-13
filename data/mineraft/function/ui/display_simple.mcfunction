@@ -1,0 +1,4 @@
+execute if score #current weather.state matches 0 run function mineraft:ui/macros/display_actionbar {pot_section:"", hydration_color:"aqua", weather_name:"Clear Skies", weather_color:"aqua"}
+execute if score #current weather.state matches 1 run function mineraft:ui/macros/display_actionbar {pot_section:"", hydration_color:"aqua", weather_name:"Light Breeze", weather_color:"blue"}
+execute if score #current weather.state matches 2 run function mineraft:ui/macros/display_actionbar {pot_section:"", hydration_color:"aqua", weather_name:"Storm", weather_color:"yellow"} 
+execute if score #current weather.state matches 3 run function mineraft:ui/macros/display_actionbar {pot_section:"", hydration_color:"aqua", weather_name:"Heavy Storm", weather_color:"gold"}

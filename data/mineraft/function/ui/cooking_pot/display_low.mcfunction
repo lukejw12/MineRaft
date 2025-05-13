@@ -1,0 +1,11 @@
+execute as @e[type=marker,tag=cooking_pot_active,sort=nearest,limit=1,distance=..3] run scoreboard players operation #temp_ingredients dummy = @s ingredient_count
+
+execute if score #temp_ingredients dummy matches 3 if score #current weather.state matches 0 run function mineraft:ui/macros/display_actionbar {pot_section:" | Pot: $(temp_ingredients)/3", hydration_color:"red", weather_name:"Clear Skies", weather_color:"aqua"}
+execute if score #temp_ingredients dummy matches 3 if score #current weather.state matches 1 run function mineraft:ui/macros/display_actionbar {pot_section:" | Pot: $(temp_ingredients)/3", hydration_color:"red", weather_name:"Light Breeze", weather_color:"blue"}
+execute if score #temp_ingredients dummy matches 3 if score #current weather.state matches 2 run function mineraft:ui/macros/display_actionbar {pot_section:" | Pot: $(temp_ingredients)/3", hydration_color:"red", weather_name:"Storm", weather_color:"yellow"}
+execute if score #temp_ingredients dummy matches 3 if score #current weather.state matches 3 run function mineraft:ui/macros/display_actionbar {pot_section:" | Pot: $(temp_ingredients)/3", hydration_color:"red", weather_name:"Heavy Storm", weather_color:"gold"}
+
+execute unless score #temp_ingredients dummy matches 3 if score #current weather.state matches 0 run function mineraft:ui/macros/display_actionbar {pot_section:" | Pot: $(temp_ingredients)/3", hydration_color:"red", weather_name:"Clear Skies", weather_color:"aqua"}
+execute unless score #temp_ingredients dummy matches 3 if score #current weather.state matches 1 run function mineraft:ui/macros/display_actionbar {pot_section:" | Pot: $(temp_ingredients)/3", hydration_color:"red", weather_name:"Light Breeze", weather_color:"blue"}
+execute unless score #temp_ingredients dummy matches 3 if score #current weather.state matches 2 run function mineraft:ui/macros/display_actionbar {pot_section:" | Pot: $(temp_ingredients)/3", hydration_color:"red", weather_name:"Storm", weather_color:"yellow"}
+execute unless score #temp_ingredients dummy matches 3 if score #current weather.state matches 3 run function mineraft:ui/macros/display_actionbar {pot_section:" | Pot: $(temp_ingredients)/3", hydration_color:"red", weather_name:"Heavy Storm", weather_color:"gold"}

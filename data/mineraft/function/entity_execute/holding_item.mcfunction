@@ -46,7 +46,7 @@ attribute @s block_interaction_range base reset
 
 #execute as @a[scores={hydration=6..}] at @s run title @s actionbar [{"color":"aqua","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"}}]
 #execute as @a[scores={hydration=..5}] run title @s actionbar [{"color":"red","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"}}]
-function mineraft:raft_utility/cooking_pot/merge_with_hydration
+execute as @a at @s run function mineraft:ui/display_ui
 
 execute if items entity @s container.* barrel[custom_data={barrel_loot:1b}] at @s run function mineraft:barrels/open_barrel
 execute as @s if predicate mineraft:holding_compass run schedule function mineraft:radar/holding_compass 20t append

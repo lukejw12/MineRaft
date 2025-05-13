@@ -30,3 +30,6 @@ execute store result score #Global player_online if entity @a
 effect give @e[tag=staircase_steps,type=shulker] invisibility infinite 1 true
 
 execute as @e[type=interaction,tag=trophy_board_interact] at @s run function mineraft:raft_decor/trophy_board/process_interaction
+function mineraft:weather/tick
+
+# Remove any existing calls to actionbar or title commands for hydration
