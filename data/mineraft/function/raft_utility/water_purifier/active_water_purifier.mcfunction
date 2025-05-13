@@ -22,6 +22,5 @@ execute if entity @s[tag=processing,scores={purifier_timer=800}] run item modify
 execute if entity @s[tag=processing,scores={purifier_timer=800}] run tag @s add ready
 
 execute if entity @s[tag=processing,tag=!ready] at @s run particle minecraft:flame ~ ~0.4 ~ 0 0 0 0 1
-
 tag @e[tag=this_facade,type=item_display,distance=0..] remove this_facade
 tag @e[tag=this_interact,type=interaction,distance=0..] remove this_interact
