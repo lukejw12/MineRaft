@@ -13,6 +13,7 @@ execute as @s[tag=has_interaction,tag=planks_click] at @s on target if items ent
 execute as @s[tag=water_click] at @s if entity @e[type=marker,distance=..0.5,tag=water_purifier_active,tag=has_planks,tag=!processing] run tag @e[type=marker,distance=..0.5,tag=water_purifier_active,limit=1] add processing
 execute as @s[tag=water_click] at @s if entity @e[type=marker,distance=..0.5,tag=water_purifier_active,tag=has_planks,tag=processing,tag=!ready] run item modify entity @e[type=item_display,tag=this_facade,limit=1,distance=0..] contents {function:"set_components",components:{"minecraft:item_model":"minecraft:water_purifier_filled"}}
 execute as @s[tag=water_click] at @s if entity @e[type=marker,distance=..0.5,tag=water_purifier_active,tag=has_planks,tag=processing,tag=!ready] on target run clear @s minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] 1
+execute as @s[tag=water_click] at @s if entity @e[type=marker,distance=..0.5,tag=water_purifier_active,tag=has_planks,tag=processing,tag=!ready] on target run give @s glass_bottle
 
 execute as @s[tag=has_interaction] at @s on target if entity @s[nbt={SelectedItem:{id:"minecraft:glass_bottle"}}] run tag @e[type=interaction,tag=has_interaction,limit=1,sort=nearest,distance=0..] add bottle_click
 

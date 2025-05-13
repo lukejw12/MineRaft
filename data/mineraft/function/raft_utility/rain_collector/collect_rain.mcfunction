@@ -10,7 +10,7 @@ execute unless block ~ ~-1 ~ #raft_materials run setblock ~ ~ ~ air
 execute unless block ~ ~-1 ~ #raft_materials run kill @s
 
 
-scoreboard players add @s rain_collector_timer 1
+execute if predicate mineraft:is_raining run scoreboard players add @s rain_collector_timer 1
 execute if entity @s[scores={rain_collector_timer=200..}] if block ~ ~ ~ water_cauldron[level=3] run particle falling_water ~ ~1.3 ~ 0.2 0.2 0.2 0 4 force
 execute if entity @s[scores={rain_collector_timer=200..}] if block ~ ~ ~ water_cauldron[level=2] run setblock ~ ~ ~ water_cauldron[level=3]
 execute if entity @s[scores={rain_collector_timer=200..}] if block ~ ~ ~ water_cauldron[level=1] run setblock ~ ~ ~ water_cauldron[level=2]

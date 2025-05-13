@@ -1,8 +1,10 @@
+
 execute store result score #random temp run random value 0..100
-execute if score #random temp matches 0..39 run scoreboard players set #current weather.state 0
-execute if score #random temp matches 40..69 run scoreboard players set #current weather.state 1
-execute if score #random temp matches 70..89 run scoreboard players set #current weather.state 2
-execute if score #random temp matches 90..100 run scoreboard players set #current weather.state 3
+
+execute if score #current weather.state matches 0 run function mineraft:weather/transitions/from_clear
+execute if score #current weather.state matches 1 run function mineraft:weather/transitions/from_light_breeze
+execute if score #current weather.state matches 2 run function mineraft:weather/transitions/from_storm
+execute if score #current weather.state matches 3 run function mineraft:weather/transitions/from_heavy_storm
 
 function mineraft:weather/update_data
 

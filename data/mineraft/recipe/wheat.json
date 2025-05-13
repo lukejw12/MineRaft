@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      "sugar_cane",
+      "sugar_cane",
+      "sugar_cane",
+      "sugar_cane",
+      "sugar_cane",
+      "sugar_cane",
+      "sugar_cane",
+      "command_block_minecart"
+    ],
+    "result": {
+      "id": "minecraft:wheat",
+      "count": 5
+    }
+  }

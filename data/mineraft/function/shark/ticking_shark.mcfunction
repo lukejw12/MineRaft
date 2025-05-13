@@ -1,6 +1,8 @@
 
-execute as @s[tag=shark] at @s if entity @e[tag=valid_shark_chomp] if score @s shark.detect matches 0..1 if predicate mineraft:shark_raft_chance run function mineraft:shark/target_raft
-
+execute if score #current weather.state matches 0 as @s[tag=shark] at @s if entity @e[tag=valid_shark_chomp,type=marker,distance=0..] if score @s shark.detect matches 0..1 if predicate mineraft:shark_raft_chance run function mineraft:shark/target_raft
+execute if score #current weather.state matches 1 as @s[tag=shark] at @s if entity @e[tag=valid_shark_chomp,type=marker,distance=0..] if score @s shark.detect matches 0..1 if predicate mineraft:shark_raft_chance_light_breeze run function mineraft:shark/target_raft
+execute if score #current weather.state matches 2 as @s[tag=shark] at @s if entity @e[tag=valid_shark_chomp,type=marker,distance=0..] if score @s shark.detect matches 0..1 if predicate mineraft:shark_raft_chance_storm run function mineraft:shark/target_raft
+execute if score #current weather.state matches 3 as @s[tag=shark] at @s if entity @e[tag=valid_shark_chomp,type=marker,distance=0..] if score @s shark.detect matches 0..1 if predicate mineraft:shark_raft_chance_heavy_storm run function mineraft:shark/target_raft
 
 
 
