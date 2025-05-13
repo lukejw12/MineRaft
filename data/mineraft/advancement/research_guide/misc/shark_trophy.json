@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:prismarine_shard",
+        "components": {
+          "minecraft:item_model": "minecraft:shark_head"
+        }
+    },
+    "title": "Shark Trophy",
+    "description": "A trophy made from shark parts. Display it on your Trophy Board to showcase your hunting prowess.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "mineraft:research_guide/decor/trophy_board",
+  "criteria": {
+    "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+                "items": "prismarine_shard"
+            }
+          ]
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "minecraft:water_purifier"
+      }
+    },
+    "title": "Water Purifier",
+    "description": "A System to purify your water! Fuel with some planks then insert a bottle of water",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "mineraft:research_guide/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "mineraft:water_purifier"
+      }
+    }
+  }
+}

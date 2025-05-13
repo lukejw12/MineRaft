@@ -13,7 +13,7 @@
       "announce_to_chat": false,
       "hidden": false
     },
-    "parent": "mineraft:research_guide/root",
+    "parent": "mineraft:research_guide/functional/water_purifier",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:recipe_crafted",

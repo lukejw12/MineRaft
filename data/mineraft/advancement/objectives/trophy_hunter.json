@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:prismarine_shard",
+      "components": {
+        "minecraft:item_model": "minecraft:trophy_board"
+      }
+    },
+    "title": "Trophy Hunter",
+    "description": "Craft a Trophy Board to display your accomplishments",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mineraft:objectives/shark_hunter",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "mineraft:decor/trophy_board"
+      }
+    }
+  }
+}

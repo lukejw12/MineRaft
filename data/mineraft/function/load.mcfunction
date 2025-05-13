@@ -20,6 +20,8 @@ scoreboard objectives add purifier_start dummy
 scoreboard objectives add purifier_timer dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add dummy dummy
+scoreboard objectives add water_purified dummy
+
 
 scoreboard objectives add fishing_state dummy
 scoreboard objectives add lifetime dummy

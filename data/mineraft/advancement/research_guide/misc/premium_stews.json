@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:rabbit_stew"
+    },
+    "title": "Premium Stews",
+    "description": "High-quality stews can provide status effects and substantial nutrition. Quality ingredients make a difference!",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "mineraft:research_guide/misc/cooking_ingredients",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:rabbit_stew"
+          ]
+        }
+      }
+    }
+  }
+}

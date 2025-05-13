@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:blast_furnace",
+      "components": {
+        "minecraft:item_model": "minecraft:simple_grill_item"
+      }
+    },
+    "title": "Hot and Ready",
+    "description": "Craft a Simple Grill for better cooking",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mineraft:objectives/smeltery",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "mineraft:simple_grill"
+      }
+    }
+  }
+}

@@ -6,6 +6,12 @@ clear @s minecraft:bowl 1
 
 tag @s add cooking_collector
 execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] run function mineraft:raft_utility/cooking_pot/calculate_stew
+scoreboard players set #is_bad_stew temp 0
+execute if score @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] raw_shark_count matches 1.. run scoreboard players set #is_bad_stew temp 1
+execute if score @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] raw_cod_count matches 1.. run scoreboard players set #is_bad_stew temp 1
+execute if score @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] nutrition_value matches 15.. run advancement grant @s only mineraft:objectives/gourmet_chef
+
+execute if score #is_bad_stew temp matches 1 run advancement grant @s only mineraft:objectives/bottom_of_the_barrel
 execute as @a[tag=cooking_collector] run tag @s remove cooking_collector
 
 execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] run scoreboard players set @s cooking 0

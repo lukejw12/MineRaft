@@ -1,5 +1,5 @@
 execute on target run tag @s add trophy_adder
-
+tag @e[type=interaction,distance=..0.5,limit=1,sort=nearest] add display_shark
 execute as @a[tag=trophy_adder,distance=..5,limit=1] run clear @s minecraft:prismarine_shard 1
 
 scoreboard players set @s trophy_has_shark 1

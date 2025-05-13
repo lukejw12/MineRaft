@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "minecraft:simple_grill_item"
+      }
+    },
+    "title": "Simple Grill",
+    "description": "A specialized cooking station that makes food more nutritious and cooks faster than the smeltery.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "mineraft:research_guide/functional/smeltery",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "mineraft:simple_grill"
+      }
+    }
+  }
+}
