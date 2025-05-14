@@ -51,3 +51,9 @@ execute as @a at @s run function mineraft:ui/display_ui
 execute if items entity @s container.* barrel[custom_data={barrel_loot:1b}] at @s run function mineraft:barrels/open_barrel
 execute as @s if predicate mineraft:holding_compass run schedule function mineraft:radar/holding_compass 20t append
 bossbar set mineraft:radar/locate_distance players @a[predicate=mineraft:holding_compass]
+execute as @s[predicate=mineraft:wearing_flippers] run effect give @s dolphins_grace infinite 0 false
+# When the item is worn in the helmet slot, set worn to 1
+execute as @a if items entity @s armor.head prismarine_shard run item modify entity @s armor.head mineraft:custom_data_worn_true
+
+# When the item is in inventory or mainhand, set worn to 0
+execute as @a unless items entity @s armor.head prismarine_shard run item modify entity @s player.cursor mineraft:custom_data_worn_false

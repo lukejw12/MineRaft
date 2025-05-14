@@ -25,7 +25,10 @@
           "translate": "item.mineraft.shark_head", 
           "fallback": "Shark Head" 
         },
-        "minecraft:rarity": "epic"
+        "minecraft:rarity": "epic",
+        "equippable": {
+          "slot": "head"
+        }
       },
       "count": 1
     },

@@ -7,9 +7,10 @@ execute at @s as @e[tag=water_purifier_active,type=marker,distance=..1] run scor
 execute at @s as @e[tag=water_purifier_active,type=marker,distance=..1] run tag @s remove processing
 execute at @s as @e[tag=water_purifier_active,type=marker,distance=..1] run tag @s remove ready
 
-tag @e[tag=has_interaction,type=interaction,distance=..1] remove has_interaction
-tag @e[tag=water_click,type=interaction,distance=..1] remove water_click
-tag @e[tag=planks_click,type=interaction,distance=..1] remove planks_click
-tag @e[tag=bottle_click,type=interaction,distance=..1] remove bottle_click
-tag @e[tag=this_facade,type=item_display,distance=..1] remove this_facade
-tag @e[tag=this_interact,type=interaction,distance=..1] remove this_interact
+tag @s[tag=has_interaction,type=interaction] remove has_interaction
+tag @s[tag=water_click,type=interaction] remove water_click
+tag @s[tag=planks_click,type=interaction] remove planks_click
+tag @s[tag=bottle_click,type=interaction] remove bottle_click
+tag @e[tag=this_facade,type=item_display] remove this_facade
+tag @s[tag=this_interact,type=interaction] remove this_interact
+tag @s[tag=this_interact,type=interaction] remove held_planks

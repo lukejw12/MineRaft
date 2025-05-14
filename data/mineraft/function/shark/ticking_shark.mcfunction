@@ -8,7 +8,7 @@ execute if score #current weather.state matches 3 as @s[tag=shark] at @s if enti
 
 effect give @s water_breathing infinite 1 true
 effect give @s invisibility infinite 1 true
-effect clear @a dolphins_grace
+effect clear @a[predicate=!mineraft:wearing_flippers] dolphins_grace
 attribute @s scale base set 1.6
 
 execute as @s at @s unless entity @a[distance=..60,predicate=mineraft:in_water,gamemode=survival,predicate=!mineraft:is_riding,predicate=!mineraft:repellent] unless score @s shark.detect matches 2 run scoreboard players set @s shark.detect 0

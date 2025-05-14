@@ -1,6 +1,7 @@
 advancement revoke @s only mineraft:hammer_returns/sailable_raft
 advancement revoke @s only mineraft:hammer_returns/nail
 advancement revoke @s only mineraft:hammer_returns/planks
+advancement revoke @s only mineraft:hammer_returns/planks_mass
 advancement revoke @s only mineraft:hammer_returns/metal_ore
 advancement revoke @s only mineraft:hammer_returns/barrel
 advancement revoke @s only mineraft:hammer_returns/wooden_staircase

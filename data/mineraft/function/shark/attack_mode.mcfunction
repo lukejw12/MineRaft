@@ -7,4 +7,5 @@ data modify entity @s AngerTime set value 200
 execute if entity @a[distance=..60,predicate=mineraft:in_water] run tp @s ~ ~ ~ facing entity @p[predicate=mineraft:in_water,distance=..60] feet
 
 execute if entity @a[distance=..5,predicate=mineraft:in_water] run function mineraft:shark/apply_close_chase_motion
-execute if entity @a[distance=5..60,predicate=mineraft:in_water] run function mineraft:shark/apply_chase_motion
+execute if entity @a[distance=5..60,predicate=mineraft:in_water,predicate=mineraft:wearing_flippers] run function mineraft:shark/flipper_attack_motion
+execute if entity @a[distance=5..60,predicate=mineraft:in_water,predicate=!mineraft:wearing_flippers] run function mineraft:shark/apply_chase_motion

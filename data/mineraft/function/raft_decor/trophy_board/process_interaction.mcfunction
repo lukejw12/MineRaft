@@ -7,7 +7,7 @@ execute if data entity @s interaction run tag @s add has_interaction
 execute as @s[tag=has_interaction] at @s on target if entity @s[nbt={SelectedItem:{id:"minecraft:prismarine_shard"}}] run tag @e[tag=has_interaction,limit=1,sort=nearest,type=interaction,distance=0..] add shark_trophy_click
 
 # Process shark trophy interaction
-execute as @s[tag=shark_trophy_click] at @s as @e[tag=trophy_board_active,distance=..1.5,limit=1,sort=nearest] unless score @s trophy_has_shark matches 1 run function mineraft:raft_decor/trophy_board/add_shark_trophy
+execute as @s[tag=shark_trophy_click] at @s unless score @e[tag=trophy_board_active,distance=..1.5,limit=1,sort=nearest] trophy_has_shark matches 1 run function mineraft:raft_decor/trophy_board/add_shark_trophy
 
 # Clear interaction data after processing
 execute if data entity @s interaction run data remove entity @s interaction
