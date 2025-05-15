@@ -3,13 +3,13 @@
       "requirement": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "mineraft:vanilla_overrides/blocks/barrel"
+          "recipe_id": "mineraft:food/dough"
           
         }
       }
     },
     "rewards": {
-      "function": "mineraft:hammer/hammer_recipe_return/hammer_recipe_return",
+      "function": "mineraft:misc/recipe_item_callbacks/dough",
       "recipes": []
     }
   }
