@@ -38,7 +38,8 @@ execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:cus
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={simple_grill_item:1b}] at @s run function mineraft:raft_utility/grills/simple_grill/is_holding_item
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={cooking_pot_item:1b}] at @s run function mineraft:raft_utility/cooking_pot/is_holding_item
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={trophy_board_item:1b}] at @s run function mineraft:raft_decor/trophy_board/is_holding_item
-
+#execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={thin_wooden_wall:1b}] at @s run function mineraft:raft_decor/wall/thin_wooden_wall/is_holding_item
+execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={solid_wooden_wall:1b}] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/is_holding_item
 execute as @s at @s run function mineraft:hydration/hydration_deplenish
 
 attribute @s block_interaction_range base reset

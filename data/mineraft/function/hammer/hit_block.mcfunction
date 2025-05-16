@@ -1,5 +1,22 @@
 scoreboard players set #hit hammer 1
 
+execute if block ~-1 ~ ~ barrier if block ~ ~ ~ barrier if block ~1 ~ ~ barrier if block ~-1 ~1 ~ barrier if block ~ ~1 ~ barrier if block ~1 ~1 ~ barrier if block ~-1 ~2 ~ barrier if block ~ ~2 ~ barrier if block ~1 ~2 ~ barrier if entity @e[tag=solid_wooden_wall_active,tag=facing_east_west,distance=..2] align xyz positioned ~0.5 ~ ~0.5 run summon item_display ~ ~0.3 ~ {Glowing:1b,item_display:"ground",Rotation:[90F,0F],Tags:["solid_wall_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:solid_wooden_wall","minecraft:enchantment_glint_override":false}}}
+
+execute if block ~ ~ ~-1 barrier if block ~ ~ ~ barrier if block ~ ~ ~1 barrier if block ~ ~1 ~-1 barrier if block ~ ~1 ~ barrier if block ~ ~1 ~1 barrier if block ~ ~2 ~-1 barrier if block ~ ~2 ~ barrier if block ~ ~2 ~1 barrier if entity @e[tag=solid_wooden_wall_active,tag=facing_north_south,distance=..2] align xyz positioned ~0.5 ~ ~0.5 run summon item_display ~ ~0.3 ~ {Glowing:1b,item_display:"ground",Rotation:[0F,0F],Tags:["solid_wall_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:solid_wooden_wall","minecraft:enchantment_glint_override":false}}}
+
+#execute if block ~ ~ ~ barrier if entity @e[tag=solid_wooden_wall_active,distance=..3] align xyz positioned ~0.5 ~1 ~0.5 run tag @s add checking_wall
+##execute if entity @s[tag=checking_wall] if entity @e[tag=solid_wooden_wall_active,tag=facing_east_west,distance=..1,limit=1,sort=nearest] align xyz run summon item_display ~ ~0.3 ~ {Glowing:1b,item_display:"ground",Rotation:[90F,0F],Tags:["solid_wall_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:solid_wooden_wall","minecraft:enchantment_glint_override":false}}}
+#execute if entity @s[tag=checking_wall] if entity @e[tag=solid_wooden_wall_active,tag=facing_north_south,distance=..1,limit=1,sort=nearest] align xyz run summon item_display ~ ~0.3 ~ {Glowing:1b,item_display:"ground",Rotation:[0F,0F],Tags:["solid_wall_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:solid_wooden_wall","minecraft:enchantment_glint_override":false}}}
+#tag @s remove checking_wall
+
+scoreboard players set #destroyed hammer_helper 0
+
+execute if score #destroyed hammer_helper matches 0 if entity @s[scores={hammer=2}] as @e[limit=1,sort=nearest,type=marker,tag=solid_wooden_wall_active,tag=facing_east_west,distance=..3] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/break_east_west_wall
+
+execute if score #destroyed hammer_helper matches 0 if entity @s[scores={hammer=2}] as @e[limit=1,sort=nearest,type=marker,tag=solid_wooden_wall_active,tag=facing_north_south,distance=..3] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/break_north_south_wall
+scoreboard players set #destroyed hammer_helper 0
+
+
 ## IF BLOCK IS CENTER RAFT
 execute if entity @e[tag=central_raft,distance=..1] run tag @s add why_even_try_that
 execute unless entity @e[tag=central_raft,distance=..1] run tag @s remove why_even_try_that
@@ -34,6 +51,7 @@ execute if block ~ ~ ~ structure_void if entity @s[scores={hammer=2}] align xz r
 execute if block ~ ~ ~ #possible_platform_center unless block ~ ~1 ~ end_rod if entity @e[tag=wooden_platform_active,distance=..1] align xyz run summon item_display ~0.5 ~0.99 ~0.5 {Glowing:1b,item_display:"ground",Tags:["wooden_platform_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:wooden_platform","minecraft:enchantment_glint_override":false}}}
 execute if block ~ ~ ~ #possible_platform_center unless block ~ ~1 ~ end_rod if entity @e[tag=wooden_platform_active,distance=..1] if entity @s[scores={hammer=2}] align xz run fill ~-1 ~ ~-1 ~1 ~1 ~1 air
 
+
 execute if block ~ ~ ~ structure_void if entity @e[tag=crop_plot_active,tag=facing_north,distance=..1,sort=nearest,limit=1] align xyz run summon item_display ~0.5 ~0.29 ~0.5 {Rotation:[90f,0f],Glowing:1b,item_display:"ground",Tags:["rain_collector_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:crop_plot_empty","minecraft:enchantment_glint_override":false}}}
 execute if block ~ ~ ~ structure_void if entity @e[tag=crop_plot_active,tag=facing_west,distance=..1,sort=nearest,limit=1] align xyz run summon item_display ~0.5 ~0.29 ~0.5 {Rotation:[180f,0f],Glowing:1b,item_display:"ground",Tags:["rain_collector_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:crop_plot_empty","minecraft:enchantment_glint_override":false}}}
 execute if block ~ ~ ~ structure_void if entity @e[tag=crop_plot_active,tag=facing_south,distance=..1,sort=nearest,limit=1] align xyz run summon item_display ~0.5 ~0.29 ~0.5 {Rotation:[0f,0f],Glowing:1b,item_display:"ground",Tags:["rain_collector_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:crop_plot_empty","minecraft:enchantment_glint_override":false}}}
@@ -52,6 +70,8 @@ execute if block ~ ~ ~ barrier if entity @e[tag=cooking_pot_active,tag=facing_ea
 execute if block ~ ~ ~ barrier if entity @e[tag=cooking_pot_active,tag=facing_south,distance=..1,sort=nearest,limit=1] align xyz run summon item_display ~0.5 ~0.3 ~0.5 {Rotation:[90f,0f],Glowing:1b,item_display:"ground",Tags:["purifier_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:0},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:cooking_pot_empty","minecraft:enchantment_glint_override":false}}}
 
 execute if block ~ ~ ~ barrier if entity @e[tag=cooking_pot_active,distance=..1,sort=nearest,limit=1] if entity @s[scores={hammer=2}] run setblock ~ ~ ~ air
+
+
 
 
 ## DECOR STAIRCASE
