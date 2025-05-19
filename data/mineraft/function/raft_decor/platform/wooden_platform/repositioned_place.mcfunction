@@ -1,5 +1,5 @@
 execute if block ~ ~ ~ #pillar_support if block ~ ~ ~-1 #blocks if block ~ ~ ~1 #blocks if block ~1 ~ ~ #blocks if block ~-1 ~ ~ #blocks if block ~1 ~ ~-1 #blocks if block ~-1 ~ ~-1 #blocks if block ~1 ~ ~1 #blocks if block ~-1 ~ ~1 #blocks unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-execute if entity @s[tag=valid_initial] if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
+execute if entity @s[tag=valid_initial] if predicate mineraft:platform/if_circle_clear_placing run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
 execute if entity @s[tag=valid] run summon marker ~ ~ ~ {Tags:["wooden_platform_active"]}
@@ -11,7 +11,7 @@ execute if entity @s[tag=valid] run return 0
 
 
 execute unless block ~ ~ ~ #pillar_support if block ~ ~-1 ~-2 #blocks_w_e if block ~ ~-1 ~1 #pillar_support positioned ~ ~-1 ~-2 unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~-2 if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
+execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~-2 if predicate mineraft:platform/if_circle_clear_placing run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
 execute if entity @s[tag=valid] run summon marker ~ ~-1 ~-2 {Tags:["wooden_platform_active"]}
@@ -23,7 +23,7 @@ execute if entity @s[tag=valid] run return 0
 
 
 execute unless block ~ ~ ~ #pillar_support if block ~ ~-1 ~2 #blocks_w_e if block ~ ~-1 ~-1 #pillar_support positioned ~ ~-1 ~2 unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~2 if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
+execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~2 if predicate mineraft:platform/if_circle_clear_placing run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
 execute if entity @s[tag=valid] run summon marker ~ ~-1 ~2 {Tags:["wooden_platform_active"]}
@@ -35,7 +35,7 @@ execute if entity @s[tag=valid] run return 0
 
 
 execute unless block ~ ~ ~ #pillar_support if block ~2 ~-1 ~ #blocks_w_e if block ~-1 ~-1 ~ #pillar_support positioned ~2 ~-1 ~ unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-execute if entity @s[tag=valid_initial] positioned ~2 ~-1 ~ if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
+execute if entity @s[tag=valid_initial] positioned ~2 ~-1 ~ if predicate mineraft:platform/if_circle_clear_placing run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
 execute if entity @s[tag=valid] run summon marker ~2 ~-1 ~ {Tags:["wooden_platform_active"]}
@@ -47,7 +47,7 @@ execute if entity @s[tag=valid] run return 0
 
 
 execute unless block ~ ~ ~ #pillar_support if block ~-2 ~-1 ~ #blocks_w_e if block ~1 ~-1 ~ #pillar_support positioned ~-2 ~-1 ~ unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-execute if entity @s[tag=valid_initial] positioned ~-2 ~-1 ~ if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
+execute if entity @s[tag=valid_initial] positioned ~-2 ~-1 ~ if predicate mineraft:platform/if_circle_clear_placing run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
 execute if entity @s[tag=valid] run summon marker ~-2 ~-1 ~ {Tags:["wooden_platform_active"]}
@@ -59,7 +59,7 @@ execute if entity @s[tag=valid] run return 0
 
 
 execute unless block ~ ~ ~ #pillar_support if block ~ ~-1 ~-2 #blocks_w_e if block ~ ~-1 ~-2 #pillar_support positioned ~ ~-1 ~-2 unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~-2 if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
+execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~-2 if predicate mineraft:platform/if_circle_clear_placing run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
 execute if entity @s[tag=valid] run summon marker ~ ~-1 ~-2 {Tags:["wooden_platform_active"]}
@@ -71,7 +71,7 @@ execute if entity @s[tag=valid] run return 0
 
 
 execute unless block ~ ~ ~ #pillar_support if block ~ ~-1 ~2 #blocks_w_e if block ~ ~-1 ~2 #pillar_support positioned ~ ~-1 ~2 unless entity @e[tag=wooden_platform_active,distance=..1] run tag @s add valid_initial
-execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~2 if block ~1 ~ ~ air if block ~-1 ~ ~ air if block ~ ~ ~1 air if block ~ ~ ~-1 air if block ~1 ~ ~1 air if block ~1 ~ ~-1 air if block ~-1 ~ ~1 air if block ~-1 ~ ~-1 air run tag @s add valid
+execute if entity @s[tag=valid_initial] positioned ~ ~-1 ~2 if predicate mineraft:platform/if_circle_clear_placing run tag @s add valid
 execute if entity @s[tag=valid_initial,tag=!valid] run tag @s remove valid_initial
 
 execute if entity @s[tag=valid] run summon marker ~ ~-1 ~2 {Tags:["wooden_platform_active"]}

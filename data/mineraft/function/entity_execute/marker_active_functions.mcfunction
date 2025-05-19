@@ -13,9 +13,11 @@ execute if entity @s[tag=simple_grill] as @s[tag=simple_grill] at @s run functio
 execute if entity @s[tag=cooking_pot] as @s[tag=cooking_pot] at @s run function mineraft:raft_utility/cooking_pot/raft_extension_was_placed
 execute if entity @s[tag=trophy_board] as @s[tag=trophy_board] at @s run function mineraft:raft_decor/trophy_board/place_trophy_board
 execute if entity @s[tag=solid_wooden_wall] as @s[tag=solid_wooden_wall] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/raft_extension_was_placed
+execute if entity @s[tag=solid_l_junction_wall] as @s[tag=solid_l_junction_wall] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/solid_l_junction_wall/raft_extension_was_placed
 
 
 
+execute if entity @s[tag=solid_l_junction_wall_active] as @s[tag=solid_l_junction_wall_active] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/solid_l_junction_wall/wall_ticking
 execute if entity @s[tag=solid_wooden_wall_active] as @s[tag=solid_wooden_wall_active] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/wall_ticking
 execute if entity @s[tag=active_net] as @s[tag=active_net] at @s run function mineraft:raft_extension/collection_net/active_net/active_fishing_net
 execute if entity @s[tag=raft_extension] as @s[tag=raft_extension] at @s run function mineraft:raft_extension/extension_ticking

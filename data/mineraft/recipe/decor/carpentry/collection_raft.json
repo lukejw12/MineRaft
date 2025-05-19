@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:purple_dye",
+    "result": {
+      "id": "minecraft:vex_spawn_egg",
+      "components": {
+        "item_model": "minecraft:collection_net",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.collection_net", 
+          "fallback": "Collection Net" 
+        },
+        "minecraft:rarity": "uncommon",
+        "minecraft:entity_data": {
+          "id": "minecraft:marker",
+          "Tags": [
+            "net_extension"
+          ]
+        },
+        "minecraft:custom_data": {
+          "net_extension_item": true
+        }
+      },
+      "count": 2
+    }
+  }

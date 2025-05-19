@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:purple_dye",
+    "result": {
+      "id": "minecraft:vex_spawn_egg",
+      "components": {
+        "minecraft:item_model": "minecraft:wooden_pillar",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.wooden_pillar", 
+          "fallback": "Wooden Pillar" 
+        },
+        "minecraft:rarity": "uncommon",
+        "minecraft:entity_data": {
+          "id": "minecraft:marker",
+          "Tags": [
+            "wooden_support"
+          ]
+        },
+        "minecraft:custom_data": {
+          "wooden_support": true
+        }
+      },
+      "count": 2
+    }
+  }

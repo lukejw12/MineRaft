@@ -1,22 +1,6 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "pattern": [
-    "121",
-    "131",
-    "121"
-  ],
-  "key": {
-    "1": [
-      "minecraft:jigsaw"
-    ],
-    "2": [
-      "minecraft:prismarine_crystals"
-    ],
-    "3": [
-      "minecraft:spruce_log"
-    ]
-  },
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:purple_dye",
   "result": {
     "id": "minecraft:allay_spawn_egg",
     "components": {
@@ -36,7 +20,6 @@
         "solid_wooden_wall": true
       }
     },
-    "count": 1
-  },
-  "show_notification": true
+    "count": 2
+  }
 }

@@ -1,0 +1,105 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "air",
+            "blue_stained_glass"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 1,
+      "offsetZ": 1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "air",
+            "blue_stained_glass"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 1,
+      "offsetZ": -1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "air",
+            "blue_stained_glass"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": -1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "air",
+            "blue_stained_glass"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": -1,
+      "offsetZ": 1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "air",
+            "blue_stained_glass"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": -1,
+      "offsetZ": -1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "air",
+            "blue_stained_glass"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetZ": -1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "air",
+            "blue_stained_glass"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetZ": 1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "air",
+            "blue_stained_glass"
+          ]
+        }
+      }
+    }
+  ]
+}

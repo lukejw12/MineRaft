@@ -1,15 +1,5 @@
-execute unless block ~ ~ ~ #possible_platform_center run fill ~1 ~ ~1 ~-1 ~ ~-1 air
-execute unless block ~ ~ ~ #possible_platform_center run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_platform:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_platform"]},"minecraft:item_model":"minecraft:wooden_platform_it","minecraft:item_name":{"translate":"item.mineraft.wooden_platform","fallback":"Wooden Platform"},"minecraft:rarity":"uncommon"}}}
-execute unless block ~ ~ ~ #possible_platform_center run particle block_crumble{block_state:"minecraft:stripped_spruce_wood"} ~ ~ ~ 0.8 0.3 0.8 1 40 normal
-execute unless block ~ ~ ~ #possible_platform_center run playsound minecraft:entity.zombie.break_wooden_door block @a[distance=..15] ~ ~ ~ 0.2 1.5
-execute unless block ~ ~ ~ #possible_platform_center run kill @e[tag=wooden_platform_facade,distance=..1]
-execute unless block ~ ~ ~ #possible_platform_center run kill @s
-execute unless block ~ ~ ~ #possible_platform_center run return 0
+execute if entity @s[tag=!breaking] if predicate mineraft:platform/if_circle_clear run tag @s add breaking
+execute if entity @s[tag=!breaking] unless block ~ ~ ~ #possible_platform_center run tag @s add breaking
+execute if entity @s[tag=!breaking] if predicate mineraft:platform/if_no_supports run tag @s add breaking
 
-
-execute unless block ~ ~ ~ #pillar_support unless block ~ ~ ~3 #pillar_support unless block ~ ~ ~-3 #pillar_support unless block ~3 ~ ~ #pillar_support unless block ~-3 ~ ~ #pillar_support run fill ~1 ~ ~1 ~-1 ~ ~-1 air
-execute unless block ~ ~ ~ #pillar_support unless block ~ ~ ~3 #pillar_support unless block ~ ~ ~-3 #pillar_support unless block ~3 ~ ~ #pillar_support unless block ~-3 ~ ~ #pillar_support run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{wooden_platform:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["wooden_platform"]},"minecraft:item_model":"minecraft:wooden_platform_it","minecraft:item_name":{"translate":"item.mineraft.wooden_platform","fallback":"Wooden Platform"},"minecraft:rarity":"uncommon"}}}
-execute unless block ~ ~ ~ #pillar_support unless block ~ ~ ~3 #pillar_support unless block ~ ~ ~-3 #pillar_support unless block ~3 ~ ~ #pillar_support unless block ~-3 ~ ~ #pillar_support run particle block_crumble{block_state:"minecraft:stripped_spruce_wood"} ~ ~ ~ 0.8 0.3 0.8 1 40 normal
-execute unless block ~ ~ ~ #pillar_support unless block ~ ~ ~3 #pillar_support unless block ~ ~ ~-3 #pillar_support unless block ~3 ~ ~ #pillar_support unless block ~-3 ~ ~ #pillar_support run playsound minecraft:entity.zombie.break_wooden_door block @a[distance=..15] ~ ~ ~ 0.2 1.5
-execute unless block ~ ~ ~ #pillar_support unless block ~ ~ ~3 #pillar_support unless block ~ ~ ~-3 #pillar_support unless block ~3 ~ ~ #pillar_support unless block ~-3 ~ ~ #pillar_support run kill @e[tag=wooden_platform_facade,distance=..1]
-execute unless block ~ ~ ~ #pillar_support unless block ~ ~ ~3 #pillar_support unless block ~ ~ ~-3 #pillar_support unless block ~3 ~ ~ #pillar_support unless block ~-3 ~ ~ #pillar_support run kill @s
+execute as @s[tag=breaking] run function mineraft:raft_decor/platform/wooden_platform/destroy

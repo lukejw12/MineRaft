@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:allay_spawn_egg",
+  "result": {
+    "id": "minecraft:allay_spawn_egg",
+    "components": {
+      "minecraft:item_model": "minecraft:solid_l_junction_wall_item",
+      "minecraft:item_name": {
+        "translate": "item.mineraft.solid_l_junction_wall",
+        "fallback": "Solid L Junction Wall"
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "solid_l_junction_wall"
+        ]
+      },
+      "minecraft:custom_data": {
+        "solid_l_junction_wall": true
+      }
+    },
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:purple_dye",
+  "result": {
+    "id": "minecraft:vex_spawn_egg",
+    "components": {
+      "minecraft:item_model": "minecraft:raft_extension",
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.wooden_foundation", 
+        "fallback": "Wooden Foundation" 
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "extension"
+        ]
+      },
+      "minecraft:custom_data": {
+        "extension_item": true
+      }
+    },
+    "count": 3
+  }
+}

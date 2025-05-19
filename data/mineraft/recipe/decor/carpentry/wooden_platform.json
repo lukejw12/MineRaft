@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:purple_dye",
+    "result": {
+      "id": "minecraft:vex_spawn_egg",
+      "components": {
+        "minecraft:item_model": "minecraft:wooden_platform_it",
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.wooden_platform", 
+          "fallback": "Wooden Platform" 
+        },
+        "minecraft:rarity": "uncommon",
+        "minecraft:entity_data": {
+          "id": "minecraft:marker",
+          "Tags": [
+            "wooden_platform"
+          ]
+        },
+        "minecraft:custom_data": {
+          "wooden_platform": true
+        }
+      },
+      "count": 2
+    }
+  }
