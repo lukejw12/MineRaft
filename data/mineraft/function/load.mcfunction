@@ -22,8 +22,11 @@ scoreboard objectives add temp dummy
 scoreboard objectives add dummy dummy
 scoreboard objectives add water_purified dummy
 
+scoreboard objectives add solid_wall_id dummy
+scoreboard objectives add l_junction_wall_id dummy
 scoreboard objectives add solid_l_junction_wall dummy
 scoreboard objectives add solid_wooden_wall dummy
+
 scoreboard objectives add fishing_state dummy
 scoreboard objectives add lifetime dummy
 scoreboard objectives add foundation dummy
