@@ -1,0 +1,2 @@
+
+function mineraft:raft_extension/collection_net/give_item_by_id with storage mineraft:temp

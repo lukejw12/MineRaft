@@ -5,6 +5,10 @@ schedule function mineraft:spawn_raft/spawn_raft 15t append
 # Foudation Raycast
 scoreboard objectives add raft_extension dummy
 # Collection Net Raycast
+scoreboard objectives add net_id dummy
+scoreboard objectives add net_id_counter dummy
+scoreboard objectives add item_count dummy
+
 scoreboard objectives add raft_extension_net dummy
 # Smeltery Net Raycast
 scoreboard objectives add smeltery dummy
