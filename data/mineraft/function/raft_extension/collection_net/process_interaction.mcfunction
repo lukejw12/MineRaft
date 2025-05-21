@@ -1,3 +1,4 @@
+execute as @s[type=minecraft:interaction] if data entity @s interaction on target if entity @s[nbt={SelectedItem:{id:"minecraft:structure_block"}}] run function mineraft:hammer/hammer_right_click
 
 scoreboard players operation #current_net temp = @s net_id
 
