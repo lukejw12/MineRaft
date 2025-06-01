@@ -2,15 +2,23 @@
   "structures": [
     {
       "structure": "mineraft:small_tropical",
-      "weight": 1
+      "weight": 20
     },
     {
       "structure": "mineraft:small_tropical_var_1",
-      "weight": 1
+      "weight": 20
     },
     {
       "structure": "mineraft:small_tropical_var_2",
-      "weight": 1
+      "weight": 20
+    },
+    {
+      "structure": "mineraft:small_tropical_var_3",
+      "weight": 20
+    },
+    {
+      "structure": "mineraft:small_tropical_shipwreck",
+      "weight": 5
     }
   ],
   "placement": {

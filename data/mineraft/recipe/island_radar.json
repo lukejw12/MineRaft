@@ -2,16 +2,19 @@
     "type": "minecraft:crafting_shaped",
     "category": "equipment",
     "pattern": [
-      "222",
-      "232",
-      "424"
+      "444",
+      "313",
+      "121"
     ],
     "key": {
-      "2": [
+      "1": [
         "repeating_command_block"
       ],
+      "2": [
+        "yellow_dye"
+      ],
       "3": [
-        "minecraft:chain_command_block"
+        "orange_dye"
       ],
       "4": [
         "prismarine_crystals"
@@ -25,7 +28,7 @@
           "translate": "item.mineraft.island_radar", 
           "fallback": "Island Radar" 
         },
-        "minecraft:rarity": "epic",
+        "minecraft:rarity": "rare",
         "minecraft:custom_data": {
           "radar": true
         }

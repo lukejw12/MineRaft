@@ -6,7 +6,7 @@
                 "items": [
                     {
                         "items": [
-                            "jigsaw"
+                            "repeating_command_block"
                         ]
                     }
                 ]
@@ -15,7 +15,7 @@
     },
     "rewards": {
         "recipes": [
-            "mineraft:carpentry_table"
+            "mineraft:tech/circuit_board"
         ]
     }
 }

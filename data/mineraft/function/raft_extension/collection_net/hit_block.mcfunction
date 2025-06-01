@@ -1,9 +1,5 @@
-#Mark the ray as having found a block.
 
 scoreboard players set #hit raft_extension_net 1
-
-#Running custom commands since the block was found.
-
 execute if block ~ ~ ~1 #valid_center_blocks if block ~ ~ ~-1 #raft_replacable align xz positioned ~0.5 63 ~0.5 run summon item_display ~ ~-0.3 ~-2 {Glowing:1b,item_display:"ground",Tags:["net_extension_display","displayed"],Rotation:[180F,0F],glow_color_override:3329330,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:enchantment_glint_override":false,"minecraft:item_model":"minecraft:collection_net_st"}}}
 execute if block ~ ~ ~1 #valid_center_blocks if block ~ ~ ~-1 #raft_replacable align xz positioned ~0.5 63 ~0.5 run summon item_display ~ ~-0.3 ~-2 {Glowing:1b,item_display:"ground",Tags:["net_extension_display","displayed"],Rotation:[180F,0F],glow_color_override:3329330,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:enchantment_glint_override":false,"minecraft:item_model":"minecraft:collection_net_st"}}}
 execute if block ~-1 ~ ~ #valid_center_blocks if block ~1 ~ ~ #raft_replacable align xz positioned ~0.5 63 ~0.5 run summon item_display ~2 ~-0.3 ~ {Glowing:1b,item_display:"ground",Tags:["net_extension_display","displayed"],Rotation:[180F,0F],glow_color_override:3329330,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:enchantment_glint_override":false,"minecraft:item_model":"minecraft:collection_net_st"}}}

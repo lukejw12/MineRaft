@@ -61,6 +61,35 @@
         ]
       },
       {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "pirate_hat",
+                "minecraft:item_name": {
+                  "translate": "item.mineraft.pirate_hat",
+                  "fallback": "Pirate Hat"
+                },
+                "minecraft:rarity": "rare",
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "dispensable": true,
+                  "swappable": true,
+                  "damage_on_hurt": true,
+                  "equip_on_interact": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "rolls": {
         "min": 0,
         "max": 1

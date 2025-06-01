@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      " 11",
+      "242",
+      "232"
+    ],
+    "key": {
+      "1": [
+        "stick"
+      ],
+      "2": [
+        "repeating_command_block"
+      ],
+      "3": [
+        "command_block_minecart"
+      ],
+      "4": [
+        "prismarine_crystals"
+      ]
+    },
+    "result": {
+      "id": "yellow_dye",
+      "components": {
+        "minecraft:item_name": { 
+          "translate": "item.mineraft.circuit_board", 
+          "fallback": "Circuit Board" 
+        },
+      "minecraft:item_model": "minecraft:circuit_board"
+      },
+      "count": 1
+    },
+    "show_notification": true
+  }

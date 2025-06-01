@@ -131,3 +131,11 @@ bossbar add mineraft:radar/locate_distance {"text":"Island Radar"}
 scoreboard objectives add compass_id dummy
 scoreboard objectives add player_has_compass dummy
 
+bossbar add mineraft:tips {"text":"Tips","color":"yellow"}
+bossbar set mineraft:tips color yellow
+bossbar set mineraft:tips style progress
+bossbar set mineraft:tips max 200
+bossbar set mineraft:tips value 0
+scoreboard objectives add tips trigger
+scoreboard objectives add tip_timer dummy
+scoreboard players set #tip_timer tip_timer 0

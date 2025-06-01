@@ -1,0 +1,27 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:lapis_lazuli",
+        "components": {
+          "minecraft:item_model": "minecraft:blueprint"
+        }
+      },
+      "title": "The Power of Knowledge",
+      "description": "Use a blueprint and unlock any recipe",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mineraft:objectives/mid_game/island_seeker",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:lapis_lazuli"
+              }
+            }
+          }
+        }
+      }

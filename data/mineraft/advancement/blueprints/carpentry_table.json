@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:lapis_lazuli",
+            "components": {
+              "minecraft:custom_data": {
+                "blueprint_carpentry_table": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "mineraft:blueprints/carpentry_table"
+    }
+  }
