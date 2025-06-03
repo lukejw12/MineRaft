@@ -139,3 +139,5 @@ bossbar set mineraft:tips value 0
 scoreboard objectives add tips trigger
 scoreboard objectives add tip_timer dummy
 scoreboard players set #tip_timer tip_timer 0
+
+scoreboard objectives add discord trigger

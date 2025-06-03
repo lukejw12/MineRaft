@@ -33,5 +33,7 @@ execute as @e[type=interaction,tag=trophy_board_interact] at @s run function min
 function mineraft:weather/tick
 
 execute as @e[type=interaction,tag=collection_net_interact] at @s if data entity @s interaction run function mineraft:raft_extension/collection_net/process_interaction
-function mineraft:tips/cycle_tips
+function mineraft:triggers/tips/cycle_tips
+function mineraft:triggers/discord/discord_trigger
 scoreboard players enable @a tips
+scoreboard players enable @a discord

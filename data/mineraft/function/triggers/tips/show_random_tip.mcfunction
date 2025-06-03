@@ -1,4 +1,4 @@
-execute store result score #random dummy run random value 1..11
+execute store result score #random dummy run random value 1..12
 
 execute if score #random dummy matches 1 run bossbar set mineraft:tips name {"text":"Tip: Drink water regularly to maintain your hydration!","color":"gold"}
 execute if score #random dummy matches 2 run bossbar set mineraft:tips name {"text":"Tip: Unlock blueprints and recipes by discovering islands!","color":"gold"}
@@ -11,3 +11,4 @@ execute if score #random dummy matches 8 run bossbar set mineraft:tips name {"te
 execute if score #random dummy matches 9 run bossbar set mineraft:tips name {"text":"Tip: Run /trigger tips to toggle the preview of these tips!","color":"gold"}
 execute if score #random dummy matches 10 run bossbar set mineraft:tips name {"text":"Tip: Steve the shark is friendly! make sure to give him a big ole' hug!","color":"gold"}
 execute if score #random dummy matches 11 run bossbar set mineraft:tips name {"text":"Tip: Annoyed crafting planks 1 by 1? You can simply Bulk craft themm with logs!","color":"gold"}
+execute if score #random dummy matches 12 run bossbar set mineraft:tips name {"text":"Tip: Found any bugs? You can report them on the official discord server, and chat with the community! Try using /trigger discord!","color":"gold"}

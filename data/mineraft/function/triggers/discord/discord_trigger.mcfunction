@@ -1,0 +1,2 @@
+execute as @a[scores={discord=1}] run tellraw @s [{"color":"gold","italic":false,"text":"☺ MineRaft Official Discord"},{"click_event":{"action":"open_url","url":"https://discord.gg/YxRWAPUtDt"},"color":"gold","hover_event":{"action":"show_text","value":[{"text":"Join the Discord!","color":"yellow","bold":true,"italic":false}]},"italic":false,"text":" [Click here!]"}]
+execute as @a[scores={discord=1}] run scoreboard players set @s discord 0
