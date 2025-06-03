@@ -2,7 +2,7 @@ scoreboard players set @s shark.detect 2
 scoreboard players set @s shark.raft_timer 0
 scoreboard players set @s shark.stuck_timer 0
 
-execute unless entity @e[tag=shark_target] run summon marker 0 0 0 {Tags:["shark_target"]}
+execute unless entity @e[tag=shark_target] run summon marker ~ 0 ~ {Tags:["shark_target"]}
 
 execute unless entity @e[tag=valid_shark_chomp,limit=1] run return 0
 

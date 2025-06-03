@@ -77,7 +77,7 @@ scoreboard objectives add large_crop_plot dummy
 scoreboard objectives add crop_plot dummy
 execute positioned ~0.5 63 ~0.5 unless entity @e[tag=central_raft,distance=..2] run kill @e[tag=central_raft]
 execute positioned ~0.5 63 ~0.5 unless entity @e[tag=central_raft,distance=..2] run summon marker ~ 63 ~ {Tags:["central_raft"]}
-execute unless entity @e[tag=shark_name] run summon marker 0 62 0 {Tags:["shark_name"],CustomNameVisible:0b,CustomName:{"color":"aqua","text":"Shark"}}
+execute unless entity @e[tag=shark_name] run summon marker ~ 62 ~ {Tags:["shark_name"],CustomNameVisible:0b,CustomName:{"color":"aqua","text":"Shark"}}
 
 # Weather system
 scoreboard objectives add weather.state dummy

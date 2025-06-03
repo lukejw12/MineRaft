@@ -1,4 +1,3 @@
-# data/mineraft/function/raft_extension/collection_net/raft_extension_was_placed.mcfunction
 
 execute if block ~ ~-1 ~1 #valid_center_blocks if block ~ ~-1 ~-1 #raft_replacable run summon marker ~ ~-1 ~-2 {Tags:["active_net","valid_shark_chomp","new_net"]}
 execute if block ~ ~-1 ~1 #valid_center_blocks if block ~ ~-1 ~-1 #raft_replacable run tag @s add valid

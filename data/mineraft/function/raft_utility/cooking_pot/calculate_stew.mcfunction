@@ -10,7 +10,6 @@ data modify storage minecraft:temp effects set value []
 data modify storage minecraft:temp effect_name set value []
 data remove storage minecraft:temp effect_name_1
 
-# Check if all 3 ingredients are the same
 scoreboard players set #very_bonus temp 0
 execute if score @s kelp_count matches 3 run scoreboard players set #very_bonus temp 1
 execute if score @s dried_kelp_count matches 3 run scoreboard players set #very_bonus temp 1

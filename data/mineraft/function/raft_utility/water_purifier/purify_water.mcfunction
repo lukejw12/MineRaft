@@ -2,7 +2,7 @@ execute if data entity @s interaction on target if entity @s[nbt={SelectedItem:{
 
 execute if data entity @s interaction run tag @s add has_interaction
 
-execute as @s[tag=has_interaction] at @s on target if items entity @s weapon.mainhand spruce_planks run tag @e[tag=has_interaction,limit=1,sort=nearest,type=interaction,distance=0..] add planks_click
+execute as @s[tag=has_interaction,tag=!held_planks] at @s on target if items entity @s weapon.mainhand spruce_planks run tag @e[tag=has_interaction,limit=1,sort=nearest,type=interaction,distance=0..] add planks_click
 
 execute as @s[tag=planks_click] at @s unless entity @e[type=marker,distance=..0.5,tag=water_purifier_active,tag=has_planks] run tag @e[type=marker,distance=..0.5,tag=water_purifier_active,limit=1] add has_planks
 execute as @s[tag=planks_click] at @s unless entity @e[type=marker,distance=..0.5,tag=water_purifier_active,tag=processing] if entity @e[type=marker,distance=..0.5,tag=water_purifier_active,tag=has_planks,tag=!ready] run item modify entity @e[type=item_display,tag=this_facade,limit=1,distance=0..] contents {function:"set_components",components:{"minecraft:item_model":"minecraft:water_purifier_planks"}}

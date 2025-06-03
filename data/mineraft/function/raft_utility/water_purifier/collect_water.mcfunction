@@ -12,5 +12,5 @@ tag @s[tag=water_click,type=interaction] remove water_click
 tag @s[tag=planks_click,type=interaction] remove planks_click
 tag @s[tag=bottle_click,type=interaction] remove bottle_click
 tag @e[tag=this_facade,type=item_display] remove this_facade
-tag @s[tag=this_interact,type=interaction] remove this_interact
 tag @s[tag=this_interact,type=interaction] remove held_planks
+tag @s[tag=this_interact,type=interaction] remove this_interact

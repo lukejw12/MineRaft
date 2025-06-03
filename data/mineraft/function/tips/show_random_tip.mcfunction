@@ -1,7 +1,5 @@
-# Generate random number 1-10
-execute store result score #random dummy run random value 1..8
+execute store result score #random dummy run random value 1..11
 
-# Display the tip based on random number
 execute if score #random dummy matches 1 run bossbar set mineraft:tips name {"text":"Tip: Drink water regularly to maintain your hydration!","color":"gold"}
 execute if score #random dummy matches 2 run bossbar set mineraft:tips name {"text":"Tip: Unlock blueprints and recipes by discovering islands!","color":"gold"}
 execute if score #random dummy matches 3 run bossbar set mineraft:tips name {"text":"Tip: Storms can make the shark more agressive, stay prepared!","color":"gold"}
@@ -11,3 +9,5 @@ execute if score #random dummy matches 6 run bossbar set mineraft:tips name {"te
 execute if score #random dummy matches 7 run bossbar set mineraft:tips name {"text":"Tip: Pure water restores more hydration than unpure sources!","color":"gold"}
 execute if score #random dummy matches 8 run bossbar set mineraft:tips name {"text":"Tip: Cook food to get better nutrition and effects!","color":"gold"}
 execute if score #random dummy matches 9 run bossbar set mineraft:tips name {"text":"Tip: Run /trigger tips to toggle the preview of these tips!","color":"gold"}
+execute if score #random dummy matches 10 run bossbar set mineraft:tips name {"text":"Tip: Steve the shark is friendly! make sure to give him a big ole' hug!","color":"gold"}
+execute if score #random dummy matches 11 run bossbar set mineraft:tips name {"text":"Tip: Annoyed crafting planks 1 by 1? You can simply Bulk craft themm with logs!","color":"gold"}
