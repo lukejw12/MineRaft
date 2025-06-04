@@ -1,0 +1,8 @@
+tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Tools Categories --"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Metal Tools "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/tools/metal"},"color":"aqua","text":"View"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Stone Tools "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/tools/stone"},"color":"aqua","text":"View"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Wooden Tools "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/tools/wooden"},"color":"aqua","text":"View"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Weapons "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/tools/weapons"},"color":"aqua","text":"View"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Other Tools "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/tools/other"},"color":"aqua","text":"View"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-----------------------"}]
+tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/main"}}]

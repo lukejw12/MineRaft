@@ -1,0 +1,7 @@
+tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Crafting Materials --"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Basic Materials "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/crafting_materials/basic"},"color":"aqua","text":"View"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Advanced Materials "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/crafting_materials/advanced"},"color":"aqua","text":"View"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Tech Materials "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/crafting_materials/tech"},"color":"aqua","text":"View"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Blueprints "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/crafting_materials/blueprints"},"color":"aqua","text":"View"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-----------------------"}]
+tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/main"}}]

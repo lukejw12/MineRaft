@@ -1,0 +1,4 @@
+tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Blueprints --"}]
+tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Carpentry Table Blueprint "},"[",{"click_event":{"action":"run_command","command":"/give @s lapis_lazuli[item_name={translate:\"item.mineraft.blueprint\",fallback:\"Blueprint\"},item_model=\"blueprint\",consumable={consume_seconds:99999,animation:\"block\",has_consume_particles:0b},custom_data={blueprint_carpentry_table:1b},lore=[{text:\"Unlocks: Carpentry Table\",color:\"gray\",bold:0b,italic:0b,underlined:0b,strikethrough:0b,obfuscated:0b}]] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
+tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-----------------------"}]
+tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/crafting_materials/main"}}]
