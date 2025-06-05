@@ -24,7 +24,7 @@ Possible Trades
   2 carpentry kits
   3 dough
   Small Crop Plot blueprint
-  Compactor blueprint
+  Recycler blueprint
   Carpentry Table blueprint
   Advanced Rod Recipe
   10 sweet berries
@@ -70,7 +70,7 @@ Fishing Rework
   3% Treasure chest (3-5 scrap/metal, or 1-2 assorted tech items (circuit board or battery))
   10% Abandonded Fishing net (1-3 random fish from tier 2)
 
-Compactor
+Recycler
  Uses: Insert 20 value worth of spare junk to convert to trash cubes, accepts:
   scrap, (3 value)
   planks, (1 value)
@@ -95,10 +95,13 @@ Island Radar Upgrades
   Allows you to pick which island type to locate:
    tropical
    shipwrecked
-   quest
    trading post
 
-
+# Receiver
+ - Placable structure (1x1x1)
+ - When powered with batteries, shows a radar (static image)
+ - When clicking a powered receiver with a radar, will set the radar to locate the nearest story structure (can be cleared by clicking the radar, which will prompt a message before removing the target)
+ - Receiver will consume 1 battery every 8 minutes, (when battery is at 20% radar will flash red rather then green), yoou can right click with a battery to recharge it once it has died
 possible names
  Trap and Trade
  Voyage Beyond
@@ -107,24 +110,26 @@ possible names
 
 
 
-TO-DO:
+###### TO-DO: #######
 
 # Models
  - Trading post
- - Compactor
+ - Recycler
  - Portable Tradng Post
  - Foundation Counter
+ - Receiver
  ## Crop Plot
   - Wheat
   - Berries
 
 # Textures
- - Compactor
+ - Recycler
  - Portable Tradng Post
  - Foundation Counter
  - Farmers Almanac
  - Recipe Book
  - Trash Cube
+ - Receiver
  ## Fish
   - shrimp
   - Lion fish
@@ -137,11 +142,15 @@ TO-DO:
   - Collectors Rod
 
 # Placeable Structures
- - Compactor 1x1x2
+ - Recycler 1x1x2
  - Portable Trading Post 1x1x1
  - Foundation Counter 1x1x1 (Wall Mountable)
 
 # Island Types
  # Large Islands
-  - var_1 (simple island, huge bushel oof berrie bushes, 4 trees, some titanium at shoreline)
-  - var_2 (simple island, barren execpt for a cave, cave contains cave mushroom, a new cookable resource)
+  - var_1 (Tropical, simple island, huge bushel oof berrie bushes, 4 trees, some titanium at shoreline)
+  - var_2 (Tropical, simple island, barren execpt for a cave, cave contains cave mushroom, a new cookable resource)
+  - var_2 (Evergreen, simple island, very lushous with grass and flowers, new tree type, leaves have a chance to drop apples, and these trees have the highest plank drop amount in the game)
+ # Quests
+  - Radio Tower (contains lootchests with random loot, at very top contains a lore note, Recycler Blueprint, and a Receiver Blueprint)
+
