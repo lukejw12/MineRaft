@@ -104,3 +104,44 @@ possible names
  Voyage Beyond
  Merchantry
  Sail and Sell
+
+
+
+TO-DO:
+
+# Models
+ - Trading post
+ - Compactor
+ - Portable Tradng Post
+ - Foundation Counter
+ ## Crop Plot
+  - Wheat
+  - Berries
+
+# Textures
+ - Compactor
+ - Portable Tradng Post
+ - Foundation Counter
+ - Farmers Almanac
+ - Recipe Book
+ - Trash Cube
+ ## Fish
+  - shrimp
+  - Lion fish
+  - sharp carp
+  - lobster
+  - lunar fish
+  - gift fish
+ ## Rods
+  - Advanced Rod
+  - Collectors Rod
+
+# Placeable Structures
+ - Compactor 1x1x2
+ - Portable Trading Post 1x1x1
+ - Foundation Counter 1x1x1 (Wall Mountable)
+
+# Island Types
+ # Large Islands
+  - var_1 (simple island, huge bushel oof berrie bushes, 4 trees, some titanium at shoreline)
+  - var_2 (simple island, barren execpt for a cave, cave contains cave mushroom, a new cookable resource)
