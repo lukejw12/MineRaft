@@ -1,4 +1,3 @@
-# Similar to display.mcfunction but with hydration_color:"red"
 scoreboard players operation #temp recycler_id = @e[type=marker,tag=recycler_active,sort=nearest,limit=1,distance=..3] recycler_id
 execute as @e[type=marker,tag=recycler_active] if score @s recycler_id = #temp recycler_id run tag @s add ui_recycler
 
