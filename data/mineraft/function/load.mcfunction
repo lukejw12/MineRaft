@@ -141,3 +141,11 @@ scoreboard objectives add tip_timer dummy
 scoreboard players set #tip_timer tip_timer 0
 
 scoreboard objectives add discord trigger
+
+
+scoreboard objectives add recycler dummy
+scoreboard objectives add recycler_value dummy
+scoreboard objectives add recycler_timer dummy
+scoreboard objectives add battery_uses dummy
+scoreboard objectives add has_battery dummy
+scoreboard objectives add recycler_state dummy

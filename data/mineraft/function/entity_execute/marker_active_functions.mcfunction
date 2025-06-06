@@ -14,6 +14,7 @@ execute as @s[tag=cooking_pot] at @s run function mineraft:raft_utility/cooking_
 execute as @s[tag=trophy_board] at @s run function mineraft:raft_decor/trophy_board/place_trophy_board
 execute as @s[tag=solid_wooden_wall] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/raft_extension_was_placed
 execute as @s[tag=solid_l_junction_wall] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/solid_l_junction_wall/raft_extension_was_placed
+execute as @s[tag=recycler] at @s run function mineraft:raft_utility/recycler/raft_extension_was_placed
 
 
 
@@ -33,4 +34,4 @@ execute as @s[tag=simple_grill_active] at @s run function mineraft:raft_utility/
 execute as @s[tag=cooking_pot_active] at @s run function mineraft:raft_utility/cooking_pot/active_cooking_pot
 
 execute as @s[tag=trophy_board_active] at @s run function mineraft:raft_decor/trophy_board/update_trophy_board
- 
+execute as @s[tag=recycler_active] at @s run function mineraft:raft_utility/recycler/active_recycler

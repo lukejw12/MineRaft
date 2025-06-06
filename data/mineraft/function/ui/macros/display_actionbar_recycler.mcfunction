@@ -1,0 +1,4 @@
+execute as @e[type=marker,tag=ui_recycler,limit=1] run scoreboard players operation #temp_battery dummy = @s has_battery
+execute as @e[type=marker,tag=ui_recycler,limit=1] run scoreboard players operation #temp_uses dummy = @s battery_uses
+
+$title @s actionbar [{"color":"$(hydration_color)","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"},"color":"$(hydration_color)"},{"text":" | $(recycler_section)","color":"$(recycler_color)"},{"text":" | Battery: ","color":"gray"},{"score":{"name":"#temp_battery","objective":"dummy"},"color":"green"},{"text":"/1 Uses: ","color":"gray"},{"score":{"name":"#temp_uses","objective":"dummy"},"color":"green"},{"text":"/5","color":"gray"},{"text":" | ","color":"gray"},{"text":"$(weather_name)","color":"$(weather_color)"}]

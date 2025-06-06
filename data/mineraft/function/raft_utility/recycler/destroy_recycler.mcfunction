@@ -1,0 +1,9 @@
+scoreboard players operation #temp recycler_id = @s recycler_id
+
+execute as @e[type=item_display,tag=recycler_facade] if score @s recycler_id = #temp recycler_id run kill @s
+execute as @e[type=interaction,tag=recycler_interact] if score @s recycler_id = #temp recycler_id run kill @s
+summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{recycler_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["recycler"]},"minecraft:item_model":"minecraft:recycler","minecraft:item_name":{"translate":"item.mineraft.recycler","fallback":"Recycler"},"minecraft:rarity":"uncommon"}}}
+
+execute if score @s has_battery matches 1 if score @s battery_uses matches 1.. run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:orange_dye",count:1,components:{"minecraft:item_model":"minecraft:battery","minecraft:item_name":{"translate":"item.mineraft.battery","fallback":"Battery"}}}}
+
+kill @s
