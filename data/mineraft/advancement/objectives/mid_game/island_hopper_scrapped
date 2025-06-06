@@ -29,6 +29,7 @@
     },
     "visited_variant_1": {
       "trigger": "minecraft:location",
+      
       "conditions": {
         "player": {
           "location": {
