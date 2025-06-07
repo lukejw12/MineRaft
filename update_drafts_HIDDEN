@@ -70,7 +70,7 @@ Fishing Rework
   3% Treasure chest (3-5 scrap/metal, or 1-2 assorted tech items (circuit board or battery))
   10% Abandonded Fishing net (1-3 random fish from tier 2)
 
-Recycler
+## Recycler ✅
  Uses: Insert 20 value worth of spare junk to convert to trash cubes, accepts:
   scrap, (3 value)
   planks, (1 value)
@@ -114,7 +114,7 @@ possible names
 
 # Models
  - Trading post
- - Recycler
+ - Recycler ✅
  - Portable Tradng Post
  - Foundation Counter
  - Receiver
@@ -128,7 +128,7 @@ possible names
  - Foundation Counter
  - Farmers Almanac
  - Recipe Book
- - Trash Cube
+ - Trash Cube ✅
  - Receiver
  ## Fish
   - shrimp
@@ -142,7 +142,7 @@ possible names
   - Collectors Rod
 
 # Placeable Structures
- - Recycler 1x1x2
+ - Recycler 1x1x2 ✅
  - Portable Trading Post 1x1x1
  - Foundation Counter 1x1x1 (Wall Mountable)
 
