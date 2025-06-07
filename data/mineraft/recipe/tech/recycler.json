@@ -26,9 +26,9 @@
   "result": {
     "id": "minecraft:vex_spawn_egg",
     "components": {
-      "minecraft:item_model": "minecraft:recycler",
+      "minecraft:item_model": "minecraft:recycler_item",
       "minecraft:item_name": { 
-        "translate": "item.mineraft.recycler", 
+        "translate": "item.mineraft.recycler",
         "fallback": "Recycler" 
       },
       "minecraft:rarity": "uncommon",
