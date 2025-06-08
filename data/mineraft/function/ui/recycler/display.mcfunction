@@ -1,9 +1,20 @@
-scoreboard players operation #temp recycler_id = @e[type=marker,tag=recycler_active,sort=nearest,limit=1,distance=..3] recycler_id
+# Start raycast to find target recycler
+execute anchored eyes positioned ^ ^ ^ run function mineraft:ui/recycler/start_raycast
+
+# Only proceed if we found a recycler
+execute unless entity @e[tag=ui_target_recycler] run return 0
+
+# Get the recycler ID from the interaction entity and find the corresponding marker
+execute as @e[tag=ui_target_recycler,limit=1] run scoreboard players operation #temp recycler_id = @s recycler_id
 execute as @e[type=marker,tag=recycler_active] if score @s recycler_id = #temp recycler_id run tag @s add ui_recycler
+
+# Get values from the target recycler
 execute as @e[type=marker,tag=ui_recycler,limit=1] run scoreboard players operation #temp_capacity dummy = @s recycler_value
 execute as @e[type=marker,tag=ui_recycler,limit=1] run scoreboard players operation #temp_battery dummy = @s has_battery
 execute as @e[type=marker,tag=ui_recycler,limit=1] run scoreboard players operation #temp_uses dummy = @s battery_uses
 execute as @e[type=marker,tag=ui_recycler,limit=1] run scoreboard players operation #temp_state dummy = @s recycler_state
+
+# Display logic (all your existing commands)
 execute if score #temp_battery dummy matches 0 if score #current weather.state matches 0 run function mineraft:ui/macros/display_actionbar {pot_section:'"},{"text":" | Capacity: ","color":"gray"},{"score":{"name":"#temp_capacity","objective":"dummy"},"color":"white"},{"text":"/20 | Battery: ","color":"gray"},{"text":"0","color":"red"},{"text":"/1 | Uses: ","color":"gray"},{"text":"0","color":"red"},{"text":"/5","color":"gray', hydration_color:"aqua", weather_name:"Clear Skies", weather_color:"aqua"}
 execute if score #temp_battery dummy matches 0 if score #current weather.state matches 1 run function mineraft:ui/macros/display_actionbar {pot_section:'"},{"text":" | Capacity: ","color":"gray"},{"score":{"name":"#temp_capacity","objective":"dummy"},"color":"white"},{"text":"/20 | Battery: ","color":"gray"},{"text":"0","color":"red"},{"text":"/1 | Uses: ","color":"gray"},{"text":"0","color":"red"},{"text":"/5","color":"gray', hydration_color:"aqua", weather_name:"Light Breeze", weather_color:"blue"}
 execute if score #temp_battery dummy matches 0 if score #current weather.state matches 2 run function mineraft:ui/macros/display_actionbar {pot_section:'"},{"text":" | Capacity: ","color":"gray"},{"score":{"name":"#temp_capacity","objective":"dummy"},"color":"white"},{"text":"/20 | Battery: ","color":"gray"},{"text":"0","color":"red"},{"text":"/1 | Uses: ","color":"gray"},{"text":"0","color":"red"},{"text":"/5","color":"gray', hydration_color:"aqua", weather_name:"Storm", weather_color:"yellow"}
@@ -21,4 +32,6 @@ execute if score #temp_state dummy matches 0 if score #temp_battery dummy matche
 execute if score #temp_state dummy matches 0 if score #temp_battery dummy matches 1 if score #current weather.state matches 2 run function mineraft:ui/macros/display_actionbar {pot_section:'"},{"text":" | Capacity: ","color":"gray"},{"score":{"name":"#temp_capacity","objective":"dummy"},"color":"white"},{"text":"/20 | Battery: ","color":"gray"},{"score":{"name":"#temp_battery","objective":"dummy"},"color":"green"},{"text":"/1 | Uses: ","color":"gray"},{"score":{"name":"#temp_uses","objective":"dummy"},"color":"green"},{"text":"/5","color":"gray', hydration_color:"aqua", weather_name:"Storm", weather_color:"yellow"}
 execute if score #temp_state dummy matches 0 if score #temp_battery dummy matches 1 if score #current weather.state matches 3 run function mineraft:ui/macros/display_actionbar {pot_section:'"},{"text":" | Capacity: ","color":"gray"},{"score":{"name":"#temp_capacity","objective":"dummy"},"color":"white"},{"text":"/20 | Battery: ","color":"gray"},{"score":{"name":"#temp_battery","objective":"dummy"},"color":"green"},{"text":"/1 | Uses: ","color":"gray"},{"score":{"name":"#temp_uses","objective":"dummy"},"color":"green"},{"text":"/5","color":"gray', hydration_color:"aqua", weather_name:"Heavy Storm", weather_color:"gold"}
 
+# Clean up tags
 tag @e[tag=ui_recycler] remove ui_recycler
+tag @e[tag=ui_target_recycler] remove ui_target_recycler
