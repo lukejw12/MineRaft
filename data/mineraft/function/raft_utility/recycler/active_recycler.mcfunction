@@ -18,8 +18,8 @@ execute as @e[type=interaction,tag=this_recycler_interact] if data entity @s int
 execute as @e[type=interaction,tag=this_recycler_interact] if data entity @s interaction run data remove entity @s interaction
 execute if score @s recycler_state matches 1 run scoreboard players add @s recycler_timer 1
 
-execute if score @s recycler_state matches 1 if score @s recycler_timer matches 200.. run scoreboard players remove @s battery_uses 1
-execute if score @s recycler_state matches 1 if score @s recycler_timer matches 200.. run scoreboard players set @s recycler_timer 0
+execute if score @s recycler_state matches 1 if score @s recycler_timer matches 6000.. run scoreboard players remove @s battery_uses 1
+execute if score @s recycler_state matches 1 if score @s recycler_timer matches 6000.. run scoreboard players set @s recycler_timer 0
 execute if score @s recycler_state matches 1 if score @s recycler_timer matches 0 run scoreboard players set @s recycler_state 2
 
 execute if score @s battery_uses matches ..0 run scoreboard players set @s has_battery 0

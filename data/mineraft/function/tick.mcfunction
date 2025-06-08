@@ -37,3 +37,8 @@ function mineraft:triggers/tips/cycle_tips
 function mineraft:triggers/discord/discord_trigger
 scoreboard players enable @a tips
 scoreboard players enable @a discord
+function mineraft:trading_post/update_villager_trades
+execute as @e[type=villager,tag=register_entity,tag=!named] run data modify entity @s CustomName set value {"text":"Trading Post"}
+execute as @e[type=villager,tag=register_entity,tag=!named] run effect give @s invisibility infinite 100 true
+execute as @e[type=villager,tag=register_entity,tag=!named] run data modify entity @s CustomNameVisible set value 0b
+execute as @e[type=villager,tag=register_entity,tag=!named] run tag @s add named

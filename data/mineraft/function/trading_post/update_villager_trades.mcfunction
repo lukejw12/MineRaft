@@ -1,0 +1,1 @@
+execute as @a at @s run function mineraft:trading_post/check_player_rep

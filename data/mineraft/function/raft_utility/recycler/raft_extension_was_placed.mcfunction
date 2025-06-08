@@ -54,7 +54,7 @@ execute at @s if entity @s[tag=valid_east] run summon marker ~ ~ ~ {Tags:["recyc
 execute at @s if entity @s[tag=valid_east] run setblock ~ ~ ~ barrier
 execute at @s if entity @s[tag=valid_east] run playsound minecraft:block.anvil.use block @a[distance=..10] ~ ~ ~ 1 1.5 1
 execute at @s if entity @s[tag=valid_east] run summon interaction ~ ~ ~ {width:1.02,height:1.8,response:true,Tags:["recycler_interact","recent_spawned"]}
-execute at @s if entity @s[tag=valid_east] run summon item_display ~ ~0.3 ~ {Rotation:[180f,0f],item_display:"ground",Tags:["recycler_facade","recent_spawned"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:recycler"}}}
+execute at @s if entity @s[tag=valid_east] run summon item_display ~ ~0.3 ~ {Rotation:[180f,0f],item_display:"ground",Tags:["recycler_facade","recent_spawned"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:recycler"}}} 
 execute at @s if entity @s[tag=valid_east] run scoreboard players operation @e[tag=recent_spawned] recycler_id = #current recycler_id
 execute at @s if entity @s[tag=valid_east] run tag @e[tag=recent_spawned] remove recent_spawned
 execute at @s if entity @s[tag=valid_east] run kill @s

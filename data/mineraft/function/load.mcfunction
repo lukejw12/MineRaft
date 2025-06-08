@@ -149,3 +149,9 @@ scoreboard objectives add recycler_timer dummy
 scoreboard objectives add battery_uses dummy
 scoreboard objectives add has_battery dummy
 scoreboard objectives add recycler_state dummy
+scoreboard objectives add constants dummy
+scoreboard players set 20 constants 20
+scoreboard players set 60 constants 60
+
+
+scoreboard objectives add reputation dummy "Trading Reputation"

@@ -1,0 +1,16 @@
+data modify entity @s Offers.Recipes set value [\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:cod",count:1},sell:{id:"minecraft:gold_ingot",count:1}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:salmon",count:1},sell:{id:"minecraft:gold_ingot",count:2}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:paper",count:1,components:{"minecraft:item_name":"{\"text\":\"Shellfish\"}"}},sell:{id:"minecraft:gold_ingot",count:1}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:paper",count:1,components:{"minecraft:item_name":"{\"text\":\"Shrimp\"}"}},sell:{id:"minecraft:gold_ingot",count:2}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:paper",count:1,components:{"minecraft:item_name":"{\"text\":\"Lion Fish\"}"}},sell:{id:"minecraft:gold_ingot",count:2}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:paper",count:1,components:{"minecraft:item_name":"{\"text\":\"Sharp Carp\"}"}},sell:{id:"minecraft:gold_ingot",count:3}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:paper",count:1,components:{"minecraft:item_name":"{\"text\":\"Lobster\"}"}},sell:{id:"minecraft:gold_ingot",count:4}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:paper",count:1,components:{"minecraft:item_name":"{\"text\":\"Lunar Fish\"}"}},sell:{id:"minecraft:gold_ingot",count:4}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:paper",count:1,components:{"minecraft:item_name":"{\"text\":\"Gift Fish\"}"}},sell:{id:"minecraft:gold_ingot",count:5}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:gold_ingot",count:8},buyB:{id:"minecraft:brown_dye",count:3,components:{"minecraft:custom_data":{trash_cube:1b}}},sell:{id:"minecraft:prismarine_shard",count:1,components:{"minecraft:item_model":"minecraft:shark_head","minecraft:item_name":"{\"text\":\"Shark Head\"}"}}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:gold_ingot",count:9},buyB:{id:"minecraft:brown_dye",count:3,components:{"minecraft:custom_data":{trash_cube:1b}}},sell:{id:"minecraft:paper",count:1,components:{"minecraft:item_name":"{\"text\":\"Portable Trading Post Blueprint\"}"}}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:gold_ingot",count:6},buyB:{id:"minecraft:brown_dye",count:3,components:{"minecraft:custom_data":{trash_cube:1b}}},sell:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:item_model":"minecraft:cooking_pot","minecraft:item_name":"{\"text\":\"Cooking Pot\"}","minecraft:entity_data":{id:"minecraft:marker",Tags:["cooking_pot"]},"minecraft:custom_data":{cooking_pot_item:1b}}}},\
+  {maxUses:2147483647,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:gold_ingot",count:8},buyB:{id:"minecraft:brown_dye",count:3,components:{"minecraft:custom_data":{trash_cube:1b}}},sell:{id:"minecraft:paper",count:1,components:{"minecraft:item_name":"{\"text\":\"Collectors Rod Recipe\"}"}}}\
+]
+
