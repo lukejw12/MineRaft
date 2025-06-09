@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " 31",
+      " 12",
+      "1 2"
+    ],
+    "key": {
+      "1": [
+        "minecraft:repeating_command_block"
+      ],
+      "2": [
+        "command_block_minecart"
+      ],
+      "3": [
+        "minecraft:prismarine_crystals"
+      ]
+    },
+    "result": {
+      "id": "minecraft:fishing_rod",
+      "components": {
+        "minecraft:item_model": "advanced_rod",
+        "minecraft:item_name": {
+          "translate": "item.mineraft.advanced_rod", 
+          "fallback": "Advanced Rod" 
+        },
+        "minecraft:rarity": "uncommon",
+        "minecraft:max_damage": 220,
+        "minecraft:custom_data": {
+        "advanced_rod": true
+      }
+      },
+      "count": 1
+    },
+    "show_notification": true
+  }

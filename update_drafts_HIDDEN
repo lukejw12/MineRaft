@@ -8,7 +8,7 @@ trading posts spawning on large type islands,
 4 new islands (type:Large),
 
 
-# Trading Post
+# Trading Post ✅
 Trade rare fish trading coins, and trash cubes for valuables
 unlock reputation based off of trade value, higher rep unlocks higher trades
 reputation levels
@@ -48,7 +48,7 @@ Possible Trades
   Cooking Pot blueprint
   Collectors Rod Recipe
 
-Fishing Rework
+Fishing Rework ✅
  Fish Types
   Level 1
    Cod
@@ -113,7 +113,7 @@ possible names
 ###### TO-DO: #######
 
 # Models
- - Trading post
+ - Trading post ✅
  - Recycler ✅
  - Portable Tradng Post✅
  - Foundation Counter
@@ -131,15 +131,15 @@ possible names
  - Trash Cube ✅
  - Receiver
  ## Fish
-  - shrimp
-  - Lion fish
-  - sharp carp
-  - lobster
-  - lunar fish
-  - gift fish
+  - shrimp✅
+  - Lion fish ✅
+  - sharp carp✅
+  - lobster✅
+  - lunar fish✅
+  - gift fish✅
  ## Rods
-  - Advanced Rod
-  - Collectors Rod
+  - Advanced Rod✅
+  - Collectors Rod✅
 
 # Placeable Structures
  - Recycler 1x1x2 ✅
@@ -149,14 +149,14 @@ possible names
 # Island Types
  # Large Islands
   - var_1 (Tropical, simple island, huge bushel oof berrie bushes, 4 trees, some titanium at shoreline)
-  - var_2 (Tropical, simple island, barren execpt for a cave, cave contains cave mushroom, a new cookable resource)
+  - var_2 (Tropical, simple island, barren execpt for a cave, cave contains cave mushroom, a new cookable resource)✅
   - var_2 (Evergreen, simple island, very lushous with grass and flowers, new tree type, leaves have a chance to drop apples, and these trees have the highest plank drop amount in the game)
  # Quests
   - Radio Tower (contains lootchests with random loot, at very top contains a lore note, Recycler Blueprint, and a Receiver Blueprint)
 
 
 
- ## TRADES (needs ingame balancing)
+ ## TRADES (needs ingame balancing)✅
  # FISH SELLING
  # Level 1 Fish
 Cod → 1 coin
