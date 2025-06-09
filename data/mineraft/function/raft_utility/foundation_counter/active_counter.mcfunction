@@ -14,7 +14,7 @@ execute as @e[type=item_display,tag=counter_facade] if score @s counter_id = #te
 execute as @e[type=interaction,tag=counter_interact] if score @s counter_id = #temp counter_id run tag @s add this_counter_interact
 execute as @e[type=interaction,tag=counter_break_interact] if score @s counter_id = #temp counter_id run tag @s add this_counter_break_interact
 
-execute as @e[type=interaction,tag=this_counter_interact] if data entity @s interaction on target if items entity @s weapon.* structure_block run function mineraft:hammer/hammer_right_click
+execute as @e[type=interaction,tag=this_counter_interact] if data entity @s attack as @e[type=marker,limit=1,sort=nearest,distance=..0.2] at @s run function mineraft:raft_utility/foundation_counter/destroy_counter
 execute as @e[type=interaction,tag=this_counter_interact] if data entity @s interaction run function mineraft:raft_utility/foundation_counter/process_interaction
 execute as @e[type=interaction,tag=this_counter_interact] if data entity @s interaction run data remove entity @s interaction
 tag @e[tag=this_counter_facade] remove this_counter_facade

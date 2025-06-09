@@ -4,7 +4,7 @@ idea: 1
 Concept:
 # Exploration
 first quest island, 
-trading posts spawning on large type islands, 
+trading posts spawning on large type islands, ✅
 4 new islands (type:Large),
 
 
@@ -87,7 +87,7 @@ Blank Recipe Book
 Farmers Almanac
  Discover new plantable crops by researching them in your almanac!
 
-Foundation Counter
+Foundation Counter✅
  counts how many foundations you have (have not decided whether its placable or an inventory item)
 
 Island Radar Upgrades
@@ -116,7 +116,7 @@ possible names
  - Trading post ✅
  - Recycler ✅
  - Portable Tradng Post✅
- - Foundation Counter
+ - Foundation Counter✅
  - Receiver
  ## Crop Plot
   - Wheat
@@ -125,7 +125,7 @@ possible names
 # Textures
  - Recycler ✅
  - Portable Trading Post✅
- - Foundation Counter
+ - Foundation Counter✅
  - Farmers Almanac
  - Recipe Book
  - Trash Cube ✅
@@ -144,7 +144,7 @@ possible names
 # Placeable Structures
  - Recycler 1x1x2 ✅
  - Portable Trading Post 1x1x1✅
- - Foundation Counter 1x1x1 (Wall Mountable)
+ - Foundation Counter 1x1x1 (Wall Mountable)✅
 
 # Island Types
  # Large Islands

@@ -105,17 +105,6 @@ execute if block ~ ~ ~ barrier if entity @e[tag=cooking_pot_active,tag=facing_so
 
 execute if block ~ ~ ~ barrier if entity @e[tag=cooking_pot_active,distance=..1,sort=nearest,limit=1] if entity @s[scores={hammer=2}] run setblock ~ ~ ~ air
 
-# FOUNDATION COUNTER HAMMER SUPPORT
-execute if block ~ ~ ~ barrier if entity @e[tag=counter_active,tag=facing_north,distance=..1,sort=nearest,limit=1] align xyz run summon item_display ~0.5 ~0.5 ~0.5 {Rotation:[90f,0f],Glowing:1b,item_display:"ground",Tags:["counter_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:foundation_counter","minecraft:enchantment_glint_override":false}}}
-
-execute if block ~ ~ ~ barrier if entity @e[tag=counter_active,tag=facing_west,distance=..1,sort=nearest,limit=1] align xyz run summon item_display ~0.5 ~0.5 ~0.5 {Rotation:[180f,0f],Glowing:1b,item_display:"ground",Tags:["counter_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:foundation_counter","minecraft:enchantment_glint_override":false}}}
-
-execute if block ~ ~ ~ barrier if entity @e[tag=counter_active,tag=facing_east,distance=..1,sort=nearest,limit=1] align xyz run summon item_display ~0.5 ~0.5 ~0.5 {Rotation:[0f,0f],Glowing:1b,item_display:"ground",Tags:["counter_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:foundation_counter","minecraft:enchantment_glint_override":false}}}
-
-execute if block ~ ~ ~ barrier if entity @e[tag=counter_active,tag=facing_south,distance=..1,sort=nearest,limit=1] align xyz run summon item_display ~0.5 ~0.5 ~0.5 {Rotation:[-90f,0f],Glowing:1b,item_display:"ground",Tags:["counter_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:foundation_counter","minecraft:enchantment_glint_override":false}}}
-
-execute if block ~ ~ ~ barrier if entity @e[tag=counter_active,distance=..1,sort=nearest,limit=1] if entity @s[scores={hammer=2}] run function mineraft:hammer/destroy_foundation_counter
-
 
 ## DECOR STAIRCASE
 execute if entity @e[type=shulker,distance=..0.4] if block ~ ~ ~ #raft_materials if blocks ~ ~1 ~-1 ~ ~2 ~-1 ~ 300 ~ masked if entity @e[limit=1,sort=nearest,type=marker,tag=wooden_stairs,tag=facing_north,distance=..1] align xyz positioned ~0.5 ~ ~0.5 run summon item_display ~ ~1.3 ~-1 {Glowing:1b,item_display:"ground",Rotation:[0F,0F],Tags:["raft_extension_display","displayed","facing_north"],glow_color_override:16711680,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:enchantment_glint_override":false,"minecraft:item_model":"minecraft:wooden_staircase"}}}
