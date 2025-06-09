@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "131",
+    "242",
+    "131"
+  ],
+  "key": {
+    "1": [
+      "minecraft:test_instance_block"
+    ],
+    "2": [
+      "minecraft:prismarine_crystals"
+    ],
+    "3": [
+      "minecraft:purple_dye"
+    ],
+    "4": [
+      "minecraft:emerald_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:vex_spawn_egg",
+    "components": {
+      "minecraft:custom_data": {
+        "portable_trading_post_item": true
+      },
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "portable_trading_post"
+        ]
+      },
+      "minecraft:item_model": "minecraft:portable_trading_post_item",
+      "minecraft:item_name": {
+        "translate": "item.mineraft.portable_trading_post",
+        "fallback": "Portable Trading Post"
+      },
+      "minecraft:rarity": "epic"
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

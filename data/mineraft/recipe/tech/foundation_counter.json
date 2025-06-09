@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "121",
+    "343",
+    "121"
+  ],
+  "key": {
+    "1": [
+      "minecraft:jigsaw"
+    ],
+    "2": [
+      "minecraft:yellow_dye"
+    ],
+    "3": [
+      "minecraft:prismarine_crystals"
+    ],
+    "4": [
+      "minecraft:repeating_command_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:vex_spawn_egg",
+    "components": {
+      "minecraft:item_model": "minecraft:foundation_counter_item",
+      "minecraft:item_name": { 
+        "translate": "item.mineraft.foundation_counter", 
+        "fallback": "Foundation Counter" 
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "foundation_counter"
+        ]
+      },
+      "minecraft:custom_data": {
+        "foundation_counter_item": true
+      }
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

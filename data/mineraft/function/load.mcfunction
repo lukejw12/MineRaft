@@ -155,3 +155,10 @@ scoreboard players set 60 constants 60
 
 
 scoreboard objectives add reputation dummy "Trading Reputation"
+
+scoreboard objectives add portable_trading_post_id dummy
+scoreboard objectives add portable_trading_post dummy
+
+scoreboard objectives add counter_id dummy
+scoreboard objectives add foundation_counter dummy
+scoreboard objectives add foundation_count dummy

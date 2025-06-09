@@ -15,9 +15,11 @@ execute as @s[tag=trophy_board] at @s run function mineraft:raft_decor/trophy_bo
 execute as @s[tag=solid_wooden_wall] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/raft_extension_was_placed
 execute as @s[tag=solid_l_junction_wall] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/solid_l_junction_wall/raft_extension_was_placed
 execute as @s[tag=recycler] at @s run function mineraft:raft_utility/recycler/raft_extension_was_placed
+execute as @s[tag=portable_trading_post] at @s run function mineraft:raft_utility/portable_trading_post/raft_extension_was_placed
+execute as @s[tag=foundation_counter] at @s run function mineraft:raft_utility/foundation_counter/place_counter
 
 
-
+execute as @s[tag=counter_active] at @s run function mineraft:raft_utility/foundation_counter/active_counter
 execute as @s[tag=solid_l_junction_wall_active] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/solid_l_junction_wall/wall_ticking
 execute as @s[tag=solid_wooden_wall_active] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/wall_ticking
 execute as @s[tag=active_net] at @s run function mineraft:raft_extension/collection_net/active_net/active_fishing_net
@@ -35,3 +37,4 @@ execute as @s[tag=cooking_pot_active] at @s run function mineraft:raft_utility/c
 
 execute as @s[tag=trophy_board_active] at @s run function mineraft:raft_decor/trophy_board/update_trophy_board
 execute as @s[tag=recycler_active] at @s run function mineraft:raft_utility/recycler/active_recycler
+execute as @s[tag=portable_trading_post_active] at @s run function mineraft:raft_utility/portable_trading_post/active_portable_trading_post

@@ -6,5 +6,7 @@ execute if score @s hydration matches 6.. if predicate mineraft:looking_at_cooki
 execute if score @s hydration matches ..5 if predicate mineraft:looking_at_cooking_pot run function mineraft:ui/cooking_pot/display_low
 execute if score @s hydration matches 6.. if predicate mineraft:looking_at_recycler run function mineraft:ui/recycler/display
 execute if score @s hydration matches ..5 if predicate mineraft:looking_at_recycler run function mineraft:ui/recycler/display_low
-execute if score @s hydration matches 6.. unless predicate mineraft:looking_at_cooking_pot unless predicate mineraft:looking_at_recycler run function mineraft:ui/display_simple
-execute if score @s hydration matches ..5 unless predicate mineraft:looking_at_cooking_pot unless predicate mineraft:looking_at_recycler run function mineraft:ui/display_simple_low
+execute if score @s hydration matches 6.. if predicate mineraft:looking_at_foundation_counter run function mineraft:ui/foundation_counter/display
+execute if score @s hydration matches ..5 if predicate mineraft:looking_at_foundation_counter run function mineraft:ui/foundation_counter/display_low
+execute if score @s hydration matches 6.. unless predicate mineraft:looking_at_cooking_pot unless predicate mineraft:looking_at_recycler unless predicate mineraft:looking_at_foundation_counter run function mineraft:ui/display_simple
+execute if score @s hydration matches ..5 unless predicate mineraft:looking_at_cooking_pot unless predicate mineraft:looking_at_recycler unless predicate mineraft:looking_at_foundation_counter run function mineraft:ui/display_simple_low

@@ -42,6 +42,8 @@ execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:cus
 execute if items entity @s weapon.mainhand minecraft:allay_spawn_egg[minecraft:custom_data={solid_wooden_wall:1b}] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/is_holding_item
 execute if items entity @s weapon.mainhand minecraft:allay_spawn_egg[minecraft:custom_data={solid_l_junction_wall:1b}] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/solid_l_junction_wall/is_holding_item
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={recycler_item:1b}] at @s run function mineraft:raft_utility/recycler/is_holding_item
+execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={portable_trading_post_item:1b}] at @s run function mineraft:raft_utility/portable_trading_post/is_holding_item
+execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={foundation_counter_item:1b}] at @s run function mineraft:raft_utility/foundation_counter/is_holding_item
 execute as @s at @s run function mineraft:hydration/hydration_deplenish
 
 attribute @s block_interaction_range base reset
