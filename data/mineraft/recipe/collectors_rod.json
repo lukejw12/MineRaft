@@ -26,7 +26,7 @@
   "result": {
     "id": "minecraft:fishing_rod",
     "components": {
-      "minecraft:item_model": "minecraft:collectors_rod",
+      "minecraft:item_model": "collectors_rod",
       "minecraft:item_name": {
         "translate": "item.mineraft.collectors_rod",
         "fallback": "Collectors Rod"
