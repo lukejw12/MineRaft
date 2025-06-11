@@ -90,14 +90,14 @@ Farmers Almanac
 ## Foundation Counter✅
  counts how many foundations you have (have not decided whether its placable or an inventory item)
 
-Island Radar Upgrades
+## Island Radar Upgrades (Scrapped in favor of the receiver)
  Island Identifier
   Allows you to pick which island type to locate:
    tropical
    shipwrecked
    trading post
 
-# Receiver
+# Receiver✅
  - Placable structure (1x1x1)
  - When powered with batteries, shows a radar (static image)
  - When clicking a powered receiver with a radar, will set the radar to locate the nearest story structure (can be cleared by clicking the radar, which will prompt a message before removing the target)
@@ -117,7 +117,7 @@ possible names
  - Recycler ✅
  - Portable Tradng Post✅
  - Foundation Counter✅
- - Receiver
+ - Receiver✅
  ## Crop Plot
   - Wheat
   - Berries
@@ -129,7 +129,7 @@ possible names
  - Farmers Almanac
  - Recipe Book
  - Trash Cube ✅
- - Receiver
+ - Receiver✅
  ## Fish
   - shrimp✅
   - Lion fish ✅
@@ -145,7 +145,7 @@ possible names
  - Recycler 1x1x2 ✅
  - Portable Trading Post 1x1x1✅
  - Foundation Counter 1x1x1 (Wall Mountable)✅
- - Receiver
+ - Receiver✅
 
 # Island Types
  # Large Islands

@@ -4,11 +4,11 @@
   "pattern": [
     "121",
     "343",
-    "565"
+    "131"
   ],
   "key": {
     "1": [
-      "minecraft:test_instance_block"
+      "minecraft:repeating_command_block"
     ],
     "2": [
       "minecraft:yellow_dye"
@@ -18,12 +18,6 @@
     ],
     "4": [
       "minecraft:orange_dye"
-    ],
-    "5": [
-      "minecraft:repeating_command_block"
-    ],
-    "6": [
-      "minecraft:compass"
     ]
   },
   "result": {

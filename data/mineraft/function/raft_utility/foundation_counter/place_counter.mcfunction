@@ -39,7 +39,7 @@ execute if entity @s[tag=valid_east] run scoreboard players operation #current c
 execute if entity @s[tag=valid_east] run summon marker ~ ~ ~ {Tags:["counter_active","facing_west","recent_spawned"]}
 execute if entity @s[tag=valid_east] run playsound minecraft:block.wood.place block @a[distance=..10] ~ ~ ~ 1 0.8 1
 execute if entity @s[tag=valid_east] run summon interaction ~0.3 ~0.3 ~ {width:0.5,height:0.5,response:true,Tags:["counter_interact","recent_spawned"]}
-execute if entity @s[tag=valid_east] align xyz run summon item_display ~0.35 ~0.5 ~0.5 {Rotation:[180f,0f],item_display:"ground",Tags:["counter_facade","recent_spawned"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:foundation_counter"}}}
+execute if entity @s[tag=valid_east] align xyz run summon item_display ~0.65 ~0.5 ~0.5 {Rotation:[180f,0f],item_display:"ground",Tags:["counter_facade","recent_spawned"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:foundation_counter"}}}
 execute if entity @s[tag=valid_east] run scoreboard players operation @e[tag=recent_spawned] counter_id = #current counter_id
 execute if entity @s[tag=valid_east] run tag @e[tag=recent_spawned] remove recent_spawned
 execute if entity @s[tag=valid_east] run kill @s
@@ -59,7 +59,7 @@ execute if entity @s[tag=valid_west] run scoreboard players operation #current c
 execute if entity @s[tag=valid_west] run summon marker ~ ~ ~ {Tags:["counter_active","facing_east","recent_spawned"]}
 execute if entity @s[tag=valid_west] run playsound minecraft:block.wood.place block @a[distance=..10] ~ ~ ~ 1 0.8 1
 execute if entity @s[tag=valid_west] run summon interaction ~-0.3 ~0.3 ~ {width:0.5,height:0.5,response:true,Tags:["counter_interact","recent_spawned"]}
-execute if entity @s[tag=valid_west] align xyz run summon item_display ~0.65 ~0.5 ~0.5 {Rotation:[0f,0f],item_display:"ground",Tags:["counter_facade","recent_spawned"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:foundation_counter"}}}
+execute if entity @s[tag=valid_west] align xyz run summon item_display ~0.35 ~0.5 ~0.5 {Rotation:[0f,0f],item_display:"ground",Tags:["counter_facade","recent_spawned"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:foundation_counter"}}}
 execute if entity @s[tag=valid_west] run scoreboard players operation @e[tag=recent_spawned] counter_id = #current counter_id
 execute if entity @s[tag=valid_west] run tag @e[tag=recent_spawned] remove recent_spawned
 execute if entity @s[tag=valid_west] run kill @s
