@@ -9,11 +9,11 @@ execute at @s if entity @s[tag=valid_north] run scoreboard players add #max rece
 execute at @s if entity @s[tag=valid_north] run scoreboard players operation #current receiver_id = #max receiver_id
 
 execute at @s if entity @s[tag=valid_north] run summon marker ~ ~ ~ {Tags:["receiver_active","facing_north","recent_spawned"]}
-execute at @s if entity @s[tag=valid_north] run fill ~-1 ~ ~ ~1 ~1 ~ barrier
+execute at @s if entity @s[tag=valid_north] run fill ~-1 ~ ~ ~1 ~ ~ barrier
 execute at @s if entity @s[tag=valid_north] run playsound minecraft:block.anvil.use block @a[distance=..10] ~ ~ ~ 1 1.5 1
-execute at @s if entity @s[tag=valid_north] run summon interaction ~-1 ~ ~ {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
-execute at @s if entity @s[tag=valid_north] run summon interaction ~1 ~ ~ {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
-execute at @s if entity @s[tag=valid_north] run summon interaction ~ ~ ~ {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_north] run summon interaction ~-1 ~ ~ {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_north] run summon interaction ~1 ~ ~ {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_north] run summon interaction ~ ~ ~ {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
 execute at @s if entity @s[tag=valid_north] run summon item_display ~ ~0.3 ~ {Rotation:[0f,0f],item_display:"ground",Tags:["receiver_facade","recent_spawned"],item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:receiver"}}}
 execute at @s if entity @s[tag=valid_north] run scoreboard players operation @e[tag=recent_spawned] receiver_id = #current receiver_id
 execute at @s if entity @s[tag=valid_north] run tag @e[tag=recent_spawned] remove recent_spawned
@@ -25,11 +25,11 @@ execute at @s if entity @s[tag=valid_west] run scoreboard players add #max recei
 execute at @s if entity @s[tag=valid_west] run scoreboard players operation #current receiver_id = #max receiver_id
 
 execute at @s if entity @s[tag=valid_west] run summon marker ~ ~ ~ {Tags:["receiver_active","facing_west","recent_spawned"]}
-execute at @s if entity @s[tag=valid_west] run fill ~ ~ ~-1 ~ ~1 ~1 barrier
+execute at @s if entity @s[tag=valid_west] run fill ~ ~ ~-1 ~ ~ ~1 barrier
 execute at @s if entity @s[tag=valid_west] run playsound minecraft:block.anvil.use block @a[distance=..10] ~ ~ ~ 1 1.5 1
-execute at @s if entity @s[tag=valid_west] run summon interaction ~ ~ ~-1 {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
-execute at @s if entity @s[tag=valid_west] run summon interaction ~ ~ ~1 {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
-execute at @s if entity @s[tag=valid_west] run summon interaction ~ ~ ~ {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_west] run summon interaction ~ ~ ~-1 {width:1.02,height:2.055,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_west] run summon interaction ~ ~ ~1 {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_west] run summon interaction ~ ~ ~ {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
 execute at @s if entity @s[tag=valid_west] run summon item_display ~ ~0.3 ~ {Rotation:[90f,0f],item_display:"ground",Tags:["receiver_facade","recent_spawned"],item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:receiver"}}}
 execute at @s if entity @s[tag=valid_west] run scoreboard players operation @e[tag=recent_spawned] receiver_id = #current receiver_id
 execute at @s if entity @s[tag=valid_west] run tag @e[tag=recent_spawned] remove recent_spawned
@@ -41,11 +41,11 @@ execute at @s if entity @s[tag=valid_south] run scoreboard players add #max rece
 execute at @s if entity @s[tag=valid_south] run scoreboard players operation #current receiver_id = #max receiver_id
 
 execute at @s if entity @s[tag=valid_south] run summon marker ~ ~ ~ {Tags:["receiver_active","facing_south","recent_spawned"]}
-execute at @s if entity @s[tag=valid_south] run fill ~ ~ ~-1 ~ ~1 ~1 barrier
+execute at @s if entity @s[tag=valid_south] run fill ~ ~ ~-1 ~ ~ ~1 barrier
 execute at @s if entity @s[tag=valid_south] run playsound minecraft:block.anvil.use block @a[distance=..10] ~ ~ ~ 1 1.5 1
-execute at @s if entity @s[tag=valid_south] run summon interaction ~ ~ ~1 {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
-execute at @s if entity @s[tag=valid_south] run summon interaction ~ ~ ~ {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
-execute at @s if entity @s[tag=valid_south] run summon interaction ~ ~ ~-1 {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_south] run summon interaction ~ ~ ~1 {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_south] run summon interaction ~ ~ ~ {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_south] run summon interaction ~ ~ ~-1 {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
 execute at @s if entity @s[tag=valid_south] run summon item_display ~ ~0.3 ~ {Rotation:[-90f,0f],item_display:"ground",Tags:["receiver_facade","recent_spawned"],item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:receiver"}}}
 execute at @s if entity @s[tag=valid_south] run scoreboard players operation @e[tag=recent_spawned] receiver_id = #current receiver_id
 execute at @s if entity @s[tag=valid_south] run tag @e[tag=recent_spawned] remove recent_spawned
@@ -57,11 +57,11 @@ execute at @s if entity @s[tag=valid_east] run scoreboard players add #max recei
 execute at @s if entity @s[tag=valid_east] run scoreboard players operation #current receiver_id = #max receiver_id
 
 execute at @s if entity @s[tag=valid_east] run summon marker ~ ~ ~ {Tags:["receiver_active","facing_east","recent_spawned"]}
-execute at @s if entity @s[tag=valid_east] run fill ~-1 ~ ~ ~1 ~1 ~ barrier
+execute at @s if entity @s[tag=valid_east] run fill ~-1 ~ ~ ~1 ~ ~ barrier
 execute at @s if entity @s[tag=valid_east] run playsound minecraft:block.anvil.use block @a[distance=..10] ~ ~ ~ 1 1.5 1
-execute at @s if entity @s[tag=valid_east] run summon interaction ~1 ~ ~ {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
-execute at @s if entity @s[tag=valid_east] run summon interaction ~ ~ ~ {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
-execute at @s if entity @s[tag=valid_east] run summon interaction ~-1 ~ ~ {width:1.05,height:2.0,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_east] run summon interaction ~1 ~ ~ {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_east] run summon interaction ~ ~ ~ {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
+execute at @s if entity @s[tag=valid_east] run summon interaction ~-1 ~ ~ {width:1.02,height:2.05,response:true,Tags:["receiver_interact","recent_spawned"]}
 execute at @s if entity @s[tag=valid_east] run summon item_display ~ ~0.3 ~ {Rotation:[180f,0f],item_display:"ground",Tags:["receiver_facade","recent_spawned"],item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:receiver"}}}
 execute at @s if entity @s[tag=valid_east] run scoreboard players operation @e[tag=recent_spawned] receiver_id = #current receiver_id
 execute at @s if entity @s[tag=valid_east] run tag @e[tag=recent_spawned] remove recent_spawned
