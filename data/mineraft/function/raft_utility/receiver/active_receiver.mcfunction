@@ -1,3 +1,7 @@
+execute if score @s[tag=!loaded] receiver_has_battery matches 1 run forceload add ~-1 ~-1 ~1 ~1
+execute if score @s[tag=!loaded] receiver_has_battery matches 1 run tag @s add loaded
+execute if score @s[tag=loaded] receiver_has_battery matches 0 run forceload remove ~-1 ~-1 ~1 ~1
+execute if score @s[tag=loaded] receiver_has_battery matches 0 run tag @s remove loaded
 execute unless score @s receiver_id matches 0.. run scoreboard players set @s receiver_id 0
 execute unless score @s receiver_battery_timer matches 0.. run scoreboard players set @s receiver_battery_timer 0
 execute unless score @s receiver_has_battery matches 0.. run scoreboard players set @s receiver_has_battery 0
@@ -5,7 +9,7 @@ execute unless score @s receiver_has_battery matches 0.. run scoreboard players 
 execute unless block ~ ~ ~ barrier run function mineraft:raft_utility/receiver/destroy_receiver
 execute unless block ~ ~-1 ~ #raft_materials run function mineraft:raft_utility/receiver/destroy_receiver
 
-# Battery consumption logic (15 minutes = 18000 ticks)
+#(15 minutes = 18000 ticks)
 execute if score @s receiver_has_battery matches 1 run scoreboard players add @s receiver_battery_timer 1
 execute if score @s receiver_has_battery matches 1 if score @s receiver_battery_timer matches 18000.. run scoreboard players set @s receiver_has_battery 0
 execute if score @s receiver_has_battery matches 1 if score @s receiver_battery_timer matches 18000.. run scoreboard players set @s receiver_battery_timer 0

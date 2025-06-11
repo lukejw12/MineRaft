@@ -1,3 +1,4 @@
+execute as @e[tag=this_receiver] run scoreboard players operation @p receiver_linked = @s receiver_id
 tellraw @s [{"bold":true,"color":"blue","italic":false,"text":"-- Receiver Configuration --"}]
 tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Large Island "},"[",{"click_event":{"action":"run_command","command":"/trigger receiver_target set 1"},"color":"green","text":"Select"},{"color":"gold","text":"]"}]
 tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Small Island "},"[",{"click_event":{"action":"run_command","command":"/trigger receiver_target set 2"},"color":"green","text":"Select"},{"color":"gold","text":"]"}]

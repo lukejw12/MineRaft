@@ -5,14 +5,12 @@ tag @s remove valid_west
 
 scoreboard players set #counter_exists foundation_counter 0
 
-# I'm in the air space, check for wall blocks adjacent to me
 execute if entity @p[y_rotation=135..225] if block ~ ~ ~ air if block ~ ~ ~-1 #wall_materials run tag @s add valid_north
 execute if entity @p[y_rotation=225..315] if block ~ ~ ~ air if block ~1 ~ ~ #wall_materials run tag @s add valid_east
 execute if entity @p[y_rotation=-135..-45] if block ~ ~ ~ air if block ~1 ~ ~ #wall_materials run tag @s add valid_east
 execute if entity @p[y_rotation=-45..45] if block ~ ~ ~ air if block ~ ~ ~1 #wall_materials run tag @s add valid_south
 execute if entity @p[y_rotation=45..135] if block ~ ~ ~ air if block ~-1 ~ ~ #wall_materials run tag @s add valid_west
 
-# Check for existing counters
 execute if entity @s[tag=valid_north] if entity @e[tag=counter_active,distance=..0.5] run scoreboard players set #counter_exists foundation_counter 1
 execute if entity @s[tag=valid_east] if entity @e[tag=counter_active,distance=..0.5] run scoreboard players set #counter_exists foundation_counter 1
 execute if entity @s[tag=valid_south] if entity @e[tag=counter_active,distance=..0.5] run scoreboard players set #counter_exists foundation_counter 1
@@ -23,7 +21,6 @@ execute if score #counter_exists foundation_counter matches 1 run tag @s remove 
 execute if score #counter_exists foundation_counter matches 1 run tag @s remove valid_south
 execute if score #counter_exists foundation_counter matches 1 run tag @s remove valid_west
 
-# Place the counter (I'm already in the correct air space)
 execute if entity @s[tag=valid_north] run scoreboard players add #max counter_id 1
 execute if entity @s[tag=valid_north] run scoreboard players operation #current counter_id = #max counter_id
 execute if entity @s[tag=valid_north] run summon marker ~ ~ ~ {Tags:["counter_active","facing_south","recent_spawned"]}

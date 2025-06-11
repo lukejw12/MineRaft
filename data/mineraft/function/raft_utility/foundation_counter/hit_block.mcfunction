@@ -1,6 +1,5 @@
 scoreboard players set #hit foundation_counter 1
 
-# I'm AT the wall block, show preview in adjacent air space
 execute if block ~ ~ ~ #wall_materials if entity @s[y_rotation=135..225] positioned ~ ~ ~1 if block ~ ~ ~ air align xyz positioned ~0.5 ~0.5 ~0.35 unless block ~ ~ ~ air run summon item_display ~ ~ ~ {Rotation:[90f,0f],Glowing:1b,item_display:"ground",Tags:["counter_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:foundation_counter"}}}
 
 execute if block ~ ~ ~ #wall_materials if entity @s[y_rotation=135..225] positioned ~ ~ ~1 if block ~ ~ ~ air align xyz positioned ~0.5 ~0.5 ~0.35 if block ~ ~ ~ air if entity @e[tag=counter_active,distance=..1] run summon item_display ~ ~ ~ {Rotation:[90f,0f],Glowing:1b,item_display:"ground",Tags:["counter_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:foundation_counter"}}}

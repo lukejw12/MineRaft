@@ -3,6 +3,11 @@ execute unless score @s radar_target matches 1.. run bossbar set mineraft:radar/
 execute unless score @s radar_target matches 1.. run bossbar set mineraft:radar/locate_distance value 0
 execute unless score @s radar_target matches 1.. run return 0
 
+execute if score @s receiver_linked matches 1.. as @e[type=marker,tag=receiver_active] if score @s receiver_id = @p receiver_linked if score @s receiver_has_battery matches 0 run bossbar set mineraft:radar/locate_distance name [{"text":"Linked Receiver is unpowered, Power it with a battery!","color":"red"}]
+execute if score @s receiver_linked matches 1.. as @e[type=marker,tag=receiver_active] if score @s receiver_id = @p receiver_linked if score @s receiver_has_battery matches 0 run bossbar set mineraft:radar/locate_distance color red
+execute if score @s receiver_linked matches 1.. as @e[type=marker,tag=receiver_active] if score @s receiver_id = @p receiver_linked if score @s receiver_has_battery matches 0 run bossbar set mineraft:radar/locate_distance value 0
+execute if score @s receiver_linked matches 1.. as @e[type=marker,tag=receiver_active] if score @s receiver_id = @p receiver_linked if score @s receiver_has_battery matches 0 run return 0
+
 execute if score @s radar_target matches 1 store result score @s locate_distance run locate structure mineraft:large_island
 execute if score @s radar_target matches 2 run execute store result score @s locate_distance_1 run locate structure mineraft:small_tropical
 execute if score @s radar_target matches 2 run execute store result score @s locate_distance_2 run locate structure mineraft:small_tropical_var_1

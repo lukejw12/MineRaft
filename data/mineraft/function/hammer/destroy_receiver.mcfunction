@@ -1,5 +1,8 @@
 scoreboard players operation #temp receiver_id = @e[type=marker,tag=receiver_active,sort=nearest,limit=1,distance=..1] receiver_id
 
+execute as @a if score @s receiver_linked = #temp receiver_id run scoreboard players reset @s radar_target
+execute as @a if score @s receiver_linked = #temp receiver_id run scoreboard players reset @s receiver_linked
+
 execute as @e[type=item_display,tag=receiver_facade] if score @s receiver_id = #temp receiver_id run kill @s
 execute as @e[type=interaction,tag=receiver_interact] if score @s receiver_id = #temp receiver_id run kill @s
 

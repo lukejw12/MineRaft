@@ -169,3 +169,5 @@ scoreboard objectives add radar_target dummy
 scoreboard objectives add receiver dummy
 scoreboard objectives add receiver_battery_timer dummy
 scoreboard objectives add receiver_has_battery dummy
+
+scoreboard objectives add receiver_linked dummy
