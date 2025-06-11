@@ -44,6 +44,8 @@ execute if items entity @s weapon.mainhand minecraft:allay_spawn_egg[minecraft:c
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={recycler_item:1b}] at @s run function mineraft:raft_utility/recycler/is_holding_item
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={portable_trading_post_item:1b}] at @s run function mineraft:raft_utility/portable_trading_post/is_holding_item
 execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={foundation_counter_item:1b}] at @s run function mineraft:raft_utility/foundation_counter/is_holding_item
+execute if items entity @s weapon.mainhand minecraft:vex_spawn_egg[minecraft:custom_data={receiver_item:1b}] run function mineraft:raft_utility/receiver/is_holding_item
+
 execute as @s at @s run function mineraft:hydration/hydration_deplenish
 
 attribute @s block_interaction_range base reset

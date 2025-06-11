@@ -17,8 +17,10 @@ execute as @s[tag=solid_l_junction_wall] at @s run function mineraft:raft_decor/
 execute as @s[tag=recycler] at @s run function mineraft:raft_utility/recycler/raft_extension_was_placed
 execute as @s[tag=portable_trading_post] at @s run function mineraft:raft_utility/portable_trading_post/raft_extension_was_placed
 execute as @s[tag=foundation_counter] at @s run function mineraft:raft_utility/foundation_counter/place_counter
+execute as @s[tag=receiver] at @s run function mineraft:raft_utility/receiver/raft_extension_was_placed
 
 
+execute as @s[tag=receiver_active] at @s run function mineraft:raft_utility/receiver/active_receiver
 execute as @s[tag=counter_active] at @s run function mineraft:raft_utility/foundation_counter/active_counter
 execute as @s[tag=solid_l_junction_wall_active] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/solid_l_junction_wall/wall_ticking
 execute as @s[tag=solid_wooden_wall_active] at @s run function mineraft:raft_decor/wall/solid_wooden_wall/wall_ticking

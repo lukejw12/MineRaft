@@ -87,7 +87,7 @@ Blank Recipe Book
 Farmers Almanac
  Discover new plantable crops by researching them in your almanac!
 
-Foundation Counter✅
+## Foundation Counter✅
  counts how many foundations you have (have not decided whether its placable or an inventory item)
 
 Island Radar Upgrades
@@ -145,6 +145,7 @@ possible names
  - Recycler 1x1x2 ✅
  - Portable Trading Post 1x1x1✅
  - Foundation Counter 1x1x1 (Wall Mountable)✅
+ - Receiver
 
 # Island Types
  # Large Islands

@@ -1,0 +1,1 @@
+execute as @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:raft_utility/receiver/start_ray

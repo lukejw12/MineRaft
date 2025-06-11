@@ -42,3 +42,7 @@ execute as @e[type=villager,tag=register_entity,tag=!named] run data modify enti
 execute as @e[type=villager,tag=register_entity,tag=!named] run effect give @s invisibility infinite 100 true
 execute as @e[type=villager,tag=register_entity,tag=!named] run data modify entity @s CustomNameVisible set value 0b
 execute as @e[type=villager,tag=register_entity,tag=!named] run tag @s add named
+
+execute as @e[type=marker,tag=receiver_active] at @s run function mineraft:raft_utility/receiver/active_receiver
+scoreboard players enable @a receiver_target
+execute as @a[scores={receiver_target=1..}] run function mineraft:raft_utility/receiver/target_selection

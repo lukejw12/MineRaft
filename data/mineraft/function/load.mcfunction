@@ -162,3 +162,8 @@ scoreboard objectives add portable_trading_post dummy
 scoreboard objectives add counter_id dummy
 scoreboard objectives add foundation_counter dummy
 scoreboard objectives add foundation_count dummy
+
+scoreboard objectives add receiver_id dummy
+scoreboard objectives add receiver_target trigger
+scoreboard objectives add radar_target dummy
+scoreboard objectives add receiver dummy
