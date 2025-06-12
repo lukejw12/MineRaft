@@ -7,3 +7,4 @@ execute unless block ~ ~ ~ #valid_center_blocks run setblock ~ ~-1 ~ water repla
 execute unless block ~ ~ ~ #valid_center_blocks run kill @s
 
 execute as @e[type=item,tag=resources,distance=..3] at @s run function mineraft:raft_extension/collection_net/active_net/process_item
+execute as @e[type=interaction,tag=collection_net_interact,distance=..5] at @s if data entity @s interaction run function mineraft:raft_extension/collection_net/process_interaction

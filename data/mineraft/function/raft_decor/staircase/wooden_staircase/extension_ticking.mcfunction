@@ -1,3 +1,5 @@
+effect give @e[tag=staircase_steps,type=shulker] invisibility infinite 1 true
+
 execute unless block ~ ~-1 ~ #raft_materials run particle block_crumble{block_state:"minecraft:stripped_spruce_wood"} ~ ~ ~ 0.8 0.3 0.8 1 40 normal
 execute unless block ~ ~-1 ~ #minecraft:raft_materials run playsound minecraft:entity.zombie.break_wooden_door block @a[distance=..15] ~ ~ ~ 0.2 1.5
 
