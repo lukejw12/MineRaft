@@ -3,15 +3,15 @@
 ## TODO LIST
 
 ### Models Needed
-- Crop Plot variants (Wheat and Berries)
 
 ### Gameplay Systems Still Needed
 
-- New plantable crops
 
 ### Remaining Priorities
 
-3. Crop Plot model variants (Wheat/Berries)
+
+
+
 
 ## SCRAPPED FEATURES
 - Farmers Almanac
@@ -31,6 +31,7 @@
 - Receiver system with battery consumption
 - Radar-receiver linking system
 - All trade values and pricing
+- New plantable crops
 
 ### World Generation
 - Large island (just a greener version of var 2) + trading post spawn chance
@@ -44,6 +45,7 @@
 - Advanced Rod and Collectors Rod textures
 - Trash Cube texture
 - Cave mushroom as cookable resource
+3. Crop Plot model variants (Wheat/Berries)
 
 
 
