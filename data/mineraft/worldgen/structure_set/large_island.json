@@ -3,6 +3,14 @@
     {
       "structure": "mineraft:large_island",
       "weight": 1
+    },
+    {
+      "structure": "mineraft:large_island_var_1",
+      "weight": 1
+    },
+    {
+      "structure": "mineraft:large_island_var_2",
+      "weight": 1
     }
   ],
   "placement": {

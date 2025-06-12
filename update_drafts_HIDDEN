@@ -1,210 +1,108 @@
-## secret update ideas
-idea: 1
-0.7
-Concept:
-# Exploration
-first quest island, 
-trading posts spawning on large type islands, ✅
-4 new islands (type:Large),
+# MINERAFT UPDATE 0.7 - COMPREHENSIVE DOCUMENTATION
 
+## TODO LIST
 
-# Trading Post ✅
-Trade rare fish trading coins, and trash cubes for valuables
-unlock reputation based off of trade value, higher rep unlocks higher trades
-reputation levels✅
- Level 1 (default)✅
- Level 2 (300 rep)✅
- Level 3 (3000 rep)✅
-Possible Trades
- Level 1
-  10 planks
-  3 scrap
-  2 metal
-  8 rope
-  2 carpentry kits
-  3 dough
-  Small Crop Plot blueprint
-  Recycler blueprint
-  Carpentry Table blueprint
-  Advanced Rod Recipe
-  10 sweet berries
-  Farmers Almanac
-  Blank Recipe Book
- Level 2
-  10 scrap
-  2 Collection net
-  20 planks
-  5 nails
-  8 thatch
-  10 loose slate
-  20 cobblestone
-  Large Crop Plot blueprint
-  Foundation Counter blueprint
-  Crispy Cod Soup cooking pot recipe
-  Island Radar Upgrade: (Island Identifier)
- Level 3
-  1 Shark Head
-  Portable Trading Post blueprint
-  Cooking Pot blueprint
-  Collectors Rod Recipe
+### Models Needed
+- Crop Plot variants (Wheat and Berries)
 
-Fishing Rework ✅
- Fish Types
-  Level 1
-   Cod✅
-   salmon✅
-   shellfish✅
-   shrimp✅
-  Level 2
-   Lion fish✅
-   sharp carp✅
-  Level 3
-   lobster✅
-   lunar fish✅
-   gift fish✅
- # (SCRAPPED) Fishing levels (was scrapped due to introduction of new rods that do essentially the same thing)
-  Level 1 (default) X
-  Level 2 (70 fishing exp) X
-  Level 3 (500 Fishing exp) X
- Fishing Loot
-  3% Treasure chest (3-5 scrap/metal, or 1-2 assorted tech items (circuit board or battery)) X
-  10% Abandonded Fishing net (1-3 random fish from tier 2) X
+### Gameplay Systems Still Needed
+- Cave mushroom as cookable resource
+- New plantable crops
 
-## Recycler ✅
- Uses: Insert 20 value worth of spare junk to convert to trash cubes, accepts:
-  scrap, (3 value)✅
-  planks, (1 value)✅
-  nails, (5 value)✅
-  plastic (2 value)✅
-  string (1 value)✅
+### Remaining Priorities
+1. Cave mushroom implementation
+3. Crop Plot model variants (Wheat/Berries)
 
-Blank Recipe Book
- Holds recipes obtained from exploration, 
- when clicking a recipe in the book 
- (if required materials are present), 
- and then clicking the cooking pot, will cook premium recipes
+## SCRAPPED FEATURES
+- Farmers Almanac
+- Recipe Book (Premium recipe mechanics for cooking pot)
+- Apple drops from evergreen trees
+- Fishing Leveling system (Level 1-3 progression)
+- Fishing Loot (3% Treasure chest, 10% Abandoned Fishing net)
+- Island Radar Upgrades (Scrapped in favor of receiver system)
 
-Farmers Almanac
- Discover new plantable crops by researching them in your almanac!
+## COMPLETED FEATURES
 
-## Foundation Counter✅
- counts how many foundations you have (have not decided whether its placable or an inventory item)
+### Core Systems
+- Trading Post system with reputation levels (1-3)
+- Fishing Rework with 9 fish types across 3 tiers
+- Recycler mechanics (20 value conversion to trash cubes)
+- Foundation Counter (counts raft foundations)
+- Receiver system with battery consumption
+- Radar-receiver linking system
+- All trade values and pricing
 
-## Island Radar Upgrades (Scrapped in favor of the receiver)
- Island Identifier
-  Allows you to pick which island type to locate:
-   tropical
-   shipwrecked
-   trading post
+### World Generation
+- Large island (just a greener version of var 2) + trading post spawn chance
+- Large island var_1 (Evergreen with berry bushes, 4-6 trees) + trading post spawn chance
+- Large island var_2 (Barren tropical with cave mushroom cave) + trading post spawn chance
+- Radio Tower quest structure with loot tables
 
-# Receiver✅
- - Placable structure (1x1x1)
- - When powered with batteries, shows a radar (static image)
- - When clicking a powered receiver with a radar, will set the radar to locate the nearest story structure (can be cleared by clicking the radar, which will prompt a message before removing the target)
- - Receiver will consume 1 battery every 8 minutes, (when battery is at 20% radar will flash red rather then green), yoou can right click with a battery to recharge it once it has died
-possible names
- Trap and Trade✅
- Voyage Beyond
- Merchantry
- Sail and Sell
+### Models and Textures
+- Trading post, Recycler, Portable Trading Post, Foundation Counter, Receiver
+- All fish textures (shrimp, lion fish, sharp carp, lobster, lunar fish, gift fish)
+- Advanced Rod and Collectors Rod textures
+- Trash Cube texture
 
 
 
-###### TO-DO: #######
+## ORIGINAL IDEA DRAFT
 
-# Models
- - Trading post ✅
- - Recycler ✅
- - Portable Tradng Post✅
- - Foundation Counter✅
- - Receiver✅
- ## Crop Plot
-  - Wheat
-  - Berries
+### Exploration Concept
+- First quest island with trading posts on large islands
+- 4 new large island variants for exploration
+- Story-driven quest structure with Radio Tower
 
-# Textures
- - Recycler ✅
- - Portable Trading Post✅
- - Foundation Counter✅
- - Farmers Almanac
- - Recipe Book
- - Trash Cube ✅
- - Receiver✅
- ## Fish
-  - shrimp✅
-  - Lion fish ✅
-  - sharp carp✅
-  - lobster✅
-  - lunar fish✅
-  - gift fish✅
- ## Rods
-  - Advanced Rod✅
-  - Collectors Rod✅
+### Trading Post System
+- Trade rare fish for coins and trash cubes for valuables
+- Reputation-based unlocks with 3 tiers
+- Level 1: Basic materials and blueprints
+- Level 2: Advanced materials and structures  
+- Level 3: Epic items like Shark Head and premium blueprints
 
-# Placeable Structures
- - Recycler 1x1x2 ✅
- - Portable Trading Post 1x1x1✅
- - Foundation Counter 1x1x1 (Wall Mountable)✅
- - Receiver✅
+### Fishing Overhaul
+- 9 fish types across 3 difficulty tiers
+- Rod progression system replacing level-based fishing
+- Integration with trading economy
 
-# Island Types
- # Large Islands
-  - var_1 (Tropical, simple island, huge bushel oof berrie bushes, 4 trees, some titanium at shoreline)
-  - var_2 (Tropical, simple island, barren execpt for a cave, cave contains cave mushroom, a new cookable resource)✅
-  - var_2 (Evergreen, simple island, very lushous with grass and flowers, new tree type, leaves have a chance to drop apples, and these trees have the highest plank drop amount in the game)
- # Quests
-  - Radio Tower (contains lootchests with random loot, at very top contains a lore note, Recycler Blueprint, and a Receiver Blueprint)
+### Tech Structures
+- Recycler for converting junk to trash cubes
+- Foundation Counter for base management
+- Receiver for advanced radar targeting with battery power system
 
+### Fish Trading Values
+Level 1: Cod (1 coin), Salmon (2 coins), Shellfish (1 coin), Shrimp (2 coins)
+Level 2: Lion Fish (2 coins), Sharp Carp (3 coins)
+Level 3: Lobster (4 coins), Lunar Fish (4 coins), Gift Fish (5 coins)
 
+## UPDATE NAMES
 
- ## TRADES ✅
- # FISH SELLING
- # Level 1 Fish
-Cod → 1 coin
-Salmon → 2 coins  
-Shellfish → 1 coin
-Shrimp → 2 coins
+### Chosen Name
+- Trap and Trade
 
-# Level 2 Fish  
-Lion Fish → 2 coins
-Sharp Carp → 3 coins
+### Alternative Names Considered
+- Voyage Beyond
+- Merchantry
+- Sail and Sell
 
-# Level 3 Fish
-Lobster → 4 coins
-Lunar Fish → 4 coins
-Gift Fish → 5 coins
+## MISC TECHNICAL DETAILS
 
- # BUYING
-# t1 rep trades
-10 planks → 2 coins
-3 scrap → 4 coins
-5 loose slate → 2 coins + 2 trash cubes
-8 rope → 5 coins
-4 carpentry kits → 3 coins + 2 trash cubes
-3 dough → 1 coins
-Small Crop Plot blueprint → 4 coins + 3 trash cubes
-Recycler blueprint → 10 coins (coins only)
-Carpentry Table blueprint → 3 coins + 2 trash cubes
-Advanced Rod Recipe → 4 coins + 3 trash cubes
-10 sweet berries → 3 coins
-Farmers Almanac → 6 coins + 3 trash cubes
-Blank Recipe Book → 5 coins + 2 trash cubes
+### Recycler Accepted Materials
+- Scrap (3 value)
+- Planks (1 value)  
+- Nails (5 value)
+- Plastic (2 value)
+- String (1 value)
 
-# t2 rep trades
-10 scrap → 2 coins + 2 trash cubes
-2 foundation armor → 4 coins + 2 trash cubes
-25 planks → 8 coins  
-5 nails → 3 coins + 1 trash cubes
-8 thatch → 2 coins
-10 metal → 2 coins + 2 trash cubes
-20 cobblestone → 1 coin + 2 trash cubes
-Large Crop Plot blueprint → 6 coins + 3 trash cubes
-Foundation Counter blueprint → 5 coins + 3 trash cubes
-Crispy Cod Soup recipe → 4 coins + 2 trash cubes
-Island Radar Upgrade → 8 coins + 3 trash cubes
+### Receiver Specifications
+- Placeable structure (3x1x2)
+- Battery consumption: 1 battery every 15 minutes
+- Radar targeting for Large Islands, Small Islands, and Radio Tower
+- Forceloads 3x3 area when powered
+- Links with compass for location tracking
 
-# t3 trades
-1 Shark Head → 8 coins + 3 trash cubes
-Portable Trading Post blueprint → 9 coins + 9 trash cubes  
-Cooking Pot blueprint → 6 coins + 3 trash cubes
-Collectors Rod Recipe → 8 coins + 3 trash cubes
+### Structure Dimensions
+- Recycler: 1x1x2
+- Portable Trading Post: 1x1x1
+- Foundation Counter: 1x1x1 (Wall Mountable)
+- Receiver: 3x1x2
