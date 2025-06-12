@@ -35,8 +35,10 @@ function mineraft:weather/tick
 execute as @e[type=interaction,tag=collection_net_interact] at @s if data entity @s interaction run function mineraft:raft_extension/collection_net/process_interaction
 function mineraft:triggers/tips/cycle_tips
 function mineraft:triggers/discord/discord_trigger
+function mineraft:triggers/credits/credits_trigger
 scoreboard players enable @a tips
 scoreboard players enable @a discord
+scoreboard players enable @a credits
 function mineraft:trading_post/update_villager_trades
 execute as @e[type=villager,tag=register_entity,tag=!named] run data modify entity @s CustomName set value {"text":"Trading Post"}
 execute as @e[type=villager,tag=register_entity,tag=!named] run effect give @s invisibility infinite 100 true

@@ -142,6 +142,7 @@ scoreboard objectives add tip_timer dummy
 scoreboard players set #tip_timer tip_timer 0
 
 scoreboard objectives add discord trigger
+scoreboard objectives add credits trigger
 
 
 scoreboard objectives add recycler dummy
