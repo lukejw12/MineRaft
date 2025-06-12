@@ -17,6 +17,7 @@ execute as @a[tag=cooking_collector] run tag @s remove cooking_collector
 execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] run scoreboard players set @s cooking 0
 execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] run scoreboard players set @s ingredient_count 0
 execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] run scoreboard players set @s kelp_count 0
+execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] run scoreboard players set @s mushroom_count 0
 execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] run scoreboard players set @s dried_kelp_count 0
 execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] run scoreboard players set @s berries_count 0
 execute as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest,distance=..1] run scoreboard players set @s cod_count 0

@@ -76,3 +76,11 @@ execute on target if items entity @s weapon.mainhand minecraft:sugar_cane as @e[
 execute on target if items entity @s weapon.mainhand minecraft:sugar_cane as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s ingredient_count 1
 execute on target if items entity @s weapon.mainhand minecraft:sugar_cane run clear @s minecraft:sugar_cane 1
 execute on target if items entity @s weapon.mainhand minecraft:sugar_cane run particle minecraft:bubble ~ ~0.5 ~ 0.1 0.1 0.1 0.1 5
+
+# cave mushroom (adds 15 to cooking score) - night vision
+
+execute on target if items entity @s weapon.mainhand minecraft:brown_mushroom as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s cooking 155
+execute on target if items entity @s weapon.mainhand minecraft:brown_mushroom as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s mushroom_count 1
+execute on target if items entity @s weapon.mainhand minecraft:brown_mushroom as @e[type=marker,tag=cooking_pot_active,limit=1,sort=nearest] run scoreboard players add @s ingredient_count 1
+execute on target if items entity @s weapon.mainhand minecraft:brown_mushroom run clear @s minecraft:brown_mushroom 1
+execute on target if items entity @s weapon.mainhand minecraft:brown_mushroom run particle minecraft:bubble ~ ~0.5 ~ 0.1 0.1 0.1 0.1 5

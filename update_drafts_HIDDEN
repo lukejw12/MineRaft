@@ -6,11 +6,11 @@
 - Crop Plot variants (Wheat and Berries)
 
 ### Gameplay Systems Still Needed
-- Cave mushroom as cookable resource
+
 - New plantable crops
 
 ### Remaining Priorities
-1. Cave mushroom implementation
+
 3. Crop Plot model variants (Wheat/Berries)
 
 ## SCRAPPED FEATURES
@@ -43,6 +43,7 @@
 - All fish textures (shrimp, lion fish, sharp carp, lobster, lunar fish, gift fish)
 - Advanced Rod and Collectors Rod textures
 - Trash Cube texture
+- Cave mushroom as cookable resource
 
 
 

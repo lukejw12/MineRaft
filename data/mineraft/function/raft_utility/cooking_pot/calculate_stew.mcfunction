@@ -22,6 +22,7 @@ execute if score @s raw_shark_count matches 3 run scoreboard players set #very_b
 execute if score @s water_count matches 3 run scoreboard players set #very_bonus temp 1
 execute if score @s pure_water_count matches 3 run scoreboard players set #very_bonus temp 1
 execute if score @s thatch_count matches 3 run scoreboard players set #very_bonus temp 1
+execute if score @s mushroom_count matches 3 run scoreboard players set #very_bonus temp 1
 
 
 # Kelp - Hearty
@@ -101,6 +102,14 @@ execute if score @s thatch_count matches 1.. if score #very_bonus temp matches 1
 execute if score @s thatch_count matches 1.. unless score #very_bonus temp matches 1 run data modify storage minecraft:temp stew_name append value "Energizing"
 execute if score @s thatch_count matches 1.. run data modify storage minecraft:temp effects append value {id:"minecraft:jump_boost",duration:600,amplifier:1}
 execute if score @s thatch_count matches 1.. run data modify storage minecraft:temp effect_name append value "Jump Boost"
+
+# mushroom - Sightful (Jump Boost)
+execute if score @s mushroom_count matches 1.. run scoreboard players add @s nutrition_value 6
+execute if score @s mushroom_count matches 1.. run scoreboard players add @s saturation_value 0
+execute if score @s mushroom_count matches 1.. if score #very_bonus temp matches 1 run data modify storage minecraft:temp stew_name append value "Very Sightful"
+execute if score @s mushroom_count matches 1.. unless score #very_bonus temp matches 1 run data modify storage minecraft:temp stew_name append value "Sightful"
+execute if score @s mushroom_count matches 1.. run data modify storage minecraft:temp effects append value {id:"minecraft:night_vision",duration:1600,amplifier:1}
+execute if score @s mushroom_count matches 1.. run data modify storage minecraft:temp effect_name append value "Night Vision"
 
 execute if score #very_bonus temp matches 1 run scoreboard players operation @s nutrition_value *= #2 dummy
 

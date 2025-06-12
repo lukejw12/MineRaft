@@ -118,6 +118,7 @@ scoreboard objectives add berries_count dummy
 scoreboard objectives add cod_count dummy
 scoreboard objectives add shark_count dummy
 scoreboard objectives add bread_count dummy
+scoreboard objectives add mushroom_count dummy
 
 scoreboard objectives add locate_distance dummy
 scoreboard objectives add locate_distance_1 dummy
