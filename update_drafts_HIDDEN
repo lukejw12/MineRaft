@@ -32,6 +32,9 @@
 - Radar-receiver linking system
 - All trade values and pricing
 - New plantable crops
+- credits trigger
+- discord trigger
+- new ui displays for crop plot, and tree crop plot
 
 ### World Generation
 - Large island (just a greener version of var 2) + trading post spawn chance
