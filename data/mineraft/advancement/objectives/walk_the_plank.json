@@ -15,11 +15,25 @@
     },
     "parent": "mineraft:objectives/nailin_it",
     "criteria": {
-      "requirement": {
+      "wooden_step": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
           "recipe_id": "mineraft:wooden_step"
         }
+      },
+      "wooden_step_mess": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "mineraft:wooden_step_mass"
+        }
       }
-    }
+    },
+    "requirements": [
+      [
+        "wooden_step"
+      ],
+      [
+        "wooden_step_mess"
+      ]
+    ]
   }

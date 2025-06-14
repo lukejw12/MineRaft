@@ -14,9 +14,11 @@
     }
   ],
   "placement": {
-    "type": "minecraft:random_spread",
-    "spacing": 120,
-    "separation": 90,
+    "type": "minecraft:concentric_rings",
+    "distance": 40,
+    "spread": 30,
+    "preferred_biomes": "#minecraft:oceans",
+    "count": 5,
     "salt": 345234523
   }
 }

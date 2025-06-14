@@ -11,6 +11,6 @@ tag @s remove why_even_try_that
 
 
 
-tag @s add hammer_advancement
+tag @s add hammer_advancement 
 schedule function mineraft:hammer/remove_advancement.mcfunction 5t
 

@@ -18,13 +18,15 @@
     },
     {
       "structure": "mineraft:small_tropical_shipwreck",
-      "weight": 5
+      "weight": 10
     }
   ],
   "placement": {
-    "type": "minecraft:random_spread",
-    "spacing": 80,
-    "separation": 70,
+    "type": "minecraft:concentric_rings",
+    "distance": 30,
+    "spread": 25,
+    "preferred_biomes": "#minecraft:oceans",
+    "count": 12,
     "salt": 10000019
   }
 }
