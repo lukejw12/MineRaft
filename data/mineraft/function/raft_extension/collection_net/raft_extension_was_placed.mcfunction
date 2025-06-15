@@ -5,7 +5,7 @@ execute if block ~ ~-1 ~1 #valid_center_blocks if block ~ ~-1 ~-1 #raft_replacab
 execute if block ~ ~-1 ~1 #valid_center_blocks if block ~ ~-1 ~-1 #raft_replacable run playsound minecraft:block.anvil.use block @a[distance=..10] ~ ~ ~ 1 1.5 1
 execute if block ~ ~-1 ~1 #valid_center_blocks run fill ~1 ~-1 ~-3 ~-1 ~-1 ~-1 barrier[waterlogged=true]
 execute if block ~ ~-1 ~1 #valid_center_blocks run setblock ~ ~-1 ~-2 pink_stained_glass_pane[waterlogged=true]
-execute if block ~ ~-1 ~1 #valid_center_blocks run summon interaction ~ ~-0.5 ~-2 {width:1.0f,height:1.0f,response:1b,Tags:["collection_net_interact","new_interact"]}
+execute if block ~ ~-1 ~1 #valid_center_blocks run summon interaction ~ ~-0.5 ~-2 {width:1.0f,height:1.1f,response:1b,Tags:["collection_net_interact","new_interact"]}
 execute if block ~ ~-1 ~1 #valid_center_blocks as @e[type=marker,tag=new_net,limit=1] run function mineraft:raft_extension/collection_net/init_net
 execute if block ~ ~-1 ~1 #valid_center_blocks run kill @s
 execute if block ~ ~-1 ~1 #valid_center_blocks if entity @s[tag=valid] run return 0
@@ -16,7 +16,7 @@ execute if block ~-1 ~-1 ~ #valid_center_blocks if block ~1 ~-1 ~ #raft_replacab
 execute if block ~-1 ~-1 ~ #valid_center_blocks if block ~1 ~-1 ~ #raft_replacable run playsound minecraft:block.anvil.use block @a[distance=..10] ~ ~ ~ 1 1.5 1
 execute if block ~-1 ~-1 ~ #valid_center_blocks run fill ~3 ~-1 ~1 ~1 ~-1 ~-1 barrier[waterlogged=true]
 execute if block ~-1 ~-1 ~ #valid_center_blocks run setblock ~2 ~-1 ~ pink_stained_glass_pane[waterlogged=true]
-execute if block ~-1 ~-1 ~ #valid_center_blocks run summon interaction ~2 ~-0.5 ~ {width:1.0f,height:1.0f,response:1b,Tags:["collection_net_interact","new_interact"]}
+execute if block ~-1 ~-1 ~ #valid_center_blocks run summon interaction ~2 ~-0.5 ~ {width:1.0f,height:1.1f,response:1b,Tags:["collection_net_interact","new_interact"]}
 execute if block ~-1 ~-1 ~ #valid_center_blocks as @e[type=marker,tag=new_net,limit=1] run function mineraft:raft_extension/collection_net/init_net
 execute if block ~-1 ~-1 ~ #valid_center_blocks run kill @s
 execute if block ~-1 ~-1 ~ #valid_center_blocks if entity @s[tag=valid] run return 0
@@ -27,7 +27,7 @@ execute if block ~1 ~-1 ~ #valid_center_blocks if block ~-1 ~-1 ~ #raft_replacab
 execute if block ~1 ~-1 ~ #valid_center_blocks if block ~-1 ~-1 ~ #raft_replacable run playsound minecraft:block.anvil.use block @a[distance=..10] ~ ~ ~ 1 1.5 1
 execute if block ~1 ~-1 ~ #valid_center_blocks run fill ~-3 ~-1 ~-1 ~-1 ~-1 ~1 barrier[waterlogged=true]
 execute if block ~1 ~-1 ~ #valid_center_blocks run setblock ~-2 ~-1 ~ pink_stained_glass_pane[waterlogged=true]
-execute if block ~1 ~-1 ~ #valid_center_blocks run summon interaction ~-2 ~-0.5 ~ {width:1.0f,height:1.0f,response:1b,Tags:["collection_net_interact","new_interact"]}
+execute if block ~1 ~-1 ~ #valid_center_blocks run summon interaction ~-2 ~-0.5 ~ {width:1.0f,height:1.1f,response:1b,Tags:["collection_net_interact","new_interact"]}
 execute if block ~1 ~-1 ~ #valid_center_blocks as @e[type=marker,tag=new_net,limit=1] run function mineraft:raft_extension/collection_net/init_net
 execute if block ~1 ~-1 ~ #valid_center_blocks run kill @s
 execute if block ~1 ~-1 ~ #valid_center_blocks if entity @s[tag=valid] run return 0
@@ -38,7 +38,7 @@ execute if block ~ ~-1 ~-1 #valid_center_blocks if block ~ ~-1 ~1 #raft_replacab
 execute if block ~ ~-1 ~-1 #valid_center_blocks if block ~ ~-1 ~1 #raft_replacable run playsound minecraft:block.anvil.use block @a[distance=..10] ~ ~ ~ 1 1.5 1
 execute if block ~ ~-1 ~-1 #valid_center_blocks run fill ~-1 ~-1 ~3 ~1 ~-1 ~1 barrier[waterlogged=true]
 execute if block ~ ~-1 ~-1 #valid_center_blocks run setblock ~ ~-1 ~2 pink_stained_glass_pane[waterlogged=true]
-execute if block ~ ~-1 ~-1 #valid_center_blocks run summon interaction ~ ~-0.5 ~2 {width:1.0f,height:1.0f,response:1b,Tags:["collection_net_interact","new_interact"]}
+execute if block ~ ~-1 ~-1 #valid_center_blocks run summon interaction ~ ~-0.5 ~2 {width:1.0f,height:1.1f,response:1b,Tags:["collection_net_interact","new_interact"]}
 execute if block ~ ~-1 ~-1 #valid_center_blocks as @e[type=marker,tag=new_net,limit=1] run function mineraft:raft_extension/collection_net/init_net
 execute if block ~ ~-1 ~-1 #valid_center_blocks run kill @s 
 execute if block ~ ~-1 ~-1 #valid_center_blocks if entity @s[tag=valid] run return 0 

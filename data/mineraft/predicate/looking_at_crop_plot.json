@@ -5,9 +5,14 @@
     "type_specific": {
       "type": "player",
       "looking_at": {
-          "type": "minecraft:interaction",
-          "nbt": "{Tags:['crop_plot_interact']}"
+        "type": "minecraft:interaction",
+        "nbt": "{Tags:['crop_plot_interact']}",
+        "distance": {
+          "absolute": {
+            "max": 5
+          }
         }
       }
     }
   }
+}

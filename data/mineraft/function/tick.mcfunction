@@ -24,3 +24,4 @@ function mineraft:triggers/discord/discord_trigger
 function mineraft:triggers/credits/credits_trigger
 function mineraft:trading_post/update_villager_trades
 execute as @e[type=villager,tag=register_entity,tag=!named] at @s run function mineraft:misc/entity_tick/trading_post_natural
+kill @e[type=lightning_bolt]

@@ -6,7 +6,12 @@
       "type": "player",
       "looking_at": {
         "type": "minecraft:interaction",
-        "nbt": "{Tags:[\"water_purifier_interact\"]}"
+        "nbt": "{Tags:['water_purifier_interact']}",
+        "distance": {
+          "absolute": {
+            "max": 5
+          }
+        }
       }
     }
   }

@@ -177,3 +177,4 @@ scoreboard objectives add receiver_battery_timer dummy
 scoreboard objectives add receiver_has_battery dummy
 
 scoreboard objectives add receiver_linked dummy
+function mineraft:trading_post/update_trades

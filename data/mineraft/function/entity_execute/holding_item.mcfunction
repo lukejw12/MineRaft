@@ -36,4 +36,4 @@ bossbar set mineraft:radar/locate_distance players @a[predicate=mineraft:holding
 execute as @s[predicate=mineraft:wearing_flippers] run effect give @s dolphins_grace infinite 0 false
 execute if items entity @s armor.head prismarine_shard run item modify entity @s armor.head mineraft:custom_data_worn_true
 
-execute as @a unless items entity @s armor.head prismarine_shard if items entity @s player.cursor prismarine run item modify entity @s player.cursor mineraft:custom_data_worn_false
+execute as @a unless items entity @s armor.head prismarine_shard if items entity @s player.cursor prismarine_shard run item modify entity @s player.cursor mineraft:custom_data_worn_false

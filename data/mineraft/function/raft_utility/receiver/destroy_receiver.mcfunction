@@ -8,8 +8,6 @@ execute as @e[type=interaction,tag=receiver_interact] if score @s receiver_id = 
 
 summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:custom_data":{receiver_item:1b},"minecraft:entity_data":{id:"minecraft:marker",Tags:["receiver"]},"minecraft:item_model":"minecraft:receiver_item","minecraft:item_name":{"translate":"item.mineraft.receiver","fallback":"Receiver"},"minecraft:rarity":"uncommon"}}}
 
-execute if score @s receiver_has_battery matches 1 run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:orange_dye",count:1,components:{"minecraft:item_model":"minecraft:battery","minecraft:item_name":{"translate":"item.mineraft.battery","fallback":"Battery"}}}}
-
 playsound minecraft:entity.zombie.break_wooden_door block @a[distance=..15] ~ ~ ~ 0.2 1.5
 
 execute as @s[tag=facing_north] at @s run fill ~-1 ~ ~ ~1 ~1 ~ air
