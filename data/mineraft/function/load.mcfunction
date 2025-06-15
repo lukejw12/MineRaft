@@ -25,6 +25,10 @@ scoreboard objectives add purifier_timer dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add dummy dummy
 scoreboard objectives add water_purified dummy
+scoreboard objectives add has_water dummy
+scoreboard objectives add has_planks dummy
+scoreboard objectives add processing dummy
+scoreboard objectives add ready dummy
 
 scoreboard objectives add solid_wall_id dummy
 scoreboard objectives add l_junction_wall_id dummy

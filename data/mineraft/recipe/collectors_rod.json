@@ -35,6 +35,9 @@
       "minecraft:max_damage": 256,
       "minecraft:custom_data": {
         "collectors_rod": true
+      },
+      "minecraft:enchantments": {
+        "minecraft:lure": 3
       }
     },
     "count": 1

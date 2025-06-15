@@ -5,4 +5,4 @@ tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Light Breeze "
 tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Storm "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/weather/set_storm"},"color":"green","text":"Set"},{"color":"gold","text":"]"}]
 tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Heavy Storm "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/weather/set_heavy_storm"},"color":"green","text":"Set"},{"color":"gold","text":"]"}]
 tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-----------------------"}]
-tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/settings"}}]
+tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/a/settings"}}]

@@ -11,7 +11,9 @@ execute unless block ~ ~-1 ~ #raft_materials run kill @s[type=marker,tag=water_p
 
 tag @e[type=item_display,distance=..0.5,sort=nearest,limit=1,tag=water_purifier_facade] add this_facade
 tag @e[type=interaction,distance=..0.5,sort=nearest,limit=1,tag=water_purifier_interact] add this_interact
-
+execute if entity @s[tag=processing,scores={purifier_timer=800}] run item modify entity @e[type=item_display,tag=this_facade,limit=1,distance=0..] contents {function:"set_components",components:{"minecraft:item_model":"minecraft:water_purifier_purified"}}
+execute if entity @s[tag=processing,scores={purifier_timer=800}] run tag @s add ready
+execute if entity @s[tag=processing,scores={purifier_timer=800}] run scoreboard players set @s ready 1
 execute as @e[tag=this_facade,type=item_display,distance=0..] run function mineraft:raft_utility/water_purifier/check_display
 execute as @e[tag=this_interact,type=interaction,distance=0..] run function mineraft:raft_utility/water_purifier/purify_water
 

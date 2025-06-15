@@ -29,7 +29,10 @@
         "minecraft:max_damage": 220,
         "minecraft:custom_data": {
         "advanced_rod": true
-      }
+      },
+        "minecraft:enchantments": {
+          "minecraft:lure": 1
+        }
       },
       "count": 1
     },

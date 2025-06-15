@@ -1,4 +1,7 @@
 execute if items entity @s contents *[minecraft:item_model="minecraft:water_purifier_filled"] as @e[type=marker,distance=..0.5,tag=water_purifier_active,limit=1] unless entity @s[tag=processing] run tag @s add processing
 execute if items entity @s contents *[minecraft:item_model="minecraft:water_purifier_planks"] as @e[type=marker,distance=..0.5,tag=water_purifier_active,limit=1] unless entity @s[tag=has_planks] run tag @s add has_planks
+execute if items entity @s contents *[minecraft:item_model="minecraft:water_purifier_water"] as @e[type=marker,distance=..0.5,tag=water_purifier_active,limit=1] unless entity @s[tag=has_water] run tag @s add has_water
 execute if items entity @s contents *[minecraft:item_model="minecraft:water_purifier_filled"] as @e[type=marker,distance=..0.5,tag=water_purifier_active,limit=1] unless entity @s[tag=has_planks] run tag @s add has_planks
+execute if items entity @s contents *[minecraft:item_model="minecraft:water_purifier_filled"] as @e[type=marker,distance=..0.5,tag=water_purifier_active,limit=1] unless entity @s[tag=has_water] run tag @s add has_water
 execute if items entity @s contents *[minecraft:item_model="minecraft:water_purifier_purified"] as @e[type=marker,distance=..0.5,tag=water_purifier_active,limit=1] unless entity @s[tag=has_planks] run tag @s add has_planks
+execute if items entity @s contents *[minecraft:item_model="minecraft:water_purifier_purified"] as @e[type=marker,distance=..0.5,tag=water_purifier_active,limit=1] unless entity @s[tag=has_water] run tag @s add has_water

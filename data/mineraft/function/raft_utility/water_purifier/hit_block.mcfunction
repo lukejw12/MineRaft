@@ -1,8 +1,5 @@
-#Mark the ray as having found a block.
 
 scoreboard players set #hit water_purifier 1
-
-#Running custom commands since the block was found.
 
 execute if block ~ ~ ~ #raft_materials if entity @s[y_rotation=-180..-135] align xyz positioned ~0.5 ~1 ~0.5 unless block ~ ~ ~ air run summon item_display ~ ~0.3 ~ {Rotation:[90f,0f],Glowing:1b,item_display:"ground",Tags:["large_water_purifier_empty_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:water_purifier_empty"}}}
 execute if block ~ ~ ~ #raft_materials if entity @s[y_rotation=135..180] align xyz positioned ~0.5 ~1 ~0.5 unless block ~ ~ ~ air run summon item_display ~ ~0.3 ~ {Rotation:[90f,0f],Glowing:1b,item_display:"ground",Tags:["large_water_purifier_empty_display","displayed"],glow_color_override:16711680,brightness:{sky:15,block:10},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:water_purifier_empty"}}}

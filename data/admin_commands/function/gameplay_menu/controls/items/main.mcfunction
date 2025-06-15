@@ -6,4 +6,4 @@ tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Structure It
 tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Armor "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/armor/main"},"color":"aqua","text":"Expand"},{"color":"gold","text":"]"}]
 tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Decorative Items "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/decorative/main"},"color":"aqua","text":"Expand"},{"color":"gold","text":"]"}]
 tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-----------------------"}]
-tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/settings"}}]
+tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/a/settings"}}]

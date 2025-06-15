@@ -16,7 +16,7 @@ tellraw @a {"text":"- Check advancements tab for the Research Guide!","color":"g
 tellraw @a {"text":"- Resource pack is REQUIRED","color":"yellow"}
 tellraw @a {"text":"- This is a BETA which means anything can change during","color":"gold"}
 tellraw @a {"text":"development, old worlds may not be usable on new versions.","color":"yellow"}
-tellraw @a [{"bold":true,"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/settings"},"color":"gold","text":"Click Me "},{"bold":false,"color":"gold","text":"to open Gameplay Settings (must have op)"}]
+tellraw @a [{"bold":true,"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/a/settings"},"color":"gold","text":"Click Me "},{"bold":false,"color":"gold","text":"to open Gameplay Settings (must have op)"}]
 tellraw @a {"text":"- If playing multiplayer please wait until all players join before opening barrel (loot generates based on player count)","color":"yellow"}
 tellraw @a {"text":"Join the discord to report bugs! (linked on modrinth)","color":"yellow"}
 tellraw @a {"text":"Datapack made by @_itsjustluke on discord!","color":"gold"}
