@@ -23,10 +23,10 @@
   ],
   "placement": {
     "type": "minecraft:concentric_rings",
-    "distance": 30,
-    "spread": 25,
+    "distance": 15,
+    "spread": 17,
     "preferred_biomes": "#minecraft:oceans",
-    "count": 12,
+    "count": 19,
     "salt": 10000019
   }
 }
