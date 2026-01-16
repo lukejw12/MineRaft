@@ -1,0 +1,1 @@
+$data modify entity @s item.components.minecraft:item_model set value "mineraft:structures/smelteries/states/$(current_type)-active"

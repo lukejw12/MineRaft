@@ -1,1 +1,0 @@
-execute as @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:raft_decor/wall/solid_wooden_wall/solid_l_junction_wall/start_ray

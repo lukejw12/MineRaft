@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "category": "food",
-    "ingredient": "minecraft:cod",
-    "result": {
-      "id": "minecraft:cooked_cod"
-      },
-      "cookingtime": 200
-    }

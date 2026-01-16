@@ -1,1 +1,0 @@
-execute as @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:raft_utility/grills/simple_grill/start_ray

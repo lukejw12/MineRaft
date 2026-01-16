@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "category": "food",
-  "ingredient": "minecraft:beetroot",
-  "result": {
-    "id": "minecraft:bread"
-  },
-  "cookingtime": 300
-}

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "mr.collection_net": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineraft:structures/collection_net/place"
+  }
+}

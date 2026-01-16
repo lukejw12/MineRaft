@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=mr.smeltery_preview] if score @s mr.link = @s mr.link run kill @s

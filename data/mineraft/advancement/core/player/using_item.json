@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "mr.foundation": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineraft:core/foundation/used"
+  }
+}

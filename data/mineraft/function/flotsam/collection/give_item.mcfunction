@@ -1,0 +1,1 @@
+$give @s $(item_id)$(item_components) $(item_count)`

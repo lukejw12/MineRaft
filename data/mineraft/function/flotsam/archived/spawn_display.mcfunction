@@ -1,0 +1,3 @@
+#/ $summon item_display ~ ~ ~ {item_display:"ground",Tags:["mr.flotsam","mr.flotsam_display","mr.new_display"],transformation:{left_rotation:[0f,$(rotation_y)f,0f,$(rotation_w)f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.3f,0f],scale:[1f,1f,1f]},item:{id:"$(item_id)",count:1,components:{"minecraft:item_model":"$(item_model)"}}}
+
+#/ ride @e[type=item_display,tag=mr.new_display,limit=1,sort=nearest] mount @s

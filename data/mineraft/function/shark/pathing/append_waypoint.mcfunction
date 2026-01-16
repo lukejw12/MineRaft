@@ -1,0 +1,1 @@
+$data modify entity @s data.waypoints append value {x:$(temp_x),z:$(temp_z)}

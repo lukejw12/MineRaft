@@ -1,1 +1,0 @@
-execute as @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:raft_utility/portable_trading_post/start_ray

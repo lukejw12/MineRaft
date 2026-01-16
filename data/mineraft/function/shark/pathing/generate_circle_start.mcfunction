@@ -1,0 +1,1 @@
+execute store result score @s mr.shark_circle_angle run random value 0..360

@@ -1,35 +1,34 @@
 {
-  "carvers": [
-    "minecraft:cave",
-    "minecraft:cave_extra_underground",
-    "minecraft:canyon"
-  ],
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "creative": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.creative"
+      },
+      "default": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.game"
+      },
+      "underwater": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.under_water"
+      }
+    },
+    "minecraft:visual/sky_color": "#7ba4ff"
+  },
+  "carvers": [],
   "downfall": 0.5,
   "effects": {
-    "fog_color": 12638463,
-    "mood_sound": {
-      "block_search_extent": 8,
-      "offset": 2.0,
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000
-    },
-    "sky_color": 8103167,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "water_color": "#3f76e4"
   },
   "features": [
     [],
-    [
-      "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface"
-    ],
-    [
-      "minecraft:amethyst_geode"
-    ],
-    [
-      "minecraft:monster_room",
-      "minecraft:monster_room_deep"
-    ],
+    [],
+    [],
+    [],
     [],
     [],
     [
@@ -65,8 +64,7 @@
     ],
     [],
     [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
+      "minecraft:spring_water"
     ],
     [
       "minecraft:glow_lichen",

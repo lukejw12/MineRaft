@@ -1,5 +1,0 @@
-tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Tech Materials --"}]
-tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Battery "},"[",{"click_event":{"action":"run_command","command":"/give @s orange_dye[item_name={translate:\"item.mineraft.battery\",fallback:\"Battery\"},item_model=\"minecraft:battery\"] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
-tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Circuit Board "},"[",{"click_event":{"action":"run_command","command":"/give @s yellow_dye[item_name={translate:\"item.mineraft.circuit_board\",fallback:\"Circuit Board\"},item_model=\"minecraft:circuit_board\"] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
-tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-----------------------"}]
-tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/crafting_materials/main"}}]

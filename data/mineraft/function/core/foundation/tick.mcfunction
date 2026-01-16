@@ -1,0 +1,1 @@
+function mineraft:core/foundation/check_integrity

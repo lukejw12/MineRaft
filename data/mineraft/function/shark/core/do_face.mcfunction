@@ -1,0 +1,1 @@
+$tp @s ~ ~ ~ facing $(face_x) $(face_y) $(face_z)

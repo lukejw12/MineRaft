@@ -1,0 +1,1 @@
+execute if data storage mineraft:smeltery {finished_model:"metal_ore"} run data modify entity @s item.components.minecraft:item_model set value "mineraft:structures/smelteries/states/simple_smelter-metal_ore"

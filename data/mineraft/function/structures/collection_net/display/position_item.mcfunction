@@ -1,0 +1,10 @@
+execute if score #offset mr.data matches 0 run tp @e[type=item_display,tag=mr.new_item_display,limit=1] ~-0.2 ~0.3 ~-0.2
+execute if score #offset mr.data matches 1 run tp @e[type=item_display,tag=mr.new_item_display,limit=1] ~0.2 ~0.3 ~-0.2
+execute if score #offset mr.data matches 2 run tp @e[type=item_display,tag=mr.new_item_display,limit=1] ~-0.2 ~0.3 ~0.2
+execute if score #offset mr.data matches 3 run tp @e[type=item_display,tag=mr.new_item_display,limit=1] ~0.2 ~0.3 ~0.2
+execute if score #offset mr.data matches 4 run tp @e[type=item_display,tag=mr.new_item_display,limit=1] ~ ~0.3 ~
+execute if score #offset mr.data matches 5 run tp @e[type=item_display,tag=mr.new_item_display,limit=1] ~-0.3 ~0.4 ~
+execute if score #offset mr.data matches 6 run tp @e[type=item_display,tag=mr.new_item_display,limit=1] ~0.3 ~0.4 ~
+execute if score #offset mr.data matches 7 run tp @e[type=item_display,tag=mr.new_item_display,limit=1] ~ ~0.4 ~-0.3
+execute if score #offset mr.data matches 8 run tp @e[type=item_display,tag=mr.new_item_display,limit=1] ~ ~0.4 ~0.3
+execute if score #offset mr.data matches 9.. run tp @e[type=item_display,tag=mr.new_item_display,limit=1] ~ ~0.5 ~

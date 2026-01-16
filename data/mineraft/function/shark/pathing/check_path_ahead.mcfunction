@@ -1,0 +1,1 @@
+$execute positioned ~$(check_x) ~ ~$(check_z) if entity @e[type=item_display,tag=mr.foundation,distance=..2] run scoreboard players set @s mr.shark_target_y 56

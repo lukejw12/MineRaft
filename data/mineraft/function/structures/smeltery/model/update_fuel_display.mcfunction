@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=mr.smeltery_fuel_display] if score @s mr.smeltery_id = @e[type=item_display,tag=mr.smeltery_display,sort=nearest,limit=1] mr.smeltery_id run function mineraft:structures/smeltery/model/set/set_fuel_model

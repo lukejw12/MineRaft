@@ -1,0 +1,7 @@
+advancement revoke @a[tag=mr.revoke] only mineraft:core/player/using_item
+advancement revoke @a[tag=mr.revoke] only mineraft:core/smeltery/place
+advancement revoke @a[tag=mr.revoke] only mineraft:core/water_purifier/place
+advancement revoke @a[tag=mr.revoke] only mineraft:core/collection_net/place
+tag @a[tag=mr.revoke] remove mr.revoke
+schedule clear mineraft:core/advancement/revoke/using_item
+

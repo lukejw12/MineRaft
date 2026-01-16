@@ -1,1 +1,5 @@
-{"values":["animated_java:global/on_tick","mineraft:tick"]}
+{
+    "values": [
+        "mineraft:core/world_tick"
+    ]
+}

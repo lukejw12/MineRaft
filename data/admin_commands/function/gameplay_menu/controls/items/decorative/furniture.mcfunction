@@ -1,5 +1,0 @@
-tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Furniture --"}]
-tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Carpentry Table "},"[",{"click_event":{"action":"run_command","command":"/give @s stonecutter 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
-tellraw @s [{"bold":false,"color":"yellow","italic":false,"text":"- Trophy Board "},"[",{"click_event":{"action":"run_command","command":"/give @s vex_spawn_egg[custom_data={trophy_board_item:1b},entity_data={id:\"minecraft:marker\",Tags:[\"trophy_board\"]},item_model=\"minecraft:trophy_board\",item_name={translate:\"item.mineraft.trophy_board\",fallback:\"Trophy Board\"},rarity=\"uncommon\"] 1"},"color":"green","text":"Receive"},{"color":"gold","text":"]"}]
-tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-----------------------"}]
-tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/items/decorative/main"}}]

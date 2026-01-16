@@ -1,3 +1,0 @@
-execute unless predicate mineraft:is_riding run kill @e[type=item,sort=nearest,distance=..6,nbt={Item:{id:"minecraft:bamboo_raft"}}]
-execute unless predicate mineraft:is_riding run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:bamboo_raft",count:1,components:{"minecraft:custom_data":{sail_boat:1b},"minecraft:item_model":"minecraft:sail_raft","minecraft:item_name":{"translate":"item.mineraft.sailable_raft","fallback":"Sailable Raft"},"minecraft:rarity":"epic","minecraft:entity_data":{id:"minecraft:bamboo_raft",Tags:["sail","new"]}}}}
-execute unless predicate mineraft:is_riding run kill @s

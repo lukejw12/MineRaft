@@ -1,3 +1,0 @@
-title @a[predicate=mineraft:looking_at_cooking_pot] actionbar ["",{"text":"Cooking Pot (","color":"gray"},{"score":{"name":"@s","objective":"ingredient_count"},"color":"white"},{"text":"/3) - ","color":"gray"},{"text":"Multiple items","color":"yellow"}]
-
-#title @a[predicate=mineraft:looking_at_cooking_pot] actionbar ["",{"text":"Cooking Pot (","color":"gray"},{"score":{"name":"@s","objective":"ingredient_count"},"color":"white"},{"text":"/3)","color":"gray"}]

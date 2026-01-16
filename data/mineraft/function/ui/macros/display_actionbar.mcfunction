@@ -1,1 +1,0 @@
-$title @s actionbar [{"color":"$(hydration_color)","text":"Hydration: "},{"score":{"name":"@s","objective":"hydration"},"color":"$(hydration_color)"},{text:"$(pot_section)"},{"text":" | ","color":"gray"},{"text":"$(weather_name)","color":"$(weather_color)"}]

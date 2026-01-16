@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=mr.net_display,sort=nearest,limit=1] run function mineraft:structures/collection_net/try_collect

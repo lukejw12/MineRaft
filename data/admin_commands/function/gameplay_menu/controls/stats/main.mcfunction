@@ -1,4 +1,0 @@
-tellraw @s [{"bold":true,"color":"red","italic":false,"text":"-- Stats Controls --"}]
-tellraw @s [{"bold":false,"color":"gold","italic":false,"text":"- Reputation "},"[",{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/stats/reputation_max"},"color":"green","text":"Max"},{"color":"gold","text":"/"},{"click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/controls/stats/reputation_clear"},"color":"red","text":"Clear"},{"color":"gold","text":"]"}]
-tellraw @s [{"bold":false,"color":"red","italic":false,"text":"-----------------------"}]
-tellraw @s [{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/function admin_commands:gameplay_menu/a/settings"}}]
