@@ -1,0 +1,2 @@
+execute if data storage mineraft:net {net_type:"simple_collection_net"} run data modify storage mineraft:net model set value "mineraft:structures/collection_net/simple_collection_net"
+execute if data storage mineraft:net {net_type:"advanced_collection_net"} run data modify storage mineraft:net model set value "mineraft:structures/collection_net/advanced_collection_net"

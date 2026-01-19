@@ -1,1 +1,1 @@
-$summon item ~ ~0.5 ~ {Item:$(temp_item),PickupDelay:0}
+$summon item ~ ~1.5 ~ {Item:$(temp_item),PickupDelay:10}

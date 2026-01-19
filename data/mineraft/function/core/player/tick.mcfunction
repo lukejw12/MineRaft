@@ -4,17 +4,22 @@ execute as @s[tag=!mr.has_ray_id] run function mineraft:core/player/link
 #/ Foundation tick
 execute as @e[type=item_display,tag=mr.foundation,distance=..10] at @s run function mineraft:core/foundation/tick
 execute if items entity @s weapon.mainhand *[custom_data~{mr.foundation:1b}] run function mineraft:core/foundation/check_display_type
+execute if items entity @s weapon.mainhand *[custom_data~{mr.collection_net:1b}] run function mineraft:structures/collection_net/check_display_type
 
 execute as @e[type=interaction] at @s run function mineraft:core/interaction/tick
 
-#/ Collection Net
-execute as @e[type=interaction,tag=mr.net_interaction] if data entity @s interaction run function mineraft:structures/collection_net/interact
+
 
 #/ Raycast
+execute if items entity @s weapon.mainhand *[custom_data~{mr.wall:1b}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/walls/raycast/preview/start
+execute if items entity @s weapon.mainhand *[custom_data~{mr.collection_net:1b}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:structures/collection_net/raycast/hit_preview"}
 execute if items entity @s weapon.mainhand *[custom_data~{mr.foundation:1b}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:core/raycast/hit_foundation"}
 execute if items entity @s weapon.mainhand *[custom_data~{mr.smeltery:1b}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/smeltery/raycast/preview/start
 
 execute as @s[tag=mr.place] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:core/raycast/helpers/place_foundation"}
+execute as @s[tag=mr.place_net] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:structures/collection_net/raycast/place_net"}
 #/ Clear Displays
+execute unless items entity @s weapon.mainhand *[custom_data~{mr.wall:1b}] as @e[type=item_display,tag=mr.wall_preview] if score @s mr.link = @p mr.link run kill @s
 execute unless items entity @s weapon.mainhand *[custom_data~{mr.foundation:1b}] as @e[type=item_display,tag=mr.display] if score @s mr.link = @p mr.link run kill @s
 execute unless items entity @s weapon.mainhand *[custom_data~{mr.smeltery:1b}] as @e[type=item_display,tag=mr.smeltery_preview] if score @s mr.link = @p mr.link run kill @s
+execute unless items entity @s weapon.mainhand *[custom_data~{mr.collection_net:1b}] as @e[type=item_display,tag=mr.net_preview] if score @s mr.link = @p mr.link run kill @s

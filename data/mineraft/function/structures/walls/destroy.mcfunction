@@ -1,0 +1,17 @@
+tag @s add mr.destroying
+
+scoreboard players operation #wall_id mr.data = @s mr.wall_id
+
+execute as @e[type=item_display,tag=mr.wall_pillar] if score @s mr.wall_id = #wall_id mr.data run kill @s
+execute as @e[type=item_display,tag=mr.wall_pillar] if score @s mr.wall_id2 = #wall_id mr.data run kill @s
+
+data modify storage mineraft:walls destroy_side set from entity @s data.side
+
+function mineraft:structures/walls/remove_trapdoors with storage mineraft:walls
+
+particle item{item:{id:egg,components:{item_model:"mineraft:particle/wood"}}} ~ ~2 ~ 0.5 0.5 0.5 0.1 100 normal
+
+kill @s
+
+execute as @e[type=item_display,tag=mr.wall_display,distance=..5] at @s run function mineraft:structures/walls/check_corners
+

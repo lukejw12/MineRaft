@@ -1,0 +1,33 @@
+scoreboard players set #space_clear mr.data 1
+
+execute if data storage mineraft:walls {side:"north"} unless block ~-1 ~1 ~ #air unless block ~-1 ~1 ~ iron_trapdoor[half=top,facing=east] unless block ~-1 ~1 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"north"} unless block ~ ~1 ~ #air unless block ~ ~1 ~ iron_trapdoor[half=bottom,facing=east] unless block ~ ~1 ~ iron_trapdoor[half=bottom,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"north"} unless block ~1 ~1 ~ #air unless block ~1 ~1 ~ iron_trapdoor[half=top,facing=east] unless block ~1 ~1 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"north"} unless block ~-1 ~2 ~ #air unless block ~-1 ~2 ~ iron_trapdoor[half=top,facing=east] unless block ~-1 ~2 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"north"} unless block ~ ~2 ~ #air run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"north"} unless block ~1 ~2 ~ #air unless block ~1 ~2 ~ iron_trapdoor[half=top,facing=east] unless block ~1 ~2 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"north"} unless block ~-1 ~3 ~ #air unless block ~-1 ~3 ~ iron_trapdoor[half=top,facing=east] unless block ~-1 ~3 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"north"} unless block ~ ~3 ~ #air unless block ~ ~3 ~ iron_trapdoor[half=bottom,facing=east] unless block ~ ~3 ~ iron_trapdoor[half=bottom,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"north"} unless block ~1 ~3 ~ #air unless block ~1 ~3 ~ iron_trapdoor[half=top,facing=east] unless block ~1 ~3 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+
+execute if data storage mineraft:walls {side:"south"} unless block ~-1 ~1 ~ #air unless block ~-1 ~1 ~ iron_trapdoor[half=top,facing=east] unless block ~-1 ~1 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"south"} unless block ~ ~1 ~ #air unless block ~ ~1 ~ iron_trapdoor[half=bottom,facing=east] unless block ~ ~1 ~ iron_trapdoor[half=bottom,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"south"} unless block ~1 ~1 ~ #air unless block ~1 ~1 ~ iron_trapdoor[half=top,facing=east] unless block ~1 ~1 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"south"} unless block ~-1 ~2 ~ #air unless block ~-1 ~2 ~ iron_trapdoor[half=top,facing=east] unless block ~-1 ~2 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"south"} unless block ~ ~2 ~ #air run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"south"} unless block ~1 ~2 ~ #air unless block ~1 ~2 ~ iron_trapdoor[half=top,facing=east] unless block ~1 ~2 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"south"} unless block ~-1 ~3 ~ #air unless block ~-1 ~3 ~ iron_trapdoor[half=top,facing=east] unless block ~-1 ~3 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"south"} unless block ~ ~3 ~ #air unless block ~ ~3 ~ iron_trapdoor[half=bottom,facing=east] unless block ~ ~3 ~ iron_trapdoor[half=bottom,facing=west] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"south"} unless block ~1 ~3 ~ #air unless block ~1 ~3 ~ iron_trapdoor[half=top,facing=east] unless block ~1 ~3 ~ iron_trapdoor[half=top,facing=west] run scoreboard players set #space_clear mr.data 0
+
+execute if data storage mineraft:walls {side:"east"} unless block ~ ~1 ~ #air unless block ~ ~1 ~ iron_trapdoor[half=bottom,facing=north] unless block ~ ~1 ~ iron_trapdoor[half=bottom,facing=south] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"east"} unless block ~ ~2 ~-1 #air unless block ~ ~2 ~-1 iron_trapdoor[half=top,facing=north] unless block ~ ~2 ~-1 iron_trapdoor[half=top,facing=south] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"east"} unless block ~ ~2 ~ #air unless block ~ ~2 ~ iron_trapdoor[half=bottom,facing=north] unless block ~ ~2 ~ iron_trapdoor[half=bottom,facing=south] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"east"} unless block ~ ~2 ~1 #air unless block ~ ~2 ~1 iron_trapdoor[half=top,facing=north] unless block ~ ~2 ~1 iron_trapdoor[half=top,facing=south] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"east"} unless block ~ ~3 ~ #air unless block ~ ~3 ~ iron_trapdoor[half=bottom,facing=north] unless block ~ ~3 ~ iron_trapdoor[half=bottom,facing=south] run scoreboard players set #space_clear mr.data 0
+
+execute if data storage mineraft:walls {side:"west"} unless block ~ ~1 ~ #air unless block ~ ~1 ~ iron_trapdoor[half=bottom,facing=north] unless block ~ ~1 ~ iron_trapdoor[half=bottom,facing=south] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"west"} unless block ~ ~2 ~-1 #air unless block ~ ~2 ~-1 iron_trapdoor[half=top,facing=north] unless block ~ ~2 ~-1 iron_trapdoor[half=top,facing=south] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"west"} unless block ~ ~2 ~ #air unless block ~ ~2 ~ iron_trapdoor[half=bottom,facing=north] unless block ~ ~2 ~ iron_trapdoor[half=bottom,facing=south] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"west"} unless block ~ ~2 ~1 #air unless block ~ ~2 ~1 iron_trapdoor[half=top,facing=north] unless block ~ ~2 ~1 iron_trapdoor[half=top,facing=south] run scoreboard players set #space_clear mr.data 0
+execute if data storage mineraft:walls {side:"west"} unless block ~ ~3 ~ #air unless block ~ ~3 ~ iron_trapdoor[half=bottom,facing=north] unless block ~ ~3 ~ iron_trapdoor[half=bottom,facing=south] run scoreboard players set #space_clear mr.data 0

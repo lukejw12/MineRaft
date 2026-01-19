@@ -52,3 +52,7 @@ scoreboard objectives add mr.net_items dummy
 ##/ flotsam
 scoreboard objectives add mr.flotsam_id dummy
 scoreboard objectives add mr.flotsam_timer dummy
+
+#/ Wall
+scoreboard objectives add mr.wall_id dummy
+scoreboard objectives add mr.wall_id2 dummy
