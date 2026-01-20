@@ -1,0 +1,2 @@
+execute unless entity @e[type=item_display,tag=mr.platform_display,distance=..2] run tag @s remove mr.supporting_platform
+execute unless entity @e[type=item_display,tag=mr.platform_display,distance=..2] positioned ~ ~2 ~ run setblock ~ ~ ~ iron_bars

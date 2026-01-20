@@ -11,7 +11,8 @@ function mineraft:structures/walls/remove_trapdoors with storage mineraft:walls
 
 particle item{item:{id:egg,components:{item_model:"mineraft:particle/wood"}}} ~ ~2 ~ 0.5 0.5 0.5 0.1 100 normal
 
+execute if entity @s[tag=mr.supporting_platform] positioned ~ ~2 ~ as @e[type=item_display,tag=mr.platform_display,distance=..2] at @s run function mineraft:structures/platform/check_supports
+
 kill @s
 
 execute as @e[type=item_display,tag=mr.wall_display,distance=..5] at @s run function mineraft:structures/walls/check_corners
-

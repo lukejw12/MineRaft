@@ -56,3 +56,11 @@ scoreboard objectives add mr.flotsam_timer dummy
 #/ Wall
 scoreboard objectives add mr.wall_id dummy
 scoreboard objectives add mr.wall_id2 dummy
+
+
+#/ Supports
+scoreboard objectives add mr.support_id dummy
+scoreboard objectives add mr.support_count dummy
+
+#/ Platforms
+scoreboard objectives add mr.platform_id dummy

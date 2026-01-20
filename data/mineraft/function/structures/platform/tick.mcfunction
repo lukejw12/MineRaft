@@ -1,0 +1,2 @@
+execute unless block ~ ~ ~ barrier unless block ~ ~ ~ iron_bars run tellraw @a ["§c[DEBUG] platform tick: barrier check failed, checking supports"]
+execute unless block ~ ~ ~ barrier unless block ~ ~ ~ iron_bars run function mineraft:structures/platform/check_supports

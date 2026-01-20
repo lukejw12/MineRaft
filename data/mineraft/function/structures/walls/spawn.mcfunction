@@ -10,6 +10,8 @@ execute as @e[type=item_display,tag=mr.new_wall,limit=1] run data modify entity 
 
 execute as @e[type=item_display,tag=mr.new_wall,limit=1] store result score @s mr.wall_id run scoreboard players add #global mr.wall_id 1
 
+execute as @e[type=item_display,tag=mr.new_wall,limit=1] at @s positioned ~ ~2 ~ if block ~ ~ ~ barrier run tag @s add mr.supporting_platform
+
 execute as @e[type=item_display,tag=mr.new_wall,limit=1] at @s run function mineraft:structures/walls/check_corners
 
 tag @e[type=item_display,tag=mr.new_wall] remove mr.new_wall
