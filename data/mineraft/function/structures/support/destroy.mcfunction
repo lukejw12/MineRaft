@@ -1,4 +1,4 @@
-tellraw @a ["§c[DEBUG] support destroy called"]
+
 
 scoreboard players operation #support_id mr.data = @s mr.support_id
 

@@ -1,2 +1,5 @@
-execute unless block ~ ~ ~ barrier unless block ~ ~ ~ iron_bars run tellraw @a ["§c[DEBUG] platform tick: barrier check failed, checking supports"]
-execute unless block ~ ~ ~ barrier unless block ~ ~ ~ iron_bars run function mineraft:structures/platform/check_supports
+
+
+execute if entity @s[tag=mr.skip_check] run return run tag @s remove mr.skip_check
+
+execute positioned ~ ~-0.5 ~ unless block ~ ~ ~ barrier run function mineraft:structures/platform/check_supports

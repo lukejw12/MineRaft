@@ -1,19 +1,15 @@
+
 scoreboard players set #support_count mr.data 0
+execute if score @s mr.support_value matches 0 positioned ~ ~-2 ~ if entity @e[type=item_display,tag=mr.support_display,distance=..0.7] if score @s mr.support_id = @e[type=item_display,tag=mr.support_display,distance=..0.7,limit=1] mr.support_id run scoreboard players set #support_count mr.data 1
 
-execute positioned ~ ~-3 ~ if entity @e[type=item_display,tag=mr.support_display,distance=..0.5] run scoreboard players add #support_count mr.data 1
-execute positioned ~3 ~-3 ~ if entity @e[type=item_display,tag=mr.support_display,distance=..0.5] run scoreboard players add #support_count mr.data 1
-execute positioned ~-3 ~-3 ~ if entity @e[type=item_display,tag=mr.support_display,distance=..0.5] run scoreboard players add #support_count mr.data 1
-execute positioned ~ ~-3 ~3 if entity @e[type=item_display,tag=mr.support_display,distance=..0.5] run scoreboard players add #support_count mr.data 1
-execute positioned ~ ~-3 ~-3 if entity @e[type=item_display,tag=mr.support_display,distance=..0.5] run scoreboard players add #support_count mr.data 1
+execute if score @s mr.support_value matches 1 positioned ~3 ~ ~ if entity @e[type=item_display,tag=mr.platform_display,distance=..0.7] if score @s mr.support_id = @e[type=item_display,tag=mr.platform_display,distance=..0.7,limit=1] mr.support_id run scoreboard players set #support_count mr.data 1
 
-execute as @e[type=item_display,tag=mr.wall_display,tag=mr.supporting_platform,distance=..4] run scoreboard players add #support_count mr.data 1
+execute if score @s mr.support_value matches 2 positioned ~-3 ~ ~ if entity @e[type=item_display,tag=mr.platform_display,distance=..0.7] if score @s mr.support_id = @e[type=item_display,tag=mr.platform_display,distance=..0.7,limit=1] mr.support_id run scoreboard players set #support_count mr.data 1
 
-#execute positioned ~3 ~ ~ if entity @e[type=item_display,tag=mr.platform_display,distance=..0.5] run scoreboard players add #support_count mr.data 1
-#execute positioned ~-3 ~ ~ if entity @e[type=item_display,tag=mr.platform_display,distance=..0.5] run scoreboard players add #support_count mr.data 1
-#execute positioned ~ ~ ~3 if entity @e[type=item_display,tag=mr.platform_display,distance=..0.5] run scoreboard players add #support_count mr.data 1
-#execute positioned ~ ~ ~-3 if entity @e[type=item_display,tag=mr.platform_display,distance=..0.5] run scoreboard players add #support_count mr.data 1
+execute if score @s mr.support_value matches 3 positioned ~ ~ ~3 if entity @e[type=item_display,tag=mr.platform_display,distance=..0.7] if score @s mr.support_id = @e[type=item_display,tag=mr.platform_display,distance=..0.7,limit=1] mr.support_id run scoreboard players set #support_count mr.data 1
 
-tellraw @a ["§e[DEBUG] check_supports: count = ",{"score":{"name":"#support_count","objective":"mr.data"}}]
+execute if score @s mr.support_value matches 4 positioned ~ ~ ~-3 if entity @e[type=item_display,tag=mr.platform_display,distance=..0.7] if score @s mr.support_id = @e[type=item_display,tag=mr.platform_display,distance=..0.7,limit=1] mr.support_id run scoreboard players set #support_count mr.data 1
 
-execute if score #support_count mr.data matches 0 run tellraw @a ["§c[DEBUG] NO SUPPORTS FOUND - destroying platform"]
+execute if score @s mr.support_value matches 99 as @e[type=item_display,tag=mr.wall_display,tag=mr.supporting_platform,distance=..4] run scoreboard players set #support_count mr.data 1
+
 execute if score #support_count mr.data matches 0 run function mineraft:structures/platform/destroy

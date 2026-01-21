@@ -1,3 +1,5 @@
+
+
 scoreboard players operation #platform_id mr.data = @s mr.platform_id
 tag @s add mr.destroyed
 execute positioned ~-1 ~ ~-1 run fill ~2 ~ ~2 ~ ~ ~ air replace barrier

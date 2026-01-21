@@ -1,6 +1,9 @@
+
 data modify storage mineraft:platform platform_type set from entity @s SelectedItem.components.minecraft:custom_data."mr.platform_type"
 
 execute store result score #player_rot mr.data run data get entity @s Rotation[0]
+
+execute as @e[type=marker,tag=mr.platform_preview_raycast] if score @s mr.link = @p mr.link run kill @s
 
 execute positioned ~ ~ ~ anchored eyes run summon marker ~ ~ ~ {Tags:["mr.platform_preview_raycast","mr.new_preview_ray"]}
 execute anchored eyes run tp @e[type=marker,tag=mr.new_preview_ray,limit=1,sort=nearest] ~ ~ ~ ~ ~

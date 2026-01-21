@@ -64,3 +64,5 @@ scoreboard objectives add mr.support_count dummy
 
 #/ Platforms
 scoreboard objectives add mr.platform_id dummy
+scoreboard objectives add mr.support_value dummy
+
