@@ -17,3 +17,4 @@ tag @e[type=marker,tag=mr.new_preview_ray] remove mr.new_preview_ray
 scoreboard players set @e[type=marker,tag=mr.platform_preview_raycast,limit=1,sort=nearest] mr.raycast_dist 50
 
 execute as @e[type=marker,tag=mr.platform_preview_raycast,limit=1,sort=nearest] at @s run function mineraft:structures/platform/raycast/preview/loop
+execute unless entity @e[tag=mr.support] run say support gone --preview-sart

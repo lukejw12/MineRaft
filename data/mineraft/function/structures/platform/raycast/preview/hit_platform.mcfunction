@@ -10,3 +10,4 @@ tag @e[type=item_display,tag=mr.new_platform_preview] remove mr.new_platform_pre
 execute as @e[type=item_display,tag=mr.platform_display,distance=..2,limit=1,sort=nearest] at @s run function mineraft:structures/platform/preview_extend
 
 kill @s
+execute unless entity @e[tag=mr.support] run say support gone --preview-hit_platform

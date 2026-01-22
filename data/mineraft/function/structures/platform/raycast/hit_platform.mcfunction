@@ -9,3 +9,4 @@ execute as @e[type=item_display,tag=mr.platform_display,distance=..2,limit=1,sor
 execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.platform:1b}] 1
 
 kill @s
+execute unless entity @e[tag=mr.support] run say support gone --hit_platform

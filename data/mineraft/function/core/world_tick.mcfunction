@@ -1,3 +1,5 @@
+execute as @e[type=item_display,tag=mr.support_display] run tellraw @a ["§6Support ",{"score":{"name":"@s","objective":"mr.support_id"}}," tags: ",{"nbt":"Tags","entity":"@s"}," link: ",{"score":{"name":"@s","objective":"mr.link"}}]
+
 
 execute store result score #entity_count mr.data if entity @e[type=item_display]
 execute store result score #marker_count mr.data if entity @e[type=marker]

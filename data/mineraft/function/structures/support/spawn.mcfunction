@@ -17,3 +17,4 @@ execute as @e[type=item_display,tag=mr.new_support,limit=1] run scoreboard playe
 tag @e[type=item_display,tag=mr.new_support] remove mr.new_support
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1
+execute unless entity @e[tag=mr.support] run say support gone --support-spawn

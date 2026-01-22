@@ -6,3 +6,4 @@ execute if block ~ ~ ~ barrier if entity @e[type=item_display,tag=mr.platform_di
 
 execute if score @s mr.raycast_dist matches ..0 run return run kill @s
 execute positioned ^ ^ ^0.1 run function mineraft:structures/platform/raycast/loop
+execute unless entity @e[tag=mr.support] run say support gone --loop

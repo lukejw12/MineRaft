@@ -8,3 +8,4 @@ execute if score @s mr.raycast_dist matches ..0 run function mineraft:structures
 execute if score @s mr.raycast_dist matches ..0 run return run kill @s
 
 execute positioned ^ ^ ^0.1 run function mineraft:structures/platform/raycast/preview/loop
+execute unless entity @e[tag=mr.support] run say support gone --preview-lloop

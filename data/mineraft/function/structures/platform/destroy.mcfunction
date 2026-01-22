@@ -16,3 +16,4 @@ execute positioned ~ ~ ~3 as @e[type=item_display,tag=mr.platform_display,distan
 execute positioned ~ ~ ~-3 as @e[type=item_display,tag=mr.platform_display,distance=..0.5,tag=!mr.destroyed] at @s run function mineraft:structures/platform/check_supports
 
 kill @s
+execute unless entity @e[tag=mr.support] run say support gone -- destory

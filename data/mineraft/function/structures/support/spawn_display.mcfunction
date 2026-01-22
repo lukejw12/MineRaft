@@ -1,1 +1,2 @@
 summon item_display ~0.5 ~0.21 ~0.5 {item_display:"ground",Tags:["mr.support","mr.support_display","mr.new_support"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:enchantment_glint_override":false,"minecraft:item_model":"minecraft:stone"}}}
+execute unless entity @e[tag=mr.support] run say support gone --support-spawn dispaly

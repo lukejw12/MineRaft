@@ -55,3 +55,4 @@ execute if data entity @s {data:{side:"north"}} if score #found_diagonal mr.data
 execute if data entity @s {data:{side:"north"}} if score #found_diagonal mr.data matches 1 positioned ~-2 ~ ~-2 store result storage mineraft:walls diagonal_wall_id int 1 run scoreboard players get @e[type=item_display,tag=mr.wall_display,tag=!mr.destroying,distance=..0.1,predicate=mineraft:wall_is_east,limit=1] mr.wall_id
 execute if data entity @s {data:{side:"north"}} if score #found_diagonal mr.data matches 1 run function mineraft:structures/walls/spawn_pillar {x:-2,y:1,z:0,rotation:"[0f,0.707f,0f,0.707f]"}
 execute if data entity @s {data:{side:"north"}} run scoreboard players set #found_diagonal mr.data 0
+
