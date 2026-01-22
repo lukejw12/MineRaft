@@ -13,4 +13,3 @@ execute as @e[type=item_display,tag=mr.support_display,distance=..2,limit=1,sort
 
 kill @s
 
-execute unless entity @e[tag=mr.support] run say support gone --preview-hit_support

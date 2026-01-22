@@ -51,4 +51,3 @@ tag @e[type=item_display,tag=mr.new_platform] remove mr.new_platform
 execute as @e[type=item_display,tag=mr.wall_display,distance=..3] at @s run function mineraft:structures/platform/hide_wall_top
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1
-execute unless entity @e[tag=mr.support] run say support gone -- spawn extended

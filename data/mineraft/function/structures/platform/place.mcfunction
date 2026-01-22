@@ -5,4 +5,3 @@ data modify storage mineraft:platform platform_type set from entity @s SelectedI
 execute store result score #player_rot mr.data run data get entity @s Rotation[0]
 
 execute at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/platform/raycast/start
-execute unless entity @e[tag=mr.support] run say support gone --place

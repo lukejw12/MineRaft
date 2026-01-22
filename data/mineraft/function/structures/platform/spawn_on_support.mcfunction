@@ -18,20 +18,9 @@ fill ~1 ~ ~1 ~-1 ~ ~-1 barrier replace air
 
 
 function mineraft:structures/platform/spawn_display with storage mineraft:platform
-
-tellraw @a ["§e[AFTER SPAWN_DISPLAY] Checking support..."]
-execute positioned ~ ~-2 ~ as @e[type=item_display,tag=mr.support_display,distance=..1,limit=1] run tellraw @a ["§aSupport still here after spawn_display"]
-execute positioned ~ ~-2 ~ unless entity @e[type=item_display,tag=mr.support_display,distance=..1] run tellraw @a ["§c[CRITICAL] Support GONE after spawn_display!"]
-
 execute as @e[type=item_display,tag=mr.new_platform,limit=1] run data modify entity @s data.platform_type set from storage mineraft:platform platform_type
 
-tellraw @a ["§e[AFTER PLATFORM DATA] Checking support..."]
-execute positioned ~ ~-2 ~ as @e[type=item_display,tag=mr.support_display,distance=..1,limit=1] run tellraw @a ["§aSupport still here after platform data"]
-
 execute as @e[type=item_display,tag=mr.new_platform,limit=1] store result score @s mr.platform_id run scoreboard players add #global mr.platform_id 1
-
-tellraw @a ["§e[AFTER PLATFORM ID] Checking support..."]
-execute positioned ~ ~-2 ~ as @e[type=item_display,tag=mr.support_display,distance=..1,limit=1] run tellraw @a ["§aSupport still here after platform ID"]
 
 
 
@@ -49,8 +38,4 @@ execute positioned ~ ~-2 ~ as @e[type=item_display,tag=mr.support_display,distan
 
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1
-
-tellraw @a ["§e[END OF SPAWN_ON_SUPPORT] Function ending"]
-execute positioned ~ ~-2 ~ as @e[type=item_display,tag=mr.support_display,distance=..1,limit=1] run tellraw @a ["§aSupport exists at end of function"]
-
 
