@@ -8,6 +8,7 @@ particle item{item:{id:egg,components:{item_model:"mineraft:particle/wood"}}} ~ 
 playsound minecraft:entity.zombie.break_wooden_door block @a[distance=..15] ~ ~ ~ 0.2 1.5
 
 execute positioned ~ ~2 ~ as @e[type=item_display,tag=mr.support_display,distance=..1,limit=1,sort=nearest] at @s run function mineraft:structures/support/destroy
-kill @s
-execute positioned ~ ~2 ~ as @e[type=item_display,tag=mr.platform_display,distance=..1,limit=1,sort=nearest] at @s run function mineraft:structures/platform/check_supports
 
+execute as @e[type=item_display,tag=mr.platform_display] if score @s mr.support_id = #support_id mr.data at @s run function mineraft:structures/platform/destroy_no_cascade
+
+kill @s

@@ -1,4 +1,3 @@
-
 tp @s ^ ^ ^0.1
 scoreboard players remove @s mr.raycast_dist 1
 
