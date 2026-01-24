@@ -15,6 +15,7 @@ function mineraft:structures/support/has_capacity_at_position
 execute if score #has_capacity mr.data matches 0 run return fail
 
 execute as @e[type=item_display,tag=mr.wall_display,tag=mr.supporting_platform,distance=..4] run scoreboard players set #has_capacity mr.data 1
+execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.platform:1b}] 1
 
 fill ~1 ~ ~1 ~-1 ~ ~-1 barrier replace air
 

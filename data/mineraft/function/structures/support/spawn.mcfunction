@@ -2,11 +2,12 @@ execute if entity @e[type=item_display,tag=mr.support_display,distance=..0.5] ru
 
 execute positioned ~ ~ ~ unless block ~ ~ ~ air unless block ~ ~ ~ iron_bars run return fail
 execute positioned ~ ~1 ~ unless block ~ ~ ~ air unless block ~ ~ ~ iron_bars run return fail
-execute positioned ~ ~2 ~ unless block ~ ~ ~ air unless block ~ ~ ~ iron_bars run return fail
+execute positioned ~ ~2 ~ unless block ~ ~ ~ #support-valid-blocks unless block ~ ~ ~ iron_bars run return fail
 
 setblock ~ ~ ~ iron_bars
 setblock ~ ~1 ~ iron_bars
 setblock ~ ~2 ~ iron_bars
+execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.support:1b}] 1
 
 function mineraft:structures/support/spawn_display with storage mineraft:support
 
