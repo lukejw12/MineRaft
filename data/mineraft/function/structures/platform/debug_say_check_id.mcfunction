@@ -1,0 +1,1 @@
+$say Checking support ID: $(check_id)

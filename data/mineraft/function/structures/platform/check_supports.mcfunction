@@ -13,3 +13,4 @@ execute if score @s mr.support_value matches 4 positioned ~ ~ ~-3 as @e[type=ite
 execute if score @s mr.support_value matches 99 as @e[type=item_display,tag=mr.wall_display,tag=mr.supporting_platform,distance=..4] run scoreboard players set #support_count mr.data 1
 
 execute if score #support_count mr.data matches 0 run function mineraft:structures/platform/destroy
+

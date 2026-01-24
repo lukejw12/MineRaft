@@ -1,0 +1,1 @@
+$say Platform has support_id: $(platform_support_id)
