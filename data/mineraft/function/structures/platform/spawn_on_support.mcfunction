@@ -1,13 +1,16 @@
-execute unless block ~1 ~ ~1 #air run return fail
-execute unless block ~1 ~ ~ #air run return fail
-execute unless block ~1 ~ ~-1 #air run return fail
-execute unless block ~ ~ ~1 #air run return fail
-execute unless block ~ ~ ~-1 #air run return fail
-execute unless block ~-1 ~ ~1 #air run return fail
-execute unless block ~-1 ~ ~ #air run return fail
-execute unless block ~-1 ~ ~-1 #air run return fail
+execute unless block ~1 ~ ~1 #mineraft:platform-override run return fail
+execute unless block ~1 ~ ~ #mineraft:platform-override run return fail
+execute unless block ~1 ~ ~-1 #mineraft:platform-override run return fail
+execute unless block ~ ~ ~1 #mineraft:platform-override run return fail
+execute unless block ~ ~ ~-1 #mineraft:platform-override run return fail
+execute unless block ~-1 ~ ~1 #mineraft:platform-override run return fail
+execute unless block ~-1 ~ ~ #mineraft:platform-override run return fail
+execute unless block ~-1 ~ ~-1 #mineraft:platform-override run return fail
 
 execute positioned ~ ~-2 ~ unless entity @e[type=item_display,tag=mr.support_display,distance=..1] run return fail
+execute as @e[type=item_display,tag=mr.wall_display,distance=..4] at @s run function mineraft:structures/platform/hide_wall_top
+
+function mineraft:structures/platform/get_model
 
 fill ~1 ~ ~1 ~-1 ~ ~-1 barrier replace air
 
@@ -20,6 +23,5 @@ execute as @e[type=item_display,tag=mr.new_platform,limit=1] run tag @s add mr.s
 
 tag @e[type=item_display,tag=mr.new_platform] remove mr.new_platform
 
-execute as @e[type=item_display,tag=mr.wall_display,distance=..4] at @s run function mineraft:structures/platform/hide_wall_top
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1

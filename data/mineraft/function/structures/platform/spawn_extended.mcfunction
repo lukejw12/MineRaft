@@ -1,12 +1,12 @@
-execute positioned ~-1 ~ ~-1 unless block ~1 ~ ~1 air unless block ~1 ~ ~1 barrier unless block ~1 ~ ~1 iron_bars run return fail
-execute positioned ~-1 ~ ~-1 unless block ~1 ~ ~ air unless block ~1 ~ ~ barrier unless block ~1 ~ ~ iron_bars run return fail
-execute positioned ~-1 ~ ~-1 unless block ~1 ~ ~-1 air unless block ~1 ~ ~-1 barrier run return fail
-execute positioned ~-1 ~ ~-1 unless block ~ ~ ~1 air unless block ~ ~ ~1 barrier unless block ~ ~ ~1 iron_bars run return fail
-execute positioned ~-1 ~ ~-1 unless block ~ ~ ~ air unless block ~ ~ ~ barrier unless block ~ ~ ~ iron_bars run return fail
-execute positioned ~-1 ~ ~-1 unless block ~ ~ ~-1 air unless block ~ ~ ~-1 barrier unless block ~ ~ ~-1 iron_bars run return fail
-execute positioned ~-1 ~ ~-1 unless block ~-1 ~ ~1 air unless block ~-1 ~ ~1 barrier run return fail
-execute positioned ~-1 ~ ~-1 unless block ~-1 ~ ~ air unless block ~-1 ~ ~ barrier unless block ~-1 ~ ~ iron_bars run return fail
-execute positioned ~-1 ~ ~-1 unless block ~-1 ~ ~-1 air unless block ~-1 ~ ~-1 barrier run return fail
+execute positioned ~-1 ~ ~-1 unless block ~1 ~ ~1 #mineraft:platform-override unless block ~1 ~ ~1 barrier unless block ~1 ~ ~1 iron_bars run return fail
+execute positioned ~-1 ~ ~-1 unless block ~1 ~ ~ #mineraft:platform-override unless block ~1 ~ ~ barrier unless block ~1 ~ ~ iron_bars run return fail
+execute positioned ~-1 ~ ~-1 unless block ~1 ~ ~-1 #mineraft:platform-override unless block ~1 ~ ~-1 barrier run return fail
+execute positioned ~-1 ~ ~-1 unless block ~ ~ ~1 #mineraft:platform-override unless block ~ ~ ~1 barrier unless block ~ ~ ~1 iron_bars run return fail
+execute positioned ~-1 ~ ~-1 unless block ~ ~ ~ #mineraft:platform-override unless block ~ ~ ~ barrier unless block ~ ~ ~ iron_bars run return fail
+execute positioned ~-1 ~ ~-1 unless block ~ ~ ~-1 #mineraft:platform-override unless block ~ ~ ~-1 barrier unless block ~ ~ ~-1 iron_bars run return fail
+execute positioned ~-1 ~ ~-1 unless block ~-1 ~ ~1 #mineraft:platform-override unless block ~-1 ~ ~1 barrier run return fail
+execute positioned ~-1 ~ ~-1 unless block ~-1 ~ ~ #mineraft:platform-override unless block ~-1 ~ ~ barrier unless block ~-1 ~ ~ iron_bars run return fail
+execute positioned ~-1 ~ ~-1 unless block ~-1 ~ ~-1 #mineraft:platform-override unless block ~-1 ~ ~-1 barrier run return fail
 
 function mineraft:structures/support/check_position_valid
 execute if score #position_valid mr.data matches 0 run return fail
@@ -16,6 +16,8 @@ execute if score #has_capacity mr.data matches 0 run return fail
 
 execute as @e[type=item_display,tag=mr.wall_display,tag=mr.supporting_platform,distance=..4] run scoreboard players set #has_capacity mr.data 1
 execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.platform:1b}] 1
+
+function mineraft:structures/platform/get_model
 
 fill ~1 ~ ~1 ~-1 ~ ~-1 barrier replace air
 

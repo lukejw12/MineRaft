@@ -1,4 +1,5 @@
 tag @s add mr.destroying
+tag @s add mr.destroyed
 
 scoreboard players operation #wall_id mr.data = @s mr.wall_id
 
@@ -12,6 +13,9 @@ function mineraft:structures/walls/remove_trapdoors with storage mineraft:walls
 particle item{item:{id:egg,components:{item_model:"mineraft:particle/wood"}}} ~ ~2 ~ 0.5 0.5 0.5 0.1 100 normal
 
 execute if entity @s[tag=mr.supporting_platform] positioned ~ ~2 ~ as @e[type=item_display,tag=mr.platform_display,distance=..2] at @s run function mineraft:structures/platform/check_supports
+execute if entity @s[tag=mr.supporting_platform] positioned ~ ~2 ~ as @e[type=item_display,tag=mr.platform_display,distance=..2] run tag @s add mr.needs_barrier_restore
+
+execute if entity @e[type=item_display,tag=mr.needs_barrier_restore] run schedule function mineraft:structures/walls/delayed_restore_barriers 1t append
 
 kill @s
 

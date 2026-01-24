@@ -4,6 +4,8 @@ execute positioned ~ ~ ~ unless block ~ ~ ~ air unless block ~ ~ ~ iron_bars run
 execute positioned ~ ~1 ~ unless block ~ ~ ~ air unless block ~ ~ ~ iron_bars run return fail
 execute positioned ~ ~2 ~ unless block ~ ~ ~ #support-valid-blocks unless block ~ ~ ~ iron_bars run return fail
 
+function mineraft:structures/support/get_model
+
 setblock ~ ~ ~ iron_bars
 setblock ~ ~1 ~ iron_bars
 setblock ~ ~2 ~ iron_bars

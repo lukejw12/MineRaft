@@ -19,3 +19,4 @@ tag @e[type=item_display,tag=mr.new_wall] remove mr.new_wall
 execute as @e[type=item_display,tag=mr.wall_pillar,distance=..5] at @s run function mineraft:structures/walls/check_pillar_validity
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1
+
