@@ -1,2 +1,0 @@
-
-function mineraft:structures/water_purifier/spawn_with_offset with storage mineraft:purifier

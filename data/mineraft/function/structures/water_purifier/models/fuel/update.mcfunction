@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=mr.purifier_fuel_display] if score @s mr.purifier_id = @e[type=item_display,tag=mr.purifier_display,sort=nearest,limit=1] mr.purifier_id run function mineraft:structures/water_purifier/models/fuel/set

@@ -1,2 +1,2 @@
 execute unless entity @s[tag=mr.collection_net] run function mineraft:core/foundation/check_integrity
-execute if entity @s[tag=mr.collection_net] run function mineraft:structures/collection_net/check_integrity
+execute if entity @s[tag=mr.collection_net] run function mineraft:structures/collection_net/core/destruction/check_integrity

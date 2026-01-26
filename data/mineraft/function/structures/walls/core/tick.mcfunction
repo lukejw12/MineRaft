@@ -1,0 +1,2 @@
+#execute positioned ~ ~-1 ~ run function mineraft:structures/walls/validation/integrity/check
+execute unless block ~ ~-1 ~ barrier positioned ~ ~-1 ~ run function mineraft:structures/walls/core/destruction/destroy

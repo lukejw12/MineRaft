@@ -1,5 +1,0 @@
-execute if score #rotation mr.data matches -45..45 positioned ~ ~ ~3 unless entity @e[type=item_display,tag=mr.platform_display,distance=..0.7] run function mineraft:structures/platform/spawn_extended
-execute if score #rotation mr.data matches 45..135 positioned ~-3 ~ ~ unless entity @e[type=item_display,tag=mr.platform_display,distance=..0.7] run function mineraft:structures/platform/spawn_extended
-execute if score #rotation mr.data matches 135.. positioned ~ ~ ~-3 unless entity @e[type=item_display,tag=mr.platform_display,distance=..0.7] run function mineraft:structures/platform/spawn_extended
-execute if score #rotation mr.data matches ..-135 positioned ~ ~ ~-3 unless entity @e[type=item_display,tag=mr.platform_display,distance=..0.7] run function mineraft:structures/platform/spawn_extended
-execute if score #rotation mr.data matches -135..-45 positioned ~3 ~ ~ unless entity @e[type=item_display,tag=mr.platform_display,distance=..0.7] run function mineraft:structures/platform/spawn_extended

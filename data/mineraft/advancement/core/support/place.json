@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "mineraft:structures/support/place"
+    "function": "mineraft:structures/support/core/place"
   }
 }

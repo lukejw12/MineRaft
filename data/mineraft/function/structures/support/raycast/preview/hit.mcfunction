@@ -4,9 +4,9 @@ execute as @e[type=item_display,tag=mr.center,distance=..2,limit=1,sort=nearest]
 
 execute as @e[type=item_display,tag=mr.platform_display,distance=..2,limit=1,sort=nearest] at @s positioned ~ ~0.5 ~ if entity @e[type=item_display,tag=mr.support_display,distance=..0.5] run return run function mineraft:structures/support/raycast/preview/hide
 
-function mineraft:structures/support/get_model
+function mineraft:structures/support/placement/models/get
 
-execute as @a if score @s mr.link = #player_link mr.data unless entity @e[type=item_display,tag=mr.support_preview] if score @s mr.link = #player_link mr.data run function mineraft:structures/support/spawn_preview with storage mineraft:support
+execute as @a if score @s mr.link = #player_link mr.data unless entity @e[type=item_display,tag=mr.support_preview] if score @s mr.link = #player_link mr.data run function mineraft:structures/support/placement/spawn/preview with storage mineraft:support
 
 execute as @e[type=item_display,tag=mr.new_support_preview,limit=1] run scoreboard players operation @s mr.link = #player_link mr.data
 tag @e[type=item_display,tag=mr.new_support_preview] remove mr.new_support_preview

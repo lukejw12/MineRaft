@@ -1,0 +1,2 @@
+execute as @e[type=item_display,tag=mr.wall_display,tag=mr.needs_restore_check] at @s run function mineraft:structures/platform/utils/wall_interaction/restore_top
+tag @e[type=item_display,tag=mr.needs_restore_check] remove mr.needs_restore_check

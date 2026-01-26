@@ -6,6 +6,6 @@ scoreboard players operation #rotation mr.data = @s mr.data
 
 execute unless entity @e[type=item_display,tag=mr.platform_display,distance=..2] run return run kill @e[type=marker,tag=mr.platform_raycast,limit=1,sort=nearest]
 
-execute as @e[type=item_display,tag=mr.platform_display,distance=..2,limit=1,sort=nearest] at @s run function mineraft:structures/platform/try_extend
+execute as @e[type=item_display,tag=mr.platform_display,distance=..2,limit=1,sort=nearest] at @s run function mineraft:structures/platform/placement/extension/try_extend
 
 kill @e[type=marker,tag=mr.platform_raycast,limit=1,sort=nearest]

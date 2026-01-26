@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "mineraft:structures/water_purifier/place"
+    "function": "mineraft:structures/water_purifier/core/place"
   }
 }

@@ -2,7 +2,7 @@ execute as @s[tag=!mr.has_ray_id] run function mineraft:core/player/link
 
 execute as @e[type=item_display,tag=mr.foundation,distance=..10] at @s run function mineraft:core/foundation/tick
 execute if items entity @s weapon.mainhand *[custom_data~{mr.foundation:1b}] run function mineraft:core/foundation/check_display_type
-execute if items entity @s weapon.mainhand *[custom_data~{mr.collection_net:1b}] run function mineraft:structures/collection_net/check_display_type
+execute if items entity @s weapon.mainhand *[custom_data~{mr.collection_net:1b}] run function mineraft:structures/collection_net/placement/validation/check_display_type
 
 execute as @e[type=interaction] at @s run function mineraft:core/interaction/tick
 

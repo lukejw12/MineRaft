@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "mineraft:structures/collection_net/place"
+    "function": "mineraft:structures/collection_net/core/place"
   }
 }
