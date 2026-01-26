@@ -1,0 +1,2 @@
+$execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if entity @e[type=item_display,tag=mr.wall_display,tag=mr.has_trapdoor_replaced2,distance=..2] run setblock ~ ~ ~ minecraft:iron_trapdoor[half=bottom,open=true]
+$execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) as @e[type=item_display,tag=mr.wall_display,tag=mr.has_trapdoor_replaced2,distance=..2] run tag @s remove mr.has_trapdoor_replaced2

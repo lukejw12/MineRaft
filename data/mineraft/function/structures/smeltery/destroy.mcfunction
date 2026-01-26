@@ -1,7 +1,8 @@
 scoreboard players operation #smeltery_id mr.data = @s mr.smeltery_id
 
-execute at @s run setblock ~ ~ ~ air
 
+execute at @s run setblock ~ ~ ~ air
+execute as @e[type=item_display,tag=mr.smeltery_display] at @s if score @s mr.smeltery_id = #smeltery_id mr.data if entity @e[type=item_display,tag=mr.wall_display,distance=..3] run function mineraft:structures/smeltery/restore_wall_trapdoor
 execute as @e[type=item_display,tag=mr.smeltery_display] if score @s mr.smeltery_id = #smeltery_id mr.data run kill @s
 execute as @e[type=item_display,tag=mr.smeltery_fuel_display] if score @s mr.smeltery_id = #smeltery_id mr.data run kill @s
 

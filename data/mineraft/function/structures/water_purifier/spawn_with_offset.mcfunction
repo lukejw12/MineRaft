@@ -1,11 +1,20 @@
-$setblock ~$(block1_offset_x) ~ ~$(block1_offset_z) barrier
-
 function mineraft:structures/water_purifier/spawn_display with storage mineraft:purifier
 
 summon interaction ~0.5 ~ ~0.5 {width:1.05f,height:1.5f,Tags:["mr.purifier","mr.purifier_interaction","mr.new_interaction","mr.block_0"]}
 function mineraft:structures/water_purifier/spawn_interaction with storage mineraft:purifier
 
 summon item_display ~0.5 ~0.5 ~0.5 {item_display:"ground",Tags:["mr.purifier","mr.purifier_fuel_display","mr.new_fuel"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"minecraft:air"}}}
+execute if block ~ ~ ~ iron_trapdoor[facing=north] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_north
+execute if block ~ ~ ~ iron_trapdoor[facing=south] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_south
+execute if block ~ ~ ~ iron_trapdoor[facing=east] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_east
+execute if block ~ ~ ~ iron_trapdoor[facing=west] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_west
+$execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if block ~ ~ ~ iron_trapdoor[facing=north] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_north2
+$execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if block ~ ~ ~ iron_trapdoor[facing=south] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_south2
+$execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if block ~ ~ ~ iron_trapdoor[facing=east] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_east2
+$execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if block ~ ~ ~ iron_trapdoor[facing=west] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_west2
+
+setblock ~ ~ ~ barrier
+$setblock ~$(block1_offset_x) ~ ~$(block1_offset_z) barrier
 
 execute as @e[type=item_display,tag=mr.new_display,limit=1] store result score @s mr.purifier_id run scoreboard players add #global mr.purifier_id 1
 execute as @e[type=interaction,tag=mr.new_interaction] run scoreboard players operation @s mr.purifier_id = @e[type=item_display,tag=mr.new_display,limit=1] mr.purifier_id
