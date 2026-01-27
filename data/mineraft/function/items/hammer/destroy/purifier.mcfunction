@@ -1,0 +1,2 @@
+scoreboard players operation #purifier_id mr.data = @e[type=item_display,tag=mr.purifier_display,distance=..2,limit=1,sort=nearest] mr.purifier_id
+execute as @e[type=interaction,tag=mr.purifier_interaction] if score @s mr.purifier_id = #purifier_id mr.data at @s run function mineraft:structures/water_purifier/core/destroy

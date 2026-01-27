@@ -1,6 +1,6 @@
 execute store result score #flotsam_count mr.data run execute if entity @e[type=item,tag=mr.flotsam]
 
-execute if score #flotsam_count mr.data matches 20.. run return fail
+execute if score #flotsam_count mr.data matches 50.. run return fail
 
 function mineraft:flotsam/references/items
 

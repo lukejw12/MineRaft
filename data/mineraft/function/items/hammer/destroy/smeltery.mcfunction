@@ -1,0 +1,2 @@
+scoreboard players operation #smeltery_id mr.data = @e[type=item_display,tag=mr.smeltery_display,distance=..2,limit=1,sort=nearest] mr.smeltery_id
+execute as @e[type=interaction,tag=mr.smeltery_interaction] if score @s mr.smeltery_id = #smeltery_id mr.data at @s run function mineraft:structures/smeltery/core/destroy

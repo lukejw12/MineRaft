@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "mr.hammer": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineraft:items/hammer/use"
+  }
+}
