@@ -29,6 +29,6 @@
 ## Current Focus (1/26/26)
 > - [x] **Builders Hammer (Removes Structures)** *1/26/26*
 > 
-> **Stairs**
+> - [x] **Stairs**
 >
 > **Crop Plots**
