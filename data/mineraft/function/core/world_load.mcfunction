@@ -11,6 +11,11 @@ scoreboard objectives add mr.const dummy
 scoreboard players set #-1 mr.const -1
 scoreboard players set #100 mr.const 100
 scoreboard players set #10 mr.const 10
+scoreboard players set #2 mr.const 2
+scoreboard players set #3 mr.const 3
+scoreboard players set #4 mr.const 4
+scoreboard players set #5 mr.const 5
+scoreboard players set #6 mr.const 6
 
 ##/ Linking
 scoreboard objectives add mr.link dummy
@@ -66,3 +71,5 @@ scoreboard objectives add mr.support_count dummy
 scoreboard objectives add mr.platform_id dummy
 scoreboard objectives add mr.support_value dummy
 
+#/ Stairs
+scoreboard objectives add mr.stairs_id dummy
