@@ -1,1 +1,2 @@
+execute if data storage mineraft:support {support_type:"solid_wooden_support"} run data modify storage mineraft:support model set value "mineraft:structures/supports/solid_wooden_support"
 execute if data storage mineraft:support {support_type:"wooden_support"} run data modify storage mineraft:support model set value "mineraft:structures/supports/wooden_support"

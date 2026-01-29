@@ -1,7 +1,7 @@
 function mineraft:structures/walls/validation/integrity/space
 
 execute if score #space_clear mr.data matches 0 run return fail
-
+execute as @a if score @s mr.link = #player_link mr.data run item modify entity @s weapon.mainhand mineraft:remove_one
 function mineraft:structures/walls/utils/trapdoors/place with storage mineraft:walls
 function mineraft:structures/walls/placement/spawn/display with storage mineraft:walls
 

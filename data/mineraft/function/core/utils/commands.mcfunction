@@ -1,5 +1,6 @@
 $data modify storage mineraft:commands item set value "$(item)"
 $data modify storage mineraft:commands type set value "$(type)"
+$data modify storage mineraft:commands name set value "$(name)"
 
 execute if data storage mineraft:commands {item:"builders_hammer"} run give @s stick[!food,consumable={consume_seconds:9999,animation:"block",sound:"intentionally_empty",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"intentionally_empty"}]},custom_data={mr.hammer:1b},item_model="mineraft:items/tools/builders_hammer"]
 
