@@ -14,7 +14,7 @@ particle item{item:{id:egg,components:{item_model:"mineraft:particle/wood"}}} ~ 
 
 execute if entity @s[tag=mr.supporting_platform] positioned ~ ~2 ~ as @e[type=item_display,tag=mr.platform_display,distance=..2] at @s run function mineraft:structures/platform/validation/support_checks/check
 execute if entity @s[tag=mr.supporting_platform] positioned ~ ~2 ~ as @e[type=item_display,tag=mr.platform_display,distance=..2] run tag @s add mr.needs_barrier_restore
-execute if entity @e[type=item_display,tag=mr.needs_barrier_restore] run schedule function mineraft:structures/walls/utils/platform_interaction/delayed_restore 1t append
+execute if entity @e[type=item_display,tag=mr.needs_barrier_restore] run schedule function mineraft:structures/walls/utils/platform_interaction/delayed_restore 2t append
 
 kill @s
 

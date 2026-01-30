@@ -4,7 +4,6 @@ execute as @e[type=item_display,tag=mr.foundation,distance=..10] at @s run funct
 execute if items entity @s weapon.mainhand *[custom_data~{mr.foundation:1b}] run function mineraft:core/foundation/check_display_type
 execute if items entity @s weapon.mainhand *[custom_data~{mr.collection_net:1b}] run function mineraft:structures/collection_net/placement/validation/check_display_type
 
-execute as @e[type=interaction] at @s run function mineraft:core/interaction/tick
 execute if items entity @s weapon.mainhand *[custom_data~{mr.hammer:1b}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:items/hammer/raycast/preview/start
 
 execute if items entity @s weapon.mainhand *[custom_data~{mr.wall:1b}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/walls/raycast/preview/start
