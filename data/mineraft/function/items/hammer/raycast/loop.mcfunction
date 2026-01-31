@@ -8,6 +8,7 @@ execute if entity @e[type=item_display,tag=mr.wall_display,distance=..2,limit=1]
 execute if entity @e[type=item_display,tag=mr.foundation,distance=..2,tag=!mr.net_display,limit=1] run return run function mineraft:items/hammer/destroy/foundation
 execute if entity @e[type=item_display,tag=mr.net_display,distance=..2,limit=1] run return run function mineraft:items/hammer/destroy/net
 execute if entity @e[type=item_display,tag=mr.platform_display,distance=..2,limit=1] run return run function mineraft:items/hammer/destroy/platform
+execute if entity @e[type=item_display,tag=mr.crop_plot_display,distance=..2,limit=1] run return run function mineraft:items/hammer/destroy/crop_plot
 
 execute if score @s mr.raycast_dist matches ..0 run return run kill @s
 execute positioned ^ ^ ^0.1 run function mineraft:items/hammer/raycast/loop

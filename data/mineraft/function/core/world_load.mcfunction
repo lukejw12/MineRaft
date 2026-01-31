@@ -73,3 +73,6 @@ scoreboard objectives add mr.support_value dummy
 
 #/ Stairs
 scoreboard objectives add mr.stairs_id dummy
+
+#/Crop Plots
+scoreboard objectives add mr.crop_plot_id dummy

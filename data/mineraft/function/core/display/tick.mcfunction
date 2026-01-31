@@ -6,3 +6,4 @@ execute as @s[tag=mr.support_display] at @s run function mineraft:structures/sup
 execute as @s[tag=mr.wall_display] at @s run function mineraft:structures/walls/core/tick
 execute as @s[tag=mr.platform_display] at @s run function mineraft:structures/platform/core/tick
 execute as @s[tag=mr.stairs_display] at @s run function mineraft:structures/stairs/core/tick
+execute as @s[tag=mr.crop_plot_display] at @s run function mineraft:structures/crop_plot/core/tick

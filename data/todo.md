@@ -32,3 +32,5 @@
 > - [x] **Stairs**
 >
 > **Crop Plots**
+https://media.sketchfab.com/models/c34e6d62619b41eabfe6c539e38a4acb/thumbnails/fce74f1a048b4a45a85eba1c26c82cc1/83e46d53bbba41d8a95908aaacc81112.jpeg
+reference for palm tree
