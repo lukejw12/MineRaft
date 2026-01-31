@@ -56,4 +56,4 @@ execute positioned ~ ~2.5 ~ if entity @e[type=interaction,tag=mr.smeltery_intera
 execute positioned ~ ~2.5 ~ if entity @e[type=interaction,tag=mr.purifier_interaction,distance=..2.5] run return fail
 execute positioned ~ ~2.5 ~ if entity @e[type=interaction,tag=mr.crop_plot_interaction,distance=..2.5] run return fail
 
-function mineraft:structures/crop_plot/spawn/spawn
+function mineraft:structures/crop_plot/basic/large/spawn/spawn

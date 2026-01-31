@@ -1,6 +1,5 @@
-function mineraft:structures/crop_plot/spawn/spawn_display with storage mineraft:crop_plot
+function mineraft:structures/crop_plot/basic/large/spawn/spawn_display with storage mineraft:crop_plot
 
-execute positioned ~-1 ~ ~-1 run fill ~2 ~ ~2 ~ ~ ~ barrier
 
 summon interaction ~ ~ ~ {width:3.02f,height:5f,Tags:["mr.crop_plot","mr.crop_plot_interaction","mr.new_interaction"]}
 
@@ -48,6 +47,7 @@ execute positioned ~1 ~ ~1 if block ~ ~ ~ iron_trapdoor[facing=north] run tag @e
 execute positioned ~1 ~ ~1 if block ~ ~ ~ iron_trapdoor[facing=south] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_9_south
 execute positioned ~1 ~ ~1 if block ~ ~ ~ iron_trapdoor[facing=east] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_9_east
 execute positioned ~1 ~ ~1 if block ~ ~ ~ iron_trapdoor[facing=west] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_9_west
+execute positioned ~-1 ~ ~-1 run fill ~2 ~ ~2 ~ ~ ~ barrier
 
 execute as @e[type=item_display,tag=mr.new_display,limit=1] store result score @s mr.crop_plot_id run scoreboard players add #global mr.crop_plot_id 1
 execute as @e[type=interaction,tag=mr.new_interaction,limit=1] run scoreboard players operation @s mr.crop_plot_id = @e[type=item_display,tag=mr.new_display,limit=1] mr.crop_plot_id

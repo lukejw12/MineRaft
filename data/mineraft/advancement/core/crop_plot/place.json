@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "mineraft:structures/crop_plot/core/place"
+    "function": "mineraft:structures/crop_plot/basic/large/core/place"
   }
 }

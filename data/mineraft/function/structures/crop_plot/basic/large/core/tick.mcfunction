@@ -1,0 +1,10 @@
+execute unless block ~1 ~ ~1 barrier run function mineraft:structures/crop_plot/basic/large/core/destroy
+execute unless block ~1 ~ ~ barrier run function mineraft:structures/crop_plot/basic/large/core/destroy
+execute unless block ~1 ~ ~-1 barrier run function mineraft:structures/crop_plot/basic/large/core/destroy
+execute unless block ~ ~ ~1 barrier run function mineraft:structures/crop_plot/basic/large/core/destroy
+execute unless block ~ ~ ~ barrier run function mineraft:structures/crop_plot/basic/large/core/destroy
+execute unless block ~ ~ ~-1 barrier run function mineraft:structures/crop_plot/basic/large/core/destroy
+execute unless block ~-1 ~ ~1 barrier run function mineraft:structures/crop_plot/basic/large/core/destroy
+execute unless block ~-1 ~ ~ barrier run function mineraft:structures/crop_plot/basic/large/core/destroy
+execute unless block ~-1 ~ ~-1 barrier run function mineraft:structures/crop_plot/basic/large/core/destroy
+execute unless block ~ ~-1 ~ barrier run function mineraft:structures/crop_plot/basic/large/core/destroy

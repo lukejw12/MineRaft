@@ -1,9 +1,0 @@
-execute positioned ~-1 ~ ~-1 if entity @e[type=item_display,tag=mr.wall_display,distance=..3] positioned ~-1 ~ ~-1 run function mineraft:structures/crop_plot/utils/restore/check_position {pos:"1"}
-execute positioned ~ ~ ~-1 if entity @e[type=item_display,tag=mr.wall_display,distance=..3] positioned ~ ~ ~-1 run function mineraft:structures/crop_plot/utils/restore/check_position {pos:"2"}
-execute positioned ~1 ~ ~-1 if entity @e[type=item_display,tag=mr.wall_display,distance=..3] positioned ~1 ~ ~-1 run function mineraft:structures/crop_plot/utils/restore/check_position {pos:"3"}
-execute positioned ~-1 ~ ~ if entity @e[type=item_display,tag=mr.wall_display,distance=..3] positioned ~-1 ~ ~ run function mineraft:structures/crop_plot/utils/restore/check_position {pos:"4"}
-execute positioned ~ ~ ~ if entity @e[type=item_display,tag=mr.wall_display,distance=..3] positioned ~ ~ ~ run function mineraft:structures/crop_plot/utils/restore/check_position {pos:"5"}
-execute positioned ~1 ~ ~ if entity @e[type=item_display,tag=mr.wall_display,distance=..3] positioned ~1 ~ ~ run function mineraft:structures/crop_plot/utils/restore/check_position {pos:"6"}
-execute positioned ~-1 ~ ~1 if entity @e[type=item_display,tag=mr.wall_display,distance=..3] positioned ~-1 ~ ~1 run function mineraft:structures/crop_plot/utils/restore/check_position {pos:"7"}
-execute positioned ~ ~ ~1 if entity @e[type=item_display,tag=mr.wall_display,distance=..3] positioned ~ ~ ~1 run function mineraft:structures/crop_plot/utils/restore/check_position {pos:"8"}
-execute positioned ~1 ~ ~1 if entity @e[type=item_display,tag=mr.wall_display,distance=..3] positioned ~1 ~ ~1 run function mineraft:structures/crop_plot/utils/restore/check_position {pos:"9"}

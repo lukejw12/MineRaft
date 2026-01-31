@@ -10,4 +10,4 @@ tag @e[type=marker,tag=mr.new_preview_ray] remove mr.new_preview_ray
 
 scoreboard players set @e[type=marker,tag=mr.crop_plot_preview_raycast,limit=1,sort=nearest] mr.raycast_dist 50
 
-execute as @e[type=marker,tag=mr.crop_plot_preview_raycast,limit=1,sort=nearest] at @s run function mineraft:structures/crop_plot/raycast/preview/loop
+execute as @e[type=marker,tag=mr.crop_plot_preview_raycast,limit=1,sort=nearest] at @s run function mineraft:structures/crop_plot/basic/large/raycast/preview/loop

@@ -8,6 +8,9 @@ execute unless block ~-1 ~ ~ #mineraft:platform-override run return fail
 execute unless block ~-1 ~ ~-1 #mineraft:platform-override run return fail
 
 execute positioned ~ ~-2 ~ unless entity @e[type=item_display,tag=mr.support_display,distance=..1] run return fail
+
+execute positioned ~ ~-1 ~ if entity @e[type=interaction,tag=mr.crop_plot_interaction,distance=..2.5] run return fail
+
 execute as @e[type=item_display,tag=mr.wall_display,distance=..4] at @s run function mineraft:structures/platform/utils/wall_interaction/hide_top
 
 function mineraft:structures/platform/placement/models/get_model
@@ -22,6 +25,5 @@ execute as @e[type=item_display,tag=mr.new_platform,limit=1] store result score 
 execute as @e[type=item_display,tag=mr.new_platform,limit=1] run tag @s add mr.skip_check
 
 tag @e[type=item_display,tag=mr.new_platform] remove mr.new_platform
-
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1

@@ -8,6 +8,8 @@ execute positioned ~-1 ~ ~-1 unless block ~-1 ~ ~1 #mineraft:platform-override u
 execute positioned ~-1 ~ ~-1 unless block ~-1 ~ ~ #mineraft:platform-override unless block ~-1 ~ ~ barrier unless block ~-1 ~ ~ iron_bars run return fail
 execute positioned ~-1 ~ ~-1 unless block ~-1 ~ ~-1 #mineraft:platform-override unless block ~-1 ~ ~-1 barrier run return fail
 
+execute positioned ~ ~-1 ~ if entity @e[type=interaction,tag=mr.crop_plot_interaction,distance=..2.5] run return fail
+
 function mineraft:structures/support/validation/position/check_position_valid
 execute if score #position_valid mr.data matches 0 run return fail
 

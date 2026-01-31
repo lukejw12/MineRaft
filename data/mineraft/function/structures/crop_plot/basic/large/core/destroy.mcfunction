@@ -1,6 +1,6 @@
 scoreboard players operation #crop_plot_id mr.data = @s mr.crop_plot_id
 
-execute as @e[type=item_display,tag=mr.crop_plot_display] if score @s mr.crop_plot_id = #crop_plot_id mr.data at @s if entity @e[type=item_display,tag=mr.wall_display,distance=..3] run function mineraft:structures/crop_plot/utils/restore/wall_trapdoor
+execute as @e[type=item_display,tag=mr.crop_plot_display] if score @s mr.crop_plot_id = #crop_plot_id mr.data at @s run function mineraft:structures/crop_plot/basic/large/utils/restore/wall_trapdoor
 
 fill ~1 ~ ~1 ~-1 ~ ~-1 air replace barrier
 
