@@ -1,0 +1,1 @@
+$data modify storage mineraft:crop_plot give set value "give @s stone[item_name=\"Palm Seed\",custom_data={mr.palm_seed:1b},item_model='mineraft:items/crafting_materials/palm_seed'] $(loot_count)"

@@ -1,5 +1,5 @@
 function mineraft:structures/crop_plot/basic/large/spawn/spawn_display with storage mineraft:crop_plot
-
+say test
 
 summon interaction ~ ~ ~ {width:3.02f,height:5f,Tags:["mr.crop_plot","mr.crop_plot_interaction","mr.new_interaction"]}
 
@@ -54,6 +54,8 @@ execute as @e[type=interaction,tag=mr.new_interaction,limit=1] run scoreboard pl
 
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run data modify entity @s data.crop_plot_type set from storage mineraft:crop_plot crop_plot_type
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run data modify entity @s data.state set value "empty"
+execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players set @s mr.crop_plot_timer 0
+execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players set @s mr.crop_plot_hits 0
 
 tag @e[type=item_display,tag=mr.new_display] remove mr.new_display
 tag @e[type=interaction,tag=mr.new_interaction] remove mr.new_interaction

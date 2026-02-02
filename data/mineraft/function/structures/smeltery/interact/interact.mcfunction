@@ -3,6 +3,7 @@ execute as @e[type=item_display,tag=mr.smeltery_display] if score @s mr.smeltery
 execute as @a[tag=mr.interacting] if items entity @s weapon.mainhand *[custom_data~{mr.fuel:1b}] run function mineraft:structures/smeltery/interact/fuel/add
 execute as @a[tag=mr.interacting] if items entity @s weapon.mainhand *[custom_data~{mr.smeltable:1b}] run function mineraft:structures/smeltery/interact/ore/add
 execute as @a[tag=mr.interacting] unless items entity @s weapon.mainhand * as @e[tag=mr.target_smeltery] if data entity @s {data:{state:"finished"}} run function mineraft:structures/smeltery/interact/collect
+execute on target if items entity @s weapon.mainhand *[custom_data~{mr.hammer:1b}] as @e[type=item_display,tag=mr.smeltery_display] if score @s mr.smeltery_id = @e[type=interaction,tag=mr.smeltery_interaction,sort=nearest,limit=1] mr.smeltery_id run function mineraft:structures/smeltery/core/destroy
 data remove entity @s interaction
 tag @a remove mr.interacting
 tag @e remove mr.target_smeltery

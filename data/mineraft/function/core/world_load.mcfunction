@@ -76,3 +76,5 @@ scoreboard objectives add mr.stairs_id dummy
 
 #/Crop Plots
 scoreboard objectives add mr.crop_plot_id dummy
+scoreboard objectives add mr.crop_plot_timer dummy
+scoreboard objectives add mr.crop_plot_hits dummy
