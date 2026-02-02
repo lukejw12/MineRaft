@@ -14,7 +14,8 @@ execute if items entity @s weapon.mainhand *[custom_data~{mr.support:1b}] at @s 
 execute if items entity @s weapon.mainhand *[custom_data~{mr.platform:1b}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/platform/raycast/preview/start
 execute if items entity @s weapon.mainhand *[custom_data~{mr.purifier:1b}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/water_purifier/raycast/preview/start
 execute if items entity @s weapon.mainhand *[custom_data~{mr.stairs:1b}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/stairs/raycast/preview/start
-execute if items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b}] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/crop_plot/basic/large/raycast/preview/start
+execute if items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b}] if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"basic_crop_plot"} at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/crop_plot/basic/large/raycast/preview/start
+execute if items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b}] if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"advanced_crop_plot"} at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/crop_plot/advanced/large/raycast/preview/start
 
 execute as @s[tag=mr.place] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:core/raycast/helpers/place_foundation"}
 execute as @s[tag=mr.place_net] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:structures/collection_net/raycast/place_net"}

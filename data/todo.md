@@ -1,13 +1,12 @@
 # Major Additions
 > # Structures
-- Stairs
 - Receiver
 - Trading Post
 - Portable Register
 - Foundation Armor
 - Cooking Pot
 - Simple Grill
-- Crop Plots (Large, and Small)
+- Crop Plots (Small)
 - Trophy Board
 - Foundation Counter
 - Recycler
@@ -25,15 +24,24 @@
 - All Fish
 - > And More
 
+## Completed
+- [x] **Builders Hammer** *1/26/26*
+- [x] **Stairs** *1/29/26*
+- [x] **Large Crop Plot** *1/31/26*
+- [x] **Advanced Large Crop Plot** *2/2/26*
 
 ## Current Focus (1/26/26)
-> - [x] **Builders Hammer (Removes Structures)** *1/26/26*
+> - [x] **Builders Hammer (Removes Structures)**
 > 
 > - [x] **Stairs**
 >
 > **Crop Plots**
 >> - [x] **Large Crop Plot**
->>
->> **Medium Crop Plot**
+>> - [x] **Advanced Large Crop Plot**
 >>
 >> **Small Crop Plot**
+
+
+
+### Shelved Content
+**Medium Crop Plot**

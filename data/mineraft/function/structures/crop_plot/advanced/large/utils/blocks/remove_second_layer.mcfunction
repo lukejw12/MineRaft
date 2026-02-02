@@ -1,0 +1,1 @@
+$fill ~$(block1_offset_x) ~1 ~$(block1_offset_z) ~$(block1_offset_x) ~4 ~$(block1_offset_z) air replace barrier
