@@ -1,4 +1,3 @@
-# data/mineraft/function/structures/walls/validation/corners/check.mcfunction
 execute store result storage mineraft:walls current_wall_id int 1 run scoreboard players get @s mr.wall_id
 
 execute if data entity @s {data:{side:"west"}} positioned ~-2 ~ ~2 if entity @e[type=item_display,tag=mr.wall_display,tag=!mr.destroying,distance=..0.1,predicate=mineraft:wall_is_north] run scoreboard players set #found_diagonal mr.data 1

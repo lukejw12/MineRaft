@@ -1,2 +1,3 @@
 execute if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"basic_crop_plot"} run function mineraft:structures/crop_plot/basic/large/core/place
 execute if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"advanced_crop_plot"} run function mineraft:structures/crop_plot/advanced/large/core/place
+execute if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"basic_small_crop_plot"} run function mineraft:structures/crop_plot/basic/small/core/place

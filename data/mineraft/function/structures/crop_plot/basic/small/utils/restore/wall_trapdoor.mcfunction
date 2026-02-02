@@ -8,6 +8,6 @@ execute if entity @s[tag=mr.trapdoor_west] run tag @s remove mr.trapdoor_west
 execute if entity @s[tag=mr.trapdoor_east] run setblock ~ ~ ~ minecraft:iron_trapdoor[facing=east,half=bottom,open=true]
 execute if entity @s[tag=mr.trapdoor_east] run tag @s remove mr.trapdoor_east
 
-data modify storage mineraft:purifier block1_offset_x set from entity @s data.block1_offset_x
-data modify storage mineraft:purifier block1_offset_z set from entity @s data.block1_offset_z
-function mineraft:structures/water_purifier/utils/restore/wall_trapdoor_block2 with storage mineraft:purifier
+data modify storage mineraft:crop_plot block1_offset_x set from entity @s data.block1_offset_x
+data modify storage mineraft:crop_plot block1_offset_z set from entity @s data.block1_offset_z
+function mineraft:structures/crop_plot/basic/small/utils/restore/wall_trapdoor_block2 with storage mineraft:crop_plot
