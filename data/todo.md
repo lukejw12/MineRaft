@@ -6,7 +6,6 @@
 - Foundation Armor
 - Cooking Pot
 - Simple Grill
-- Crop Plots (Small)
 - Trophy Board
 - Foundation Counter
 - Recycler
@@ -29,6 +28,8 @@
 - [x] **Stairs** *1/29/26*
 - [x] **Large Crop Plot** *1/31/26*
 - [x] **Advanced Large Crop Plot** *2/2/26*
+- [x] **Small Crop Plot** *2/2/26*
+- [x] **Advanced Small Crop Plot** *2/3/26*
 
 ## Current Focus (1/26/26)
 > - [x] **Builders Hammer (Removes Structures)**
@@ -38,9 +39,9 @@
 > **Crop Plots**
 >> - [x] **Large Crop Plot**
 >> - [x] **Advanced Large Crop Plot**
+>> - [x] **Small Crop Plot**
 >>
->> **Small Crop Plot**
-
+>> - [x] **Advanced Small Crop Plot**
 
 
 ### Shelved Content

@@ -1,1 +1,2 @@
 $setblock ~$(block1_offset_x) ~ ~$(block1_offset_z) air
+$setblock ~$(block1_offset_x) ~ ~$(block1_offset_z) air

@@ -1,9 +1,9 @@
-function mineraft:structures/crop_plot/basic/small/spawn/spawn_display with storage mineraft:crop_plot
+function mineraft:structures/crop_plot/advanced/small/spawn/spawn_display with storage mineraft:crop_plot
 
-summon interaction ~0.5 ~ ~0.5 {width:1.05f,height:1.05f,Tags:["mr.small_crop_plot","mr.small_crop_plot_interaction","mr.new_interaction","mr.block_0"]}
-function mineraft:structures/crop_plot/basic/small/spawn/spawn_interaction with storage mineraft:crop_plot
+summon interaction ~0.5 ~ ~0.5 {width:1.05f,height:1.1f,Tags:["mr.small_adv_crop_plot","mr.small_adv_crop_plot_interaction","mr.new_interaction","mr.block_0"]}
+function mineraft:structures/crop_plot/advanced/small/spawn/spawn_interaction with storage mineraft:crop_plot
 
-function mineraft:structures/crop_plot/basic/small/spawn/spawn_crop_displays with storage mineraft:crop_plot
+function mineraft:structures/crop_plot/advanced/small/spawn/spawn_crop_displays with storage mineraft:crop_plot
 
 execute if block ~ ~ ~ iron_trapdoor[facing=north] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_north
 execute if block ~ ~ ~ iron_trapdoor[facing=south] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_south
@@ -30,6 +30,7 @@ execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard playe
 execute as @e[type=item_display,tag=mr.new_crop,tag=mr.crop_1] run data modify entity @s data.slot set value 1
 execute as @e[type=item_display,tag=mr.new_crop,tag=mr.crop_2] run data modify entity @s data.slot set value 2
 execute as @e[type=item_display,tag=mr.new_crop,tag=mr.crop_3] run data modify entity @s data.slot set value 3
+execute as @e[type=item_display,tag=mr.new_crop,tag=mr.crop_4] run data modify entity @s data.slot set value 4
 execute as @e[type=item_display,tag=mr.new_crop] run data modify entity @s data.state set value "empty"
 execute as @e[type=item_display,tag=mr.new_crop] run scoreboard players set @s mr.crop_plot_timer 0
 

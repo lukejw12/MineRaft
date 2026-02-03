@@ -1,5 +1,4 @@
 function mineraft:structures/crop_plot/basic/large/spawn/spawn_display with storage mineraft:crop_plot
-say test
 
 summon interaction ~ ~ ~ {width:3.02f,height:5f,Tags:["mr.crop_plot","mr.crop_plot_interaction","mr.new_interaction"]}
 

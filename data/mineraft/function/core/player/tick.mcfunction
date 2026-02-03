@@ -17,6 +17,7 @@ execute if items entity @s weapon.mainhand *[custom_data~{mr.stairs:1b}] at @s a
 execute if items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b}] if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"basic_crop_plot"} at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/crop_plot/basic/large/raycast/preview/start
 execute if items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b}] if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"advanced_crop_plot"} at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/crop_plot/advanced/large/raycast/preview/start
 execute if items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b}] if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"basic_small_crop_plot"} at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/crop_plot/basic/small/raycast/preview/start
+execute if items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b}] if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"advanced_small_crop_plot"} at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:structures/crop_plot/advanced/small/raycast/preview/start
 
 execute as @s[tag=mr.place] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:core/raycast/helpers/place_foundation"}
 execute as @s[tag=mr.place_net] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:structures/collection_net/raycast/place_net"}
@@ -30,4 +31,5 @@ execute unless items entity @s weapon.mainhand *[custom_data~{mr.platform:1b}] a
 execute unless items entity @s weapon.mainhand *[custom_data~{mr.purifier:1b}] as @e[type=item_display,tag=mr.purifier_preview] if score @s mr.link = @p mr.link run kill @s
 execute unless items entity @s weapon.mainhand *[custom_data~{mr.stairs:1b}] as @e[type=item_display,tag=mr.stairs_preview] if score @s mr.link = @p mr.link run kill @s
 execute unless items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b}] as @e[type=item_display,tag=mr.crop_plot_preview] if score @s mr.link = @p mr.link run kill @s
-execute unless items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b}] as @e[type=item_display,tag=mr.small_crop_plot_preview] if score @s mr.link = @p mr.link run kill @s
+execute unless items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b,mr.crop_plot_type:"basic_small_crop_plot"}] as @e[type=item_display,tag=mr.small_crop_plot_preview] if score @s mr.link = @p mr.link run kill @s
+execute unless items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b,mr.crop_plot_type:"advanced_small_crop_plot"}] as @e[type=item_display,tag=mr.small_adv_crop_plot_preview] if score @s mr.link = @p mr.link run kill @s

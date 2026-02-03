@@ -3,6 +3,7 @@ scoreboard players remove @s mr.raycast_dist 1
 execute if entity @e[type=item_display,tag=mr.smeltery_display,distance=..2,limit=1] run return run function mineraft:items/hammer/destroy/smeltery
 execute if entity @e[type=item_display,tag=mr.purifier_display,distance=..2,limit=1] run return run function mineraft:items/hammer/destroy/purifier
 execute if entity @e[type=item_display,tag=mr.small_crop_plot_display,distance=..2,limit=1] run return run function mineraft:items/hammer/destroy/small_crop_plot
+execute if entity @e[type=item_display,tag=mr.small_adv_crop_plot_display,distance=..2,limit=1] run return run function mineraft:items/hammer/destroy/small_adv_crop_plot
 execute if entity @e[type=item_display,tag=mr.support_display,distance=..2,limit=1] run return run function mineraft:items/hammer/destroy/support
 execute if entity @e[type=item_display,tag=mr.stairs_display,distance=..2,limit=1] run return run function mineraft:items/hammer/destroy/stairs
 execute if entity @e[type=item_display,tag=mr.wall_display,distance=..2,limit=1] run return run function mineraft:items/hammer/destroy/wall

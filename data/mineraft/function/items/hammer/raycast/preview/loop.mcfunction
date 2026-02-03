@@ -3,6 +3,7 @@ scoreboard players remove @s mr.raycast_dist 1
 execute if entity @e[type=item_display,tag=mr.smeltery_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"smeltery",tag:"mr.smeltery_display"}
 execute if entity @e[type=item_display,tag=mr.purifier_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"purifier",tag:"mr.purifier_display"}
 execute if entity @e[type=item_display,tag=mr.small_crop_plot_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"small_crop_plot",tag:"mr.small_crop_plot_display"}
+execute if entity @e[type=item_display,tag=mr.small_adv_crop_plot_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"small_adv_crop_plot",tag:"mr.small_adv_crop_plot_display"}
 execute if entity @e[type=item_display,tag=mr.support_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"support",tag:"mr.support_display"}
 execute if entity @e[type=item_display,tag=mr.stairs_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"stairs",tag:"mr.stairs_display"}
 execute if entity @e[type=item_display,tag=mr.wall_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"wall",tag:"mr.wall_display"}

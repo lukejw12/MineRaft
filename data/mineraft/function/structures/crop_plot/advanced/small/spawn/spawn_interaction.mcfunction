@@ -1,0 +1,1 @@
+$execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) run summon interaction ~0.5 ~ ~0.5 {width:1.05f,height:1.1f,Tags:["mr.small_adv_crop_plot","mr.small_adv_crop_plot_interaction","mr.new_interaction","mr.block_1"]}
