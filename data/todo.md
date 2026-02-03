@@ -4,13 +4,13 @@
 - Trading Post
 - Portable Register
 - Foundation Armor
-- Cooking Pot
+
 - Simple Grill
 - Trophy Board
 - Foundation Counter
 - Recycler
 
-> # Items
+>## Items
 - Thatch
 - Plastic
 - Rope
@@ -21,17 +21,17 @@
 - Trash Cubes
 - Fishing Rods
 - All Fish
-- > And More
+- And More
 
 ## Completed
-- [x] **Builders Hammer** *1/26/26*
-- [x] **Stairs** *1/29/26*
-- [x] **Large Crop Plot** *1/31/26*
-- [x] **Advanced Large Crop Plot** *2/2/26*
-- [x] **Small Crop Plot** *2/2/26*
-- [x] **Advanced Small Crop Plot** *2/3/26*
+- [x] **Builders Hammer**           | *1/26/26*
+- [x] **Stairs**                    | *1/29/26*
+- [x] **Large Crop Plot**           | *1/31/26*
+- [x] **Advanced Large Crop Plot**  | *2/2/26*
+- [x] **Small Crop Plot**           | *2/2/26*
+- [x] **Advanced Small Crop Plot**  | *2/3/26*
 
-## Current Focus (1/26/26)
+## Previous Focus (1/26/26-2/3/26)
 > - [x] **Builders Hammer (Removes Structures)**
 > 
 > - [x] **Stairs**
@@ -43,7 +43,22 @@
 >>
 >> - [x] **Advanced Small Crop Plot**
 
+## Current Focus (2/3/26)
+> - [ ] **Simple Grill**
+> - [ ] **Foundation Armor**
+> - [ ] **Trophy Board**
+> - [ ] **Foundation Counter**
 
-### Shelved Content
-**Medium Crop Plot**
 
+
+
+### Shelved 1.0.0 Content
+> **Medium Crop Plot**
+>> | Reason: Not Majorly Important 
+>>
+>> | Note: Will release at later verison
+>
+> **Cooking Pot**
+>> | Reason: Requires MAJOR overhaul
+>> 
+>> | Note: Most likely 1.0.2-3 will be a cooking overhaul update
