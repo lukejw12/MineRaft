@@ -1,6 +1,5 @@
 execute unless score @s mr.shark_mode matches 1 run return fail
 
-tellraw @a ["CHARGE_PROCESS called, checking distance..."]
 
 execute store result score #target_x mr.data run data get entity @a[tag=mr.my_target,limit=1] Pos[0] 1000
 execute store result score #target_y mr.data run data get entity @a[tag=mr.my_target,limit=1] Pos[1] 1000
@@ -29,5 +28,4 @@ execute store result entity @s Motion[0] double 0.00008 run scoreboard players g
 execute store result entity @s Motion[1] double 0.00008 run scoreboard players get #delta_y mr.data
 execute store result entity @s Motion[2] double 0.00008 run scoreboard players get #delta_z mr.data
 
-execute if entity @a[tag=mr.my_target,distance=..2] run tellraw @a ["Player within 2 blocks! Calling deal_damage"]
 execute if entity @a[tag=mr.my_target,distance=..2] run function mineraft:shark/mode/deal_damage

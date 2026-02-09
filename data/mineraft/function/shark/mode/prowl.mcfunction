@@ -1,8 +1,6 @@
-execute if score @s mr.shark_cooldown matches 300 run tellraw @a ["Shark entered prowl mode. Cooldown: ",{"score":{"name":"@s","objective":"mr.shark_cooldown"}}]
 
 scoreboard players remove @s mr.shark_cooldown 1
 
-execute if score @s mr.shark_cooldown matches 0 run tellraw @a ["Prowl cooldown ENDED (reached 0)"]
 execute if score @s mr.shark_cooldown matches ..0 run function mineraft:shark/mode/prowl_check_attack
 
 scoreboard players operation #current_shark_id mr.data = @s mr.shark_id
