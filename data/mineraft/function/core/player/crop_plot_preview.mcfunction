@@ -1,0 +1,4 @@
+execute if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"basic_crop_plot"} run return run function mineraft:structures/crop_plot/basic/large/raycast/preview/start
+execute if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"advanced_crop_plot"} run return run function mineraft:structures/crop_plot/advanced/large/raycast/preview/start
+execute if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"basic_small_crop_plot"} run return run function mineraft:structures/crop_plot/basic/small/raycast/preview/start
+execute if data entity @s SelectedItem.components.minecraft:custom_data{mr.crop_plot_type:"advanced_small_crop_plot"} run return run function mineraft:structures/crop_plot/advanced/small/raycast/preview/start

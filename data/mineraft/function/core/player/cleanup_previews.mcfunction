@@ -1,0 +1,14 @@
+$execute as @e[type=item_display,tag=mr.hammer_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.wall_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.display,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.smeltery_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.net_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.support_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.platform_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.purifier_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.stairs_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.crop_plot_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.small_crop_plot_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.small_adv_crop_plot_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.basic_crop_plot_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.advanced_crop_plot_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
