@@ -4,4 +4,5 @@ execute if score @s mr.shark_mode matches 0 run function mineraft:shark/mode/idl
 execute if score @s mr.shark_mode matches 1 run function mineraft:shark/mode/charge
 execute if score @s mr.shark_mode matches 2 run function mineraft:shark/mode/prowl
 
-execute as @e[type=item_display,tag=aj.mineraft.root] if score @s mr.shark_id = @e[type=armor_stand,tag=mr.shark,limit=1,sort=nearest] mr.shark_id run tp @s ~ ~ ~ ~180 ~
+scoreboard players operation #shark_id mr.data = @s mr.shark_id
+execute as @e[type=item_display,tag=aj.mineraft.root,sort=nearest,limit=1] if score @s mr.shark_id = #shark_id mr.data run tp @s ~ ~ ~ ~180 ~

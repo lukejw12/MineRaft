@@ -1,6 +1,5 @@
 execute unless score @s mr.shark_mode matches 1 run return fail
 
-
 execute store result score #target_x mr.data run data get entity @a[tag=mr.my_target,limit=1] Pos[0] 1000
 execute store result score #target_y mr.data run data get entity @a[tag=mr.my_target,limit=1] Pos[1] 1000
 execute store result score #target_z mr.data run data get entity @a[tag=mr.my_target,limit=1] Pos[2] 1000
@@ -22,6 +21,8 @@ scoreboard players operation #delta_y mr.data -= #shark_y mr.data
 scoreboard players operation #delta_z mr.data = #target_z mr.data
 scoreboard players operation #delta_z mr.data -= #shark_z mr.data
 
+scoreboard players operation #motion_x mr.data = #delta_x mr.data
+scoreboard players operation #motion_z mr.data = #delta_z mr.data
 function mineraft:shark/core/update_rotation
 
 execute store result entity @s Motion[0] double 0.00008 run scoreboard players get #delta_x mr.data

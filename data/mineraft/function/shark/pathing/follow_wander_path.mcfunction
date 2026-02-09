@@ -26,10 +26,11 @@ function mineraft:shark/pathing/check_path_ahead with storage mineraft:shark
 
 scoreboard players operation #target_y mr.data = @s mr.shark_target_y
 scoreboard players operation #target_y mr.data *= #100 mr.const
-
 scoreboard players operation #delta_y mr.data = #target_y mr.data
 scoreboard players operation #delta_y mr.data -= #shark_y mr.data
 
+scoreboard players operation #motion_x mr.data = @s mr.shark_heading_x
+scoreboard players operation #motion_z mr.data = @s mr.shark_heading_z
 function mineraft:shark/core/update_rotation
 
 execute store result entity @s Motion[0] double 0.0025 run scoreboard players get @s mr.shark_heading_x

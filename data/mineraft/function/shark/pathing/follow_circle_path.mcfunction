@@ -17,14 +17,15 @@ scoreboard players operation #target_z mr.data *= #100 mr.const
 
 scoreboard players operation #delta_x mr.data = #target_x mr.data
 scoreboard players operation #delta_x mr.data -= #shark_x mr.data
-
 scoreboard players operation #delta_y mr.data = #target_y mr.data
 scoreboard players operation #delta_y mr.data -= #shark_y mr.data
-
 scoreboard players operation #delta_z mr.data = #target_z mr.data
 scoreboard players operation #delta_z mr.data -= #shark_z mr.data
 
 scoreboard players set @s mr.shark_speed 40
 
 function mineraft:shark/math/normalize_and_apply
+
+scoreboard players operation #motion_x mr.data = #delta_x mr.data
+scoreboard players operation #motion_z mr.data = #delta_z mr.data
 function mineraft:shark/core/update_rotation
