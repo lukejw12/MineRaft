@@ -1,0 +1,2 @@
+
+function animated_java:mineraft/remove/this/without_on_remove_function

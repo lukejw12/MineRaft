@@ -1,0 +1,3 @@
+
+tellraw @a [{color:'red',text:''},{color:'gray',text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:'dark_gray',italic:true,text:'\n (animated_java:mineraft)'},'\n → ᴇʀʀᴏʀ: ',{color:'red',underlined:true,text:'Invalid Animation'},'\n\n The animation ',{color:'yellow',nbt:'args.animation',storage:'animated_java:temp'},' does not exist.\n ',{color:'white',text:' ≡ '},{color:'green',text:'Available Animations:'},{color:'gray',text:'\n \s\s\s ● '},{color:'yellow',text:'steve_swim_idle'},{color:'gray',text:'\n \s\s\s ● '},{color:'yellow',text:'steve_attack_charge'},'\n']
+function animated_java:mineraft/remove/this/without_on_remove_function

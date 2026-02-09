@@ -1,0 +1,11 @@
+
+$data merge entity $(bone_fin) {transformation: [-0.9996f,0.0164f,0.0218f,-0.0075f,0.0164f,0.9999f,-0.0011f,0.1586f,-0.0219f,-0.0007f,-0.9998f,1.4301f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_tail) {transformation: [-0.9996f,0.0164f,0.0218f,-0.0037f,0.0164f,0.9999f,-0.0011f,0.1886f,-0.0219f,-0.0007f,-0.9998f,1.2811f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_body_seg_3) {transformation: [-0.9997f,0.0164f,0.0164f,0.0009f,0.0164f,0.9999f,-0.001f,0.1883f,-0.0164f,-0.0007f,-0.9999f,0.9999f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_body_seg_2) {transformation: [-0.9998f,0.0164f,0.0109f,0.002f,0.0164f,0.9999f,-0.0009f,0.0899f,-0.011f,-0.0007f,-0.9999f,0.75f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_body_seg_1) {transformation: [-0.9999f,0.0164f,0.0055f,0.005f,0.0164f,0.9999f,-0.0008f,0.1879f,-0.0055f,-0.0007f,-1f,0.4999f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_bottom_jaw) {transformation: [-0.9998f,0.0168f,0.0084f,0.0286f,0.0164f,0.9989f,-0.0445f,0.0929f,-0.0091f,-0.0443f,-0.999f,-0.6247f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_top_jaw) {transformation: [-0.9998f,0.016f,0.0098f,0.0004f,0.0164f,0.999f,0.0428f,0.2809f,-0.0091f,0.0429f,-0.999f,-0.6251f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_gills) {transformation: [-0.9999f,0.0164f,0f,0.0004f,0.0164f,0.9999f,-0.0007f,0.2809f,0f,-0.0007f,-1f,-0.6251f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_dorsal_fin_body) {transformation: [-0.9999f,0.0164f,-0.0054f,0.0045f,0.0164f,0.9999f,-0.0006f,0.4061f,0.0054f,-0.0007f,-1f,-0.2502f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_body) {transformation: [-0.9999f,0.0164f,-0.0054f,0.0046f,0.0164f,0.9999f,-0.0006f,0.0622f,0.0054f,-0.0007f,-1f,-0.0417f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

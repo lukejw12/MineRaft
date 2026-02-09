@@ -1,0 +1,3 @@
+
+tellraw @a [{color:'red',text:''},{color:'gray',text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:'dark_gray',italic:true,text:'\n (animated_java:mineraft)'},'\n → ᴇʀʀᴏʀ: ',{color:'red',underlined:true,text:'Argument Cannot Be Empty'},'\n\n Argument ',{color:'yellow',text:'animation'},{color:'red',text:' cannot be an empty string.\n'}]
+function animated_java:mineraft/remove/this/without_on_remove_function

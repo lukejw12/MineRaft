@@ -33,3 +33,5 @@ execute unless items entity @s weapon.mainhand *[custom_data~{mr.stairs:1b}] as 
 execute unless items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b}] as @e[type=item_display,tag=mr.crop_plot_preview] if score @s mr.link = @p mr.link run kill @s
 execute unless items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b,mr.crop_plot_type:"basic_small_crop_plot"}] as @e[type=item_display,tag=mr.small_crop_plot_preview] if score @s mr.link = @p mr.link run kill @s
 execute unless items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b,mr.crop_plot_type:"advanced_small_crop_plot"}] as @e[type=item_display,tag=mr.small_adv_crop_plot_preview] if score @s mr.link = @p mr.link run kill @s
+execute unless items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b,mr.crop_plot_type:"basic_crop_plot"}] as @e[type=item_display,tag=mr.basic_crop_plot_preview] if score @s mr.link = @p mr.link run kill @s
+execute unless items entity @s weapon.mainhand *[custom_data~{mr.crop_plot:1b,mr.crop_plot_type:"advanced_crop_plot"}] as @e[type=item_display,tag=mr.advanced_crop_plot_preview] if score @s mr.link = @p mr.link run kill @s

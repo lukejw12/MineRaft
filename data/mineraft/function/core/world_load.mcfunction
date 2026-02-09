@@ -49,6 +49,8 @@ scoreboard objectives add mr.shark_waypoint dummy
 scoreboard objectives add mr.shark_heading_x dummy
 scoreboard objectives add mr.shark_heading_z dummy
 scoreboard objectives add mr.shark_turn_timer dummy
+scoreboard objectives add mr.shark_id dummy
+scoreboard objectives add mr.shark_prev_mode dummy
 
 #/ Collection Net
 scoreboard objectives add mr.net_id dummy

@@ -5,8 +5,8 @@ execute if score @s mr.shark_turn_timer matches ..0 run function mineraft:shark/
 execute store result score #shark_x mr.data run data get entity @s Pos[0]
 execute store result score #shark_y mr.data run data get entity @s Pos[1] 100
 execute store result score #shark_z mr.data run data get entity @s Pos[2]
-execute store result score #target_x mr.data run data get entity @a[tag=mr.shark_target,limit=1] Pos[0]
-execute store result score #target_z mr.data run data get entity @a[tag=mr.shark_target,limit=1] Pos[2]
+execute store result score #target_x mr.data run data get entity @a[tag=mr.my_target,limit=1] Pos[0]
+execute store result score #target_z mr.data run data get entity @a[tag=mr.my_target,limit=1] Pos[2]
 
 scoreboard players operation #dist_x mr.data = #target_x mr.data
 scoreboard players operation #dist_x mr.data -= #shark_x mr.data

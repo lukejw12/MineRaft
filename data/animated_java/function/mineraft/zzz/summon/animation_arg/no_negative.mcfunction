@@ -1,0 +1,3 @@
+
+tellraw @a [{color:'red',text:''},{color:'gray',text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:'dark_gray',italic:true,text:'\n (animated_java:mineraft)'},'\n → ᴇʀʀᴏʀ: ',{color:'red',underlined:true,text:'Frame cannot be negative'},'\n\n ',{color:'yellow',text:'frame'},{color:'red',text:' must be a non-negative integer.\n'}]
+function animated_java:mineraft/remove/this/without_on_remove_function
