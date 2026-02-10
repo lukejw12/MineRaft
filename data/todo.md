@@ -4,7 +4,6 @@
 - Trading Post
 - Portable Register
 - Foundation Armor
-
 - Simple Grill
 - Trophy Board
 - Foundation Counter
@@ -46,7 +45,7 @@
 
 
 ## Current Focus (2/3/26)
-> - [ ] **Simple Grill**
+> - [x] **Simple Grill**
 > - [ ] **Foundation Armor**
 > - [ ] **Trophy Board**
 > - [ ] **Foundation Counter**
