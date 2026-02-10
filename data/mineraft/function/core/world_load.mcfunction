@@ -76,7 +76,15 @@ scoreboard objectives add mr.support_value dummy
 #/ Stairs
 scoreboard objectives add mr.stairs_id dummy
 
-#/Crop Plots
+#/ Crop Plots
 scoreboard objectives add mr.crop_plot_id dummy
 scoreboard objectives add mr.crop_plot_timer dummy
 scoreboard objectives add mr.crop_plot_hits dummy
+
+
+#/ Grills
+scoreboard objectives add mr.grill_id dummy
+scoreboard objectives add mr.grill_fuel dummy
+scoreboard objectives add mr.grill_progress dummy
+scoreboard objectives add mr.grill_max dummy
+scoreboard objectives add mr.grill_cook dummy

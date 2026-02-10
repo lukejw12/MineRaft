@@ -5,4 +5,4 @@ execute as @e[type=item_display,tag=mr.foundation,distance=..10] at @s run funct
 execute if entity @s[tag=mr.place] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:core/raycast/helpers/place_foundation"}
 execute if entity @s[tag=mr.place_net] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:structures/collection_net/raycast/place_net"}
 
-execute at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/player/held_item_check
+execute as @s at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/player/held_item_check

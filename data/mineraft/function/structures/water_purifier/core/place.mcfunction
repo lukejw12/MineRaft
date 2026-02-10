@@ -1,4 +1,4 @@
-schedule function mineraft:core/advancement/revoke/using_item 5t append
+schedule function mineraft:core/advancement/revoke/using_item 10t append
 tag @s add mr.revoke
 data modify storage mineraft:purifier purifier_type set from entity @s SelectedItem.components.minecraft:custom_data."mr.purifier_type"
 

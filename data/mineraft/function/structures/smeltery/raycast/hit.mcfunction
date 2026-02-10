@@ -5,8 +5,10 @@ data modify storage mineraft:smeltery smeltery_type set from entity @s data.smel
 scoreboard players operation #rotation mr.data = @s mr.data
 function mineraft:structures/smeltery/spawn/calculate_rotation
 
-execute align xyz positioned ~ ~ ~ if entity @e[type=item_display,tag=mr.smeltery_display,distance=..0.5] run return run kill @s
-execute align xyz positioned ~ ~ ~ if entity @e[type=item_display,tag=mr.purifier_display,distance=..0.5] run return run kill @s
+execute align xyz positioned ~0.5 ~ ~0.5 if entity @e[type=item_display,tag=mr.small_crop_plot_display,distance=..1] run return run kill @s
+execute align xyz positioned ~0.5 ~ ~0.5 if entity @e[type=item_display,tag=mr.purifier_display,distance=..1] run return run kill @s
+execute align xyz positioned ~0.5 ~ ~0.5 if entity @e[type=item_display,tag=mr.smeltery_display,distance=..1] run return run kill @s
+execute align xyz positioned ~0.5 ~ ~0.5 if entity @e[type=item_display,tag=mr.grill_display,distance=..1] run return run kill @s
 
 execute align xyz positioned ~ ~1 ~ run function mineraft:structures/smeltery/spawn/spawn
 

@@ -12,3 +12,6 @@ execute if entity @s[tag=mr.crop_plot_interaction] if data entity @s attack if s
 execute if entity @s[tag=mr.crop_plot_interaction] if data entity @s attack if score @s mr.crop_plot_id = @e[type=item_display,tag=mr.crop_plot_display,sort=nearest,limit=1,distance=..3] mr.crop_plot_id if entity @e[type=item_display,tag=mr.crop_plot_display,sort=nearest,limit=1,distance=..3,nbt={data:{crop_plot_type:"advanced_crop_plot"}}] run function mineraft:structures/crop_plot/advanced/large/interaction/attack
 execute if entity @s[tag=mr.small_crop_plot_interaction] if data entity @s interaction run function mineraft:structures/crop_plot/basic/small/interaction/interact
 execute if entity @s[tag=mr.small_adv_crop_plot_interaction] if data entity @s interaction run function mineraft:structures/crop_plot/advanced/small/interaction/interact
+
+execute if entity @s[tag=mr.grill_interaction] if data entity @s interaction run function mineraft:structures/grill/interaction/interact
+execute if entity @s[tag=mr.grill_interaction] if data entity @s attack run function mineraft:structures/grill/core/destroy

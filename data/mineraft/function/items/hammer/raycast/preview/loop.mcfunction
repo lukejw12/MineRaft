@@ -1,5 +1,6 @@
 tp @s ^ ^ ^0.1
 scoreboard players remove @s mr.raycast_dist 1
+execute if entity @e[type=item_display,tag=mr.grill_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"grill",tag:"mr.grill_display"}
 execute if entity @e[type=item_display,tag=mr.smeltery_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"smeltery",tag:"mr.smeltery_display"}
 execute if entity @e[type=item_display,tag=mr.purifier_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"purifier",tag:"mr.purifier_display"}
 execute if entity @e[type=item_display,tag=mr.small_crop_plot_display,distance=..2,limit=1] run return run function mineraft:items/hammer/raycast/preview/hit {structure:"small_crop_plot",tag:"mr.small_crop_plot_display"}

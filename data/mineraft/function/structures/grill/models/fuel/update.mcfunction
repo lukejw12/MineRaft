@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=mr.grill_fuel_display] if score @s mr.grill_id = @e[type=item_display,tag=mr.grill_display,sort=nearest,limit=1] mr.grill_id run function mineraft:structures/grill/models/fuel/set

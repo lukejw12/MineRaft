@@ -4,9 +4,9 @@ data modify storage mineraft:crop_plot crop_plot_type set from entity @s data.cr
 scoreboard players operation #rotation mr.data = @s mr.data
 function mineraft:structures/crop_plot/advanced/small/placement/calculate_rotation
 
-execute align xyz positioned ~ ~ ~ if entity @e[type=item_display,tag=mr.small_adv_crop_plot_display,distance=..1] run return run function mineraft:structures/crop_plot/advanced/small/raycast/preview/hide
-execute align xyz positioned ~ ~ ~ if entity @e[type=item_display,tag=mr.purifier_display,distance=..1] run return run function mineraft:structures/crop_plot/advanced/small/raycast/preview/hide
-execute align xyz positioned ~ ~ ~ if entity @e[type=item_display,tag=mr.smeltery_display,distance=..1] run return run function mineraft:structures/crop_plot/advanced/small/raycast/preview/hide
+execute align xyz positioned ~0.5 ~ ~0.5 if entity @e[type=item_display,tag=mr.small_adv_crop_plot_display,distance=..1] run return run function mineraft:structures/crop_plot/advanced/small/raycast/preview/hide
+execute align xyz positioned ~0.5 ~ ~0.5 if entity @e[type=item_display,tag=mr.purifier_display,distance=..1] run return run function mineraft:structures/crop_plot/advanced/small/raycast/preview/hide
+execute align xyz positioned ~0.5 ~ ~0.5 if entity @e[type=item_display,tag=mr.smeltery_display,distance=..1] run return run function mineraft:structures/crop_plot/advanced/small/raycast/preview/hide
 
 execute as @a if score @s mr.link = #player_link mr.data unless entity @e[type=item_display,tag=mr.small_adv_crop_plot_preview] if score @s mr.link = #player_link mr.data run function mineraft:structures/crop_plot/advanced/small/spawn/spawn_preview with storage mineraft:crop_plot
 
