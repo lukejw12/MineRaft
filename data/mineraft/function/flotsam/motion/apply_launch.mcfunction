@@ -1,0 +1,1 @@
+$data modify entity @s Motion set value [$(launch_x)d,$(launch_y)d,$(launch_z)d]

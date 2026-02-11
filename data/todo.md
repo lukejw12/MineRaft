@@ -4,7 +4,6 @@
 - Trading Post
 - Portable Register
 - Foundation Armor
-- Simple Grill
 - Trophy Board
 - Foundation Counter
 - Recycler
@@ -29,6 +28,7 @@
 - [x] **Advanced Large Crop Plot**  | *2/2/26*
 - [x] **Small Crop Plot**           | *2/2/26*
 - [x] **Advanced Small Crop Plot**  | *2/3/26*
+- [x] **Simple Grill**              | *2/10/26*
 
 ## Previous Focus (1/26/26-2/3/26)
 > - [x] **Builders Hammer (Removes Structures)**

@@ -7,3 +7,4 @@ execute as @e[type=interaction] at @s run function mineraft:core/interaction/tic
 execute as @e[type=item_display,tag=!aj.mineraft.bone,tag=!aj.mineraft.root] at @s run function mineraft:core/display/tick
 execute as @e[type=item,tag=mr.flotsam] at @s run function mineraft:flotsam/tick
 execute as @e[type=armor_stand,tag=mr.shark] at @s run function mineraft:shark/core/tick
+execute as @e[type=marker,limit=1,sort=nearest,tag=mr.spawn] at @s run function mineraft:flotsam/core/tick

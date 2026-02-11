@@ -1,6 +1,5 @@
 execute if entity @s[tag=mr.smeltery_display] run function mineraft:structures/smeltery/core/tick
 execute if entity @s[tag=mr.purifier_display] run function mineraft:structures/water_purifier/core/tick
-execute if entity @s[tag=mr.spawn] run function mineraft:flotsam/core/tick
 execute if entity @s[tag=mr.net_display] run function mineraft:structures/collection_net/core/tick
 execute if entity @s[tag=mr.support_display] run function mineraft:structures/support/core/tick
 execute if entity @s[tag=mr.wall_display] run function mineraft:structures/walls/core/tick

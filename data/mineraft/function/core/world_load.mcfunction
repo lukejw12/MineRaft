@@ -56,10 +56,12 @@ scoreboard objectives add mr.shark_prev_mode dummy
 scoreboard objectives add mr.net_id dummy
 scoreboard objectives add mr.net_items dummy
 
-##/ flotsam
+#/ flotsam
 scoreboard objectives add mr.flotsam_id dummy
 scoreboard objectives add mr.flotsam_timer dummy
-
+scoreboard objectives add mr.bobber_id dummy
+scoreboard objectives add mr.bobber_timer dummy
+scoreboard players set #flotsam_wave mr.data 0
 #/ Wall
 scoreboard objectives add mr.wall_id dummy
 scoreboard objectives add mr.wall_id2 dummy

@@ -1,0 +1,1 @@
+$execute as @s at @s run tp @s ~$(attract_x) ~ ~$(attract_z)
