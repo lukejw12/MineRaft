@@ -29,18 +29,7 @@
 - [x] **Small Crop Plot**           | *2/2/26*
 - [x] **Advanced Small Crop Plot**  | *2/3/26*
 - [x] **Simple Grill**              | *2/10/26*
-
-## Previous Focus (1/26/26-2/3/26)
-> - [x] **Builders Hammer (Removes Structures)**
-> 
-> - [x] **Stairs**
->
-> **Crop Plots**
->> - [x] **Large Crop Plot**
->> - [x] **Advanced Large Crop Plot**
->> - [x] **Small Crop Plot**
->>
->> - [x] **Advanced Small Crop Plot**
+- [x] **Flotsam Rework**            | *2/10/26*
 
 
 
@@ -49,6 +38,7 @@
 > - [ ] **Foundation Armor**
 > - [ ] **Trophy Board**
 > - [ ] **Foundation Counter**
+> - [x] **Flotsam Rework**
 
 
 
