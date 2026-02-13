@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "requirement": {
+    "empty_cup": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
@@ -11,8 +11,24 @@
           }
         }
       }
+    },
+    "saltwater_cup": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "mr.filled_cup": true,
+              "mr.water_type": "saltwater"
+            }
+          }
+        }
+      }
     }
   },
+  "requirements": [
+    ["empty_cup", "saltwater_cup"]
+  ],
   "rewards": {
     "function": "mineraft:core/player/cup/fill_cup"
   }

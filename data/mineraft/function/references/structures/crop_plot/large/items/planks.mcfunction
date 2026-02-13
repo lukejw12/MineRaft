@@ -1,1 +1,1 @@
-$data modify storage mineraft:crop_plot give set value "give @s stone[item_name=\"Planks\",custom_data={mr.planks:1b},item_model='mineraft:items/crafting_materials/planks'] $(loot_count)"
+$data modify storage mineraft:crop_plot give set value "give @s minecraft:brown_dye[item_name=\"Wooden Plank\",custom_data={mr.wooden_plank:1b,mr.fuel:1b},item_model='raft_items:wooden_plank'] $(loot_count)"

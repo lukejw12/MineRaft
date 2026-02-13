@@ -1,0 +1,1 @@
+tag @a[tag=mr.just_drank] remove mr.just_drank

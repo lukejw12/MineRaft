@@ -1,0 +1,1 @@
+$data modify storage mineraft:crop_plot give set value "give @s minecraft:green_dye[item_name=\"Palm Leaf\",custom_data={mr.palm_leaf:1b},item_model='raft_items:palm_leaf'] $(loot_count)"
