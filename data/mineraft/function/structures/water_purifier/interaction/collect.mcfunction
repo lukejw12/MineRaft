@@ -1,7 +1,9 @@
 data modify entity @s data.state set value "idle"
 
-execute as @a[tag=mr.interacting] if items entity @s weapon.mainhand *[custom_data~{mr.pail-empty:1b}] run item replace entity @s weapon.mainhand with stone[custom_data={mr.pail-freshwater:1b},item_model="mineraft:items/crafting_materials/cup/freshwater_cup"]
-execute as @a[tag=mr.interacting] if items entity @s weapon.offhand *[custom_data~{mr.pail-empty:1b}] run item replace entity @s weapon.offhand with stone[custom_data={mr.pail-freshwater:1b},item_model="mineraft:items/crafting_materials/cup/freshwater_cup"]
+data modify storage mineraft:cup cup_type set from entity @a[tag=mr.interacting,limit=1] SelectedItem.components.minecraft:custom_data."mr.cup_type"
+
+execute as @a[tag=mr.interacting] if items entity @s weapon.mainhand *[custom_data~{mr.pail-empty:1b}] run function mineraft:items/cups/purifier_collect_main
+execute as @a[tag=mr.interacting] if items entity @s weapon.offhand *[custom_data~{mr.pail-empty:1b}] run function mineraft:items/cups/purifier_collect_off
 
 function mineraft:structures/water_purifier/models/idle/update
 

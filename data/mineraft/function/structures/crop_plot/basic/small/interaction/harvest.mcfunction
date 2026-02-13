@@ -6,7 +6,7 @@ execute unless entity @e[tag=mr.harvestable] run return fail
 
 execute as @e[tag=mr.harvestable,limit=1,sort=nearest] run data modify storage mineraft:crop_plot seed_type set from entity @s data.seed_type
 
-function mineraft:structures/crop_plot/basic/small/references/loot
+function mineraft:references/structures/crop_plot/small/loot
 
 execute as @a[tag=mr.interacting] run function mineraft:structures/crop_plot/basic/small/interaction/give_loot with storage mineraft:crop_plot
 

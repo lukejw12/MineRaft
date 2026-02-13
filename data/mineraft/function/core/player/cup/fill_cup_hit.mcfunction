@@ -1,5 +1,8 @@
-execute as @a[tag=mr.fill_water,sort=nearest] if items entity @s weapon.mainhand *[custom_data~{mr.pail-empty:1b}] run item replace entity @s weapon.mainhand with stone[custom_data={mr.pail-saltwater:1b},item_model="mineraft:items/crafting_materials/cup/saltwater_cup"]
-execute as @a[tag=mr.fill_water,sort=nearest] if items entity @s weapon.offhand *[custom_data~{mr.pail-empty:1b}] run item replace entity @s weapon.offhand with stone[custom_data={mr.pail-saltwater:1b},item_model="mineraft:items/crafting_materials/cup/saltwater_cup"]
+data modify storage mineraft:cup cup_type set from entity @a[tag=mr.fill_water,sort=nearest,limit=1] SelectedItem.components.minecraft:custom_data."mr.cup_type"
+data modify storage mineraft:cup water_type set value "saltwater"
+function mineraft:references/items/cups/uses
+execute store result storage mineraft:cup new_uses int 1 run data get storage mineraft:cup max_uses
+function mineraft:items/cups/fill_hand with storage mineraft:cup
 
 particle splash ~ ~ ~ 0.2 0.2 0.2 0 10
 tag @a[tag=mr.fill_water,sort=nearest] remove mr.fill_water

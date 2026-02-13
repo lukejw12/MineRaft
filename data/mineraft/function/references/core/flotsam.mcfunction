@@ -1,3 +1,4 @@
+#/ Specify roll value, item id, item components
 execute store result score #flotsam_roll mr.data run random value 1..100
 data modify storage mineraft:flotsam item_count set value 1
 execute if score #flotsam_roll mr.data matches 1..40 run data modify storage mineraft:flotsam item_id set value "minecraft:green_dye"

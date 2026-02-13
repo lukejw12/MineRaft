@@ -1,6 +1,6 @@
 execute store result score #flotsam_count mr.data if entity @e[type=item,tag=mr.flotsam]
 execute if score #flotsam_count mr.data matches 50.. run return fail
-function mineraft:flotsam/references/items
+function mineraft:references/core/flotsam
 execute store result score #spawn_x mr.data run random value 40..50
 execute store result score #spawn_z_abs mr.data run random value 0..40
 execute store result score #spawn_z mr.data run random value 0..1

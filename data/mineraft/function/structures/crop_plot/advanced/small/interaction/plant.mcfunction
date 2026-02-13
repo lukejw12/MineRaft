@@ -9,7 +9,7 @@ execute unless entity @e[tag=mr.available_slot] as @e[type=item_display,tag=mr.s
 
 execute unless entity @e[tag=mr.available_slot] run return fail
 
-function mineraft:structures/crop_plot/advanced/small/references/seedlings
+function mineraft:references/structures/crop_plot/small/seedlings
 
 execute as @e[tag=mr.available_slot] run data modify entity @s data.seed_type set from storage mineraft:crop_plot seed_type
 execute as @e[tag=mr.available_slot] run data modify entity @s data.state set value "stage0"

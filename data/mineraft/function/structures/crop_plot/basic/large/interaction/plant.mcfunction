@@ -1,6 +1,6 @@
 execute as @e[tag=mr.target_crop_plot] unless data entity @s {data:{state:"empty"}} run return fail
 
-function mineraft:structures/crop_plot/basic/large/references/seedlings
+function mineraft:references/structures/crop_plot/large/seedlings
 
 execute as @e[tag=mr.target_crop_plot] run data modify entity @s data.seed_type set from storage mineraft:crop_plot seed_type
 execute as @e[tag=mr.target_crop_plot] run data modify entity @s data.state set value "sapling"

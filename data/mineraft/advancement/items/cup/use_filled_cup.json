@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "use_cup": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{mr.filled_cup:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineraft:items/cups/used"
+  }
+}

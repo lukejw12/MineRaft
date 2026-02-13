@@ -1,4 +1,3 @@
 data modify storage mineraft:smeltery fuel_item set from entity @s SelectedItem.id
-execute store result score #fuel_value mr.data run function mineraft:structures/smeltery/references/fuel_lookup
-
+execute store result score #fuel_value mr.data run function mineraft:references/core/fuel
 execute as @e[tag=mr.target_smeltery] if score @s mr.smeltery_fuel matches ..199 run function mineraft:structures/smeltery/interact/fuel/do_add

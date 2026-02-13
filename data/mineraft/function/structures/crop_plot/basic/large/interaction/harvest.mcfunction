@@ -1,6 +1,6 @@
 scoreboard players add @s mr.crop_plot_hits 1
 
-function mineraft:structures/crop_plot/basic/large/references/loot
+function mineraft:references/structures/crop_plot/large/loot
 
 scoreboard players set #loot_index mr.data 0
 execute store result score #loot_count mr.data run data get storage mineraft:crop_plot loot

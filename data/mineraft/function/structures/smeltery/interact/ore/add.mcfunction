@@ -2,7 +2,7 @@ execute as @e[tag=mr.target_smeltery] unless data entity @s {data:{state:"idle"}
 
 data modify storage mineraft:smeltery smelt_type set from entity @s SelectedItem.components.minecraft:custom_data."mr.smelt_type"
 
-function mineraft:structures/smeltery/references/smeltables
+function mineraft:references/core/smeltable
 
 execute as @e[tag=mr.target_smeltery] run data modify entity @s data.smelt_type set from storage mineraft:smeltery smelt_type
 execute as @e[tag=mr.target_smeltery] run data modify entity @s data.output_item set from storage mineraft:smeltery output_item
