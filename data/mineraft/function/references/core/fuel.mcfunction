@@ -1,5 +1,2 @@
-#/ Specify fuel type, and fuel value
-
-execute if data storage mineraft:smeltery {fuel_item:"minecraft:oak_planks"} run return 50
-execute if data storage mineraft:smeltery {fuel_item:"minecraft:spruce_planks"} run return 50
-return 0
+execute store result score #fuel_value mr.data run data get entity @s SelectedItem.components.minecraft:custom_data."mr.fuel_time"
+return run scoreboard players get #fuel_value mr.data

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "111"
+  ],
+  "key": {
+    "1": [
+      "minecraft:brown_dye"
+    ]
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:item_name": {"translate": "structure.mineraft.wooden_platform", 
+      "fallback": "Wooden Platform", "bold": false, "italic": false},
+      "minecraft:item_model": "raft_items:structure/wooden/platform",
+      "!minecraft:food": {},
+      "minecraft:custom_data": {
+        "mr.platform": true,
+        "mr.platform_type": "wooden_platform"
+      },
+      "minecraft:consumable": {
+        "on_consume_effects": [
+          {
+            "sound": "minecraft:intentionally_empty",
+            "type": "minecraft:play_sound"
+          }
+        ],
+        "sound": "minecraft:intentionally_empty",
+        "consume_seconds": 9999,
+        "has_consume_particles": false,
+        "animation": "block"
+      }
+    }
+  }
+}

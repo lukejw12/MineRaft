@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brown_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:brown_dye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mineraft:structures/basic/foundation"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_brown_dye"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mineraft:structures/basic/foundation",
+      "mineraft:structures/advanced/foundation",
+      "mineraft:structures/wooden/wall",
+      "mineraft:structures/solid_wooden/wall",
+      "mineraft:structures/wooden/platform",
+      "mineraft:structures/solid_wooden/platform"
+    ]
+  }
+}

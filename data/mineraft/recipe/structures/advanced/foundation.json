@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "   ",
+    "111",
+    "222"
+  ],
+  "key": {
+    "1": [
+      "minecraft:brown_dye"
+    ],
+    "2": [
+      "minecraft:light_gray_dye"
+    ]
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:item_name": {"translate": "structure.mineraft.advanced_foundation",
+      "fallback": "Advanced Foundation", "bold": false, "italic": false},
+      "minecraft:item_model": "raft_items:structure/advanced/foundation",
+      "!minecraft:food": {},
+      "minecraft:custom_data": {
+        "mr.foundation": true,
+        "mr.foundation_type": "advanced_foundation"
+      },
+      "minecraft:consumable": {
+        "on_consume_effects": [
+          {
+            "sound": "minecraft:intentionally_empty",
+            "type": "minecraft:play_sound"
+          }
+        ],
+        "sound": "minecraft:intentionally_empty",
+        "consume_seconds": 9999,
+        "has_consume_particles": false,
+        "animation": "block"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "11 ",
+    "11 "
+  ],
+  "key": {
+    "1": [
+      "minecraft:brown_dye"
+    ]
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:item_name": {"translate": "structure.mineraft.wooden_wall", 
+      "fallback": "Wooden Wall", "bold": false, "italic": false},
+      "minecraft:item_model": "raft_items:structure/wooden/wall",
+      "!minecraft:food": {},
+      "minecraft:custom_data": {
+        "mr.wall": true,
+        "mr.wall_type": "wooden_wall"
+      },
+      "minecraft:consumable": {
+        "on_consume_effects": [
+          {
+            "sound": "minecraft:intentionally_empty",
+            "type": "minecraft:play_sound"
+          }
+        ],
+        "sound": "minecraft:intentionally_empty",
+        "consume_seconds": 9999,
+        "has_consume_particles": false,
+        "animation": "block"
+      }
+    }
+  }
+}

@@ -1,1 +1,1 @@
-$data modify storage mineraft:crop_plot give set value "give @s stone[item_name=\"Palm Seed\",custom_data={mr.palm_seed:1b},item_model='raft_items:palm_seed'] $(loot_count)"
+$data modify storage mineraft:crop_plot give set value "give @s stone[item_name={translate:\"item.mineraft.palm_seed\",fallback:\"Palm Seed\"},custom_data={mr.palm_seed:1b},item_model='raft_items:palm_seed'] $(loot_count)"
