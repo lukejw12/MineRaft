@@ -9,6 +9,7 @@ advancement revoke @a[tag=mr.revoke] only mineraft:core/hammer/use
 advancement revoke @a[tag=mr.revoke] only mineraft:core/stairs/place
 advancement revoke @a[tag=mr.revoke] only mineraft:core/crop_plot/place
 advancement revoke @a[tag=mr.revoke] only mineraft:core/grill/place
+advancement revoke @a[tag=mr.revoke] only mineraft:core/foundation_armor/use
 
 tag @a[tag=mr.revoke] remove mr.revoke
 schedule clear mineraft:core/advancement/revoke/using_item

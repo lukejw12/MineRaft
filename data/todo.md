@@ -9,7 +9,7 @@
 - Recycler
 
 ># Essential Crafting Items
-- [x] Palm Leaf* 
+- [x] Palm Leaf 
     - [x] Texture
     - [x] Translation
     - [x] Obtainability

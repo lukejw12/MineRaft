@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{mr.foundation_armor:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineraft:items/foundation_armor/used"
+  }
+}

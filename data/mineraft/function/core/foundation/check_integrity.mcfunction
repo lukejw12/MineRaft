@@ -13,3 +13,4 @@ execute if block ~-1 62 ~-1 barrier run scoreboard players add #barrier_count mr
 execute unless score #barrier_count mr.data matches 9 run particle item{item:{id:egg,components:{item_model:"mineraft:particle/wood"}}} ~ ~1 ~ 0.5 0 0.5 0.1 100 normal
 execute unless score #barrier_count mr.data matches 9 run fill ~1 62 ~1 ~-1 61 ~-1 water
 execute unless score #barrier_count mr.data matches 9 run kill @s
+execute unless score #barrier_count mr.data matches 9 run kill @e[type=item_display,tag=mr.foundation_armor_display,distance=..1,limit=1]

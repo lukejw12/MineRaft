@@ -13,3 +13,4 @@ $execute as @e[type=item_display,tag=mr.small_adv_crop_plot_preview,tag=!$(keep)
 $execute as @e[type=item_display,tag=mr.basic_crop_plot_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
 $execute as @e[type=item_display,tag=mr.advanced_crop_plot_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
 $execute as @e[type=item_display,tag=mr.grill_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s
+$execute as @e[type=item_display,tag=mr.armor_preview,tag=!$(keep)] if score @s mr.link = @p mr.link run kill @s

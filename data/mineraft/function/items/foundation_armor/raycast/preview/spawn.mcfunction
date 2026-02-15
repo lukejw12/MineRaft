@@ -1,0 +1,3 @@
+$summon item_display ~ ~ ~ {Glowing:true,glow_color_override:16711680,item_display:"ground",Tags:["mr.armor_preview","mr.new_armor_preview"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.72f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:enchantment_glint_override":false,"minecraft:item_model":"$(model)"}}}
+execute as @e[type=item_display,tag=mr.new_armor_preview,limit=1] run scoreboard players operation @s mr.link = #player_link mr.data
+tag @e[type=item_display,tag=mr.new_armor_preview] remove mr.new_armor_preview
