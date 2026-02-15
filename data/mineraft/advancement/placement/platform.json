@@ -1,4 +1,5 @@
 {
+    "parent": "mineraft:placement/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:using_item",
@@ -6,7 +7,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "mr.hammer": true
+              "mr.platform": true
             }
           }
         }
@@ -14,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "mineraft:items/hammer/use"
+    "function": "mineraft:structures/platform/core/place"
   }
 }

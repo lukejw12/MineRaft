@@ -1,4 +1,5 @@
 {
+    "parent": "mineraft:placement/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:using_item",

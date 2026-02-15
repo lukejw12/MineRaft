@@ -1,4 +1,5 @@
 {
+    "parent": "mineraft:placement/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:using_item",
@@ -6,7 +7,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "mr.grill": true
+              "mr.wall": true
             }
           }
         }
@@ -14,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "mineraft:structures/grill/core/place"
+    "function": "mineraft:structures/walls/core/place"
   }
 }

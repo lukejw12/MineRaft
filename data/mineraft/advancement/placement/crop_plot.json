@@ -1,4 +1,5 @@
 {
+    "parent": "mineraft:placement/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:using_item",
@@ -6,7 +7,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "mr.smeltery": true
+              "mr.crop_plot": true
             }
           }
         }
@@ -14,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "mineraft:structures/smeltery/core/place"
+    "function": "mineraft:structures/crop_plot/core/place_router"
   }
 }

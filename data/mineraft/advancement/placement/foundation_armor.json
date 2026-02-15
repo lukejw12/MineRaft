@@ -1,19 +1,18 @@
 {
+    "parent": "mineraft:placement/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": {
-              "mr.collection_net": true
-            }
+            "minecraft:custom_data": "{mr.foundation_armor:1b}"
           }
         }
       }
     }
   },
   "rewards": {
-    "function": "mineraft:structures/collection_net/core/place"
+    "function": "mineraft:items/foundation_armor/used"
   }
 }
