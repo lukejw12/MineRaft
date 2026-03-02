@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brown_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "custom_data": {
+                  "mr.fuel": 1,
+                  "mr.fuel_time": 50,
+                  "mr.wooden_plank": 1
+                },
+                "item_model": "raft_items:wooden_plank",
+                "item_name": {
+                  "fallback": "Wooden Plank",
+                  "translate": "item.mineraft.wooden_plank"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

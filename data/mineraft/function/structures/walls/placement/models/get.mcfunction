@@ -1,1 +1,2 @@
-execute if data storage mineraft:walls {wall_type:"solid_wooden_wall"} run data modify storage mineraft:walls model set value "mineraft:structures/walls/solid_wooden_wall"
+execute if data storage mineraft:walls {wall_type:"solid_wooden"} run data modify storage mineraft:walls model set value "raft_structures:solid_wooden/wall"
+

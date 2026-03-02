@@ -8,6 +8,6 @@ $data modify storage mineraft:crop_plot loot_max set from storage mineraft:crop_
 
 execute if data storage mineraft:crop_plot loot_min if data storage mineraft:crop_plot loot_max run function mineraft:structures/crop_plot/basic/large/interaction/roll_count
 
-function mineraft:references/structures/crop_plot/large/items
-
-execute as @a[sort=nearest,limit=1,distance=..5] run function mineraft:structures/crop_plot/basic/large/interaction/give_loot with storage mineraft:crop_plot
+data modify storage mineraft:give item_type set from storage mineraft:crop_plot loot_type
+execute store result storage mineraft:give count int 1 run data get storage mineraft:crop_plot loot_count
+execute as @a[sort=nearest,limit=1,distance=..5] run function mineraft:core/give_item_loop

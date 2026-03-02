@@ -19,7 +19,7 @@
       "!minecraft:food": {},
       "minecraft:custom_data": {
         "mr.wall": true,
-        "mr.wall_type": "wooden_wall"
+        "mr.wall_type": "wooden"
       },
       "minecraft:consumable": {
         "on_consume_effects": [

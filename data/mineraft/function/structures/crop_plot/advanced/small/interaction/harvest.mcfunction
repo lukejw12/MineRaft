@@ -8,7 +8,7 @@ execute as @e[tag=mr.harvestable,limit=1,sort=nearest] run data modify storage m
 
 function mineraft:references/structures/crop_plot/small/loot
 
-execute as @a[tag=mr.interacting] run function mineraft:structures/crop_plot/advanced/small/interaction/give_loot with storage mineraft:crop_plot
+execute as @a[tag=mr.interacting] run function mineraft:core/give_item_loop
 
 execute as @e[tag=mr.harvestable,limit=1,sort=nearest] run data modify entity @s data.state set value "empty"
 execute as @e[tag=mr.harvestable,limit=1,sort=nearest] run data modify entity @s item.components.minecraft:item_model set value "minecraft:air"

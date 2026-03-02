@@ -1,3 +1,4 @@
+#update when nnew model #fix
 scoreboard players operation #player_link mr.data = @s mr.link
 execute if entity @e[type=item_display,tag=mr.net_display,distance=..2,limit=1] run data modify storage mineraft:armor_preview model set value "raft_items:structures/armor/net"
 execute unless entity @e[type=item_display,tag=mr.net_display,distance=..2,limit=1] run data modify storage mineraft:armor_preview model set value "raft_items:structures/armor/foundation"

@@ -1,2 +1,2 @@
 execute if data storage mineraft:grill {grill_recipe:"cod"} run data modify storage mineraft:grill grill_time set value 60
-execute if data storage mineraft:grill {grill_recipe:"cod"} run data modify storage mineraft:grill output_item set value "minecraft:cooked_cod"
+execute if data storage mineraft:grill {grill_recipe:"cod"} run data modify storage mineraft:grill output_type set value "cooked_cod"

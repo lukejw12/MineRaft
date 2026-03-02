@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light_gray_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "custom_data": {
+                  "mr.plastic": 1
+                },
+                "item_model": "raft_items:plastic",
+                "item_name": {
+                  "fallback": "Plastic",
+                  "translate": "item.mineraft.plastic"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

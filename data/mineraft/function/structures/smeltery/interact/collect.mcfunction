@@ -1,10 +1,10 @@
-data modify storage mineraft:smeltery output_item set from entity @s data.output_item
+data modify storage mineraft:give item_type set from entity @s data.output_type
 
-execute as @a[tag=mr.interacting] run function mineraft:structures/smeltery/interact/give_output with storage mineraft:smeltery
+execute as @a[tag=mr.interacting] run function mineraft:core/give_item
 
 data modify entity @s data.state set value "idle"
 data remove entity @s data.smelt_type
-data remove entity @s data.output_item
+data remove entity @s data.output_type
 
 function mineraft:structures/smeltery/model/update_model_idle
 

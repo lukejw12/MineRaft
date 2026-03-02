@@ -1,5 +1,0 @@
-data modify storage mineraft:net give set value "give @s stone"
-
-execute if data storage mineraft:net {flotsam_type:"palm_leaf"} run data modify storage mineraft:net give set value "give @s minecraft:green_dye[item_name={translate:'item.mineraft.palm_leaf',fallback:'Palm Leaf'},custom_data={mr.palm_leaf:1b},item_model='raft_items:palm_leaf']"
-execute if data storage mineraft:net {flotsam_type:"wooden_plank"} run data modify storage mineraft:net give set value "give @s minecraft:brown_dye[item_name={translate:'item.mineraft.wooden_plank',fallback:'Wooden Plank'},custom_data={mr.wooden_plank:1b,mr.fuel:1b,mr.fuel_time:50},item_model='raft_items:wooden_plank']"
-execute if data storage mineraft:net {flotsam_type:"plastic"} run data modify storage mineraft:net give set value "give @s minecraft:light_gray_dye[item_name={translate:'item.mineraft.plastic',fallback:'Plastic'},custom_data={mr.plastic:1b},item_model='raft_items:plastic']"

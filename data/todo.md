@@ -57,7 +57,7 @@
 
 # Current Focus (2/3/26)
 > - [x] **Simple Grill**
-> - [ ] **Foundation Armor**
+> - [x] **Foundation Armor**
 > - [ ] **Trophy Board**
 > - [ ] **Foundation Counter**
 > - [x] **Flotsam Rework**

@@ -1,1 +1,2 @@
-execute if data storage mineraft:crop_plot {seed_type:"potato"} run data modify storage mineraft:crop_plot loot_item set value "minecraft:potato 2"
+execute if data storage mineraft:crop_plot {seed_type:"potato"} run data modify storage mineraft:give item_type set value "potato"
+execute if data storage mineraft:crop_plot {seed_type:"potato"} run data modify storage mineraft:give count set value 2

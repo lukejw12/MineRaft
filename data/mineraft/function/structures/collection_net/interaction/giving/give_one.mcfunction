@@ -1,6 +1,3 @@
-$execute as @e[type=item_display,tag=mr.net_display,sort=nearest,limit=1] run data modify storage mineraft:net flotsam_type set from entity @s data.items[$(current_index)]
+$execute as @e[type=item_display,tag=mr.net_display,sort=nearest,limit=1] run data modify storage mineraft:give item_type set from entity @s data.items[$(current_index)]
 
-function mineraft:references/structures/collection_net
-
-execute as @a[tag=mr.net_emptying] run function mineraft:structures/collection_net/interaction/giving/do_give with storage mineraft:net
-
+execute as @a[tag=mr.net_emptying] run function mineraft:core/give_item

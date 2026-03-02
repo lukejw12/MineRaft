@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brown_dye",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "custom_data": {
+                  "mr.fuel": 1,
+                  "mr.fuel_time": 50,
+                  "mr.wooden_plank": 1
+                },
+                "item_model": "raft_items:wooden_plank",
+                "item_name": {
+                  "fallback": "Wooden Plank",
+                  "translate": "item.mineraft.wooden_plank"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:green_dye",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "custom_data": {
+                  "mr.palm_leaf": 1
+                },
+                "item_model": "raft_items:palm_leaf",
+                "item_name": {
+                  "fallback": "Palm Leaf",
+                  "translate": "item.mineraft.palm_leaf"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light_gray_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "custom_data": {
+                  "mr.plastic": 1
+                },
+                "item_model": "raft_items:plastic",
+                "item_name": {
+                  "fallback": "Plastic",
+                  "translate": "item.mineraft.plastic"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,0 @@
-$give @s $(output_item)
