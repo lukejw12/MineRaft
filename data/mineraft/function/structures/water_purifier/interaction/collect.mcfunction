@@ -4,6 +4,7 @@ data modify storage mineraft:cup cup_type set from entity @a[tag=mr.interacting,
 data modify storage mineraft:cup cup_name set from entity @a[tag=mr.interacting,limit=1] SelectedItem.components.minecraft:custom_data."mr.cup_name"
 data modify storage mineraft:cup water_type set value "freshwater"
 function mineraft:references/items/cups/uses
+function mineraft:references/items/cups/filled_model
 execute store result score #current_uses mr.data run data get entity @a[tag=mr.interacting,limit=1] SelectedItem.components.minecraft:custom_data."mr.filled_uses"
 execute store result score #max_uses mr.data run data get storage mineraft:cup max_uses
 execute if score #current_uses mr.data >= #max_uses mr.data run return fail

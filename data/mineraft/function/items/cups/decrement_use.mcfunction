@@ -11,4 +11,5 @@ scoreboard players operation #damage mr.data *= #-1 mr.const
 execute store result storage mineraft:cup damage int 1 run scoreboard players get #damage mr.data
 execute if data storage mineraft:cup {water_type:"saltwater"} run data modify storage mineraft:cup water_name set value "Saltwater"
 execute if data storage mineraft:cup {water_type:"freshwater"} run data modify storage mineraft:cup water_name set value "Freshwater"
+function mineraft:references/items/cups/filled_model
 function mineraft:items/cups/rebuild_item with storage mineraft:cup

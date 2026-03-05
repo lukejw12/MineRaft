@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mineraft:items/plank",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mineraft:items/palm_leaf",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mineraft:items/plastic",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mineraft:items/scrap",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+execute if data storage mineraft:cup {cup_type:"cup"} run data modify storage mineraft:cup item_model set value "raft_items:container/cup/empty"
+execute if data storage mineraft:cup {cup_type:"bottle"} run data modify storage mineraft:cup item_model set value "raft_items:container/bottle/empty"
+execute if data storage mineraft:cup {cup_type:"canteen"} run data modify storage mineraft:cup item_model set value "raft_items:container/canteen/empty"

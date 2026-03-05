@@ -22,6 +22,7 @@ scoreboard players set #max_dam mr.data 100
 scoreboard players operation #damage mr.data -= #max_dam mr.data
 scoreboard players operation #damage mr.data *= #-1 mr.const
 execute store result storage mineraft:cup damage int 1 run scoreboard players get #damage mr.data
+function mineraft:references/items/cups/filled_model
 function mineraft:items/cups/fill_hand with storage mineraft:cup
 particle splash ~ ~ ~ 0.2 0.2 0.2 0 10
 tag @a[tag=mr.fill_water] remove mr.fill_water

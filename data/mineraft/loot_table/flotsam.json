@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:brown_dye",
-          "weight": 3,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -29,7 +29,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:green_dye",
-          "weight": 2,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -49,6 +49,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:light_gray_dye",
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -60,6 +61,25 @@
                 "item_name": {
                   "fallback": "Plastic",
                   "translate": "item.mineraft.plastic"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "custom_data": {
+                  "mr.barrel": 1
+                },
+                "item_name": {
+                  "fallback": "Barrel",
+                  "translate": "item.mineraft.barrel"
                 }
               }
             }

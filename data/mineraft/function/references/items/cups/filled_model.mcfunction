@@ -1,0 +1,6 @@
+execute if data storage mineraft:cup {cup_type:"cup",water_type:"freshwater"} run data modify storage mineraft:cup item_model set value "raft_items:container/cup/freshwater"
+execute if data storage mineraft:cup {cup_type:"cup",water_type:"saltwater"} run data modify storage mineraft:cup item_model set value "raft_items:container/cup/saltwater"
+execute if data storage mineraft:cup {cup_type:"bottle",water_type:"freshwater"} run data modify storage mineraft:cup item_model set value "raft_items:container/bottle/freshwater"
+execute if data storage mineraft:cup {cup_type:"bottle",water_type:"saltwater"} run data modify storage mineraft:cup item_model set value "raft_items:container/bottle/saltwater"
+execute if data storage mineraft:cup {cup_type:"canteen",water_type:"freshwater"} run data modify storage mineraft:cup item_model set value "raft_items:container/canteen/freshwater"
+execute if data storage mineraft:cup {cup_type:"canteen",water_type:"saltwater"} run data modify storage mineraft:cup item_model set value "raft_items:container/canteen/saltwater"

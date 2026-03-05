@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "barrel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{mr.barrel:1b}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineraft:flotsam/barrel/pickup"
+  }
+}
