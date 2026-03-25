@@ -5,8 +5,8 @@ execute if entity @s[tag=mr.support_display] run function mineraft:structures/su
 execute if entity @s[tag=mr.wall_display] run function mineraft:structures/walls/core/tick
 execute if entity @s[tag=mr.platform_display] run function mineraft:structures/platform/core/tick
 execute if entity @s[tag=mr.stairs_display] run function mineraft:structures/stairs/core/tick
-execute if entity @s[tag=mr.crop_plot_display] if data entity @s {data:{crop_plot_type:"basic_crop_plot"}} run function mineraft:structures/crop_plot/basic/large/core/tick
-execute if entity @s[tag=mr.crop_plot_display] if data entity @s {data:{crop_plot_type:"advanced_crop_plot"}} run function mineraft:structures/crop_plot/advanced/large/core/tick
+execute if entity @s[tag=mr.crop_plot_display,tag=mr.basic_type] run function mineraft:structures/crop_plot/basic/large/core/tick
+execute if entity @s[tag=mr.crop_plot_display,tag=mr.advanced_type] run function mineraft:structures/crop_plot/advanced/large/core/tick
 execute if entity @s[tag=mr.small_crop_plot_display] run function mineraft:structures/crop_plot/basic/small/core/tick
 execute if entity @s[tag=mr.small_adv_crop_plot_display] run function mineraft:structures/crop_plot/advanced/small/core/tick
 execute if entity @s[tag=mr.grill_display] run function mineraft:structures/grill/core/tick

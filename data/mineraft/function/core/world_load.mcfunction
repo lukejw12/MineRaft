@@ -90,3 +90,19 @@ scoreboard objectives add mr.grill_fuel dummy
 scoreboard objectives add mr.grill_progress dummy
 scoreboard objectives add mr.grill_max dummy
 scoreboard objectives add mr.grill_cook dummy
+#/ Tag existing structure displays for optimized tick selector
+execute as @e[type=item_display,tag=mr.smeltery_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.purifier_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.net_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.support_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.wall_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.platform_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.stairs_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.crop_plot_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.small_crop_plot_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.small_adv_crop_plot_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.grill_display] run tag @s add mr.structure_display
+
+#/ Crop plot type tags (replaces NBT checks in display/tick)
+execute as @e[type=item_display,tag=mr.crop_plot_display] if data entity @s {data:{crop_plot_type:"basic_crop_plot"}} run tag @s add mr.basic_type
+execute as @e[type=item_display,tag=mr.crop_plot_display] if data entity @s {data:{crop_plot_type:"advanced_crop_plot"}} run tag @s add mr.advanced_type

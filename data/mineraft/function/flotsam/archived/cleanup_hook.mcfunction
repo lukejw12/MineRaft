@@ -1,1 +1,0 @@
-#/ execute as @e[type=item,tag=mr.flotsam] at @s align xyz if block ~ 62 ~ barrier run setblock ~ 62 ~ water

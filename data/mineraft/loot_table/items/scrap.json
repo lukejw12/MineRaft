@@ -11,9 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_data": {
-                  "mr.plastic": 1
-                },
+                "custom_data": "{mr.scrap:1b}",
                 "item_model": "raft_items:scrap",
                 "item_name": {
                   "fallback": "Scrap",

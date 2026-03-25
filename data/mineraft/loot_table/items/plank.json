@@ -11,11 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_data": {
-                  "mr.fuel": 1,
-                  "mr.fuel_time": 50,
-                  "mr.wooden_plank": 1
-                },
+                "custom_data": "{mr.fuel:1b,mr.fuel_time:50,mr.wooden_plank:1b}",
                 "item_model": "raft_items:wooden_plank",
                 "item_name": {
                   "fallback": "Wooden Plank",

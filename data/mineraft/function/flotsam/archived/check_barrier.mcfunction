@@ -1,1 +1,0 @@
-#/ execute positioned ~ ~1 ~ unless entity @e[type=item,tag=mr.flotsam,distance=..1] run function mineraft:flotsam/motion/cleanup_barrier

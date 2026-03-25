@@ -6,18 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:green_dye",
+          "name": "minecraft:iron_ingot",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_data": {
-                  "mr.palm_leaf": 1
-                },
-                "item_model": "raft_items:palm_leaf",
+                "custom_data": "{mr.metal_ingot:1b}",
+                "item_model": "raft_items:metal_ingot",
                 "item_name": {
-                  "fallback": "placeholder metal inngot",
-                  "translate": "item.mineraft.palm_leaf"
+                  "fallback": "Metal Ingot",
+                  "translate": "item.mineraft.metal_ingot"
                 }
               }
             }

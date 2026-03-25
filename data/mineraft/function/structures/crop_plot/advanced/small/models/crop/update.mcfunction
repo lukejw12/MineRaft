@@ -3,4 +3,4 @@ data modify storage mineraft:crop_plot state set from entity @s data.state
 
 function mineraft:references/structures/crop_plot/small/crop_models
 
-function mineraft:structures/crop_plot/advanced/small/models/crop/set with storage mineraft:crop_plot
+function mineraft:structures/crop_plot/shared/small/models/crop/set with storage mineraft:crop_plot

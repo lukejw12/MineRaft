@@ -56,6 +56,7 @@ execute as @e[type=item_display,tag=mr.new_display,limit=1] run data modify enti
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players set @s mr.crop_plot_timer 0
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players set @s mr.crop_plot_hits 0
 
+execute as @e[type=item_display,tag=mr.new_display,limit=1] run tag @s add mr.basic_type
 tag @e[type=item_display,tag=mr.new_display] remove mr.new_display
 tag @e[type=interaction,tag=mr.new_interaction] remove mr.new_interaction
 
