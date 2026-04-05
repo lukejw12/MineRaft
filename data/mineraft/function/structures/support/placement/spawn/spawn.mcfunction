@@ -17,6 +17,8 @@ execute as @e[type=item_display,tag=mr.new_support,limit=1] run data modify enti
 execute as @e[type=item_display,tag=mr.new_support,limit=1] store result score @s mr.support_id run scoreboard players add #global mr.support_id 1
 execute as @e[type=item_display,tag=mr.new_support,limit=1] run scoreboard players set @s mr.support_count 0
 
+execute as @e[type=item_display,tag=mr.new_support,limit=1] at @s run function mineraft:grid/support/register
+
 tag @e[type=item_display,tag=mr.new_support] remove mr.new_support
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1

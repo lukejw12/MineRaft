@@ -90,6 +90,9 @@ scoreboard objectives add mr.grill_fuel dummy
 scoreboard objectives add mr.grill_progress dummy
 scoreboard objectives add mr.grill_max dummy
 scoreboard objectives add mr.grill_cook dummy
+
+#/ Grid System - migrate existing structures
+schedule function mineraft:grid/core/migrate 5t append
 #/ Tag existing structure displays for optimized tick selector
 execute as @e[type=item_display,tag=mr.smeltery_display] run tag @s add mr.structure_display
 execute as @e[type=item_display,tag=mr.purifier_display] run tag @s add mr.structure_display

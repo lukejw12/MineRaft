@@ -4,6 +4,8 @@ execute as @e[type=item_display,tag=mr.crop_plot_display] if score @s mr.crop_pl
 
 fill ~1 ~ ~1 ~-1 ~ ~-1 air replace barrier
 
+execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/clear_height_block
+
 execute as @e[type=item_display,tag=mr.crop_plot_display] if score @s mr.crop_plot_id = #crop_plot_id mr.data run kill @s
 execute as @e[type=interaction,tag=mr.crop_plot_interaction] if score @s mr.crop_plot_id = #crop_plot_id mr.data run kill @s
 

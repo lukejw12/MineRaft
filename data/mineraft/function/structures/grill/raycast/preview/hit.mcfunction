@@ -2,9 +2,12 @@ scoreboard players operation #player_link mr.data = @s mr.link
 data modify storage mineraft:grill preview_type set from entity @s data.grill_type
 scoreboard players operation #rotation mr.data = @s mr.data
 function mineraft:structures/grill/spawn/calculate_rotation
-execute align xyz positioned ~ ~ ~ if entity @e[type=item_display,tag=mr.grill_display,distance=..1] run return run function mineraft:structures/grill/raycast/preview/hide
-execute align xyz positioned ~ ~ ~ if entity @e[type=item_display,tag=mr.smeltery_display,distance=..1] run return run function mineraft:structures/grill/raycast/preview/hide
-execute align xyz positioned ~ ~ ~ if entity @e[type=item_display,tag=mr.purifier_display,distance=..1] run return run function mineraft:structures/grill/raycast/preview/hide
+
+execute align xyz run tp @s ~0.5 ~ ~0.5
+function mineraft:grid/block/compute_slot
+execute if score #slot_free mr.data matches 0 run function mineraft:structures/grill/raycast/preview/hide
+execute if score #slot_free mr.data matches 0 run return run kill @s
+
 execute as @a if score @s mr.link = #player_link mr.data unless entity @e[type=item_display,tag=mr.grill_preview] if score @s mr.link = #player_link mr.data run function mineraft:structures/grill/spawn/spawn_preview with storage mineraft:grill
 execute as @e[type=item_display,tag=mr.new_grill_preview,limit=1] run scoreboard players operation @s mr.link = #player_link mr.data
 tag @e[type=item_display,tag=mr.new_grill_preview] remove mr.new_grill_preview

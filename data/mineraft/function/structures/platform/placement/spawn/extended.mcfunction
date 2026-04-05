@@ -10,16 +10,20 @@ execute positioned ~-1 ~ ~-1 unless block ~-1 ~ ~-1 #mineraft:platform-override 
 
 execute positioned ~ ~-1 ~ if entity @e[type=interaction,tag=mr.crop_plot_interaction,distance=..2.5] run return fail
 
-function mineraft:structures/support/validation/position/check_position_valid
-execute if score #position_valid mr.data matches 0 run return fail
+execute positioned ~0.5 ~-3 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] if data entity @s data.grid.height_blocked run return fail
 
-function mineraft:structures/support/validation/position/has_capacity
+scoreboard players set #has_capacity mr.data 0
+execute positioned ~0.5 ~-3 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] if data entity @s {data:{grid:{has_support:1b}}} run function mineraft:grid/support/has_capacity
+execute if score #has_capacity mr.data matches 0 if entity @e[type=item_display,tag=mr.wall_display,tag=!mr.supporting_platform,distance=..4] run scoreboard players set #has_capacity mr.data 1
+execute if score #has_capacity mr.data matches 0 run function mineraft:structures/support/validation/position/check_position_valid
+execute if score #has_capacity mr.data matches 0 if score #position_valid mr.data matches 1 run function mineraft:structures/support/validation/position/has_capacity
 execute if score #has_capacity mr.data matches 0 run return fail
 
-execute as @e[type=item_display,tag=mr.wall_display,tag=mr.supporting_platform,distance=..4] run scoreboard players set #has_capacity mr.data 1
 execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.platform:1b}] 1
 
 function mineraft:structures/platform/placement/models/get_model
+
+execute as @e[type=item_display,tag=mr.wall_display,distance=..3] at @s run function mineraft:structures/platform/utils/wall_interaction/hide_top
 
 fill ~1 ~ ~1 ~-1 ~ ~-1 barrier replace air
 
@@ -30,6 +34,6 @@ execute as @e[type=item_display,tag=mr.new_platform,limit=1] store result score 
 
 tag @e[type=item_display,tag=mr.new_platform] remove mr.new_platform
 
-execute as @e[type=item_display,tag=mr.wall_display,distance=..3] at @s run function mineraft:structures/platform/utils/wall_interaction/hide_top
+execute positioned ~0.5 ~-3 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/support/add_platform
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1

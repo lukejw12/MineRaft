@@ -1,5 +1,7 @@
 scoreboard players operation #stairs_id mr.data = @s mr.stairs_id
 
+execute at @s run function mineraft:grid/core/unregister_stairs_edge
+
 execute as @e[type=armor_stand,tag=mr.stairs_shulker] if score @s mr.stairs_id = #stairs_id mr.data on passengers run tp @s ~ -500 ~
 execute as @e[type=armor_stand,tag=mr.stairs_shulker] if score @s mr.stairs_id = #stairs_id mr.data run kill @s
 

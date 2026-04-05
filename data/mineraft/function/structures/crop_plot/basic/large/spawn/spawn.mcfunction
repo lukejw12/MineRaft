@@ -48,6 +48,8 @@ execute positioned ~1 ~ ~1 if block ~ ~ ~ iron_trapdoor[facing=east] run tag @e[
 execute positioned ~1 ~ ~1 if block ~ ~ ~ iron_trapdoor[facing=west] run tag @e[type=item_display,tag=mr.new_display,limit=1] add mr.trapdoor_9_west
 execute positioned ~-1 ~ ~-1 run fill ~2 ~ ~2 ~ ~ ~ barrier
 
+execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/set_height_block {height:5}
+
 execute as @e[type=item_display,tag=mr.new_display,limit=1] store result score @s mr.crop_plot_id run scoreboard players add #global mr.crop_plot_id 1
 execute as @e[type=interaction,tag=mr.new_interaction,limit=1] run scoreboard players operation @s mr.crop_plot_id = @e[type=item_display,tag=mr.new_display,limit=1] mr.crop_plot_id
 

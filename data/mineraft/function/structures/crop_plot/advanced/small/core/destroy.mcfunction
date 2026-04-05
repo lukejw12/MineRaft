@@ -8,6 +8,8 @@ data modify storage mineraft:crop_plot block1_offset_z set from entity @s data.b
 execute at @s run setblock ~ ~ ~ air
 execute at @s run function mineraft:structures/crop_plot/advanced/small/utils/blocks/remove_block1 with storage mineraft:crop_plot
 
+execute as @e[type=item_display,tag=mr.small_adv_crop_plot_display] if score @s mr.crop_plot_id = #crop_plot_id mr.data at @s run function mineraft:grid/block/release_pair_at_pos
+
 execute as @e[type=item_display,tag=mr.small_adv_crop_plot_display] if score @s mr.crop_plot_id = #crop_plot_id mr.data run kill @s
 execute as @e[type=item_display,tag=mr.small_adv_crop_display] if score @s mr.crop_plot_id = #crop_plot_id mr.data run kill @s
 execute as @e[type=interaction,tag=mr.small_adv_crop_plot_interaction] if score @s mr.crop_plot_id = #crop_plot_id mr.data run kill @s

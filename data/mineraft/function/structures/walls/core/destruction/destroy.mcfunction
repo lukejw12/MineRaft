@@ -3,6 +3,8 @@ tag @s add mr.destroyed
 
 scoreboard players operation #wall_id mr.data = @s mr.wall_id
 
+execute at @s run function mineraft:grid/core/unregister_wall_edge
+
 execute as @e[type=item_display,tag=mr.wall_pillar] if score @s mr.wall_id = #wall_id mr.data run kill @s
 execute as @e[type=item_display,tag=mr.wall_pillar] if score @s mr.wall_id2 = #wall_id mr.data run kill @s
 

@@ -12,6 +12,8 @@ execute as @e[type=item_display,tag=mr.new_wall,limit=1] store result score @s m
 
 execute as @e[type=item_display,tag=mr.new_wall,limit=1] at @s positioned ~ ~2 ~ if block ~ ~ ~ barrier run tag @s add mr.supporting_platform
 
+execute as @e[type=item_display,tag=mr.new_wall,limit=1] at @s run function mineraft:grid/core/register_wall_edge
+
 execute as @e[type=item_display,tag=mr.new_wall,limit=1] at @s run function mineraft:structures/walls/validation/corners/check
 
 tag @e[type=item_display,tag=mr.new_wall] remove mr.new_wall

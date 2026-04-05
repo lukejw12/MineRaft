@@ -14,6 +14,8 @@ execute as @e[type=item_display,tag=mr.new_stairs,limit=1] store result score @s
 
 tag @e[type=item_display,tag=mr.new_stairs] remove mr.new_stairs
 
+execute as @e[type=item_display,tag=mr.stairs_display,sort=nearest,limit=1,distance=..1] at @s run function mineraft:grid/core/register_stairs_edge
+
 execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.stairs:1b}] 1
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1

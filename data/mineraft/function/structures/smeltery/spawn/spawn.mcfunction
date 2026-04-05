@@ -12,6 +12,10 @@ execute as @e[type=item_display,tag=mr.new_display,limit=1] if block ~ ~ ~ iron_
 execute as @e[type=item_display,tag=mr.new_display,limit=1] if block ~ ~ ~ iron_trapdoor[facing=east] run tag @s add mr.trapdoor_east
 execute as @e[type=item_display,tag=mr.new_display,limit=1] if block ~ ~ ~ iron_trapdoor[facing=west] run tag @s add mr.trapdoor_west
 setblock ~ ~ ~ barrier
+
+data modify storage mineraft:grid type set value "smeltery"
+execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/claim with storage mineraft:grid
+
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players operation @s mr.link = @e[type=interaction,tag=mr.new,limit=1] mr.link
 execute as @e[type=item_display,tag=mr.new_display,limit=1] store result score @s mr.smeltery_id run scoreboard players add #global mr.smeltery_id 1
 execute as @e[type=interaction,tag=mr.new,limit=1] run scoreboard players operation @s mr.smeltery_id = @e[type=item_display,tag=mr.new_display,limit=1] mr.smeltery_id

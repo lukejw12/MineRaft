@@ -15,3 +15,5 @@ execute if data entity @s {data:{side:"west"}} run fill ~ ~2 ~ ~ ~2 ~ air replac
 execute if data entity @s {data:{side:"west"}} run fill ~ ~2 ~1 ~ ~2 ~1 air replace minecraft:iron_trapdoor
 
 tag @s add mr.supporting_platform
+
+execute at @s run function mineraft:grid/core/register_wall_edge

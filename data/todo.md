@@ -22,12 +22,12 @@
     - [x] Translation
     - [x] Obtainability
 - [ ] Scrap
-    - [ ] Texture
-    - [ ] Translation
-    - [ ] Obtainability
+    - [x] Texture
+    - [x] Translation
+    - [x] Obtainability
 - [ ] Rope
-    - [ ] Texture
-    - [ ] Translation
+    - [x] Texture
+    - [x] Translation
     - [ ] Obtainability
 - [ ] Screws
     - [ ] Texture
@@ -90,3 +90,10 @@
   "item.mineraft.saltwater_canteen": "Saltwater Canteen",
   "item.mineraft.palm_seed": "Palm Seed"
 }
+
+
+## Issues to fix
+stacking support doesnt let me place a platform at second stacked support
+Hammer sometimes destroys multiple things at once
+water purifier (and other 2 block long structures) appears to take up 3 spaces on the grid (specificlly when trying to place another water purifier/ 2 block long structure)
+Cant place smelteries or structures on a platform that has a support block directly beneath it

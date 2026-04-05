@@ -2,8 +2,6 @@ execute align xyz unless block ~ ~1 ~ air unless block ~ ~1 ~ iron_trapdoor run 
 $execute align xyz positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) unless block ~ ~1 ~ air unless block ~ ~1 ~ iron_trapdoor run return run kill @e[type=marker,tag=mr.small_crop_plot_raycast,limit=1,sort=nearest]
 
 $execute align xyz positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if block ~ ~1 ~ barrier run return run kill @e[type=marker,tag=mr.small_crop_plot_raycast,limit=1,sort=nearest]
-$execute align xyz positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if entity @e[type=item_display,tag=mr.purifier_display,distance=..0.5] run return run kill @e[type=marker,tag=mr.small_crop_plot_raycast,limit=1,sort=nearest]
-$execute align xyz positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if entity @e[type=item_display,tag=mr.smeltery_display,distance=..0.5] run return run kill @e[type=marker,tag=mr.small_crop_plot_raycast,limit=1,sort=nearest]
 
 execute align xyz positioned ~ ~1 ~ run function mineraft:structures/crop_plot/basic/small/spawn/spawn
 

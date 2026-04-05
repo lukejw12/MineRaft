@@ -16,6 +16,13 @@ $execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if block ~ ~ ~ iro
 setblock ~ ~ ~ barrier
 $setblock ~$(block1_offset_x) ~ ~$(block1_offset_z) barrier
 
+data modify storage mineraft:grid type set value "purifier"
+data modify storage mineraft:grid block1_offset_x set from storage mineraft:purifier block1_offset_x
+data modify storage mineraft:grid block1_offset_z set from storage mineraft:purifier block1_offset_z
+execute store result score #hit_bx mr.data run data get entity @e[type=item_display,tag=mr.new_display,limit=1] Pos[0]
+execute store result score #hit_bz mr.data run data get entity @e[type=item_display,tag=mr.new_display,limit=1] Pos[2]
+execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/compute_and_claim_pair
+
 execute as @e[type=item_display,tag=mr.new_display,limit=1] store result score @s mr.purifier_id run scoreboard players add #global mr.purifier_id 1
 execute as @e[type=interaction,tag=mr.new_interaction] run scoreboard players operation @s mr.purifier_id = @e[type=item_display,tag=mr.new_display,limit=1] mr.purifier_id
 execute as @e[type=item_display,tag=mr.new_fuel,limit=1] run scoreboard players operation @s mr.purifier_id = @e[type=item_display,tag=mr.new_display,limit=1] mr.purifier_id

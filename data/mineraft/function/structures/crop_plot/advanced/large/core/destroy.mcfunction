@@ -40,6 +40,8 @@ execute at @s if entity @s[tag=mr.trapdoor_4_west] run data modify storage miner
 execute at @s if entity @s[tag=mr.trapdoor_4_west] run function mineraft:structures/crop_plot/advanced/large/utils/restore/wall_trapdoor with storage mineraft:temp
 
 
+execute as @e[type=item_display,tag=mr.crop_plot_display] if score @s mr.crop_plot_id = #crop_plot_id mr.data at @s positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/clear_height_block
+
 execute as @e[type=item_display,tag=mr.crop_plot_display] if score @s mr.crop_plot_id = #crop_plot_id mr.data run kill @s
 execute as @e[type=interaction,tag=mr.crop_plot_interaction] if score @s mr.crop_plot_id = #crop_plot_id mr.data run kill @s
 

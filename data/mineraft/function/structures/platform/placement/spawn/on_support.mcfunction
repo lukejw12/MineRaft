@@ -11,6 +11,8 @@ execute positioned ~ ~-2 ~ unless entity @e[type=item_display,tag=mr.support_dis
 
 execute positioned ~ ~-1 ~ if entity @e[type=interaction,tag=mr.crop_plot_interaction,distance=..2.5] run return fail
 
+execute positioned ~0.5 ~-3 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] if data entity @s data.grid.height_blocked run return fail
+
 execute as @e[type=item_display,tag=mr.wall_display,distance=..4] at @s run function mineraft:structures/platform/utils/wall_interaction/hide_top
 
 function mineraft:structures/platform/placement/models/get_model
@@ -23,6 +25,8 @@ execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_d
 execute as @e[type=item_display,tag=mr.new_platform,limit=1] run data modify entity @s data.platform_type set from storage mineraft:platform platform_type
 execute as @e[type=item_display,tag=mr.new_platform,limit=1] store result score @s mr.platform_id run scoreboard players add #global mr.platform_id 1
 execute as @e[type=item_display,tag=mr.new_platform,limit=1] run tag @s add mr.skip_check
+
+execute positioned ~0.5 ~-2 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/support/add_platform
 
 tag @e[type=item_display,tag=mr.new_platform] remove mr.new_platform
 

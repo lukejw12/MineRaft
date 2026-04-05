@@ -1,4 +1,3 @@
-#> Optimized held item check - uses return run to short-circuit on first match
 
 execute if items entity @s weapon.mainhand *[custom_data~{mr.hammer:1b}] run function mineraft:items/hammer/raycast/preview/start
 execute if items entity @s weapon.mainhand *[custom_data~{mr.hammer:1b}] run return run function mineraft:core/player/cleanup_previews {"keep":"mr.hammer_preview"}

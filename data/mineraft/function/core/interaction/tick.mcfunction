@@ -1,4 +1,3 @@
-#> Optimized: uses tag checks instead of NBT for crop plot type routing
 execute if entity @s[tag=mr.smeltery_interaction] if data entity @s interaction run function mineraft:structures/smeltery/interact/interact
 execute if entity @s[tag=mr.smeltery_interaction] if data entity @s attack run function mineraft:structures/smeltery/core/destroy
 
