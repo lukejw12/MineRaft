@@ -8,7 +8,7 @@ execute as @e[type=item_display,tag=mr.support_display,tag=mr.supporting_platfor
 
 execute as @e[type=item_display,tag=mr.support_display] if score @s mr.support_id = #destroying_support_id mr.data run scoreboard players remove @s mr.support_count 1
 
-execute positioned ~0.5 ~-3 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/support/remove_platform
+execute positioned ~0.5 ~ ~0.5 as @e[type=item_display,tag=mr.surface,distance=..10,limit=1,sort=nearest] run function mineraft:grid/support/remove_platform
 
 particle item{item:{id:egg,components:{item_model:"mineraft:particle/wood"}}} ~ ~0.5 ~ 0.8 0.3 0.8 0.1 50 normal
 playsound minecraft:entity.zombie.break_wooden_door block @a[distance=..15] ~ ~ ~ 0.2 1.5

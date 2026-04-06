@@ -5,7 +5,7 @@ execute at @s run setblock ~ ~ ~ air
 function mineraft:structures/water_purifier/utils/blocks/remove_block1 with storage mineraft:purifier
 execute as @e[type=item_display,tag=mr.purifier_display] at @s if score @s mr.purifier_id = #purifier_id mr.data if entity @e[type=item_display,tag=mr.wall_display,distance=..3] run function mineraft:structures/water_purifier/utils/restore/wall_trapdoor
 
-execute as @e[type=item_display,tag=mr.purifier_display] if score @s mr.purifier_id = #purifier_id mr.data at @s run function mineraft:grid/block/release_pair_at_pos
+execute as @e[type=item_display,tag=mr.purifier_display] if score @s mr.purifier_id = #purifier_id mr.data at @s run function mineraft:grid/block/release_1x2_at_pos
 
 execute as @e[type=item_display,tag=mr.purifier_fuel_display] if score @s mr.purifier_id = #purifier_id mr.data run kill @s
 execute as @e[type=interaction,tag=mr.purifier_interaction] if score @s mr.purifier_id = #purifier_id mr.data run kill @s

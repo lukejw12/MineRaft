@@ -5,11 +5,13 @@ execute unless entity @e[type=item_display,tag=mr.support_display,distance=..2] 
 
 execute as @e[type=item_display,tag=mr.support_display,distance=..2,limit=1,sort=nearest] at @s align xyz positioned ~0.5 ~2.79 ~0.5 if entity @e[type=item_display,tag=mr.platform_display,distance=..0.5] run return run function mineraft:structures/platform/raycast/preview/hide
 
+# Grid capacity - search wide for stacked supports
 scoreboard players set #has_capacity mr.data 0
-execute as @e[type=item_display,tag=mr.support_display,distance=..2,limit=1,sort=nearest] at @s positioned ~0.5 ~ ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/support/has_capacity
+execute as @e[type=item_display,tag=mr.support_display,distance=..2,limit=1,sort=nearest] at @s positioned ~0.5 ~ ~0.5 as @e[type=item_display,tag=mr.surface,distance=..10,limit=1,sort=nearest] run function mineraft:grid/support/has_capacity
 execute if score #has_capacity mr.data matches 0 run return run function mineraft:structures/platform/raycast/preview/hide
 
-execute as @e[type=item_display,tag=mr.support_display,distance=..2,limit=1,sort=nearest] at @s positioned ~0.5 ~ ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] if data entity @s data.grid.height_blocked run return run function mineraft:structures/platform/raycast/preview/hide
+# Height block check
+execute as @e[type=item_display,tag=mr.support_display,distance=..2,limit=1,sort=nearest] at @s positioned ~0.5 ~ ~0.5 as @e[type=item_display,tag=mr.surface,distance=..10,limit=1,sort=nearest] if data entity @s data.grid.height_blocked run return run function mineraft:structures/platform/raycast/preview/hide
 
 function mineraft:structures/platform/placement/models/get_model
 

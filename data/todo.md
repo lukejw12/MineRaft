@@ -97,3 +97,5 @@ stacking support doesnt let me place a platform at second stacked support
 Hammer sometimes destroys multiple things at once
 water purifier (and other 2 block long structures) appears to take up 3 spaces on the grid (specificlly when trying to place another water purifier/ 2 block long structure)
 Cant place smelteries or structures on a platform that has a support block directly beneath it
+
+Hammer just needs a big overhaul, hallf the time it doesnt target what you are looking at and instea dtargets the nearest thing to where you are facing

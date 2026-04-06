@@ -5,6 +5,7 @@ function mineraft:structures/collection_net/models/get_model
 
 fill ~1 62 ~1 ~-1 61 ~-1 barrier[waterlogged=true]
 setblock ~ ~ ~ water
+setblock ~ ~-1 ~ water
 function mineraft:structures/collection_net/spawn/display with storage mineraft:net
 
 summon interaction ~0.5 62.5 ~0.5 {width:1.05f,height:0.5f,Tags:["mr.collection_net","mr.net_interaction","mr.new_interaction"]}

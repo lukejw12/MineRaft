@@ -16,12 +16,11 @@ $execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if block ~ ~ ~ iro
 setblock ~ ~ ~ barrier
 $setblock ~$(block1_offset_x) ~ ~$(block1_offset_z) barrier
 
+# Claim grid slots using the SAME slot coords that were computed during the check
+# (stored in mineraft:grid by compute_and_check_pair, still valid)
 data modify storage mineraft:grid type set value "purifier"
-data modify storage mineraft:grid block1_offset_x set from storage mineraft:purifier block1_offset_x
-data modify storage mineraft:grid block1_offset_z set from storage mineraft:purifier block1_offset_z
-execute store result score #hit_bx mr.data run data get entity @e[type=item_display,tag=mr.new_display,limit=1] Pos[0]
-execute store result score #hit_bz mr.data run data get entity @e[type=item_display,tag=mr.new_display,limit=1] Pos[2]
-execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/compute_and_claim_pair
+# Claim primary slot only (secondary is in check_space via block state)
+execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/claim_smart_pair with storage mineraft:grid
 
 execute as @e[type=item_display,tag=mr.new_display,limit=1] store result score @s mr.purifier_id run scoreboard players add #global mr.purifier_id 1
 execute as @e[type=interaction,tag=mr.new_interaction] run scoreboard players operation @s mr.purifier_id = @e[type=item_display,tag=mr.new_display,limit=1] mr.purifier_id

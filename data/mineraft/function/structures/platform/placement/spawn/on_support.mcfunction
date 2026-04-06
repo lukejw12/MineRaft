@@ -18,6 +18,7 @@ execute as @e[type=item_display,tag=mr.wall_display,distance=..4] at @s run func
 function mineraft:structures/platform/placement/models/get_model
 
 fill ~1 ~ ~1 ~-1 ~ ~-1 barrier replace air
+fill ~1 ~ ~1 ~-1 ~ ~-1 barrier replace iron_bars
 
 function mineraft:structures/platform/placement/spawn/display with storage mineraft:platform
 execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.platform:1b}] 1
@@ -26,7 +27,7 @@ execute as @e[type=item_display,tag=mr.new_platform,limit=1] run data modify ent
 execute as @e[type=item_display,tag=mr.new_platform,limit=1] store result score @s mr.platform_id run scoreboard players add #global mr.platform_id 1
 execute as @e[type=item_display,tag=mr.new_platform,limit=1] run tag @s add mr.skip_check
 
-execute positioned ~0.5 ~-2 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/support/add_platform
+execute positioned ~0.5 ~ ~0.5 as @e[type=item_display,tag=mr.surface,distance=..10,limit=1,sort=nearest] run function mineraft:grid/support/add_platform
 
 tag @e[type=item_display,tag=mr.new_platform] remove mr.new_platform
 

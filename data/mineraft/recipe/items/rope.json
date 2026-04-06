@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:green_dye"
+    ],
+    [
+      "minecraft:green_dye"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:white_dye",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "item.mineraft.rope",
+        "fallback": "Rope",
+        "bold": false,
+        "italic": false
+      },
+      "minecraft:item_model": "raft_items:rope",
+      "minecraft:custom_data": {
+        "mr.palm_leaf": true
+      }
+    }
+  }
+}
