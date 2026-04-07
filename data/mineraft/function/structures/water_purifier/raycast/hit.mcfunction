@@ -5,7 +5,6 @@ data modify storage mineraft:purifier purifier_type set from entity @s data.puri
 scoreboard players operation #rotation mr.data = @s mr.data
 function mineraft:structures/water_purifier/placement/calculate_rotation
 
-# Smart 1x2 grid check (primary + secondary if same cell)
 execute align xyz run tp @s ~0.5 ~ ~0.5
 data modify storage mineraft:grid block1_offset_x set from storage mineraft:purifier block1_offset_x
 data modify storage mineraft:grid block1_offset_z set from storage mineraft:purifier block1_offset_z

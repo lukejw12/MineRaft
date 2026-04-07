@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=mr.recycler_display] if score @s mr.recycler_id = @e[type=interaction,tag=mr.recycler_interaction,sort=nearest,limit=1] mr.recycler_id run function mineraft:structures/recycler/core/destroy

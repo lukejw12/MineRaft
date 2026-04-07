@@ -14,3 +14,6 @@ execute if entity @s[tag=mr.small_adv_crop_plot_interaction] if data entity @s i
 
 execute if entity @s[tag=mr.grill_interaction] if data entity @s interaction run function mineraft:structures/grill/interaction/interact
 execute if entity @s[tag=mr.grill_interaction] if data entity @s attack run function mineraft:structures/grill/core/destroy
+
+execute if entity @s[tag=mr.recycler_interaction] if data entity @s interaction run function mineraft:structures/recycler/interaction/interact
+execute if entity @s[tag=mr.recycler_interaction] if data entity @s attack run function mineraft:structures/recycler/core/destroy

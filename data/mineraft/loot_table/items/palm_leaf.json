@@ -11,7 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_data": "{mr.palm_leaf:1b}",
+                "custom_data": "{mr.palm_leaf:1b,mr.recyclable:1b,mr.recycle_type:\"palm_leaf\"}",
                 "item_model": "raft_items:palm_leaf",
                 "item_name": {
                   "fallback": "Palm Leaf",

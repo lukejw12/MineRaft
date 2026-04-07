@@ -1,0 +1,20 @@
+{
+  "parent": "mineraft:placement/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "mr.recycler": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineraft:structures/recycler/core/place"
+  }
+}

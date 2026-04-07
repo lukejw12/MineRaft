@@ -11,7 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_data": "{mr.metal_ingot:1b}",
+                "custom_data": "{mr.metal_ingot:1b,mr.recyclable:1b,mr.recycle_type:\"metal_ingot\"}",
                 "item_model": "raft_items:metal_ingot",
                 "item_name": {
                   "fallback": "Metal Ingot",

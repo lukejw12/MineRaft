@@ -1,0 +1,1 @@
+$give @s poisonous_potato[item_name={"translate":"item.mineraft.simple_battery","fallback":"Simple Battery"},!food,max_stack_size=1,max_damage=100,damage=$(battery_damage),custom_data={mr.battery:1b,battery_life:$(battery_life)},item_model="mineraft:items/simple_battery"] 1

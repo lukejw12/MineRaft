@@ -39,4 +39,7 @@ execute if items entity @s weapon.mainhand *[custom_data~{mr.grill:1b}] run retu
 
 execute if items entity @s weapon.mainhand *[custom_data~{mr.foundation_armor:1b}] run function mineraft:items/foundation_armor/raycast/preview/start
 execute if items entity @s weapon.mainhand *[custom_data~{mr.foundation_armor:1b}] run return run function mineraft:core/player/cleanup_previews {"keep":"mr.armor_preview"}
+
+execute if items entity @s weapon.mainhand *[custom_data~{mr.recycler:1b}] run function mineraft:structures/recycler/raycast/preview/start
+execute if items entity @s weapon.mainhand *[custom_data~{mr.recycler:1b}] run return run function mineraft:core/player/cleanup_previews {"keep":"mr.recycler_preview"}
 function mineraft:core/player/cleanup_previews {"keep":"none"}

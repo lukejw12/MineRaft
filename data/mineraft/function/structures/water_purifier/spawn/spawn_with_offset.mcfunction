@@ -16,10 +16,8 @@ $execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) if block ~ ~ ~ iro
 setblock ~ ~ ~ barrier
 $setblock ~$(block1_offset_x) ~ ~$(block1_offset_z) barrier
 
-# Claim grid slots using the SAME slot coords that were computed during the check
-# (stored in mineraft:grid by compute_and_check_pair, still valid)
+
 data modify storage mineraft:grid type set value "purifier"
-# Claim primary slot only (secondary is in check_space via block state)
 execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/claim_smart_pair with storage mineraft:grid
 
 execute as @e[type=item_display,tag=mr.new_display,limit=1] store result score @s mr.purifier_id run scoreboard players add #global mr.purifier_id 1

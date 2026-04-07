@@ -18,5 +18,6 @@ execute if data storage mineraft:commands {item:"large_crop_plot"} run function 
 execute if data storage mineraft:commands {item:"collection_net"} run function mineraft:core/utils/commands/give with storage mineraft:commands
 execute if data storage mineraft:commands {item:"grill"} run function mineraft:core/utils/commands/give with storage mineraft:commands
 execute if data storage mineraft:commands {item:"foundation_armor"} run function mineraft:core/utils/commands/give with storage mineraft:commands
+execute if data storage mineraft:commands {item:"recycler"} run function mineraft:core/utils/commands/give with storage mineraft:commands
 #/function mineraft:core/utils/commands {item:"builders_hammer",type:""}
 #/function mineraft:core/utils/commands {item:"stairs",type:"solid_wooden",name:"Solid Wooden"}

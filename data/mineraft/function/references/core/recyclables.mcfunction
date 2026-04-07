@@ -1,0 +1,14 @@
+execute if data storage mineraft:recycler {recycle_type:"plank"} run scoreboard players set #recycle_value mr.data 8
+execute if data storage mineraft:recycler {recycle_type:"plastic"} run scoreboard players set #recycle_value mr.data 5
+execute if data storage mineraft:recycler {recycle_type:"palm_leaf"} run scoreboard players set #recycle_value mr.data 5
+execute if data storage mineraft:recycler {recycle_type:"rope"} run scoreboard players set #recycle_value mr.data 10
+execute if data storage mineraft:recycler {recycle_type:"scrap"} run scoreboard players set #recycle_value mr.data 15
+execute if data storage mineraft:recycler {recycle_type:"metal_ore"} run scoreboard players set #recycle_value mr.data 30
+execute if data storage mineraft:recycler {recycle_type:"metal_ingot"} run scoreboard players set #recycle_value mr.data 38
+execute if data storage mineraft:recycler {recycle_type:"copper"} run scoreboard players set #recycle_value mr.data 30
+execute if data storage mineraft:recycler {recycle_type:"copper_ingot"} run scoreboard players set #recycle_value mr.data 38
+execute if data storage mineraft:recycler {recycle_type:"titanium_ore"} run scoreboard players set #recycle_value mr.data 75
+execute if data storage mineraft:recycler {recycle_type:"titanium_ingot"} run scoreboard players set #recycle_value mr.data 94
+execute if data storage mineraft:recycler {recycle_type:"dirt"} run scoreboard players set #recycle_value mr.data 30
+execute if data storage mineraft:recycler {recycle_type:"clay"} run scoreboard players set #recycle_value mr.data 15
+execute if data storage mineraft:recycler {recycle_type:"sand"} run scoreboard players set #recycle_value mr.data 15

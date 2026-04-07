@@ -10,3 +10,4 @@ execute if entity @s[tag=mr.crop_plot_display,tag=mr.advanced_type] run function
 execute if entity @s[tag=mr.small_crop_plot_display] run function mineraft:structures/crop_plot/basic/small/core/tick
 execute if entity @s[tag=mr.small_adv_crop_plot_display] run function mineraft:structures/crop_plot/advanced/small/core/tick
 execute if entity @s[tag=mr.grill_display] run function mineraft:structures/grill/core/tick
+execute if entity @s[tag=mr.recycler_display] run function mineraft:structures/recycler/core/tick

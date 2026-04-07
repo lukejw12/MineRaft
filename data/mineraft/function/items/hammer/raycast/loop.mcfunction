@@ -1,15 +1,12 @@
 tp @s ^ ^ ^0.1
 scoreboard players remove @s mr.raycast_dist 1
 
-# Find the NEAREST structure entity regardless of type
 execute as @e[type=item_display,tag=mr.structure_display,distance=..1.5,limit=1,sort=nearest] run tag @s add mr.hammer_target
 execute unless entity @e[tag=mr.hammer_target] as @e[type=item_display,tag=mr.foundation,distance=..1.5,limit=1,sort=nearest,tag=!mr.structure_display] run tag @s add mr.hammer_target
 
-# No target — continue ray or timeout
 execute unless entity @e[tag=mr.hammer_target] if score @s mr.raycast_dist matches ..0 run return run kill @s
 execute unless entity @e[tag=mr.hammer_target] run return run execute positioned ^ ^ ^0.1 run function mineraft:items/hammer/raycast/loop
 
-# Target found — dispatch based on tags (only one will match)
 execute as @e[tag=mr.hammer_target,tag=mr.grill_display,limit=1] run function mineraft:items/hammer/destroy/grill
 execute as @e[tag=mr.hammer_target,tag=mr.smeltery_display,limit=1] run function mineraft:items/hammer/destroy/smeltery
 execute as @e[tag=mr.hammer_target,tag=mr.purifier_display,limit=1] run function mineraft:items/hammer/destroy/purifier

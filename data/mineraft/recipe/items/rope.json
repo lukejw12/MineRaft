@@ -20,7 +20,9 @@
       },
       "minecraft:item_model": "raft_items:rope",
       "minecraft:custom_data": {
-        "mr.palm_leaf": true
+        "mr.palm_leaf": true,
+        "mr.recyclable": true,
+        "mr.recycle_type": "rope"
       }
     }
   }

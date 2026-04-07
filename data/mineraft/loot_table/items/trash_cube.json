@@ -1,0 +1,24 @@
+{
+   "pools": [
+     {
+       "rolls": 1,
+       "entries": [
+         {
+           "type": "minecraft:item",
+           "name": "minecraft:poisonous_potato",
+           "functions": [
+             {
+               "function": "minecraft:set_components",
+               "components": {
+                 "minecraft:item_name": {"translate":"item.mineraft.trash_cube","fallback":"Trash Cube"},
+                 "minecraft:custom_data": {"mr.trash_cube": true},
+                 "minecraft:item_model": "mineraft:items/trash_cube",
+                 "!minecraft:food": {}
+               }
+             }
+           ]
+         }
+       ]
+     }
+   ]
+ }
