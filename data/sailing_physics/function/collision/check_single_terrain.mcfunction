@@ -1,0 +1,19 @@
+execute if score #sp.terrain_ok sp.data matches 0 run return 0
+execute unless block ~1 62 ~1 water unless block ~1 62 ~1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~1 62 ~0 water unless block ~1 62 ~0 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~1 62 ~-1 water unless block ~1 62 ~-1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~0 62 ~1 water unless block ~0 62 ~1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~0 62 ~0 water unless block ~0 62 ~0 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~0 62 ~-1 water unless block ~0 62 ~-1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~-1 62 ~1 water unless block ~-1 62 ~1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~-1 62 ~0 water unless block ~-1 62 ~0 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~-1 62 ~-1 water unless block ~-1 62 ~-1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~1 61 ~1 water unless block ~1 61 ~1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~1 61 ~0 water unless block ~1 61 ~0 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~1 61 ~-1 water unless block ~1 61 ~-1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~0 61 ~1 water unless block ~0 61 ~1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~0 61 ~0 water unless block ~0 61 ~0 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~0 61 ~-1 water unless block ~0 61 ~-1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~-1 61 ~1 water unless block ~-1 61 ~1 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~-1 61 ~0 water unless block ~-1 61 ~0 barrier run scoreboard players set #sp.terrain_ok sp.data 0
+execute unless block ~-1 61 ~-1 water unless block ~-1 61 ~-1 barrier run scoreboard players set #sp.terrain_ok sp.data 0

@@ -1,0 +1,88 @@
+{
+	"type": "minecraft:multi_action",
+	"title": {
+		"text": "Admin - Tools",
+		"color": "yellow",
+		"bold": true
+	},
+	"external_title": "Tools",
+	"columns": 1,
+	"can_close_with_escape": true,
+	"pause": false,
+	"after_action": "none",
+	"body": [
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:stick",
+				"components": {
+					"minecraft:item_model": "raft_items:building_hammer",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.building_hammer",
+						"fallback": "Building Hammer",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Building Hammer",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 22"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:glass_bottle",
+				"components": {
+					"minecraft:item_model": "raft_items:container/cup/empty",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.empty_cup",
+						"fallback": "Empty Cup",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Empty Cup",
+					"color": "white",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 23"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		}
+	],
+	"actions": [
+		{
+			"label": {
+				"text": "<",
+				"color": "gray"
+			},
+			"width": 20,
+			"action": {
+				"type": "show_dialog",
+				"dialog": "mineraft:admin/main"
+			}
+		}
+	]
+}

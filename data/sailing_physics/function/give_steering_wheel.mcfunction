@@ -1,0 +1,1 @@
+give @s poisonous_potato[item_name={"bold":false,"italic":false,"text":"Steering Wheel"},!food,consumable={consume_seconds:9999,animation:"block",sound:"intentionally_empty",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"intentionally_empty"}]},custom_data={mr.steering_wheel:1b},enchantment_glint_override=false] 1

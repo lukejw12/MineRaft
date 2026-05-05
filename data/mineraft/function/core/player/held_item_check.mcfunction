@@ -1,4 +1,6 @@
 
+execute if score #sp.sailing sp.data matches 1 run return 0
+
 execute if items entity @s weapon.mainhand *[custom_data~{mr.hammer:1b}] run function mineraft:items/hammer/raycast/preview/start
 execute if items entity @s weapon.mainhand *[custom_data~{mr.hammer:1b}] run return run function mineraft:core/player/cleanup_previews {"keep":"mr.hammer_preview"}
 

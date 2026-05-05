@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "mr.steering_wheel": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "sailing_physics:controls/activate"
+  }
+}

@@ -7,3 +7,5 @@ execute as @e[type=item_display,tag=mr.structure_display] at @s run function min
 execute as @e[type=item,tag=mr.flotsam] at @s run function mineraft:flotsam/tick
 execute as @e[type=armor_stand,tag=mr.shark] at @s run function mineraft:shark/core/tick
 execute as @e[type=marker,limit=1,sort=nearest,tag=mr.spawn] at @s run function mineraft:flotsam/core/tick
+function mineraft:admin/tick
+function sailing_physics:core/tick

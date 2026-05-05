@@ -1,0 +1,67 @@
+{
+	"type": "minecraft:multi_action",
+	"title": {"text": "Mine-Raft Admin", "color": "gold", "bold": true},
+	"external_title": "Mine-Raft Admin",
+	"columns": 1,
+	"can_close_with_escape": true,
+	"pause": false,
+	"after_action": "close",
+	"body": [
+		{
+			"type": "minecraft:plain_message",
+			"contents": {"text": "Select a category", "color": "yellow"},
+			"width": 300
+		}
+	],
+	"actions": [
+		{
+			"label": {"text": "Structures", "color": "aqua"},
+			"tooltip": {"text": "Foundations, walls, platforms, stairs, supports, armor"},
+			"width": 200,
+			"action": {
+				"type": "show_dialog",
+				"dialog": "mineraft:admin/structures"
+			}
+		},
+		{
+			"label": {"text": "Crop Plots", "color": "green"},
+			"tooltip": {"text": "Small & large crop plots"},
+			"width": 200,
+			"action": {
+				"type": "show_dialog",
+				"dialog": "mineraft:admin/crop_plots"
+			}
+		},
+		{
+			"label": {"text": "Stations", "color": "gold"},
+			"tooltip": {"text": "Smeltery, purifier, grill, recycler, collection nets"},
+			"width": 200,
+			"action": {
+				"type": "show_dialog",
+				"dialog": "mineraft:admin/stations"
+			}
+		},
+		{
+			"label": {"text": "Raw Items", "color": "light_purple"},
+			"tooltip": {"text": "Planks, rope, scrap, metal, plastic, food"},
+			"width": 200,
+			"action": {
+				"type": "show_dialog",
+				"dialog": "mineraft:admin/items"
+			}
+		},
+		{
+			"label": {"text": "Tools", "color": "yellow"},
+			"tooltip": {"text": "Building hammer, cups, bottles, canteens"},
+			"width": 200,
+			"action": {
+				"type": "show_dialog",
+				"dialog": "mineraft:admin/tools"
+			}
+		}
+	],
+	"exit_action": {
+		"label": {"text": "Close", "color": "red"},
+		"width": 200
+	}
+}

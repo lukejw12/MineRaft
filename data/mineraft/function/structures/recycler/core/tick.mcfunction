@@ -1,4 +1,4 @@
-execute unless block ~ ~-1 ~ barrier run function mineraft:structures/recycler/core/destroy
+execute if score #sp.sailing sp.data matches 0 unless block ~ ~-1 ~ barrier run function mineraft:structures/recycler/core/destroy
 
 execute unless data entity @s {data:{state:"recycling"}} run return fail
 

@@ -1,0 +1,12 @@
+execute as @e[type=item_display,tag=mr.foundation] run function sailing_physics:movement/store_single
+execute as @e[type=item_display,tag=mr.structure_display] run function sailing_physics:movement/store_single
+execute as @e[type=item_display,tag=mr.smeltery_fuel_display] run function sailing_physics:movement/store_single
+execute as @e[type=item_display,tag=mr.grill_fuel_display] run function sailing_physics:movement/store_single
+execute as @e[type=item_display,tag=mr.purifier_fuel_display] run function sailing_physics:movement/store_single
+execute as @e[type=item_display,tag=mr.net_item_display] run function sailing_physics:movement/store_single
+execute as @e[type=item_display,tag=mr.small_crop_display] run function sailing_physics:movement/store_single
+execute as @e[type=item_display,tag=mr.small_adv_crop_display] run function sailing_physics:movement/store_single
+execute as @e[type=interaction] run function sailing_physics:movement/store_single
+execute as @e[type=marker,tag=mr.spawn] run function sailing_physics:movement/store_single
+execute as @e[type=item_display,tag=mr.foundation_armor_display] run function sailing_physics:movement/store_single
+execute as @e[type=armor_stand,tag=mr.stairs_shulker] run function sailing_physics:movement/store_single_score

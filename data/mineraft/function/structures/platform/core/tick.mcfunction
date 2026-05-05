@@ -5,8 +5,8 @@ execute positioned ~-1 ~-2 ~ if entity @e[type=item_display,tag=mr.wall_display,
 execute positioned ~ ~-2 ~1 if entity @e[type=item_display,tag=mr.wall_display,distance=..0.5] run tag @s add mr.wall_under
 execute positioned ~ ~-2 ~-1 if entity @e[type=item_display,tag=mr.wall_display,distance=..0.5] run tag @s add mr.wall_under
 
-execute unless block ~ ~ ~ barrier run function mineraft:structures/platform/validation/support_checks/check
-execute unless block ~ ~ ~ iron_bars run function mineraft:structures/platform/validation/support_checks/check
+execute if score #sp.sailing sp.data matches 0 unless block ~ ~ ~ barrier run function mineraft:structures/platform/validation/support_checks/check
+execute if score #sp.sailing sp.data matches 0 unless block ~ ~ ~ iron_bars run function mineraft:structures/platform/validation/support_checks/check
 
 execute positioned ~ ~-2 ~ unless entity @e[type=item_display,tag=mr.support_display,distance=..0.5] run tag @s remove mr.support_under
 

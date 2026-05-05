@@ -1,0 +1,148 @@
+{
+	"type": "minecraft:multi_action",
+	"title": {
+		"text": "Admin - Crop Plots",
+		"color": "green",
+		"bold": true
+	},
+	"external_title": "Crop Plots",
+	"columns": 1,
+	"can_close_with_escape": true,
+	"pause": false,
+	"after_action": "none",
+	"body": [
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "mineraft:items/structures/crop_plot/basic_small_crop_plot",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.basic_small_crop_plot",
+						"fallback": "Basic Small Crop Plot",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Basic Small Crop Plot",
+					"color": "green",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 12"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "mineraft:items/structures/crop_plot/advanced_small_crop_plot",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.advanced_small_crop_plot",
+						"fallback": "Advanced Small Crop Plot",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Advanced Small Crop Plot",
+					"color": "dark_green",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 13"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "mineraft:items/structures/crop_plot/basic_crop_plot",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.basic_crop_plot",
+						"fallback": "Basic Large Crop Plot",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Basic Large Crop Plot",
+					"color": "green",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 14"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "mineraft:items/structures/crop_plot/advanced_crop_plot",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.advanced_crop_plot",
+						"fallback": "Advanced Large Crop Plot",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Advanced Large Crop Plot",
+					"color": "dark_green",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 15"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		}
+	],
+	"actions": [
+		{
+			"label": {
+				"text": "<",
+				"color": "gray"
+			},
+			"width": 20,
+			"action": {
+				"type": "show_dialog",
+				"dialog": "mineraft:admin/main"
+			}
+		}
+	]
+}

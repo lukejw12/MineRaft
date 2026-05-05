@@ -115,6 +115,11 @@ execute as @e[type=item_display,tag=mr.small_adv_crop_plot_display] run tag @s a
 execute as @e[type=item_display,tag=mr.grill_display] run tag @s add mr.structure_display
 execute as @e[type=item_display,tag=mr.recycler_display] run tag @s add mr.structure_display
 
+scoreboard objectives add mr.admin_open trigger
+scoreboard objectives add mr.admin trigger
+
 #/ Crop plot type tags 
 execute as @e[type=item_display,tag=mr.crop_plot_display] if data entity @s {data:{crop_plot_type:"basic_crop_plot"}} run tag @s add mr.basic_type
 execute as @e[type=item_display,tag=mr.crop_plot_display] if data entity @s {data:{crop_plot_type:"advanced_crop_plot"}} run tag @s add mr.advanced_type
+
+function sailing_physics:core/load

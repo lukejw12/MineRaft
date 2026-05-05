@@ -1,0 +1,1 @@
+$setblock ~$(ox) ~ ~$(oz) barrier

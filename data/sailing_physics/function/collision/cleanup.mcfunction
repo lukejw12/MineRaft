@@ -1,0 +1,9 @@
+tp @e[tag=sp.floor_ghast] ~ -1000 ~
+kill @e[tag=sp.floor_ghast]
+tp @e[tag=sp.plat_ghast] ~ -1000 ~
+kill @e[tag=sp.plat_ghast]
+tp @e[tag=sp.support_coll] ~ -1000 ~
+execute as @e[tag=sp.support_coll] on passengers run kill @s
+kill @e[tag=sp.support_coll]
+tp @e[tag=sp.support_shulker] ~ -1000 ~
+kill @e[tag=sp.support_shulker]

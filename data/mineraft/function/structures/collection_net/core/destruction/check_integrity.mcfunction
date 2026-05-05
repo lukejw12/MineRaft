@@ -1,3 +1,4 @@
+execute if score #sp.sailing sp.data matches 1 run return 0
 scoreboard players set #barrier_count mr.data 0
 
 execute if block ~1 62 ~1 barrier run scoreboard players add #barrier_count mr.data 1

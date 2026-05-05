@@ -1,0 +1,358 @@
+{
+	"type": "minecraft:multi_action",
+	"title": {
+		"text": "Admin - Structures",
+		"color": "aqua",
+		"bold": true
+	},
+	"external_title": "Structures",
+	"columns": 1,
+	"can_close_with_escape": true,
+	"pause": false,
+	"after_action": "none",
+	"body": [
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structure/basic/foundation",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.basic_foundation",
+						"fallback": "Basic Foundation",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Basic Foundation",
+					"color": "yellow",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 1"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structure/solid/foundation",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.advanced_foundation",
+						"fallback": "Advanced Foundation",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Advanced Foundation",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 2"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structure/basic/wooden_wall",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.wooden_wall",
+						"fallback": "Wooden Wall",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Wooden Wall",
+					"color": "yellow",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 3"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structure/solid/wooden_wall",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.solid_wooden_wall",
+						"fallback": "Solid Wooden Wall",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Solid Wooden Wall",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 4"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structure/basic/wooden_platform",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.wooden_platform",
+						"fallback": "Wooden Platform",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Wooden Platform",
+					"color": "yellow",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 5"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structure/solid/wooden_platform",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.solid_wooden_platform",
+						"fallback": "Solid Wooden Platform",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Solid Wooden Platform",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 6"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structure/basic/wooden_stairs",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.wooden_stairs",
+						"fallback": "Wooden Stairs",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Wooden Stairs",
+					"color": "yellow",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 7"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "mineraft:items/structures/stairs/solid_wooden_stairs",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.solid_wooden_stairs",
+						"fallback": "Solid Wooden Stairs",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Solid Wooden Stairs",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 8"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structure/basic/wooden_pillar",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.wooden_support",
+						"fallback": "Wooden Support",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Wooden Support",
+					"color": "yellow",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 9"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structure/solid/wooden_pillar",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.solid_wooden_support",
+						"fallback": "Solid Wooden Support",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Solid Wooden Support",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 10"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structures/armor/foundation",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.foundation_armor",
+						"fallback": "Foundation Armor",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Foundation Armor",
+					"color": "dark_aqua",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 11"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		}
+	],
+	"actions": [
+		{
+			"label": {
+				"text": "<",
+				"color": "gray"
+			},
+			"width": 20,
+			"action": {
+				"type": "show_dialog",
+				"dialog": "mineraft:admin/main"
+			}
+		}
+	]
+}

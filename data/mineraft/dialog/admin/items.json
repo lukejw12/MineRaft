@@ -1,0 +1,178 @@
+{
+	"type": "minecraft:multi_action",
+	"title": {
+		"text": "Admin - Raw Items",
+		"color": "light_purple",
+		"bold": true
+	},
+	"external_title": "Raw Items",
+	"columns": 1,
+	"can_close_with_escape": true,
+	"pause": false,
+	"after_action": "none",
+	"body": [
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:brown_dye",
+				"components": {
+					"minecraft:item_model": "raft_items:wooden_plank",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.wooden_plank",
+						"fallback": "Wooden Plank",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Wooden Plank",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 30"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:kelp",
+				"components": {
+					"minecraft:item_model": "raft_items:palm_leaf",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.palm_leaf",
+						"fallback": "Palm Leaf",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Palm Leaf",
+					"color": "green",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 31"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:iron_ingot",
+				"components": {
+					"minecraft:item_model": "raft_items:metal_ingot",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.metal_ingot",
+						"fallback": "Metal Ingot",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Metal Ingot",
+					"color": "gray",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 33"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:iron_nugget",
+				"components": {
+					"minecraft:item_model": "raft_items:scrap",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.scrap",
+						"fallback": "Scrap",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Scrap",
+					"color": "dark_gray",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 34"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:white_dye",
+				"components": {
+					"minecraft:item_model": "raft_items:plastic",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.plastic",
+						"fallback": "Plastic",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Plastic",
+					"color": "white",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 35"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		}
+	],
+	"actions": [
+		{
+			"label": {
+				"text": "<",
+				"color": "gray"
+			},
+			"width": 20,
+			"action": {
+				"type": "show_dialog",
+				"dialog": "mineraft:admin/main"
+			}
+		}
+	]
+}

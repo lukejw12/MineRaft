@@ -1,4 +1,4 @@
-execute unless block ~ ~-1 ~ barrier run function mineraft:structures/water_purifier/core/destroy
+execute if score #sp.sailing sp.data matches 0 unless block ~ ~-1 ~ barrier run function mineraft:structures/water_purifier/core/destroy
 
 execute unless data entity @s {data:{state:"purifying"}} run return fail
 

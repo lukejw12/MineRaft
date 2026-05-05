@@ -1,2 +1,3 @@
 scoreboard players operation #net_id mr.data = @e[type=item_display,tag=mr.net_display,distance=..2,limit=1,sort=nearest] mr.net_id
-execute as @e[type=item_display,tag=mr.net_display] if score @s mr.net_id = #net_id mr.data at @s run function mineraft:structures/collection_net/core/destruction/destroyscoreboard players set #hammer_hit mr.data 1
+execute as @e[type=item_display,tag=mr.net_display] if score @s mr.net_id = #net_id mr.data at @s run function mineraft:structures/collection_net/core/destruction/destroy
+scoreboard players set #hammer_hit mr.data 1

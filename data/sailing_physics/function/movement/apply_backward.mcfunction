@@ -1,0 +1,9 @@
+scoreboard players operation #sp.vx sp.data = #sin sp.data
+scoreboard players operation #sp.vx sp.data *= #bwd_speed sp.const
+scoreboard players operation #sp.vx sp.data /= #10000 sp.const
+scoreboard players operation #sp.center_x sp.data += #sp.vx sp.data
+scoreboard players operation #sp.vz sp.data = #cos sp.data
+scoreboard players operation #sp.vz sp.data *= #bwd_speed sp.const
+scoreboard players operation #sp.vz sp.data /= #10000 sp.const
+scoreboard players operation #sp.vz sp.data *= #-1 sp.const
+scoreboard players operation #sp.center_z sp.data += #sp.vz sp.data

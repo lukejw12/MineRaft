@@ -1,4 +1,4 @@
-execute unless block ~ ~-1 ~ barrier unless block ~ ~-1 ~ iron_bars run function mineraft:structures/stairs/core/destroy
+execute if score #sp.sailing sp.data matches 0 unless block ~ ~-1 ~ barrier unless block ~ ~-1 ~ iron_bars run function mineraft:structures/stairs/core/destroy
 
 scoreboard players operation #check_id mr.data = @s mr.stairs_id
 scoreboard players set #shulker_count mr.data 0

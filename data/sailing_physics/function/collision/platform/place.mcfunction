@@ -1,0 +1,9 @@
+execute positioned ~-1 ~ ~-1 if entity @a[distance=..10] run function sailing_physics:collision/platform/place_one
+execute positioned ~0 ~ ~-1 if entity @a[distance=..10] run function sailing_physics:collision/platform/place_one
+execute positioned ~1 ~ ~-1 if entity @a[distance=..10] run function sailing_physics:collision/platform/place_one
+execute positioned ~-1 ~ ~0 if entity @a[distance=..10] run function sailing_physics:collision/platform/place_one
+execute positioned ~0 ~ ~0 if entity @a[distance=..10] run function sailing_physics:collision/platform/place_one
+execute positioned ~1 ~ ~0 if entity @a[distance=..10] run function sailing_physics:collision/platform/place_one
+execute positioned ~-1 ~ ~1 if entity @a[distance=..10] run function sailing_physics:collision/platform/place_one
+execute positioned ~0 ~ ~1 if entity @a[distance=..10] run function sailing_physics:collision/platform/place_one
+execute positioned ~1 ~ ~1 if entity @a[distance=..10] run function sailing_physics:collision/platform/place_one

@@ -1,4 +1,4 @@
-execute unless block ~ ~ ~ barrier run function mineraft:structures/crop_plot/advanced/large/core/destroy
+execute if score #sp.sailing sp.data matches 0 unless block ~ ~ ~ barrier run function mineraft:structures/crop_plot/advanced/large/core/destroy
 data modify storage mineraft:crop_plot offset_x1 set from entity @s data.offset_x1
 data modify storage mineraft:crop_plot offset_z1 set from entity @s data.offset_z1
 data modify storage mineraft:crop_plot offset_x2 set from entity @s data.offset_x2
