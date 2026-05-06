@@ -28,7 +28,5 @@ execute store result storage mineraft:grid slot2_z int 1 run scoreboard players 
 
 execute unless score #slot_x mr.data matches 0..2 run return run scoreboard players set #slot_free mr.data 0
 execute unless score #slot_z mr.data matches 0..2 run return run scoreboard players set #slot_free mr.data 0
-execute unless score #slot2_x mr.data matches 0..2 run return run scoreboard players set #slot_free mr.data 0
-execute unless score #slot2_z mr.data matches 0..2 run return run scoreboard players set #slot_free mr.data 0
 
 function mineraft:grid/block/is_free_pair with storage mineraft:grid

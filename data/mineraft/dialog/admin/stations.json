@@ -16,7 +16,7 @@
 			"item": {
 				"id": "minecraft:poisonous_potato",
 				"components": {
-					"minecraft:item_model": "mineraft:items/structures/smelteries/basic_smeltery",
+					"minecraft:item_model": "raft_items:structure/basic/smeltery",
 					"minecraft:item_name": {
 						"translate": "structure.mineraft.basic_smeltery",
 						"fallback": "Basic Smeltery",
@@ -46,7 +46,7 @@
 			"item": {
 				"id": "minecraft:poisonous_potato",
 				"components": {
-					"minecraft:item_model": "mineraft:items/structures/water_purifiers/basic_water_purifier",
+					"minecraft:item_model": "raft_items:structure/basic/water_purifier",
 					"minecraft:item_name": {
 						"translate": "structure.mineraft.basic_water_purifier",
 						"fallback": "Basic Water Purifier",
@@ -76,7 +76,7 @@
 			"item": {
 				"id": "minecraft:poisonous_potato",
 				"components": {
-					"minecraft:item_model": "mineraft:items/structures/grills/basic_grill",
+					"minecraft:item_model": "raft_items:structure/basic/grill",
 					"minecraft:item_name": {
 						"translate": "structure.mineraft.basic_grill",
 						"fallback": "Basic Grill",
@@ -106,7 +106,7 @@
 			"item": {
 				"id": "minecraft:poisonous_potato",
 				"components": {
-					"minecraft:item_model": "mineraft:items/structures/recyclers/basic_recycler",
+					"minecraft:item_model": "raft_items:structure/basic/recycler",
 					"minecraft:item_name": {
 						"translate": "structure.mineraft.basic_recycler",
 						"fallback": "Basic Recycler",

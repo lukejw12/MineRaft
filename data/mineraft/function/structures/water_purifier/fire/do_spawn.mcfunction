@@ -1,0 +1,6 @@
+$summon text_display ~$(fire_x) ~-0.5 ~$(fire_z) {Tags:["mr.purifier","mr.purifier_fire","mr.new_fire"],text:[{sprite:"raft_structures:structure/fire"}],background:0,brightness:{block:15,sky:15},transformation:[1.767767,0,-0.0007778,-0.17140388,0,2.49,0,0,1.767767,0,0.0007778,0.5830155,0,0,0,1]}
+$summon text_display ~$(fire_x) ~-0.5 ~$(fire_z) {Tags:["mr.purifier","mr.purifier_fire","mr.new_fire"],text:[{sprite:"raft_structures:structure/fire"}],background:0,brightness:{block:15,sky:15},transformation:[-1.767767,0,0.0007778,-0.07859612,0,2.49,0,0,-1.767767,0,-0.0007778,0.6669845,0,0,0,1]}
+$summon text_display ~$(fire_x) ~-0.5 ~$(fire_z) {Tags:["mr.purifier","mr.purifier_fire","mr.new_fire"],text:[{sprite:"raft_structures:structure/fire"}],background:0,brightness:{block:15,sky:15},transformation:[1.767767,0,0.0007778,-0.16698447,0,2.49,0,0,-1.767767,0,0.0007778,0.6714039,0,0,0,1]}
+$summon text_display ~$(fire_x) ~-0.5 ~$(fire_z) {Tags:["mr.purifier","mr.purifier_fire","mr.new_fire"],text:[{sprite:"raft_structures:structure/fire"}],background:0,brightness:{block:15,sky:15},transformation:[-1.767767,0,-0.0007778,-0.0830155,0,2.49,0,0,1.767767,0,-0.0007778,0.5785961,0,0,0,1]}
+execute as @e[tag=mr.new_fire] run scoreboard players operation @s mr.purifier_id = #purifier_id mr.data
+tag @e[tag=mr.new_fire] remove mr.new_fire

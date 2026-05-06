@@ -1,1 +1,0 @@
-$particle dripping_water ~$(particle_x) ~0.84 ~$(particle_z) 0 0 0 0 1

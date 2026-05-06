@@ -16,7 +16,7 @@
 			"item": {
 				"id": "minecraft:stick",
 				"components": {
-					"minecraft:item_model": "raft_items:building_hammer",
+					"minecraft:item_model": "raft_items:tool/building_hammer",
 					"minecraft:item_name": {
 						"translate": "item.mineraft.building_hammer",
 						"fallback": "Building Hammer",
