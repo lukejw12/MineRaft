@@ -1,3 +1,4 @@
+function mineraft:core/break_structure
 scoreboard players operation #platform_id mr.data = @s mr.platform_id
 scoreboard players operation #destroying_support_id mr.data = @s mr.support_id
 tag @s add mr.destroyed
@@ -10,7 +11,5 @@ execute as @e[type=item_display,tag=mr.support_display] if score @s mr.support_i
 
 execute positioned ~0.5 ~ ~0.5 as @e[type=item_display,tag=mr.surface,distance=..10,limit=1,sort=nearest] run function mineraft:grid/support/remove_platform
 
-particle item{item:{id:egg,components:{item_model:"mineraft:particle/wood"}}} ~ ~0.5 ~ 0.8 0.3 0.8 0.1 50 normal
-playsound minecraft:entity.zombie.break_wooden_door block @a[distance=..15] ~ ~ ~ 0.2 1.5
 
 kill @s

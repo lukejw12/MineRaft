@@ -6,8 +6,7 @@ execute as @e[type=item_display,tag=mr.recycler_display] at @s if score @s mr.re
 
 execute as @e[type=item_display,tag=mr.recycler_display] if score @s mr.recycler_id = #recycler_id mr.data at @s run function mineraft:grid/block/release_at_pos
 
-execute as @e[type=item_display,tag=mr.recycler_display] if score @s mr.recycler_id = #recycler_id mr.data run kill @s
+execute as @e[type=item_display,tag=mr.recycler_display,distance=..2,limit=1,sort=nearest] at @s run function mineraft:core/break_structure
+kill @s
 execute as @e[type=interaction,tag=mr.recycler_interaction] if score @s mr.recycler_id = #recycler_id mr.data run kill @s
 
-execute at @s run particle block{block_state:"minecraft:barrier"} ~ ~0.5 ~ 0.3 0.3 0.3 0 20
-execute at @s run playsound minecraft:block.stone.break block @a ~ ~ ~ 1 0.8

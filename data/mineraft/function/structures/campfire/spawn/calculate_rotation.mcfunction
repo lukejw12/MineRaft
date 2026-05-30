@@ -1,0 +1,5 @@
+execute if score #rotation mr.data matches -44..44 run data modify storage mineraft:campfire rotation set value [0f,1f,0f,0f]
+execute if score #rotation mr.data matches 45..134 run data modify storage mineraft:campfire rotation set value [0f,0.707f,0f,0.707f]
+execute if score #rotation mr.data matches 135.. run data modify storage mineraft:campfire rotation set value [0f,0f,0f,1f]
+execute if score #rotation mr.data matches ..-135 run data modify storage mineraft:campfire rotation set value [0f,0f,0f,1f]
+execute if score #rotation mr.data matches -134..-45 run data modify storage mineraft:campfire rotation set value [0f,-0.707f,0f,0.707f]

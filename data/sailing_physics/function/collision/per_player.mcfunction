@@ -1,3 +1,3 @@
-execute as @e[tag=sp.raft_entity,tag=mr.foundation,distance=..10] at @s unless entity @e[tag=sp.floor_ghast,tag=!sp.ghast_free,distance=..1] if entity @a[distance=..10] run function sailing_physics:collision/floor/place
-execute as @e[tag=sp.raft_entity,tag=mr.platform_display,distance=..12] at @s unless entity @e[tag=sp.plat_ghast,tag=!sp.plat_free,distance=..1] if entity @a[distance=..10] run function sailing_physics:collision/platform/place
-execute as @e[tag=sp.raft_entity,tag=mr.support_display,distance=..10] at @s unless entity @e[tag=sp.support_coll,tag=!sp.sup_free,distance=..1] if entity @a[distance=..10] run function sailing_physics:collision/support/place
+execute as @e[tag=sp.raft_entity,tag=mr.foundation,distance=..5] at @s unless entity @e[tag=sp.floor_ghast,tag=!sp.ghast_free,distance=..1] if entity @a[distance=..5] run function sailing_physics:collision/floor/place
+execute as @e[tag=sp.raft_entity,tag=mr.platform_display,distance=..6] at @s unless entity @e[tag=sp.plat_ghast,tag=!sp.plat_free,distance=..1] if entity @a[distance=..6] run function sailing_physics:collision/platform/place
+execute as @e[tag=sp.raft_entity,tag=mr.support_display,distance=..5] at @s unless entity @e[tag=sp.support_coll,tag=!sp.sup_free,distance=..1] if entity @a[distance=..5] run function sailing_physics:collision/support/place

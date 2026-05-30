@@ -1,1 +1,1 @@
-execute as @e[type=item_display,tag=mr.hammer_preview] if score @s mr.link = @p mr.link run kill @s
+execute as @e[type=item_display,tag=mr.hammer_glowing] run function mineraft:items/hammer/raycast/preview/remove_glow

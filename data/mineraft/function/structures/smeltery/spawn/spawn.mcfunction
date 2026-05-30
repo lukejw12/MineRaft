@@ -1,3 +1,4 @@
+execute unless block ~ ~ ~ air unless block ~ ~ ~ iron_trapdoor run return fail
 playsound minecraft:block.vault.reject_rewarded_player block @a[distance=..10] ~ ~ ~ 100 1 1
 
 
@@ -14,6 +15,7 @@ execute as @e[type=item_display,tag=mr.new_display,limit=1] if block ~ ~ ~ iron_
 setblock ~ ~ ~ barrier
 
 data modify storage mineraft:grid type set value "smeltery"
+data modify storage mineraft:grid h set value 1
 execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/claim with storage mineraft:grid
 
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players operation @s mr.link = @e[type=interaction,tag=mr.new,limit=1] mr.link
@@ -27,6 +29,7 @@ execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard playe
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players set @s mr.smeltery_progress 0
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players set @s mr.smeltery_max 0
 
+execute as @e[type=item_display,tag=mr.new_display,limit=1] run function mineraft:core/structure/store_item
 tag @e[type=item_display,tag=mr.new_display] remove mr.new_display
 tag @e[type=item_display,tag=mr.new_fuel] remove mr.new_fuel
 tag @e[type=interaction,tag=mr.new] remove mr.new

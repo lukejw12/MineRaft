@@ -9,3 +9,4 @@ execute as @e[type=interaction,tag=mr.net_interaction] if score @s mr.net_id = @
 execute as @e[type=interaction,tag=mr.net_interaction] if score @s mr.net_id = @e[type=item_display,tag=mr.net_display,sort=nearest,limit=1] mr.net_id at @s run particle minecraft:splash ~ ~0.5 ~ 0.3 0.1 0.3 0 1
 
 tag @e[type=item_display,tag=mr.new_item_display] remove mr.new_item_display
+execute if score #sp.sailing sp.data matches 1 as @e[type=item_display,tag=mr.net_item_display,tag=!sp.raft_entity] run function sailing_physics:movement/store_single

@@ -11,8 +11,8 @@ execute as @e[type=item_display,tag=mr.wall_pillar] if score @s mr.wall_id2 = #w
 data modify storage mineraft:walls destroy_side set from entity @s data.side
 
 function mineraft:structures/walls/utils/trapdoors/remove with storage mineraft:walls
+function mineraft:core/break_structure
 
-particle item{item:{id:egg,components:{item_model:"mineraft:particle/wood"}}} ~ ~2 ~ 0.5 0.5 0.5 0.1 100 normal
 
 execute if entity @s[tag=mr.supporting_platform] positioned ~ ~2 ~ as @e[type=item_display,tag=mr.platform_display,distance=..2] at @s run function mineraft:structures/platform/validation/support_checks/check
 execute if entity @s[tag=mr.supporting_platform] positioned ~ ~2 ~ as @e[type=item_display,tag=mr.platform_display,distance=..2] run tag @s add mr.needs_barrier_restore

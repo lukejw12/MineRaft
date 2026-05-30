@@ -1,0 +1,1 @@
+$summon block_display $(cx) $(cy) $(cz) {Rotation:[$(yaw)f,$(pitch)f],Tags:["hp.rope","hp.new_rope"],block_state:{Name:"iron_chain",Properties:{axis:"y"}},transformation:{left_rotation:[0f,0.707f,0.707f,0f],right_rotation:[0f,0f,0f,1f],translation:[0.5f,-0.5f,-0.5f],scale:[1f,1f,1f]},teleport_duration:3}

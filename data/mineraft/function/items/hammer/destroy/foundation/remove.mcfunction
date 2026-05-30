@@ -1,4 +1,5 @@
-particle item{item:{id:egg,components:{item_model:"mineraft:particle/wood"}}} ~ ~1 ~ 0.5 0 0.5 0.1 100 normal
-fill ~1 62 ~1 ~-1 61 ~-1 water
+execute as @e[type=item_display,tag=mr.foundation_armor_display,distance=..1,limit=1] if data entity @s data.placed_item unless entity @p[distance=..10,gamemode=creative] run function mineraft:core/return_item
 kill @e[type=item_display,tag=mr.foundation_armor_display,distance=..1,limit=1]
+function mineraft:core/break_structure
+fill ~1 62 ~1 ~-1 61 ~-1 water
 kill @s

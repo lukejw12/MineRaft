@@ -9,5 +9,7 @@ execute as @e[type=item_display,tag=mr.small_adv_crop_display] run function sail
 execute as @e[type=interaction] run function sailing_physics:movement/store_single
 execute as @e[type=marker,tag=mr.spawn] run function sailing_physics:movement/store_single
 execute as @e[type=item_display,tag=mr.foundation_armor_display] run function sailing_physics:movement/store_single
-execute as @e[type=armor_stand,tag=mr.stairs_shulker] run function sailing_physics:movement/store_single_score
+execute as @e[type=item_display,tag=mr.stairs_shulker] run function sailing_physics:movement/store_single
 execute as @e[type=text_display,tag=mr.purifier_fire] run function sailing_physics:movement/store_single
+execute as @e[type=block_display,tag=sp.campfire_block] run function sailing_physics:movement/store_single
+execute as @e[type=block_display,tag=sp.grill_block] run function sailing_physics:movement/store_single

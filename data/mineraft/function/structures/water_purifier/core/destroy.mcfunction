@@ -1,3 +1,4 @@
+execute as @e[type=item_display,tag=mr.purifier_display,distance=..2,limit=1,sort=nearest] at @s run function mineraft:core/break_structure
 scoreboard players operation #purifier_id mr.data = @s mr.purifier_id
 
 execute if entity @s[tag=mr.block_0] at @s run setblock ~ ~ ~ air

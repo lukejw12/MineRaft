@@ -7,6 +7,8 @@ execute align xyz run tp @s ~0.5 ~ ~0.5
 function mineraft:grid/block/compute_slot
 execute if score #slot_free mr.data matches 0 run function mineraft:structures/grill/raycast/preview/hide
 execute if score #slot_free mr.data matches 0 run return run kill @s
+execute align xyz positioned ~ ~1 ~ unless block ~ ~ ~ air unless block ~ ~ ~ iron_trapdoor run function mineraft:structures/grill/raycast/preview/hide
+execute align xyz positioned ~ ~1 ~ unless block ~ ~ ~ air unless block ~ ~ ~ iron_trapdoor run return run kill @s
 
 execute as @a if score @s mr.link = #player_link mr.data unless entity @e[type=item_display,tag=mr.grill_preview] if score @s mr.link = #player_link mr.data run function mineraft:structures/grill/spawn/spawn_preview with storage mineraft:grill
 execute as @e[type=item_display,tag=mr.new_grill_preview,limit=1] run scoreboard players operation @s mr.link = #player_link mr.data

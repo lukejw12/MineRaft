@@ -16,6 +16,7 @@ execute align xyz if block ~ ~2 ~ barrier run return run kill @s
 
 execute align xyz positioned ~ ~1 ~ run function mineraft:structures/recycler/spawn/spawn
 
-execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.recycler:1b}] 1
+function mineraft:core/structure/cache_item
+execute as @a if score @s mr.link = #player_link mr.data unless entity @s[gamemode=creative] run clear @s *[custom_data~{mr.recycler:1b}] 1
 
 kill @s

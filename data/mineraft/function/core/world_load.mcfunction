@@ -85,11 +85,11 @@ scoreboard objectives add mr.crop_plot_hits dummy
 
 
 #/ Grills
-scoreboard objectives add mr.grill_id dummy
-scoreboard objectives add mr.grill_fuel dummy
-scoreboard objectives add mr.grill_progress dummy
-scoreboard objectives add mr.grill_max dummy
-scoreboard objectives add mr.grill_cook dummy
+scoreboard objectives add mr.campfire_id dummy
+scoreboard objectives add mr.campfire_fuel dummy
+scoreboard objectives add mr.campfire_progress dummy
+scoreboard objectives add mr.campfire_slots dummy
+
 
 #/ Recycler
 scoreboard objectives add mr.recycler_id dummy
@@ -112,7 +112,7 @@ execute as @e[type=item_display,tag=mr.stairs_display] run tag @s add mr.structu
 execute as @e[type=item_display,tag=mr.crop_plot_display] run tag @s add mr.structure_display
 execute as @e[type=item_display,tag=mr.small_crop_plot_display] run tag @s add mr.structure_display
 execute as @e[type=item_display,tag=mr.small_adv_crop_plot_display] run tag @s add mr.structure_display
-execute as @e[type=item_display,tag=mr.grill_display] run tag @s add mr.structure_display
+execute as @e[type=item_display,tag=mr.campfire_display] run tag @s add mr.structure_display
 execute as @e[type=item_display,tag=mr.recycler_display] run tag @s add mr.structure_display
 
 scoreboard objectives add mr.admin_open trigger
@@ -123,3 +123,4 @@ execute as @e[type=item_display,tag=mr.crop_plot_display] if data entity @s {dat
 execute as @e[type=item_display,tag=mr.crop_plot_display] if data entity @s {data:{crop_plot_type:"advanced_crop_plot"}} run tag @s add mr.advanced_type
 
 function sailing_physics:core/load
+function hook_physics:core/load

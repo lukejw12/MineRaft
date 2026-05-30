@@ -134,7 +134,7 @@
 		{
 			"type": "minecraft:item",
 			"item": {
-				"id": "minecraft:white_dye",
+				"id": "minecraft:light_gray_dye",
 				"components": {
 					"minecraft:item_model": "raft_items:plastic",
 					"minecraft:item_name": {

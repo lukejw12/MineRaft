@@ -44,9 +44,14 @@ execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard playe
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players set @s mr.crop_plot_hits 0
 
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run tag @s add mr.advanced_type
+execute as @e[type=item_display,tag=mr.new_display,limit=1] run function mineraft:core/structure/store_item
 tag @e[type=item_display,tag=mr.new_display] remove mr.new_display
 tag @e[type=interaction,tag=mr.new_interaction] remove mr.new_interaction
 
-execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.crop_plot:1b}] 1
+function mineraft:core/structure/cache_item
+execute as @a if score @s mr.link = #player_link mr.data unless entity @s[gamemode=creative] run clear @s *[custom_data~{mr.crop_plot:1b}] 1
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1
+data modify storage mineraft:grid type set value "crop_plot"
+data modify storage mineraft:grid h set value 5
+execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..5,limit=1,sort=nearest] run function mineraft:grid/block/claim_all with storage mineraft:grid

@@ -8,6 +8,10 @@ execute align xyz run tp @s ~0.5 ~ ~0.5
 function mineraft:grid/block/compute_slot
 execute if score #slot_free mr.data matches 0 run function mineraft:structures/recycler/raycast/preview/hide
 execute if score #slot_free mr.data matches 0 run return run kill @s
+execute align xyz positioned ~ ~1 ~ unless block ~ ~ ~ air unless block ~ ~ ~ iron_trapdoor run function mineraft:structures/recycler/raycast/preview/hide
+execute align xyz positioned ~ ~1 ~ unless block ~ ~ ~ air unless block ~ ~ ~ iron_trapdoor run return run kill @s
+execute align xyz positioned ~ ~2 ~ unless block ~ ~ ~ air run function mineraft:structures/recycler/raycast/preview/hide
+execute align xyz positioned ~ ~2 ~ unless block ~ ~ ~ air run return run kill @s
 
 execute align xyz unless block ~ ~1 ~ air unless block ~ ~1 ~ iron_trapdoor run function mineraft:structures/recycler/raycast/preview/hide
 execute align xyz unless block ~ ~1 ~ air unless block ~ ~1 ~ iron_trapdoor run return run kill @s

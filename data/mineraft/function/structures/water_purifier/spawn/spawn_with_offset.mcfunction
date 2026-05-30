@@ -1,3 +1,4 @@
+execute unless block ~ ~ ~ air unless block ~ ~ ~ iron_trapdoor run return fail
 function mineraft:structures/water_purifier/spawn/spawn_display with storage mineraft:purifier
 
 summon interaction ~0.5 ~ ~0.5 {width:1.05f,height:1.5f,Tags:["mr.purifier","mr.purifier_interaction","mr.new_interaction","mr.block_0"]}
@@ -18,6 +19,7 @@ setblock ~ ~ ~ barrier
 $setblock ~$(block1_offset_x) ~ ~$(block1_offset_z) barrier
 
 data modify storage mineraft:grid type set value "purifier"
+data modify storage mineraft:grid h set value 1
 execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/claim_smart_pair with storage mineraft:grid
 
 execute as @e[type=item_display,tag=mr.new_display,limit=1] store result score @s mr.purifier_id run scoreboard players add #global mr.purifier_id 1
@@ -34,6 +36,7 @@ execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard playe
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players set @s mr.purifier_progress 0
 execute as @e[type=item_display,tag=mr.new_display,limit=1] run scoreboard players set @s mr.purifier_timer 0
 
+execute as @e[type=item_display,tag=mr.new_display,limit=1] run function mineraft:core/structure/store_item
 tag @e[type=item_display,tag=mr.new_display] remove mr.new_display
 tag @e[type=item_display,tag=mr.new_fuel] remove mr.new_fuel
 tag @e[type=interaction,tag=mr.new_interaction] remove mr.new_interaction

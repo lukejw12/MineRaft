@@ -1,3 +1,5 @@
+execute if block ~ ~1 ~ barrier run return fail
+
 scoreboard players set #can_place mr.data 1
 
 execute positioned ~ ~ ~ unless block ~ ~ ~ #mineraft:platform-override run scoreboard players set #can_place mr.data 0

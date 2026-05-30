@@ -1,0 +1,1 @@
+summon block_display ~0 ~0 ~0 {Glowing:true,glow_color_override:65280,Tags:["mr.campfire","mr.campfire_preview","mr.campfire_block_preview"],block_state:{Name:"minecraft:campfire",Properties:{lit:"false"}}}

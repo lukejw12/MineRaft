@@ -12,13 +12,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_data": {
-                  "mr.fuel": 1,
-                  "mr.fuel_time": 50,
-                  "mr.wooden_plank": 1,
-                  "mr.recyclable": 1,
-                  "mr.recycle_type": "plank"
-                },
+                "custom_data": "{mr.fuel:1b,mr.fuel_time:50,mr.wooden_plank:1b,mr.recyclable:1b,mr.recycle_type:\"plank\"}",
                 "item_model": "raft_items:wooden_plank",
                 "item_name": {
                   "fallback": "Wooden Plank",
@@ -36,11 +30,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_data": {
-                  "mr.palm_leaf": 1,
-                  "mr.recyclable": 1,
-                  "mr.recycle_type": "palm_leaf"
-                },
+                "custom_data": "{mr.palm_leaf:1b,mr.recyclable:1b,mr.recycle_type:\"palm_leaf\"}",
                 "item_model": "raft_items:palm_leaf",
                 "item_name": {
                   "fallback": "Palm Leaf",
@@ -58,11 +48,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_data": {
-                  "mr.plastic": 1,
-                  "mr.recyclable": 1,
-                  "mr.recycle_type": "plastic"
-                },
+                "custom_data": "{mr.plastic:1b,mr.recyclable:1b,mr.recycle_type:\"plastic\"}",
                 "item_model": "raft_items:plastic",
                 "item_name": {
                   "fallback": "Plastic",
@@ -80,9 +66,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "custom_data": {
-                  "mr.barrel": 1
-                },
+                "custom_data": "{mr.barrel:1b}",
                 "item_name": {
                   "fallback": "Barrel",
                   "translate": "item.mineraft.barrel"

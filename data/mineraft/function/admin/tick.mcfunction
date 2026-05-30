@@ -37,7 +37,7 @@ execute as @a[scores={mr.admin=16}] run give @s poisonous_potato[item_name={"bol
 
 execute as @a[scores={mr.admin=17}] run give @s poisonous_potato[item_name={"bold":false,"italic":false,"translate":"structure.mineraft.basic_water_purifier","fallback":"Basic Water Purifier"},!food,consumable={consume_seconds:9999,animation:"block",sound:"intentionally_empty",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"intentionally_empty"}]},custom_data={mr.purifier:1b,mr.purifier_type:"basic_water_purifier"},item_model="raft_items:structure/basic/water_purifier"]
 
-execute as @a[scores={mr.admin=18}] run give @s poisonous_potato[item_name={"bold":false,"italic":false,"translate":"structure.mineraft.basic_grill","fallback":"Basic Grill"},!food,consumable={consume_seconds:9999,animation:"block",sound:"intentionally_empty",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"intentionally_empty"}]},custom_data={mr.grill:1b,mr.grill_type:"basic_grill"},item_model="raft_items:structure/basic/grill"]
+execute as @a[scores={mr.admin=18}] run give @s poisonous_potato[item_name={"bold":false,"italic":false,"translate":"structure.mineraft.campfire","fallback":"Campfire"},!food,consumable={consume_seconds:9999,animation:"block",sound:"intentionally_empty",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"intentionally_empty"}]},custom_data={mr.campfire:1b,mr.campfire_type:"basic_campfire"},item_model="minecraft:campfire"]
 
 execute as @a[scores={mr.admin=19}] run give @s poisonous_potato[item_name={"bold":false,"italic":false,"translate":"structure.mineraft.basic_recycler","fallback":"Basic Recycler"},!food,consumable={consume_seconds:9999,animation:"block",sound:"intentionally_empty",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"intentionally_empty"}]},custom_data={mr.recycler:1b,mr.recycler_type:"basic_recycler"},item_model="raft_items:structure/basic/recycler"]
 
@@ -59,5 +59,4 @@ execute as @a[scores={mr.admin=36}] run loot give @s loot mineraft:items/trash_c
 execute as @a[scores={mr.admin=37}] run loot give @s loot mineraft:items/food/cooked_cod
 execute as @a[scores={mr.admin=38}] run loot give @s loot mineraft:items/food/potato
 
-# Reset after handling
 scoreboard players reset @a[scores={mr.admin=1..}] mr.admin

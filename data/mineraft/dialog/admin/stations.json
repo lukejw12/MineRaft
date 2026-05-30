@@ -1,208 +1,208 @@
 {
-	"type": "minecraft:multi_action",
-	"title": {
-		"text": "Admin - Stations",
-		"color": "gold",
-		"bold": true
-	},
-	"external_title": "Stations",
-	"columns": 1,
-	"can_close_with_escape": true,
-	"pause": false,
-	"after_action": "none",
-	"body": [
-		{
-			"type": "minecraft:item",
-			"item": {
-				"id": "minecraft:poisonous_potato",
-				"components": {
-					"minecraft:item_model": "raft_items:structure/basic/smeltery",
-					"minecraft:item_name": {
-						"translate": "structure.mineraft.basic_smeltery",
-						"fallback": "Basic Smeltery",
-						"bold": false,
-						"italic": false
-					}
-				}
-			},
-			"description": {
-				"contents": {
-					"text": "Basic Smeltery",
-					"color": "red",
-					"click_event": {
-						"action": "run_command",
-						"command": "trigger mr.admin set 16"
-					}
-				},
-				"width": 250
-			},
-			"show_decorations": false,
-			"show_tooltip": true,
-			"width": 16,
-			"height": 16
-		},
-		{
-			"type": "minecraft:item",
-			"item": {
-				"id": "minecraft:poisonous_potato",
-				"components": {
-					"minecraft:item_model": "raft_items:structure/basic/water_purifier",
-					"minecraft:item_name": {
-						"translate": "structure.mineraft.basic_water_purifier",
-						"fallback": "Basic Water Purifier",
-						"bold": false,
-						"italic": false
-					}
-				}
-			},
-			"description": {
-				"contents": {
-					"text": "Basic Water Purifier",
-					"color": "aqua",
-					"click_event": {
-						"action": "run_command",
-						"command": "trigger mr.admin set 17"
-					}
-				},
-				"width": 250
-			},
-			"show_decorations": false,
-			"show_tooltip": true,
-			"width": 16,
-			"height": 16
-		},
-		{
-			"type": "minecraft:item",
-			"item": {
-				"id": "minecraft:poisonous_potato",
-				"components": {
-					"minecraft:item_model": "raft_items:structure/basic/grill",
-					"minecraft:item_name": {
-						"translate": "structure.mineraft.basic_grill",
-						"fallback": "Basic Grill",
-						"bold": false,
-						"italic": false
-					}
-				}
-			},
-			"description": {
-				"contents": {
-					"text": "Basic Grill",
-					"color": "gold",
-					"click_event": {
-						"action": "run_command",
-						"command": "trigger mr.admin set 18"
-					}
-				},
-				"width": 250
-			},
-			"show_decorations": false,
-			"show_tooltip": true,
-			"width": 16,
-			"height": 16
-		},
-		{
-			"type": "minecraft:item",
-			"item": {
-				"id": "minecraft:poisonous_potato",
-				"components": {
-					"minecraft:item_model": "raft_items:structure/basic/recycler",
-					"minecraft:item_name": {
-						"translate": "structure.mineraft.basic_recycler",
-						"fallback": "Basic Recycler",
-						"bold": false,
-						"italic": false
-					}
-				}
-			},
-			"description": {
-				"contents": {
-					"text": "Basic Recycler",
-					"color": "dark_green",
-					"click_event": {
-						"action": "run_command",
-						"command": "trigger mr.admin set 19"
-					}
-				},
-				"width": 250
-			},
-			"show_decorations": false,
-			"show_tooltip": true,
-			"width": 16,
-			"height": 16
-		},
-		{
-			"type": "minecraft:item",
-			"item": {
-				"id": "minecraft:poisonous_potato",
-				"components": {
-					"minecraft:item_model": "raft_items:structure/simple/collection_net",
-					"minecraft:item_name": {
-						"translate": "structure.mineraft.simple_collection_net",
-						"fallback": "Simple Collection Net",
-						"bold": false,
-						"italic": false
-					}
-				}
-			},
-			"description": {
-				"contents": {
-					"text": "Simple Collection Net",
-					"color": "white",
-					"click_event": {
-						"action": "run_command",
-						"command": "trigger mr.admin set 20"
-					}
-				},
-				"width": 250
-			},
-			"show_decorations": false,
-			"show_tooltip": true,
-			"width": 16,
-			"height": 16
-		},
-		{
-			"type": "minecraft:item",
-			"item": {
-				"id": "minecraft:poisonous_potato",
-				"components": {
-					"minecraft:item_model": "raft_items:structure/advanced/collection_net",
-					"minecraft:item_name": {
-						"translate": "structure.mineraft.advanced_collection_net",
-						"fallback": "Advanced Collection Net",
-						"bold": false,
-						"italic": false
-					}
-				}
-			},
-			"description": {
-				"contents": {
-					"text": "Advanced Collection Net",
-					"color": "light_purple",
-					"click_event": {
-						"action": "run_command",
-						"command": "trigger mr.admin set 21"
-					}
-				},
-				"width": 250
-			},
-			"show_decorations": false,
-			"show_tooltip": true,
-			"width": 16,
-			"height": 16
-		}
-	],
-	"actions": [
-		{
-			"label": {
-				"text": "<",
-				"color": "gray"
-			},
-			"width": 20,
-			"action": {
-				"type": "show_dialog",
-				"dialog": "mineraft:admin/main"
-			}
-		}
-	]
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Admin - Stations",
+    "color": "gold",
+    "bold": true
+  },
+  "external_title": "Stations",
+  "columns": 1,
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "raft_items:structure/basic/smeltery",
+          "minecraft:item_name": {
+            "translate": "structure.mineraft.basic_smeltery",
+            "fallback": "Basic Smeltery",
+            "bold": false,
+            "italic": false
+          }
+        }
+      },
+      "description": {
+        "contents": {
+          "text": "Basic Smeltery",
+          "color": "red",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger mr.admin set 16"
+          }
+        },
+        "width": 250
+      },
+      "show_decorations": false,
+      "show_tooltip": true,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "raft_items:structure/basic/water_purifier",
+          "minecraft:item_name": {
+            "translate": "structure.mineraft.basic_water_purifier",
+            "fallback": "Basic Water Purifier",
+            "bold": false,
+            "italic": false
+          }
+        }
+      },
+      "description": {
+        "contents": {
+          "text": "Basic Water Purifier",
+          "color": "aqua",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger mr.admin set 17"
+          }
+        },
+        "width": 250
+      },
+      "show_decorations": false,
+      "show_tooltip": true,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "minecraft:campfire",
+          "minecraft:item_name": {
+            "translate": "structure.mineraft.basic_grill",
+            "fallback": "Basic Grill",
+            "bold": false,
+            "italic": false
+          }
+        }
+      },
+      "description": {
+        "contents": {
+          "text": "Campfire",
+          "color": "gold",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger mr.admin set 18"
+          }
+        },
+        "width": 250
+      },
+      "show_decorations": false,
+      "show_tooltip": true,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "raft_items:structure/basic/recycler",
+          "minecraft:item_name": {
+            "translate": "structure.mineraft.basic_recycler",
+            "fallback": "Basic Recycler",
+            "bold": false,
+            "italic": false
+          }
+        }
+      },
+      "description": {
+        "contents": {
+          "text": "Basic Recycler",
+          "color": "dark_green",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger mr.admin set 19"
+          }
+        },
+        "width": 250
+      },
+      "show_decorations": false,
+      "show_tooltip": true,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "raft_items:structure/simple/collection_net",
+          "minecraft:item_name": {
+            "translate": "structure.mineraft.simple_collection_net",
+            "fallback": "Simple Collection Net",
+            "bold": false,
+            "italic": false
+          }
+        }
+      },
+      "description": {
+        "contents": {
+          "text": "Simple Collection Net",
+          "color": "white",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger mr.admin set 20"
+          }
+        },
+        "width": 250
+      },
+      "show_decorations": false,
+      "show_tooltip": true,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "raft_items:structure/advanced/collection_net",
+          "minecraft:item_name": {
+            "translate": "structure.mineraft.advanced_collection_net",
+            "fallback": "Advanced Collection Net",
+            "bold": false,
+            "italic": false
+          }
+        }
+      },
+      "description": {
+        "contents": {
+          "text": "Advanced Collection Net",
+          "color": "light_purple",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger mr.admin set 21"
+          }
+        },
+        "width": 250
+      },
+      "show_decorations": false,
+      "show_tooltip": true,
+      "width": 16,
+      "height": 16
+    }
+  ],
+  "actions": [
+    {
+      "label": {
+        "text": "<",
+        "color": "gray"
+      },
+      "width": 20,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "mineraft:admin/main"
+      }
+    }
+  ]
 }

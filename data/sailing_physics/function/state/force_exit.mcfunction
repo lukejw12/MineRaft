@@ -5,6 +5,8 @@ execute as @e[tag=sp.raft_entity,tag=mr.foundation] at @s run function sailing_p
 function sailing_physics:docking/recompute_and_reposition
 function sailing_physics:docking/place_blocks
 function sailing_physics:docking/update_grid
+
+execute as @a at @s run spawnpoint @s ~ ~ ~
 execute as @e[tag=sp.raft_entity,type=item_display] run data merge entity @s {teleport_duration:0}
 tag @e[tag=sp.raft_entity] remove sp.raft_entity
 tag @a[tag=sp.steering_tag] remove sp.steering_tag

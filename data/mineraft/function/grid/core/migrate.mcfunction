@@ -6,7 +6,7 @@ execute as @e[type=item_display,tag=mr.platform_display] unless data entity @s d
 execute as @e[type=item_display,tag=mr.platform_display] run function mineraft:grid/core/init
 
 execute as @e[type=item_display,tag=mr.smeltery_display] at @s run function mineraft:grid/core/migrate_1x1 {type:"smeltery"}
-execute as @e[type=item_display,tag=mr.grill_display] at @s run function mineraft:grid/core/migrate_1x1 {type:"grill"}
+execute as @e[type=item_display,tag=mr.campfire_display] at @s run function mineraft:grid/core/migrate_1x1 {type:"campfire"}
 
 execute as @e[type=item_display,tag=mr.purifier_display] at @s run function mineraft:grid/core/migrate_1x2
 execute as @e[type=item_display,tag=mr.small_crop_plot_display] at @s run function mineraft:grid/core/migrate_1x2

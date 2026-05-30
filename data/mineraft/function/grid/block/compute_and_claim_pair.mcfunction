@@ -1,4 +1,3 @@
-
 execute unless data entity @s data.grid.cx run function mineraft:grid/core/init
 
 execute store result score #surface_x mr.data run data get entity @s data.grid.cx
@@ -32,4 +31,5 @@ execute unless score #slot2_x mr.data matches 0..2 run return fail
 execute unless score #slot2_z mr.data matches 0..2 run return fail
 
 data modify storage mineraft:grid type set value "furniture"
+execute unless data storage mineraft:grid h run data modify storage mineraft:grid h set value 1
 function mineraft:grid/block/claim_pair with storage mineraft:grid

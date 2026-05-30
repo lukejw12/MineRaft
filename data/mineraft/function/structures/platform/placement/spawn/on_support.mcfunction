@@ -21,7 +21,8 @@ fill ~1 ~ ~1 ~-1 ~ ~-1 barrier replace air
 fill ~1 ~ ~1 ~-1 ~ ~-1 barrier replace iron_bars
 
 function mineraft:structures/platform/placement/spawn/display with storage mineraft:platform
-execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.platform:1b}] 1
+function mineraft:core/structure/cache_item
+execute as @a if score @s mr.link = #player_link mr.data unless entity @s[gamemode=creative] run clear @s *[custom_data~{mr.platform:1b}] 1
 
 execute as @e[type=item_display,tag=mr.new_platform,limit=1] run data modify entity @s data.platform_type set from storage mineraft:platform platform_type
 execute as @e[type=item_display,tag=mr.new_platform,limit=1] store result score @s mr.platform_id run scoreboard players add #global mr.platform_id 1
@@ -29,6 +30,7 @@ execute as @e[type=item_display,tag=mr.new_platform,limit=1] run tag @s add mr.s
 
 execute positioned ~0.5 ~ ~0.5 as @e[type=item_display,tag=mr.surface,distance=..10,limit=1,sort=nearest] run function mineraft:grid/support/add_platform
 
+execute as @e[type=item_display,tag=mr.new_platform,limit=1] run function mineraft:core/structure/store_item
 tag @e[type=item_display,tag=mr.new_platform] remove mr.new_platform
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1

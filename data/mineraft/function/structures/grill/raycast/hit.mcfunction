@@ -8,5 +8,6 @@ function mineraft:grid/block/compute_slot
 execute if score #slot_free mr.data matches 0 run return run kill @s
 
 execute align xyz positioned ~ ~1 ~ run function mineraft:structures/grill/spawn/spawn
-execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.grill:1b}] 1
+function mineraft:core/structure/cache_item
+execute as @a if score @s mr.link = #player_link mr.data unless entity @s[gamemode=creative] run clear @s *[custom_data~{mr.grill:1b}] 1
 kill @s

@@ -1,3 +1,5 @@
+tag @e[type=item_display,tag=mr.hammer_target_current] remove mr.hammer_target_current
+
 execute positioned ~ ~ ~ anchored eyes run summon marker ~ ~ ~ {Tags:["mr.hammer_preview_raycast","mr.new_hammer_preview_ray"]}
 execute anchored eyes run tp @e[type=marker,tag=mr.new_hammer_preview_ray,limit=1,sort=nearest] ~ ~ ~ ~ ~
 

@@ -1,0 +1,11 @@
+scoreboard players operation #player_link mr.data = @s mr.link
+data modify storage mineraft:campfire campfire_type set from entity @s data.campfire_type
+scoreboard players operation #rotation mr.data = @s mr.data
+function mineraft:structures/campfire/spawn/calculate_rotation
+execute align xyz run tp @s ~0.5 ~ ~0.5
+function mineraft:grid/block/compute_slot
+execute if score #slot_free mr.data matches 0 run return run kill @s
+execute align xyz positioned ~ ~1 ~ run function mineraft:structures/campfire/spawn/spawn
+function mineraft:core/structure/cache_item
+execute as @a if score @s mr.link = #player_link mr.data unless entity @s[gamemode=creative] run clear @s *[custom_data~{mr.campfire:1b}] 1
+kill @s

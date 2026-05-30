@@ -1,3 +1,7 @@
+scoreboard players set #slot_free mr.data 1
+execute as @e[type=item_display,tag=mr.surface,distance=..1.5,limit=1,sort=nearest] run function mineraft:grid/block/is_any_occupied
+execute if score #slot_free mr.data matches 0 run return fail
+
 execute if entity @e[type=item_display,tag=mr.center,distance=..1] run return fail
 execute if entity @e[type=item_display,tag=mr.net_display,distance=..1] run return fail
 
@@ -21,9 +25,15 @@ execute as @e[type=item_display,tag=mr.new_net,limit=1] run data modify entity @
 execute as @e[type=item_display,tag=mr.new_net,limit=1] run data modify entity @s data.display_items set value []
 execute as @e[type=interaction,tag=mr.new_interaction,limit=1] run scoreboard players operation @s mr.net_id = @e[type=item_display,tag=mr.new_net,limit=1] mr.net_id
 
+execute as @e[type=item_display,tag=mr.new_net,limit=1] run function mineraft:core/structure/store_item
 tag @e[type=item_display,tag=mr.new_net] remove mr.new_net
 tag @e[type=interaction,tag=mr.new_interaction] remove mr.new_interaction
 
-execute as @a if score @s mr.link = #player_link mr.data run item modify entity @s weapon.mainhand mineraft:remove_one
+function mineraft:core/structure/cache_item
+execute as @a if score @s mr.link = #player_link mr.data unless entity @s[gamemode=creative] run item modify entity @s weapon.mainhand mineraft:remove_one
 
 playsound block.anvil.use block @a[distance=..10] ~ ~ ~ 100 2 1
+
+data modify storage mineraft:grid type set value "collection_net"
+data modify storage mineraft:grid h set value 2
+execute as @e[type=item_display,tag=mr.surface,distance=..2,limit=1,sort=nearest] run function mineraft:grid/block/claim_all with storage mineraft:grid

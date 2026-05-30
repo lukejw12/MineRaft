@@ -1,3 +1,5 @@
+execute unless block ~ ~ ~ air unless block ~ ~ ~ iron_trapdoor run return fail
+$execute positioned ~$(block1_offset_x) ~ ~$(block1_offset_z) unless block ~ ~ ~ air unless block ~ ~ ~ iron_trapdoor run return fail
 function mineraft:structures/crop_plot/basic/small/spawn/spawn_display with storage mineraft:crop_plot
 
 summon interaction ~0.5 ~ ~0.5 {width:1.05f,height:1.05f,Tags:["mr.small_crop_plot","mr.small_crop_plot_interaction","mr.new_interaction","mr.block_0"]}
@@ -18,6 +20,7 @@ setblock ~ ~ ~ barrier
 $setblock ~$(block1_offset_x) ~ ~$(block1_offset_z) barrier
 
 data modify storage mineraft:grid type set value "small_crop_plot"
+data modify storage mineraft:grid h set value 1
 data modify storage mineraft:grid block1_offset_x set from storage mineraft:crop_plot block1_offset_x
 data modify storage mineraft:grid block1_offset_z set from storage mineraft:crop_plot block1_offset_z
 execute positioned ~0.5 ~-1 ~0.5 as @e[type=item_display,tag=mr.surface,distance=..3,limit=1,sort=nearest] run function mineraft:grid/block/claim_smart_pair with storage mineraft:grid
@@ -38,6 +41,7 @@ execute as @e[type=item_display,tag=mr.new_crop,tag=mr.crop_3] run data modify e
 execute as @e[type=item_display,tag=mr.new_crop] run data modify entity @s data.state set value "empty"
 execute as @e[type=item_display,tag=mr.new_crop] run scoreboard players set @s mr.crop_plot_timer 0
 
+execute as @e[type=item_display,tag=mr.new_display,limit=1] run function mineraft:core/structure/store_item
 tag @e[type=item_display,tag=mr.new_display] remove mr.new_display
 tag @e[type=item_display,tag=mr.new_crop] remove mr.new_crop
 tag @e[type=interaction,tag=mr.new_interaction] remove mr.new_interaction

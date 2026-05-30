@@ -9,3 +9,4 @@ execute as @e[type=armor_stand,tag=mr.shark] at @s run function mineraft:shark/c
 execute as @e[type=marker,limit=1,sort=nearest,tag=mr.spawn] at @s run function mineraft:flotsam/core/tick
 function mineraft:admin/tick
 function sailing_physics:core/tick
+function hook_physics:core/tick

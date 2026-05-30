@@ -6,6 +6,7 @@ execute as @e[type=item_display,tag=mr.support_display,distance=..2,limit=1,sort
 
 execute as @e[type=item_display,tag=mr.support_display,distance=..2,limit=1,sort=nearest] at @s align xyz positioned ~0.5 ~3 ~0.5 run function mineraft:structures/support/placement/spawn/spawn
 
-execute as @a if score @s mr.link = #player_link mr.data run clear @s *[custom_data~{mr.support:1b}] 1
+function mineraft:core/structure/cache_item
+execute as @a if score @s mr.link = #player_link mr.data unless entity @s[gamemode=creative] run clear @s *[custom_data~{mr.support:1b}] 1
 
 kill @s

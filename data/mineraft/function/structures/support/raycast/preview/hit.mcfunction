@@ -1,9 +1,13 @@
-
 scoreboard players operation #player_link mr.data = @s mr.link
 
 execute as @e[type=item_display,tag=mr.center,distance=..2,limit=1,sort=nearest] at @s align xyz positioned ~0.5 ~1 ~0.5 if entity @e[type=item_display,tag=mr.support_display,distance=..0.5] run return run function mineraft:structures/support/raycast/preview/hide
 
 execute as @e[type=item_display,tag=mr.platform_display,distance=..2,limit=1,sort=nearest] at @s positioned ~ ~0.5 ~ if entity @e[type=item_display,tag=mr.support_display,distance=..0.5] run return run function mineraft:structures/support/raycast/preview/hide
+
+scoreboard players set #support_can_place mr.data 0
+execute as @e[type=item_display,tag=mr.center,distance=..2,limit=1,sort=nearest] run function mineraft:structures/support/placement/grid_check
+execute if score #support_can_place mr.data matches 0 as @e[type=item_display,tag=mr.platform_display,distance=..2,limit=1,sort=nearest] run function mineraft:structures/support/placement/grid_check
+execute if score #support_can_place mr.data matches 0 run return run function mineraft:structures/support/raycast/preview/hide
 
 function mineraft:structures/support/placement/models/get
 

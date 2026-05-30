@@ -4,10 +4,12 @@ data modify storage mineraft:stairs stairs_type set from entity @s data.stairs_t
 scoreboard players operation #rotation mr.data = @s mr.data
 function mineraft:structures/stairs/placement/models/calculate_rotation
 
-execute align xyz positioned ~ ~1 ~ if data storage mineraft:stairs {direction:"south"} positioned ~ ~ ~-1 if entity @e[type=armor_stand,tag=mr.stairs_shulker,dx=0,dy=2,dz=3] run return run function mineraft:structures/stairs/raycast/preview/hide
-execute align xyz positioned ~ ~1 ~ if data storage mineraft:stairs {direction:"north"} positioned ~ ~ ~-1 if entity @e[type=armor_stand,tag=mr.stairs_shulker,dx=0,dy=2,dz=3] run return run function mineraft:structures/stairs/raycast/preview/hide
-execute align xyz positioned ~ ~1 ~ if data storage mineraft:stairs {direction:"east"} positioned ~-1 ~ ~ if entity @e[type=armor_stand,tag=mr.stairs_shulker,dx=3,dy=2,dz=0] run return run function mineraft:structures/stairs/raycast/preview/hide
-execute align xyz positioned ~ ~1 ~ if data storage mineraft:stairs {direction:"west"} positioned ~-1 ~ ~ if entity @e[type=armor_stand,tag=mr.stairs_shulker,dx=3,dy=2,dz=0] run return run function mineraft:structures/stairs/raycast/preview/hide
+data modify storage mineraft:grid block1_offset_x set from storage mineraft:stairs offset_x
+data modify storage mineraft:grid block1_offset_z set from storage mineraft:stairs offset_z
+execute align xyz run tp @s ~0.5 ~ ~0.5
+function mineraft:grid/block/compute_slot_1x3
+execute if score #slot_free mr.data matches 0 run function mineraft:structures/stairs/raycast/preview/hide
+execute if score #slot_free mr.data matches 0 run return run kill @s
 
 function mineraft:structures/stairs/placement/models/get
 
