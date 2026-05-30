@@ -10,4 +10,5 @@ scoreboard players operation #hp.yaw hp.data %= #360 hp.const
 execute if score #hp.yaw hp.data matches ..-1 run scoreboard players add #hp.yaw hp.data 360
 execute at @s anchored eyes positioned ^ ^ ^1 run function hook_physics:cast/launch
 tag @s add hp.caster
+item modify entity @s weapon.mainhand hook_physics:cast
 scoreboard players set @s hp.cooldown 4

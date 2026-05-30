@@ -3,7 +3,7 @@ $execute as @e[type=item_display,tag=mr.wall_preview,tag=!$(keep)] run kill @s
 $execute as @e[type=item_display,tag=mr.support_preview,tag=!$(keep)] run kill @s
 $execute as @e[type=item_display,tag=mr.stairs_preview,tag=!$(keep)] run kill @s
 $execute as @e[type=item_display,tag=mr.campfire_preview,tag=!$(keep)] run kill @s
-$execute as @e[type=block_display,tag=mr.campfire_block_preview] run kill @s
+$execute as @e[type=block_display,tag=mr.campfire_block_preview,tag=!$(keep)] run kill @s
 $execute as @e[type=item_display,tag=mr.grill_preview,tag=!$(keep)] run kill @s
 $execute as @e[type=item_display,tag=mr.smeltery_preview,tag=!$(keep)] run kill @s
 $execute as @e[type=item_display,tag=mr.recycler_preview,tag=!$(keep)] run kill @s

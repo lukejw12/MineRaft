@@ -4,5 +4,6 @@ execute as @e[tag=hp.hook] if score @s hp.link = #hp.caster_link hp.data on pass
 execute as @e[tag=hp.rope] if score @s hp.link = #hp.caster_link hp.data run kill @s
 execute as @e[tag=hp.hook] if score @s hp.link = #hp.caster_link hp.data run kill @s
 advancement revoke @s only hook_physics:use_hook
+function hook_physics:hook/restore_model
 tag @s remove hp.caster
 scoreboard players set @s hp.cooldown 4

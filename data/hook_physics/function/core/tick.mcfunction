@@ -3,6 +3,7 @@ execute as @e[tag=hp.hook,tag=hp.flying] at @s run function hook_physics:hook/fl
 execute as @e[tag=hp.hook,tag=hp.floating] at @s run function hook_physics:hook/float
 execute as @e[tag=hp.hook,tag=hp.reeling] at @s run function hook_physics:hook/reel
 execute as @a[tag=hp.caster] at @s run function hook_physics:hook/check_snap
+execute as @a[tag=hp.caster] unless items entity @s weapon.mainhand *[minecraft:custom_data~{"mr.hook":1b}] run function hook_physics:hook/force_cleanup
 scoreboard players add #hp.rope_tick hp.data 1
 execute if score #hp.rope_tick hp.data matches 3.. as @a[tag=hp.caster] run function hook_physics:rope/update_all
 execute if score #hp.rope_tick hp.data matches 3.. run scoreboard players set #hp.rope_tick hp.data 0

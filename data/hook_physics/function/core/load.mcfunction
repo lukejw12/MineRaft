@@ -17,7 +17,7 @@ scoreboard players set #3 hp.const 3
 scoreboard players set #4 hp.const 4
 scoreboard players set #10 hp.const 10
 scoreboard players set #20 hp.const 20
-scoreboard players set #28 hp.const 28
+scoreboard players set #28 hp.const 7
 scoreboard players set #35000 hp.const 35000
 scoreboard players set #360 hp.const 360
 scoreboard players set #hp.rope_tick hp.data 0
