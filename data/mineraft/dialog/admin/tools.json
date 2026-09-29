@@ -70,6 +70,216 @@
 			"show_tooltip": true,
 			"width": 16,
 			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:stone_axe",
+				"components": {
+					"minecraft:item_model": "raft_items:tool/scrap_axe",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.scrap_axe",
+						"fallback": "Scrap Axe",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Scrap Axe",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 56"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:iron_axe",
+				"components": {
+					"minecraft:item_model": "raft_items:tool/metal_axe",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.metal_axe",
+						"fallback": "Metal Axe",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Metal Axe",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 57"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:iron_shovel",
+				"components": {
+					"minecraft:item_model": "raft_items:tool/scrap_shovel",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.scrap_shovel",
+						"fallback": "Scrap Shovel",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Scrap Shovel",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 58"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:iron_shovel",
+				"components": {
+					"minecraft:item_model": "raft_items:tool/metal_shovel",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.metal_shovel",
+						"fallback": "Metal Shovel",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Metal Shovel",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 59"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:iron_sword",
+				"components": {
+					"minecraft:item_model": "raft_items:tool/machete",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.machete",
+						"fallback": "Machete",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Machete",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 60"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:fishing_rod",
+				"components": {
+					"minecraft:item_model": "raft_items:tool/wooden_fishing_rod",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.wooden_fishing_rod",
+						"fallback": "Wooden Fishing Rod",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Wooden Fishing Rod",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 61"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:tool/plastic_hook",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.plastic_hook",
+						"fallback": "Plastic Hook",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Plastic Hook",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 62"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
 		}
 	],
 	"actions": [

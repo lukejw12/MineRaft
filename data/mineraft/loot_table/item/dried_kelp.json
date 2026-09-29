@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "minecraft:dried_kelp",
+     "functions": [
+      {
+       "function": "minecraft:set_components",
+       "components": {
+        "minecraft:custom_data": "{mr.fuel:1b,mr.fuel_time:50,mr.fuel_style:\"dried_kelp\"}",
+        "minecraft:item_name": {
+         "translate": "item.minecraft.dried_kelp",
+         "fallback": "Dried Kelp",
+         "italic": false
+        },
+        "!minecraft:food": {},
+        "!minecraft:consumable": {}
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

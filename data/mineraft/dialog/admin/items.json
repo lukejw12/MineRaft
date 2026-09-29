@@ -160,6 +160,515 @@
 			"show_tooltip": true,
 			"width": 16,
 			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:light_gray_dye",
+				"components": {
+					"minecraft:item_model": "minecraft:beetroot_seeds",
+					"minecraft:item_name": {
+						"translate": "item.minecraft.beetroot_seeds",
+						"fallback": "Beetroot Seeds",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Beetroot Seeds",
+					"color": "white",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 39"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:light_gray_dye",
+				"components": {
+					"minecraft:item_model": "minecraft:beetroot",
+					"minecraft:item_name": {
+						"translate": "item.minecraft.beetroot",
+						"fallback": "Beetroot",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Beetroot",
+					"color": "white",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 40"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:light_gray_dye",
+				"components": {
+					"minecraft:item_model": "raft_items:crop/pineapple_top",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.pineapple_top",
+						"fallback": "Pineapple Top",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Pineapple Top",
+					"color": "white",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 41"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:light_gray_dye",
+				"components": {
+					"minecraft:item_model": "raft_items:crop/pineapple",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.pineapple",
+						"fallback": "Pineapple",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Pineapple",
+					"color": "white",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 42"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:raw_iron",
+				"components": {
+					"minecraft:item_model": "raft_items:metal_ore",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.metal_ore",
+						"fallback": "Metal Ore",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Metal Ore",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 43"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:sugar",
+				"components": {
+					"minecraft:item_model": "raft_items:sand_pile",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.sand_pile",
+						"fallback": "Sand Pile",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Sand Pile",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 44"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:quartz",
+				"components": {
+					"minecraft:item_model": "raft_items:glass",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.glass",
+						"fallback": "Glass",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Glass",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 45"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:iron_nugget",
+				"components": {
+					"minecraft:item_model": "raft_items:nail",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.nail",
+						"fallback": "Nail",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Nail",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 46"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:sugar",
+				"components": {
+					"minecraft:item_model": "raft_items:salt",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.salt",
+						"fallback": "Salt",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Salt",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 47"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:paper",
+				"components": {
+					"minecraft:item_model": "raft_items:fabric",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.fabric",
+						"fallback": "Fabric",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Fabric",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 48"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:iron_ingot",
+				"components": {
+					"minecraft:item_model": "raft_items:magnet",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.magnet",
+						"fallback": "Magnet",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Magnet",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 49"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:glowstone_dust",
+				"components": {
+					"minecraft:item_model": "raft_items:glowing_pigment",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.glowing_pigment",
+						"fallback": "Glowing Pigment",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Glowing Pigment",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 50"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:clay_ball",
+				"components": {
+					"minecraft:item_model": "raft_items:dirt_clump",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.dirt_clump",
+						"fallback": "Dirt Clump",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Dirt Clump",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 51"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:paper",
+				"components": {
+					"minecraft:item_model": "raft_items:rope",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.rope",
+						"fallback": "Rope",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Rope",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 52"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:dried_kelp",
+				"components": {
+					"minecraft:item_name": {
+						"translate": "item.minecraft.dried_kelp",
+						"fallback": "Dried Kelp",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Dried Kelp",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 53"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:paper",
+				"components": {
+					"minecraft:item_model": "raft_items:crop/coconut_fruit",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.coconut_fruit",
+						"fallback": "Coconut",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Coconut",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 54"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:paper",
+				"components": {
+					"minecraft:item_model": "raft_items:crop/cracked_coconut",
+					"minecraft:item_name": {
+						"translate": "item.mineraft.cracked_coconut",
+						"fallback": "Cracked Coconut",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Cracked Coconut",
+					"color": "gold",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 55"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
 		}
 	],
 	"actions": [

@@ -1,0 +1,31 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:poisonous_potato",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": {
+									"translate": "item.minecraft.beetroot_seeds",
+									"fallback": "Beetroot Seeds",
+									"italic": false
+								},
+								"minecraft:item_model": "minecraft:beetroot_seeds",
+								"!minecraft:food": {},
+								"minecraft:custom_data": {
+									"mr.seed": true,
+									"mr.seed_type": "beetroot"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

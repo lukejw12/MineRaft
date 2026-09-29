@@ -1,0 +1,12 @@
+execute if score #r.rot mr.data matches 0 run scoreboard players operation #r.ox mr.data = #r.x mr.data
+execute if score #r.rot mr.data matches 0 run scoreboard players operation #r.oz mr.data = #r.z mr.data
+execute if score #r.rot mr.data matches 1 run scoreboard players operation #r.ox mr.data = #r.z mr.data
+execute if score #r.rot mr.data matches 1 run scoreboard players operation #r.ox mr.data *= #-1 mr.const
+execute if score #r.rot mr.data matches 1 run scoreboard players operation #r.oz mr.data = #r.x mr.data
+execute if score #r.rot mr.data matches 2 run scoreboard players operation #r.ox mr.data = #r.x mr.data
+execute if score #r.rot mr.data matches 2 run scoreboard players operation #r.ox mr.data *= #-1 mr.const
+execute if score #r.rot mr.data matches 2 run scoreboard players operation #r.oz mr.data = #r.z mr.data
+execute if score #r.rot mr.data matches 2 run scoreboard players operation #r.oz mr.data *= #-1 mr.const
+execute if score #r.rot mr.data matches 3 run scoreboard players operation #r.ox mr.data = #r.z mr.data
+execute if score #r.rot mr.data matches 3 run scoreboard players operation #r.oz mr.data = #r.x mr.data
+execute if score #r.rot mr.data matches 3 run scoreboard players operation #r.oz mr.data *= #-1 mr.const

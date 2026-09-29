@@ -1,0 +1,29 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_sword",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": {
+									"translate": "item.mineraft.machete",
+									"fallback": "Machete",
+									"italic": false
+								},
+								"minecraft:item_model": "raft_items:tool/machete",
+								"minecraft:custom_data": {
+									"mr.machete": true
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

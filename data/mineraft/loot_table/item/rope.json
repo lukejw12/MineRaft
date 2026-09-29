@@ -1,0 +1,28 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "minecraft:paper",
+     "functions": [
+      {
+       "function": "minecraft:set_components",
+       "components": {
+        "minecraft:custom_data": "{mr.rope:1b,mr.recyclable:1b,mr.recycle_type:\"rope\"}",
+        "minecraft:item_name": {
+         "translate": "item.mineraft.rope",
+         "fallback": "Rope",
+         "italic": false
+        },
+        "minecraft:item_model": "raft_items:rope"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

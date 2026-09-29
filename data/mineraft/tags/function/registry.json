@@ -1,0 +1,22 @@
+{
+	"values": [
+		"mineraft:registry/palette",
+		"mineraft:registry/recipes",
+		"mineraft:registry/structure/foundation",
+		"mineraft:registry/structure/collection_net",
+		"mineraft:registry/structure/platform",
+		"mineraft:registry/structure/support",
+		"mineraft:registry/structure/wall",
+		"mineraft:registry/structure/stairs",
+		"mineraft:registry/structure/smelter",
+		"mineraft:registry/structure/water_purifier",
+		"mineraft:registry/structure/campfire",
+		"mineraft:registry/structure/grill",
+		"mineraft:registry/structure/recycler",
+		"mineraft:registry/structure/crop_plot_small",
+		"mineraft:registry/structure/crop_plot_medium",
+		"mineraft:registry/structure/crop_plot_large",
+		"mineraft:registry/structure/sail",
+		"mineraft:registry/structure/foundation_armor"
+	]
+}

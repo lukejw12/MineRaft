@@ -1,0 +1,28 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "minecraft:clay_ball",
+     "functions": [
+      {
+       "function": "minecraft:set_components",
+       "components": {
+        "minecraft:custom_data": "{mr.dirt_clump:1b,mr.recyclable:1b,mr.recycle_type:\"dirt\"}",
+        "minecraft:item_name": {
+         "translate": "item.mineraft.dirt_clump",
+         "fallback": "Dirt Clump",
+         "italic": false
+        },
+        "minecraft:item_model": "raft_items:dirt_clump"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

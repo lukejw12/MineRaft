@@ -1,2 +1,0 @@
-execute if data storage mineraft:stairs {stairs_type:"wooden_stairs"} run data modify storage mineraft:stairs model set value "raft_structures:basic/wooden_stairs"
-execute if data storage mineraft:stairs {stairs_type:"solid_wooden_stairs"} run data modify storage mineraft:stairs model set value "raft_structures:basic/wooden_stairs"

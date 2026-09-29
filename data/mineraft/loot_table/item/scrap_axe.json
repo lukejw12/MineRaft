@@ -1,0 +1,29 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stone_axe",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": {
+									"translate": "item.mineraft.scrap_axe",
+									"fallback": "Scrap Axe",
+									"italic": false
+								},
+								"minecraft:item_model": "raft_items:tool/scrap_axe",
+								"minecraft:custom_data": {
+									"mr.axe": 2
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

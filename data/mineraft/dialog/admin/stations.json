@@ -16,7 +16,7 @@
       "item": {
         "id": "minecraft:poisonous_potato",
         "components": {
-          "minecraft:item_model": "raft_items:structure/basic/smeltery",
+          "minecraft:item_model": "raft_items:structure/smelter",
           "minecraft:item_name": {
             "translate": "structure.mineraft.basic_smeltery",
             "fallback": "Basic Smeltery",
@@ -136,7 +136,7 @@
       "item": {
         "id": "minecraft:poisonous_potato",
         "components": {
-          "minecraft:item_model": "raft_items:structure/simple/collection_net",
+          "minecraft:item_model": "raft_items:structure/basic/collection_net",
           "minecraft:item_name": {
             "translate": "structure.mineraft.simple_collection_net",
             "fallback": "Simple Collection Net",

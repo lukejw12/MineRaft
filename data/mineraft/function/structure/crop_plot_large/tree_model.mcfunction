@@ -1,0 +1,1 @@
+$execute as @e[type=item_display,tag=mr.p.tree,distance=..3] if score @s mr.id = #pt.id mr.data run function mineraft:structure/crop_plot_large/tree_set {model:"raft_sources:plant/coconut/wild_$(v)$(f)"}

@@ -1,0 +1,26 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:fishing_rod",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": {
+									"translate": "item.mineraft.wooden_fishing_rod",
+									"fallback": "Wooden Fishing Rod",
+									"italic": false
+								},
+								"minecraft:item_model": "raft_items:tool/wooden_fishing_rod"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

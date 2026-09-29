@@ -1,0 +1,1 @@
+$execute as @e[type=item_display,tag=mr.p.content,distance=..2] if score @s mr.id = #sm.id mr.data run data modify entity @s item.components."minecraft:item_model" set value "raft_structures:smelting/$(content)/$(stage)"

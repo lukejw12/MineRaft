@@ -1,0 +1,5 @@
+{
+	"parent": "mineraft:technical/root",
+	"criteria": {"use": {"trigger": "minecraft:using_item", "conditions": {"item": {"predicates": {"minecraft:custom_data": {"mineraft": {"id": "building_hammer"}}}}}}},
+	"rewards": {"function": "mineraft:item/hammer/use"}
+}

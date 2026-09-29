@@ -1,0 +1,1 @@
+$summon item_display $(cx) $(cy) $(cz) {Rotation:[$(yaw)f,$(pitch)f],Tags:["hp.rope","hp.new_rope"],item:{id:"minecraft:string",count:1,components:{"minecraft:item_model":"raft_items:tool/rope"}},item_display:"none",transformation:{left_rotation:[0.7071f,0f,0f,0.7071f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1.0667f,1f]},teleport_duration:3}

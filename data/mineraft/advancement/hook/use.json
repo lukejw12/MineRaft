@@ -1,0 +1,20 @@
+{
+    "parent": "mineraft:technical/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "mr.hook": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mineraft:hook/cast/activate"
+    }
+}

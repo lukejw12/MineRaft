@@ -1,0 +1,7 @@
+$summon text_display ~$(x) ~-0.5 ~$(z) {Tags:["mr.part","mr.p.fire","mr.new_fire"],text:[{sprite:"raft_structures:structure/fire"}],background:0,brightness:{block:15,sky:15},transformation:[1.767767f,0f,-0.0007778f,-0.17140388f,0f,2.49f,0f,0f,1.767767f,0f,0.0007778f,0.5830155f,0f,0f,0f,1f]}
+$summon text_display ~$(x) ~-0.5 ~$(z) {Tags:["mr.part","mr.p.fire","mr.new_fire"],text:[{sprite:"raft_structures:structure/fire"}],background:0,brightness:{block:15,sky:15},transformation:[-1.767767f,0f,0.0007778f,-0.07859612f,0f,2.49f,0f,0f,-1.767767f,0f,-0.0007778f,0.6669845f,0f,0f,0f,1f]}
+$summon text_display ~$(x) ~-0.5 ~$(z) {Tags:["mr.part","mr.p.fire","mr.new_fire"],text:[{sprite:"raft_structures:structure/fire"}],background:0,brightness:{block:15,sky:15},transformation:[1.767767f,0f,0.0007778f,-0.16698447f,0f,2.49f,0f,0f,-1.767767f,0f,0.0007778f,0.6714039f,0f,0f,0f,1f]}
+$summon text_display ~$(x) ~-0.5 ~$(z) {Tags:["mr.part","mr.p.fire","mr.new_fire"],text:[{sprite:"raft_structures:structure/fire"}],background:0,brightness:{block:15,sky:15},transformation:[-1.767767f,0f,-0.0007778f,-0.0830155f,0f,2.49f,0f,0f,1.767767f,0f,-0.0007778f,0.5785961f,0f,0f,0f,1f]}
+scoreboard players operation @e[type=text_display,tag=mr.new_fire] mr.id = @s mr.id
+execute if score #sp.sailing sp.data matches 1 as @e[type=text_display,tag=mr.new_fire] run function sailing_physics:movement/store_single
+tag @e[type=text_display,tag=mr.new_fire] remove mr.new_fire

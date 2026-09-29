@@ -1,0 +1,1 @@
+$execute at @a[tag=mr.interacting,limit=1] as @e[type=item_display,tag=mr.crop_$(size),distance=..8,sort=nearest] if score @s mr.id = #cp.id mr.data if data entity @s {data:{state:"empty"}} run return run tag @s add mr.cp_slot

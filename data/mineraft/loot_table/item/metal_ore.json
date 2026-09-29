@@ -1,0 +1,28 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "minecraft:raw_iron",
+     "functions": [
+      {
+       "function": "minecraft:set_components",
+       "components": {
+        "minecraft:custom_data": "{mr.metal_ore:1b,mr.smelt_type:\"metal_ore\",mr.recyclable:1b,mr.recycle_type:\"metal_ore\"}",
+        "minecraft:item_name": {
+         "translate": "item.mineraft.metal_ore",
+         "fallback": "Metal Ore",
+         "italic": false
+        },
+        "minecraft:item_model": "raft_items:metal_ore"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

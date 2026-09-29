@@ -1,1 +1,0 @@
-$function $(hit_function)

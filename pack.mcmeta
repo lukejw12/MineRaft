@@ -1,37 +1,16 @@
 {
 	"pack": {
-		"pack_format": 94,
-		"max_format": 94,
-		"min_format": 88,
 		"description": [
-			{
-				"text": "Mine-Raft",
-				"color": "gold"
-			},
-			{
-				"text": " (Recreation of the hit game Raft) Created by @_itsjustluke!",
-				"color": "yellow"
-			}
-		]
-	},
-	"overlays": {
-		"entries": [
-			{
-				"directory": "animated_java",
-				"formats": 71
-			}
-		]
+			{"text": "MineRaft", "color": "gold"},
+			{"text": " (Recreation of the hit game Raft) Created by @_itsjustluke!", "color": "yellow"}
+		],
+		"min_format": 101,
+		"max_format": 101
 	},
 	"filter": {
 		"block": [
-			{
-				"namespace": "minecraft",
-				"path": "advancement/*"
-			},
-			{
-				"namespace": "minecraft",
-				"path": "recipe/*"
-			}
+			{"namespace": "minecraft", "path": "advancement/*"},
+			{"namespace": "minecraft", "path": "recipe/*"}
 		]
 	}
 }

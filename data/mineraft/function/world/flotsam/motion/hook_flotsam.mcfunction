@@ -1,0 +1,1 @@
+execute as @e[type=item,tag=mr.flotsam,tag=!mr.riding,distance=..3,limit=1,sort=nearest] run function mineraft:world/flotsam/motion/mount_flotsam

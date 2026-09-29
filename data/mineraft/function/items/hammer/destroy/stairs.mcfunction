@@ -1,2 +1,0 @@
-execute as @e[type=item_display,tag=mr.stairs_display,distance=..2,limit=1,sort=nearest] at @s run function mineraft:structures/stairs/core/destroy
-scoreboard players set #hammer_hit mr.data 1

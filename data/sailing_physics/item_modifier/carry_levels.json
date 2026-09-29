@@ -1,0 +1,25 @@
+{
+ "function": "minecraft:set_enchantments",
+ "enchantments": {
+  "sailing_physics:carry_x": {
+   "type": "minecraft:score",
+   "target": "this",
+   "score": "sp.c.xf"
+  },
+  "sailing_physics:carry_x2": {
+   "type": "minecraft:score",
+   "target": "this",
+   "score": "sp.c.xc"
+  },
+  "sailing_physics:carry_z": {
+   "type": "minecraft:score",
+   "target": "this",
+   "score": "sp.c.zf"
+  },
+  "sailing_physics:carry_z2": {
+   "type": "minecraft:score",
+   "target": "this",
+   "score": "sp.c.zc"
+  }
+ }
+}

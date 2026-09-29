@@ -1,26 +1,3 @@
-#> player_motion:internal/convert_from_legacy/scoreboard_constants.mcfunction
-## 
-# 32 linear approximation segments for converting from the legacy end crystal method's cubic regression to the current cubic regression.
-#
-# Cubic regression algorithms generated on [Desmos](https://www.desmos.com/calculator/ocv67a9p3z), newtonian conversion and slope calculations [here](https://discord.com/channels/154777837382008833/1221689674611818556/1439382129304928488)
-#
-# ```ts
-# const BUCKET_PARAMS = [
-#     [1.012643, 185],   [1.011031, 188],   [1.008673, 198],
-#     [1.005570, 216],   [1.001722, 247],
-#     [0.997128, 293],   [0.991788, 357],   [0.985704, 442],
-#     [0.978874, 552],   [0.971299, 688],   [0.962979, 854],
-#     [0.953914, 1054],  [0.944104, 1289],  [0.933549, 1564],
-#     [0.922249, 1880],  [0.910204, 2241],  [0.897414, 2651],
-#     [0.883879, 3111],  [0.8696, 3625],    [0.854575, 4196],
-#     [0.838806, 4827],  [0.822292, 5520],  [0.805033, 6280],
-#     [0.787029, 7108],  [0.76828, 8008],   [0.748787, 8982],
-#     [0.728548, 10035], [0.707565, 11168], [0.685836, 12385],
-#     [0.663363, 13688], [0.640144, 15081], [0.616181, 16567],
-# ] as const satisfies Array<[scale: number, adder: number]>
-# ```
-##
-
 scoreboard players set #convert.00.adder \
     player_motion.internal.const \
     185

@@ -1,0 +1,4 @@
+execute as @a[tag=mr.interacting,limit=1] if items entity @s weapon.mainhand *[custom_data~{mr.fuel:1b}] run return run function mineraft:structure/water_purifier/add_fuel
+execute as @a[tag=mr.interacting,limit=1] if items entity @s weapon.mainhand *[custom_data~{mr.filled_cup:1b,mr.water_type:"saltwater"}] run return run function mineraft:structure/water_purifier/add_saltwater
+execute if data entity @s {data:{state:"purified"}} if items entity @a[tag=mr.interacting,limit=1] weapon.mainhand *[custom_data~{mr.pail-empty:1b}] run return run function mineraft:structure/water_purifier/collect
+execute if data entity @s {data:{state:"purified"}} if items entity @a[tag=mr.interacting,limit=1] weapon.mainhand *[custom_data~{mr.filled_cup:1b,mr.water_type:"freshwater"}] run function mineraft:structure/water_purifier/collect

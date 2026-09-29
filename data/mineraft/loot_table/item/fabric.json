@@ -1,0 +1,28 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "minecraft:paper",
+     "functions": [
+      {
+       "function": "minecraft:set_components",
+       "components": {
+        "minecraft:custom_data": "{mr.fabric:1b}",
+        "minecraft:item_name": {
+         "translate": "item.mineraft.fabric",
+         "fallback": "Fabric",
+         "italic": false
+        },
+        "minecraft:item_model": "raft_items:fabric"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

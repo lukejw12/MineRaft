@@ -1,0 +1,16 @@
+scoreboard players operation #sp.dvx sp.data = #sp.vx sp.data
+scoreboard players operation #sp.dvx sp.data -= #sp.svx sp.data
+scoreboard players operation #sp.ex sp.data = #sp.dvx sp.data
+scoreboard players operation #sp.dvx sp.data /= #ease sp.const
+execute if score #sp.dvx sp.data matches 0 run scoreboard players operation #sp.dvx sp.data = #sp.ex sp.data
+scoreboard players operation #sp.svx sp.data += #sp.dvx sp.data
+scoreboard players operation #sp.dvz sp.data = #sp.vz sp.data
+scoreboard players operation #sp.dvz sp.data -= #sp.svz sp.data
+scoreboard players operation #sp.ex sp.data = #sp.dvz sp.data
+scoreboard players operation #sp.dvz sp.data /= #ease sp.const
+execute if score #sp.dvz sp.data matches 0 run scoreboard players operation #sp.dvz sp.data = #sp.ex sp.data
+scoreboard players operation #sp.svz sp.data += #sp.dvz sp.data
+scoreboard players operation #sp.center_x sp.data += #sp.svx sp.data
+scoreboard players operation #sp.center_z sp.data += #sp.svz sp.data
+scoreboard players operation #sp.vx sp.data = #sp.svx sp.data
+scoreboard players operation #sp.vz sp.data = #sp.svz sp.data

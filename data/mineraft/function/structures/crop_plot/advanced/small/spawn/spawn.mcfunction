@@ -1,1 +1,0 @@
-function mineraft:structures/crop_plot/advanced/small/spawn/spawn_with_offset with storage mineraft:crop_plot

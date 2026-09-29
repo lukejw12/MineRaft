@@ -1,0 +1,12 @@
+execute if data entity @s data.mr{rot:0} run function mineraft:structure/collision/add {o:[0,0,-1],b:"minecraft:purpur_stairs[facing=south,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:0} run function mineraft:structure/collision/add {o:[0,1,0],b:"minecraft:purpur_stairs[facing=south,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:0} run function mineraft:structure/collision/add {o:[0,2,1],b:"minecraft:purpur_stairs[facing=south,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:1} run function mineraft:structure/collision/add {o:[1,0,0],b:"minecraft:purpur_stairs[facing=west,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:1} run function mineraft:structure/collision/add {o:[0,1,0],b:"minecraft:purpur_stairs[facing=west,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:1} run function mineraft:structure/collision/add {o:[-1,2,0],b:"minecraft:purpur_stairs[facing=west,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:2} run function mineraft:structure/collision/add {o:[0,0,1],b:"minecraft:purpur_stairs[facing=north,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:2} run function mineraft:structure/collision/add {o:[0,1,0],b:"minecraft:purpur_stairs[facing=north,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:2} run function mineraft:structure/collision/add {o:[0,2,-1],b:"minecraft:purpur_stairs[facing=north,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:3} run function mineraft:structure/collision/add {o:[-1,0,0],b:"minecraft:purpur_stairs[facing=east,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:3} run function mineraft:structure/collision/add {o:[0,1,0],b:"minecraft:purpur_stairs[facing=east,half=bottom,shape=straight]",k:"stairs"}
+execute if data entity @s data.mr{rot:3} run function mineraft:structure/collision/add {o:[1,2,0],b:"minecraft:purpur_stairs[facing=east,half=bottom,shape=straight]",k:"stairs"}

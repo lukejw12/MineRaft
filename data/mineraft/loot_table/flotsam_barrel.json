@@ -9,22 +9,22 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "mineraft:items/plank",
+          "value": "mineraft:item/wooden_plank",
           "weight": 5
         },
         {
           "type": "minecraft:loot_table",
-          "value": "mineraft:items/palm_leaf",
+          "value": "mineraft:item/palm_leaf",
           "weight": 3
         },
         {
           "type": "minecraft:loot_table",
-          "value": "mineraft:items/plastic",
+          "value": "mineraft:item/plastic",
           "weight": 6
         },
         {
           "type": "minecraft:loot_table",
-          "value": "mineraft:items/scrap",
+          "value": "mineraft:item/scrap",
           "weight": 10
         }
       ]

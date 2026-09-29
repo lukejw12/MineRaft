@@ -1,0 +1,7 @@
+{
+	"condition": "minecraft:any_of",
+	"terms": [
+		{"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"flags": {"is_flying": true}}},
+		{"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"flags": {"is_fall_flying": true}}}
+	]
+}

@@ -1,0 +1,310 @@
+{
+ "description": "",
+ "supported_items": [
+  "minecraft:saddle"
+ ],
+ "weight": 1,
+ "max_level": 255,
+ "min_cost": {
+  "base": 0,
+  "per_level_above_first": 0
+ },
+ "max_cost": {
+  "base": 0,
+  "per_level_above_first": 0
+ },
+ "anvil_cost": 0,
+ "slots": [
+  "saddle"
+ ],
+ "effects": {
+  "minecraft:tick": [
+   {
+    "requirements": {
+     "condition": "minecraft:all_of",
+     "terms": [
+      {
+       "condition": "minecraft:entity_scores",
+       "entity": "this",
+       "scores": {
+        "sp.c.xs": 0
+       }
+      },
+      {
+       "condition": "minecraft:entity_properties",
+       "entity": "this",
+       "predicate": {
+        "flags": {
+         "is_sneaking": false,
+         "is_swimming": false
+        }
+       }
+      }
+     ]
+    },
+    "effect": {
+     "type": "minecraft:explode",
+     "offset": [
+      -0.01,
+      1.62,
+      0.0
+     ],
+     "radius": 0.826546,
+     "knockback_multiplier": {
+      "type": "minecraft:linear",
+      "base": 0.005,
+      "per_level_above_first": 0.005
+     },
+     "block_interaction": "none",
+     "small_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "large_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "sound": "minecraft:intentionally_empty"
+    }
+   },
+   {
+    "requirements": {
+     "condition": "minecraft:all_of",
+     "terms": [
+      {
+       "condition": "minecraft:entity_scores",
+       "entity": "this",
+       "scores": {
+        "sp.c.xs": 1
+       }
+      },
+      {
+       "condition": "minecraft:entity_properties",
+       "entity": "this",
+       "predicate": {
+        "flags": {
+         "is_sneaking": false,
+         "is_swimming": false
+        }
+       }
+      }
+     ]
+    },
+    "effect": {
+     "type": "minecraft:explode",
+     "offset": [
+      0.01,
+      1.62,
+      0.0
+     ],
+     "radius": 0.826546,
+     "knockback_multiplier": {
+      "type": "minecraft:linear",
+      "base": 0.005,
+      "per_level_above_first": 0.005
+     },
+     "block_interaction": "none",
+     "small_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "large_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "sound": "minecraft:intentionally_empty"
+    }
+   },
+   {
+    "requirements": {
+     "condition": "minecraft:all_of",
+     "terms": [
+      {
+       "condition": "minecraft:entity_scores",
+       "entity": "this",
+       "scores": {
+        "sp.c.xs": 0
+       }
+      },
+      {
+       "condition": "minecraft:entity_properties",
+       "entity": "this",
+       "predicate": {
+        "flags": {
+         "is_sneaking": true,
+         "is_swimming": false
+        }
+       }
+      }
+     ]
+    },
+    "effect": {
+     "type": "minecraft:explode",
+     "offset": [
+      -0.01,
+      1.27,
+      0.0
+     ],
+     "radius": 0.647979,
+     "knockback_multiplier": {
+      "type": "minecraft:linear",
+      "base": 0.005,
+      "per_level_above_first": 0.005
+     },
+     "block_interaction": "none",
+     "small_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "large_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "sound": "minecraft:intentionally_empty"
+    }
+   },
+   {
+    "requirements": {
+     "condition": "minecraft:all_of",
+     "terms": [
+      {
+       "condition": "minecraft:entity_scores",
+       "entity": "this",
+       "scores": {
+        "sp.c.xs": 1
+       }
+      },
+      {
+       "condition": "minecraft:entity_properties",
+       "entity": "this",
+       "predicate": {
+        "flags": {
+         "is_sneaking": true,
+         "is_swimming": false
+        }
+       }
+      }
+     ]
+    },
+    "effect": {
+     "type": "minecraft:explode",
+     "offset": [
+      0.01,
+      1.27,
+      0.0
+     ],
+     "radius": 0.647979,
+     "knockback_multiplier": {
+      "type": "minecraft:linear",
+      "base": 0.005,
+      "per_level_above_first": 0.005
+     },
+     "block_interaction": "none",
+     "small_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "large_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "sound": "minecraft:intentionally_empty"
+    }
+   },
+   {
+    "requirements": {
+     "condition": "minecraft:all_of",
+     "terms": [
+      {
+       "condition": "minecraft:entity_scores",
+       "entity": "this",
+       "scores": {
+        "sp.c.xs": 0
+       }
+      },
+      {
+       "condition": "minecraft:entity_properties",
+       "entity": "this",
+       "predicate": {
+        "flags": {
+         "is_swimming": true
+        }
+       }
+      }
+     ]
+    },
+    "effect": {
+     "type": "minecraft:explode",
+     "offset": [
+      -0.01,
+      0.4,
+      0.0
+     ],
+     "radius": 0.204145,
+     "knockback_multiplier": {
+      "type": "minecraft:linear",
+      "base": 0.005,
+      "per_level_above_first": 0.005
+     },
+     "block_interaction": "none",
+     "small_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "large_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "sound": "minecraft:intentionally_empty"
+    }
+   },
+   {
+    "requirements": {
+     "condition": "minecraft:all_of",
+     "terms": [
+      {
+       "condition": "minecraft:entity_scores",
+       "entity": "this",
+       "scores": {
+        "sp.c.xs": 1
+       }
+      },
+      {
+       "condition": "minecraft:entity_properties",
+       "entity": "this",
+       "predicate": {
+        "flags": {
+         "is_swimming": true
+        }
+       }
+      }
+     ]
+    },
+    "effect": {
+     "type": "minecraft:explode",
+     "offset": [
+      0.01,
+      0.4,
+      0.0
+     ],
+     "radius": 0.204145,
+     "knockback_multiplier": {
+      "type": "minecraft:linear",
+      "base": 0.005,
+      "per_level_above_first": 0.005
+     },
+     "block_interaction": "none",
+     "small_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "large_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+     },
+     "sound": "minecraft:intentionally_empty"
+    }
+   }
+  ]
+ }
+}

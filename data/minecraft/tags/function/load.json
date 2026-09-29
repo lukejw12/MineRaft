@@ -1,4 +1,1 @@
-{
-	"replace": false,
-	"values": ["animated_java:global/on_load", "mineraft:core/world_load", "player_motion:internal/init"]
-}
+{"values": ["animated_java:global/on_load", "mineraft:load", "player_motion:internal/init"]}

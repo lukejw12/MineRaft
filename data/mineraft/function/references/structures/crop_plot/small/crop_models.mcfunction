@@ -1,4 +1,0 @@
-execute if data storage mineraft:crop_plot {seed_type:"potato"} if data storage mineraft:crop_plot {state:"stage0"} run data modify storage mineraft:crop_plot crop_model set value "minecraft:blocks/potatoes_stage0"
-execute if data storage mineraft:crop_plot {seed_type:"potato"} if data storage mineraft:crop_plot {state:"stage1"} run data modify storage mineraft:crop_plot crop_model set value "minecraft:blocks/potatoes_stage1"
-execute if data storage mineraft:crop_plot {seed_type:"potato"} if data storage mineraft:crop_plot {state:"stage2"} run data modify storage mineraft:crop_plot crop_model set value "minecraft:blocks/potatoes_stage2"
-execute if data storage mineraft:crop_plot {seed_type:"potato"} if data storage mineraft:crop_plot {state:"stage3"} run data modify storage mineraft:crop_plot crop_model set value "minecraft:blocks/potatoes_stage3"

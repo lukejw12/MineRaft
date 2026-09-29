@@ -1,0 +1,28 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "minecraft:iron_ingot",
+     "functions": [
+      {
+       "function": "minecraft:set_components",
+       "components": {
+        "minecraft:custom_data": "{mr.magnet:1b}",
+        "minecraft:item_name": {
+         "translate": "item.mineraft.magnet",
+         "fallback": "Magnet",
+         "italic": false
+        },
+        "minecraft:item_model": "raft_items:magnet"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

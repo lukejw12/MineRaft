@@ -340,6 +340,36 @@
 			"show_tooltip": true,
 			"width": 16,
 			"height": 16
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:poisonous_potato",
+				"components": {
+					"minecraft:item_model": "raft_items:structure/sail",
+					"minecraft:item_name": {
+						"translate": "structure.mineraft.sail",
+						"fallback": "Sail",
+						"bold": false,
+						"italic": false
+					}
+				}
+			},
+			"description": {
+				"contents": {
+					"text": "Sail",
+					"color": "dark_aqua",
+					"click_event": {
+						"action": "run_command",
+						"command": "trigger mr.admin set 26"
+					}
+				},
+				"width": 250
+			},
+			"show_decorations": false,
+			"show_tooltip": true,
+			"width": 16,
+			"height": 16
 		}
 	],
 	"actions": [

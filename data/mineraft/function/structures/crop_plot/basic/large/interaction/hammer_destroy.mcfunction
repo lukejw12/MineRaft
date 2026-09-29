@@ -1,1 +1,0 @@
-execute as @e[tag=mr.target_crop_plot] run function mineraft:structures/crop_plot/basic/large/core/destroy

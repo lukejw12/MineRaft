@@ -1,0 +1,5 @@
+execute if score #fm.fuel mr.data matches ..0 run data modify entity @s item.components."minecraft:item_model" set value "minecraft:air"
+execute if score #fm.fuel mr.data matches 1..50 run data modify entity @s item.components."minecraft:item_model" set value "raft_structures:fuel/dried_kelp_1"
+execute if score #fm.fuel mr.data matches 51..100 run data modify entity @s item.components."minecraft:item_model" set value "raft_structures:fuel/dried_kelp_2"
+execute if score #fm.fuel mr.data matches 101..150 run data modify entity @s item.components."minecraft:item_model" set value "raft_structures:fuel/dried_kelp_3"
+execute if score #fm.fuel mr.data matches 151.. run data modify entity @s item.components."minecraft:item_model" set value "raft_structures:fuel/dried_kelp_4"

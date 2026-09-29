@@ -1,4 +1,0 @@
-$execute positioned ~$(offset_x) ~ ~$(offset_z) if block ~ ~ ~-1 #mineraft:wall if entity @s[tag=mr.direction_$(direction)] run setblock ~ ~ ~ iron_trapdoor[facing=$(direction),half=bottom]
-$execute positioned ~$(offset_x) ~ ~$(offset_z) if block ~ ~ ~1 #mineraft:wall if entity @s[tag=mr.direction_$(direction)] run setblock ~ ~ ~ iron_trapdoor[facing=$(direction),half=bottom]
-$execute positioned ~$(offset_x) ~ ~$(offset_z) if block ~1 ~ ~ #mineraft:wall if entity @s[tag=mr.direction_$(direction)] run setblock ~ ~ ~ iron_trapdoor[facing=$(direction),half=bottom]
-$execute positioned ~$(offset_x) ~ ~$(offset_z) if block ~-1 ~ ~ #mineraft:wall if entity @s[tag=mr.direction_$(direction)] run setblock ~ ~ ~ iron_trapdoor[facing=$(direction),half=bottom]

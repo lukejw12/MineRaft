@@ -1,0 +1,38 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "minecraft:paper",
+     "functions": [
+      {
+       "function": "minecraft:set_components",
+       "components": {
+        "minecraft:custom_data": "{mr.cracked_coconut:1b,mr.seedling:1b,mr.seed_type:\"palm_tree\"}",
+        "minecraft:item_name": {
+         "translate": "item.mineraft.cracked_coconut",
+         "fallback": "Cracked Coconut",
+         "italic": false
+        },
+        "minecraft:item_model": "raft_items:crop/cracked_coconut",
+        "minecraft:food": {
+         "nutrition": 4,
+         "saturation": 2.4
+        },
+        "minecraft:consumable": {
+         "consume_seconds": 1.6,
+         "animation": "eat",
+         "sound": "minecraft:entity.generic.eat",
+         "has_consume_particles": true
+        }
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

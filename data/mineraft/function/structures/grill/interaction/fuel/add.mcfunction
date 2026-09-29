@@ -1,2 +1,0 @@
-execute store result score #fuel_value mr.data run function mineraft:references/core/fuel
-execute as @e[tag=mr.target_grill] if score @s mr.grill_fuel matches ..199 run function mineraft:structures/grill/interaction/fuel/do_add

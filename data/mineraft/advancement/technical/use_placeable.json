@@ -1,0 +1,5 @@
+{
+	"parent": "mineraft:technical/root",
+	"criteria": {"use": {"trigger": "minecraft:using_item", "conditions": {"item": {"predicates": {"minecraft:custom_data": {"mineraft": {"place": {}}}}}}}},
+	"rewards": {"function": "mineraft:place/use"}
+}

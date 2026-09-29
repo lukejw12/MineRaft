@@ -1,1 +1,0 @@
-data modify entity @s item.components.minecraft:item_model set value "raft_structures:basic/water_purifier/saltwater"

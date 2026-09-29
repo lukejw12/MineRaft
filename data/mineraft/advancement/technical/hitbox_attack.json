@@ -1,0 +1,5 @@
+{
+	"parent": "mineraft:technical/root",
+	"criteria": {"attack": {"trigger": "minecraft:player_hurt_entity", "conditions": {"entity": {"type": "minecraft:interaction"}}}},
+	"rewards": {"function": "mineraft:structure/hitbox/attack"}
+}

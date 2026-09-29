@@ -1,0 +1,3 @@
+$execute if data storage mineraft:grid block."$(x)/$(y1)/$(z)" unless data storage mineraft:grid block."$(x)/$(y1)/$(z)"{k:"post"} run scoreboard players set #pl.valid mr.data 0
+$execute if data storage mineraft:grid block."$(x)/$(y2)/$(z)" unless data storage mineraft:grid block."$(x)/$(y2)/$(z)"{k:"post"} run scoreboard players set #pl.valid mr.data 0
+$execute if data storage mineraft:grid block."$(x)/$(y3)/$(z)" unless data storage mineraft:grid block."$(x)/$(y3)/$(z)"{k:"floor"} unless data storage mineraft:grid block."$(x)/$(y3)/$(z)"{k:"floor_water"} unless data storage mineraft:grid block."$(x)/$(y3)/$(z)"{k:"post"} run scoreboard players set #pl.valid mr.data 0

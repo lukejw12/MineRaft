@@ -1,7 +1,14 @@
-scoreboard players operation $x player_motion.api.launch = #sp.vx sp.data
-scoreboard players operation $x player_motion.api.launch *= #push_air_scale sp.const
-scoreboard players operation $x player_motion.api.launch /= #push_div sp.const
-scoreboard players set $y player_motion.api.launch 0
-scoreboard players operation $z player_motion.api.launch = #sp.vz sp.data
-scoreboard players operation $z player_motion.api.launch *= #push_air_scale sp.const
-scoreboard players operation $z player_motion.api.launch /= #push_div sp.const
+scoreboard players operation #sp.push_ax sp.data = #sp.vx sp.data
+scoreboard players operation #sp.push_ax sp.data *= #push_air_scale sp.const
+scoreboard players operation #sp.ff sp.data = #sp.dvx sp.data
+scoreboard players operation #sp.ff sp.data *= #ff_air_scale sp.const
+scoreboard players operation #sp.push_ax sp.data += #sp.ff sp.data
+scoreboard players operation #sp.push_ax sp.data += #50 sp.const
+scoreboard players operation #sp.push_ax sp.data /= #push_div sp.const
+scoreboard players operation #sp.push_az sp.data = #sp.vz sp.data
+scoreboard players operation #sp.push_az sp.data *= #push_air_scale sp.const
+scoreboard players operation #sp.ff sp.data = #sp.dvz sp.data
+scoreboard players operation #sp.ff sp.data *= #ff_air_scale sp.const
+scoreboard players operation #sp.push_az sp.data += #sp.ff sp.data
+scoreboard players operation #sp.push_az sp.data += #50 sp.const
+scoreboard players operation #sp.push_az sp.data /= #push_div sp.const

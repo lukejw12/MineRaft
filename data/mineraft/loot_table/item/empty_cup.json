@@ -1,0 +1,48 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stone",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": {
+									"translate": "item.mineraft.empty_cup",
+									"fallback": "Empty Cup",
+									"italic": false
+								},
+								"minecraft:max_damage": 100,
+								"minecraft:damage": 100,
+								"minecraft:max_stack_size": 1,
+								"!minecraft:food": {},
+								"minecraft:consumable": {
+									"consume_seconds": 9999,
+									"animation": "block",
+									"sound": "minecraft:intentionally_empty",
+									"has_consume_particles": false,
+									"on_consume_effects": [
+										{
+											"type": "minecraft:play_sound",
+											"sound": "minecraft:intentionally_empty"
+										}
+									]
+								},
+								"minecraft:custom_data": {
+									"mr.pail-empty": true,
+									"mr.cup_type": "cup",
+									"mr.cup_name": "Cup",
+									"mr.filled_uses": 0
+								},
+								"minecraft:item_model": "raft_items:container/cup/empty"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

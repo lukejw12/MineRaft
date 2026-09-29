@@ -1,0 +1,28 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "minecraft:glowstone_dust",
+     "functions": [
+      {
+       "function": "minecraft:set_components",
+       "components": {
+        "minecraft:custom_data": "{mr.glowing_pigment:1b}",
+        "minecraft:item_name": {
+         "translate": "item.mineraft.glowing_pigment",
+         "fallback": "Glowing Pigment",
+         "italic": false
+        },
+        "minecraft:item_model": "raft_items:glowing_pigment"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

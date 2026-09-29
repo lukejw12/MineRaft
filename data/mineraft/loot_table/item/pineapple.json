@@ -1,0 +1,26 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:apple",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": {
+									"translate": "item.mineraft.pineapple",
+									"fallback": "Pineapple",
+									"italic": false
+								},
+								"minecraft:item_model": "raft_items:crop/pineapple"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

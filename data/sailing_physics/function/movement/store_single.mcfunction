@@ -1,4 +1,5 @@
 tag @s add sp.raft_entity
+execute if entity @s[type=#sailing_physics:display] run data merge entity @s {teleport_duration:2}
 execute store result score #sp.tmp_x sp.data run data get entity @s Pos[0] 1000
 execute store result score #sp.tmp_y sp.data run data get entity @s Pos[1] 1000
 execute store result score #sp.tmp_z sp.data run data get entity @s Pos[2] 1000

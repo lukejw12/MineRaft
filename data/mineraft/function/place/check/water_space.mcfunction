@@ -1,0 +1,9 @@
+$execute positioned $(x) $(y) $(z) unless block ~-1 ~ ~-1 #mineraft:raft/water_space run scoreboard players set #pl.valid mr.data 0
+$execute positioned $(x) $(y) $(z) unless block ~ ~ ~-1 #mineraft:raft/water_space run scoreboard players set #pl.valid mr.data 0
+$execute positioned $(x) $(y) $(z) unless block ~1 ~ ~-1 #mineraft:raft/water_space run scoreboard players set #pl.valid mr.data 0
+$execute positioned $(x) $(y) $(z) unless block ~-1 ~ ~ #mineraft:raft/water_space run scoreboard players set #pl.valid mr.data 0
+$execute positioned $(x) $(y) $(z) unless block ~ ~ ~ #mineraft:raft/water_space run scoreboard players set #pl.valid mr.data 0
+$execute positioned $(x) $(y) $(z) unless block ~1 ~ ~ #mineraft:raft/water_space run scoreboard players set #pl.valid mr.data 0
+$execute positioned $(x) $(y) $(z) unless block ~-1 ~ ~1 #mineraft:raft/water_space run scoreboard players set #pl.valid mr.data 0
+$execute positioned $(x) $(y) $(z) unless block ~ ~ ~1 #mineraft:raft/water_space run scoreboard players set #pl.valid mr.data 0
+$execute positioned $(x) $(y) $(z) unless block ~1 ~ ~1 #mineraft:raft/water_space run scoreboard players set #pl.valid mr.data 0

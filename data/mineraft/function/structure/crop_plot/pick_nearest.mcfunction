@@ -1,0 +1,1 @@
+execute at @a[tag=mr.interacting,limit=1] as @e[type=item_display,tag=mr.p.crop,distance=..8,sort=nearest] if score @s mr.id = #cp.id mr.data if data entity @s {data:{state:"ripe"}} run return run function mineraft:structure/crop_plot/pick

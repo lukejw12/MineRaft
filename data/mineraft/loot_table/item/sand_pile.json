@@ -1,0 +1,28 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "minecraft:sugar",
+     "functions": [
+      {
+       "function": "minecraft:set_components",
+       "components": {
+        "minecraft:custom_data": "{mr.sand:1b,mr.smelt_type:\"sand\",mr.recyclable:1b,mr.recycle_type:\"sand\"}",
+        "minecraft:item_name": {
+         "translate": "item.mineraft.sand_pile",
+         "fallback": "Sand Pile",
+         "italic": false
+        },
+        "minecraft:item_model": "raft_items:sand_pile"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

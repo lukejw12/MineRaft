@@ -1,1 +1,0 @@
-execute as @e[type=item_display,tag=mr.stairs_preview] if score @s mr.link = @p mr.link run kill @s

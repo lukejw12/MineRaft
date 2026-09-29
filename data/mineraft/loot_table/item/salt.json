@@ -1,0 +1,28 @@
+{
+ "type": "minecraft:chest",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "minecraft:sugar",
+     "functions": [
+      {
+       "function": "minecraft:set_components",
+       "components": {
+        "minecraft:custom_data": "{mr.salt:1b}",
+        "minecraft:item_name": {
+         "translate": "item.mineraft.salt",
+         "fallback": "Salt",
+         "italic": false
+        },
+        "minecraft:item_model": "raft_items:salt"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

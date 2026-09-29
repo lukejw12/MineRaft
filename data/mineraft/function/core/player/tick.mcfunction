@@ -1,10 +1,10 @@
-execute if entity @s[tag=!mr.has_ray_id] run function mineraft:core/player/link
-
-execute as @e[type=item_display,tag=mr.foundation,distance=..10] at @s run function mineraft:core/foundation/tick
-
-execute if score #sp.sailing sp.data matches 1 run tag @s remove mr.place
-execute if score #sp.sailing sp.data matches 1 run tag @s remove mr.place_net
-execute if score #sp.sailing sp.data matches 0 if entity @s[tag=mr.place] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:core/raycast/helpers/place_foundation"}
-execute if score #sp.sailing sp.data matches 0 if entity @s[tag=mr.place_net] at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/raycast/start {"function":"mineraft:structures/collection_net/raycast/place_net"}
-
-execute as @s at @s anchored eyes positioned ^ ^ ^ anchored feet run function mineraft:core/player/held_item_check
+execute unless score @s mr.link matches 1.. run function mineraft:core/player/join
+execute unless score #raft_init mr.data matches 1 run function mineraft:world/init
+scoreboard players remove @s[scores={mr.cd=1..}] mr.cd 1
+execute unless score #sp.sailing sp.data matches 1 if items entity @s weapon.mainhand *[custom_data~{mineraft:{place:{}}}] run function mineraft:place/held
+execute if entity @s[tag=mr.has_preview] unless items entity @s weapon.mainhand *[custom_data~{mineraft:{place:{}}}] run function mineraft:place/preview/clear
+execute if items entity @s weapon.mainhand *[custom_data~{mineraft:{id:"building_hammer"}}] run function mineraft:item/hammer/held
+execute if entity @s[tag=mr.hammer_aiming] unless items entity @s weapon.mainhand *[custom_data~{mineraft:{id:"building_hammer"}}] run function mineraft:item/hammer/clear
+execute unless score #sp.sailing sp.data matches 1 if items entity @s saddle *[custom_data~{sp_carry:1b}] run item replace entity @s saddle with air
+execute if score @s mr.coco matches 1.. unless score @s mr.coco_on matches 1 run function mineraft:item/coconut/release
+scoreboard players set @s mr.coco_on 0

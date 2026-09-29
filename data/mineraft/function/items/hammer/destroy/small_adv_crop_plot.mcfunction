@@ -1,2 +1,0 @@
-execute as @e[type=item_display,tag=mr.small_adv_crop_plot_display,distance=..2,limit=1,sort=nearest] at @s run function mineraft:structures/crop_plot/advanced/small/core/destroy
-scoreboard players set #hammer_hit mr.data 1

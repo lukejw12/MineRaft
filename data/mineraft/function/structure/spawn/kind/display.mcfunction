@@ -1,0 +1,1 @@
+$summon item_display $(x) $(y) $(z) {Tags:["mr.new"],Rotation:[$(yaw)f,0f],item_display:"$(mode)",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:$(t),scale:$(s)},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"$(model)"}}}

@@ -1,0 +1,5 @@
+$execute if score #pl.h mr.data matches 1.. if data storage mineraft:grid block."$(x)/$(y1)/$(z)" unless data storage mineraft:grid block."$(x)/$(y1)/$(z)"{k:"panel"} run scoreboard players set #pl.valid mr.data 0
+$execute if score #pl.h mr.data matches 2.. if data storage mineraft:grid block."$(x)/$(y2)/$(z)" unless data storage mineraft:grid block."$(x)/$(y2)/$(z)"{k:"panel"} run scoreboard players set #pl.valid mr.data 0
+$execute if score #pl.h mr.data matches 3.. if data storage mineraft:grid block."$(x)/$(y3)/$(z)" unless data storage mineraft:grid block."$(x)/$(y3)/$(z)"{k:"panel"} run scoreboard players set #pl.valid mr.data 0
+$execute if score #pl.h mr.data matches 4.. if data storage mineraft:grid block."$(x)/$(y4)/$(z)" unless data storage mineraft:grid block."$(x)/$(y4)/$(z)"{k:"panel"} run scoreboard players set #pl.valid mr.data 0
+$execute if score #pl.h mr.data matches 5.. if data storage mineraft:grid block."$(x)/$(y5)/$(z)" unless data storage mineraft:grid block."$(x)/$(y5)/$(z)"{k:"panel"} run scoreboard players set #pl.valid mr.data 0

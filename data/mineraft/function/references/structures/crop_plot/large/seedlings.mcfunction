@@ -1,1 +1,0 @@
-data modify storage mineraft:crop_plot seed_type set from entity @s SelectedItem.components.minecraft:custom_data."mr.seed_type"
